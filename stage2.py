@@ -1,13 +1,3 @@
-"""
-Neural FOXP2 Stage II Module
-
-Stage II: Low-Rank Steering Directions and Window Selection
-- II-1: Language-shift matrix computation
-- II-2: Per-layer SVD
-- II-3: Rank selection (effective rank + eigengap)
-- II-4: Spectral mass and bootstrap stability
-- II-5: Contiguous window selection
-"""
 import torch
 import numpy as np
 from typing import Dict, List, Tuple, Any
@@ -25,16 +15,27 @@ def compute_layer_activations(
     layer_idx: int,
     sae: SparseAutoencoder
 ) -> List[Tuple[np.ndarray, np.ndarray]]:
-    """Get SAE feature activations for English/Hindi prompt pairs."""
+
+    device = next(model.parameters()).device
     activations = []
     for pair in prompts:
-        h_en = torch.tensor(get_residuals(model, tokenizer, pair["en"], layer_idx), dtype=torch.float32)
-        h_en = h_en / (h_en.norm() + 1e-6)
-        z_en = sae.encode(h_en).detach().numpy()
+        h_en = torch.tensor(
+            get_residuals(model, tokenizer, pair["en"], layer_idx),
+            dtype=torch.float32,
+            device=device
+        ).unsqueeze(0)
         
-        h_hi = torch.tensor(get_residuals(model, tokenizer, pair["hi"], layer_idx), dtype=torch.float32)
+        h_en = h_en / (h_en.norm() + 1e-6)
+        z_en = sae.encode(h_en)[0].detach().cpu().numpy()
+        
+        h_hi = torch.tensor(
+            get_residuals(model, tokenizer, pair["hi"], layer_idx),
+            dtype=torch.float32,
+            device=device
+        ).unsqueeze(0)
+        
         h_hi = h_hi / (h_hi.norm() + 1e-6)
-        z_hi = sae.encode(h_hi).detach().numpy()
+        z_hi = sae.encode(h_hi)[0].detach().cpu().numpy()
         
         activations.append((z_en, z_hi))
     return activations
@@ -48,32 +49,22 @@ def compute_language_shift_matrix(
     sae: SparseAutoencoder,
     language_neurons: List[int]
 ) -> np.ndarray:
-    """
-    Compute Δz = z(x_hi) - z(x_en), restricted to language neuron coordinates.
-    
-    Returns:
-        ΔZ matrix of shape [N_prompts, n_features]
-    """
+   
     activations = compute_layer_activations(model, tokenizer, prompts, layer_idx, sae)
-    
+
+    idx = np.asarray(language_neurons, dtype=int)
     delta_z_list = []
     for z_en, z_hi in activations:
         delta_z = z_hi - z_en
-        delta_z_restricted = np.zeros_like(delta_z)
-        for j in language_neurons:
-            if j < len(delta_z):
-                delta_z_restricted[j] = delta_z[j]
-        delta_z_list.append(delta_z_restricted)
+        restricted = np.zeros_like(delta_z)
+        restricted[idx]= delta_z[idx]
+        delta_z_list.append(restricted)
     
     return np.stack(delta_z_list)
 
 
 def compute_effective_rank(singular_values: np.ndarray) -> float:
-    """
-    Compute effective rank using entropy formula.
     
-    r_eff = exp(-Σ p_i log p_i) where p_i = σ_i² / Σ σ_j²
-    """
     s2 = singular_values ** 2
     total = s2.sum()
     if total < 1e-10:
@@ -85,7 +76,7 @@ def compute_effective_rank(singular_values: np.ndarray) -> float:
 
 
 def find_eigengap(singular_values: np.ndarray, r_max: int) -> int:
-    """Find the index with largest gap ratio σ_i / σ_{i+1}."""
+    
     if len(singular_values) < 2:
         return 1
     gaps = singular_values[:-1] / (singular_values[1:] + 1e-10)
@@ -97,12 +88,7 @@ def compute_steering_directions(
     delta_Z: np.ndarray,
     r_max: int = None
 ) -> Tuple[np.ndarray, np.ndarray, int]:
-    """
-    Perform SVD and select steering subspace.
     
-    Returns:
-        (singular_values, V_matrix, chosen_rank)
-    """
     r_max = r_max or config.r_max
     
     U, S, Vt = np.linalg.svd(delta_Z, full_matrices=False)
@@ -119,33 +105,25 @@ def compute_steering_directions(
 
 
 def compute_spectral_mass(singular_values: np.ndarray, r: int) -> float:
-    """Mass of top-r singular values as fraction of total."""
+    
     s2 = singular_values ** 2
     return s2[:r].sum() / (s2.sum() + 1e-10)
 
 
 def compute_stability_bootstrap(
-    model,
-    tokenizer,
-    prompts: List[Dict],
-    layer_idx: int,
-    sae: SparseAutoencoder,
-    language_neurons: List[int],
+    delta_Z: np.ndarray,
     n_bootstrap: int = None
 ) -> float:
-    """
-    Bootstrap stability using principal angle consistency.
-    """
+    
     n_bootstrap = n_bootstrap or config.n_bootstrap
-    n = len(prompts)
+    n = delta_Z.shape[0]
     projectors = []
     
     for _ in range(n_bootstrap):
-        indices = np.random.choice(n, n, replace=True)
-        resampled = [prompts[i] for i in indices]
+        idx = np.random.choice(n, n, replace=True)
+        sample = delta_Z[idx]
         
-        delta_Z = compute_language_shift_matrix(model, tokenizer, resampled, layer_idx, sae, language_neurons)
-        S, V, r = compute_steering_directions(delta_Z)
+        S, V, r = compute_steering_directions(sample)
         
         V_r = V[:, :r]
         P = V_r @ V_r.T
@@ -155,8 +133,7 @@ def compute_stability_bootstrap(
     for i in range(len(projectors)):
         for j in range(i+1, len(projectors)):
             trace = np.trace(projectors[i] @ projectors[j])
-            r = min(projectors[i].shape[0], 10)
-            consistencies.append(trace / r)
+            consistencies.append(trace / np.trace(projectors[i]))
     
     return np.median(consistencies) if consistencies else 1.0
 
@@ -166,12 +143,7 @@ def find_best_contiguous_window(
     min_window: int = None,
     max_window: int = None
 ) -> Tuple[List[int], float]:
-    """
-    Find contiguous layer window maximizing sum of scores.
     
-    Returns:
-        (best_window, best_score)
-    """
     min_window = min_window or config.min_window
     max_window = max_window or config.max_window
     
@@ -199,15 +171,7 @@ def run_stage2(
     language_neurons_per_layer: Dict[int, List[int]],
     layer_range: List[int] = None
 ) -> Dict[str, Any]:
-    """
-    Run complete Stage II pipeline.
     
-    Returns:
-        Dictionary with:
-        - layer_results: per-layer SVD results
-        - intervention_window: selected layer window
-        - window_score: combined window score
-    """
     layer_range = layer_range or config.layer_range
     
     print("\n" + "="*70)
@@ -233,12 +197,14 @@ def run_stage2(
 
             # Spectral mass
             mass = compute_spectral_mass(S, r)
-
-            # Bootstrap stability
-            stability = compute_stability_bootstrap(
+            delta_Z_stability = compute_language_shift_matrix(
                 model, tokenizer,
                 matched_prompts[:config.n_prompts_stability],
                 layer_idx, sae, language_neurons
+            )
+            # Bootstrap stability
+            stability = compute_stability_bootstrap(
+                delta_Z_stability
             )
 
             layer_results[layer_idx] = {
@@ -267,3 +233,4 @@ def run_stage2(
         "intervention_window": intervention_window,
         "window_score": window_score
     }
+
