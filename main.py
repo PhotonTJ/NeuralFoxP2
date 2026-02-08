@@ -1,11 +1,3 @@
-"""
-Neural FOXP2 - Main Pipeline Runner
-
-Complete pipeline for language neuron localization, steering direction
-identification, and intervention edit rule optimization.
-
-Based on the Neural FOXP2 paper methodology.
-"""
 import argparse
 import pickle
 import os
@@ -78,7 +70,6 @@ def parse_args():
 
 
 def parse_layer_range(layer_str: str):
-    """Parse layer range string like '8-23' or '18' into list."""
     if "-" in layer_str:
         start, end = map(int, layer_str.split("-"))
         return list(range(start, end + 1))
@@ -87,7 +78,6 @@ def parse_layer_range(layer_str: str):
 
 
 def save_checkpoint(data: dict, output_dir: str, name: str):
-    """Save checkpoint to pickle file."""
     os.makedirs(output_dir, exist_ok=True)
     path = Path(output_dir) / f"{name}.pkl"
     with open(path, "wb") as f:
@@ -96,7 +86,6 @@ def save_checkpoint(data: dict, output_dir: str, name: str):
 
 
 def load_checkpoint(path: str):
-    """Load checkpoint from pickle file."""
     with open(path, "rb") as f:
         return pickle.load(f)
 
@@ -120,8 +109,7 @@ def main():
     print("="*70)
     
     # Load model and tokenizer
-    model, tokenizer = load_model_and_tokenizer()
-    
+    model, tokenizer = load_model_and_tokenizer(hf_token=config.hf_token)    
     # Load data
     matched_prompts = load_matched_prompts()
     V_hi, V_en = build_language_token_sets(tokenizer)
@@ -146,7 +134,6 @@ def main():
         )
         save_checkpoint({"stage1": stage1_results}, args.output_dir, "stage1_checkpoint")
     
-    # Stage II: Identify Steering Directions
     if args.stage in ["all", "2"] and stage2_results is None:
         if stage1_results is None:
             raise ValueError("Stage I results required. Run Stage I first or resume from checkpoint.")
@@ -162,7 +149,6 @@ def main():
             "stage2": stage2_results
         }, args.output_dir, "stage2_checkpoint")
     
-    # Stage III: Intervention Edit Rule
     if args.stage in ["all", "3"] and stage3_results is None:
         if stage1_results is None or stage2_results is None:
             raise ValueError("Stage I and II results required.")
@@ -208,3 +194,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
