@@ -1,11 +1,3 @@
-"""
-Neural FOXP2 Stage III Module
-
-Stage III: Signed Sparse Edit and Intervention
-- III-1: Signed edit components (δz)
-- III-2: Apply sparse code update
-- III-3: Defaultness gain measurement
-"""
 import torch
 import numpy as np
 from typing import Dict, List, Any
@@ -24,29 +16,39 @@ def compute_target_prototype(
     sae: SparseAutoencoder,
     language_neurons: List[int]
 ) -> np.ndarray:
-    """
-    Compute μ_hi = E[ Π_N ( z_hi − z_en ) ]
-    Mean English→Hindi shift, restricted to language neurons.
-    """
+
+    device = next(model.parameters()).device
     shifts = []
-    idx = np.array(language_neurons, dtype=int)
+    idx = torch.tensor(language_neurons, dtype=torch.long, device=device)
 
     for pair in prompts:
-        h_en = torch.tensor(get_residuals(model, tokenizer, pair["en"], layer_idx), dtype=torch.float32)
-        h_hi = torch.tensor(get_residuals(model, tokenizer, pair["hi"], layer_idx), dtype=torch.float32)
+        h_en = torch.tensor(
+            get_residuals(model, tokenizer, pair["en"], layer_idx),
+            dtype=torch.float32,
+            device=device
+        )
+        h_hi = torch.tensor(
+            get_residuals(model, tokenizer, pair["hi"], layer_idx),
+            dtype=torch.float32,
+            device=device
+        )
 
+        
         h_en = h_en / (h_en.norm() + 1e-6)
         h_hi = h_hi / (h_hi.norm() + 1e-6)
 
-        z_en = sae.encode(h_en.unsqueeze(0)).squeeze(0).detach().cpu().numpy()
-        z_hi = sae.encode(h_hi.unsqueeze(0)).squeeze(0).detach().cpu().numpy()
+        with torch.no_grad():
+            z_en = sae.encode(h_en.unsqueeze(0))[0]
+            z_hi = sae.encode(h_hi.unsqueeze(0))[0]
 
-        shift = np.zeros_like(z_en)
+        shift = torch.zeros_like(z_en)
         shift[idx] = z_hi[idx] - z_en[idx]
+        
         shifts.append(shift)
 
-    mu_hi = np.mean(shifts, axis=0)
-    return normalize_vector(mu_hi)
+    mu_hi = torch.stack(shifts).mean(dim=0)
+    
+    return normalize_vector(mu_hi.cpu().numpy())
 
 
 def compute_english_attractor(
@@ -57,32 +59,31 @@ def compute_english_attractor(
     sae: SparseAutoencoder,
     language_neurons: List[int]
 ) -> np.ndarray:
-    """
-    Compute μ_en = E[ Π_N ( z(x) ) ]
-    English attractor direction, restricted to language neurons.
-    """
+
+    device = next(model.parameters()).device
     activations = []
-    idx = np.array(language_neurons, dtype=int)
+    idx = torch.tensor(language_neurons, dtype=torch.long, device=device)
 
     for p in prompts:
-        h = torch.tensor(get_residuals(model, tokenizer, p, layer_idx), dtype=torch.float32)
+        h = torch.tensor(
+            get_residuals(model, tokenizer, p, layer_idx),
+            dtype=torch.float32,
+            device=device
+        )
         h = h / (h.norm() + 1e-6)
-        z = sae.encode(h.unsqueeze(0)).squeeze(0).detach().cpu().numpy()
+        with torch.no_grad():
+            z = sae.encode(h.unsqueeze(0))[0]
 
-        z_restricted = np.zeros_like(z)
+        z_restricted = torch.zeros_like(z)
         z_restricted[idx] = z[idx]
+        
         activations.append(z_restricted)
 
-    mu_en = np.mean(activations, axis=0)
-    return normalize_vector(mu_en)
+    mu_en = torch.stack(activations).mean(dim=0)
+    return normalize_vector(mu_en.cpu().numpy())
 
 
 class Stage3InterventionHook:
-    """
-    FOXP2 Stage III signed sparse intervention.
-    Uses per-layer SAEs and language neurons.
-    """
-
     def __init__(
         self,
         sae_per_layer: Dict[int, SparseAutoencoder],
@@ -103,15 +104,22 @@ class Stage3InterventionHook:
     def make_hook(self, layer_idx: int):
         proto = self.prototypes[layer_idx]
         sae = self.sae_per_layer[layer_idx]
-        language_neurons = np.array(sorted(self.language_neurons_per_layer[layer_idx]), dtype=int)
 
-        mu_hi = proto["mu_hi"]
-        mu_en = proto["mu_en"]
-        P = proto["projector"]
-        pos_dir = mu_hi
-
+        device = next(sae.parameters()).device
+        
+        mu_hi = torch.tensor(proto["mu_hi"], device=device)
+        mu_en = torch.tensor(proto["mu_en"], device=device)
+        P = torch.tensor(proto["projector"], device=device, dtype=torch.float32)
+        
+        language_neurons = torch.tensor(
+            sorted(self.language_neurons_per_layer[layer_idx]),
+            device=device,
+            dtype=torch.long
+        )
+        
         def hook(module, args, kwargs, output):
             self.call_count += 1
+            
             is_tuple = isinstance(output, tuple)
             h_orig = output[0] if is_tuple else output
             h = h_orig.clone()
@@ -121,22 +129,19 @@ class Stage3InterventionHook:
             else:
                 h_last = h[-1, :].unsqueeze(0)
 
-            h_cpu = h_last.detach().cpu().float()
-            z = sae.encode(h_cpu).detach().cpu().numpy()[0]
+            z = sae.encode(h_last)[0]
 
             # Negative: English suppression inside steering subspace
-            proj_coef = np.dot(z, mu_en)
+            proj_coef = torch.dot(z, mu_en)
             neg_dir = P @ (proj_coef * mu_en)
 
             # Total feature delta
-            delta_z = self.lambda_val * pos_dir - self.beta_val * neg_dir
+            delta_z = self.lambda_val * mu_hi - self.beta_val * neg_dir
 
-            z_delta = np.zeros_like(z)
+            z_delta = torch.zeros_like(z)
             z_delta[language_neurons] = delta_z[language_neurons]
 
-            delta_h = sae.decode(
-                torch.tensor(z_delta, dtype=torch.float32)
-            ).to(h.device, dtype=h.dtype)
+            delta_h = sae.decode(z_delta.unsqueeze(0).to(device))[0]
 
             h_new = h_last + delta_h
 
@@ -146,8 +151,10 @@ class Stage3InterventionHook:
                 h[-1, :] = h_new.squeeze(0)
 
             if self.debug:
-                print(f"[STAGE III] |Δz|max={np.max(np.abs(z_delta)):.4f}, "
-                      f"|Δh|={delta_h.norm().item():.4f}")
+                print(
+                    f"[STAGE III] |Δz|max={torch.max(torch.abs(z_delta)).item():.4f}, "
+                    f"|Δh|={delta_h.norm().item():.4f}"
+                )
 
             return (h,) + output[1:] if is_tuple else h
 
@@ -159,17 +166,32 @@ def compute_baseline_defaultness(
     tokenizer,
     prompts: List[str],
     V_hi: List[int],
-    V_en: List[int]
+    V_en: List[int],
+    batch_size=32
 ) -> float:
-    """Compute baseline language mass without intervention."""
+
+    device = next(model.parameters()).device
     masses = []
-    for p in prompts:
-        inputs = tokenizer(p, return_tensors="pt").to(model.device)
+    
+    for i in range(0, len(prompts), batch_size):
+        batch = prompts[i:i+batch_size]
+        
+        inputs = tokenizer(
+            batch,
+            return_tensors="pt",
+            padding=True,
+            truncation=True
+        ).to(device)
+        
         with torch.no_grad():
             outputs = model(**inputs, use_cache=False)
-        mass = early_language_mass(outputs.logits[:, -1, :], V_hi, V_en)
-        masses.append(mass)
-    return np.mean(masses)
+
+        logits = outputs.logits[:, -1, :]
+        mass = early_language_mass(logits, V_hi, V_en)
+        
+        masses.extend(mass.tolist())
+        
+    return float(np.mean(masses))
 
 
 def evaluate_edit_strength(
@@ -183,32 +205,54 @@ def evaluate_edit_strength(
     beta_val: float,
     prompts: List[str],
     V_hi: List[int],
-    V_en: List[int]
+    V_en: List[int],
+    batch_size=32
 ) -> float:
-    """Evaluate edit strength with given lambda/beta parameters."""
+    
     intervention = Stage3InterventionHook(
-        sae_per_layer, layer_prototypes, language_neurons_per_layer,
-        lambda_val, beta_val
+        sae_per_layer,
+        layer_prototypes,
+        language_neurons_per_layer,
+        lambda_val,
+        beta_val
     )
 
     handles = []
-    for layer_idx in intervention_window:
-        hook = intervention.make_hook(layer_idx)
-        handle = model.model.layers[layer_idx].register_forward_hook(hook, with_kwargs=True)
-        handles.append(handle)
+    
+    try:
+        for layer_idx in intervention_window:
+            hook = intervention.make_hook(layer_idx)
+            handle = model.model.layers[layer_idx].register_forward_hook(
+                hook, 
+                with_kwargs=True
+            )
+            handles.append(handle)
+        
+        device = next(model.parameters()).device
+        edited_masses = []
+        for i in range(0, len(prompts), batch_size):
+            batch = prompts[i:i+batch_size]
+            
+            inputs = tokenizer(
+                batch,
+                return_tensors="pt",
+                padding=True,
+                truncation=True
+            ).to(device)
+            
+            with torch.no_grad():
+                outputs = model(**inputs, use_cache=False)
+    
+            logits = outputs.logits[:, -1, :]
+            mass = early_language_mass(logits, V_hi, V_en)
+            
+            edited_masses.extend(mass.tolist())
+        
+    finally:
+        for h in handles:
+            h.remove()
 
-    edited_masses = []
-    for p in prompts:
-        inputs = tokenizer(p, return_tensors="pt").to(model.device)
-        with torch.no_grad():
-            outputs = model(**inputs, use_cache=False)
-        mass = early_language_mass(outputs.logits[:, -1, :], V_hi, V_en)
-        edited_masses.append(mass)
-
-    for h in handles:
-        h.remove()
-
-    return np.mean(edited_masses)
+    return float(np.mean(edited_masses))
 
 
 def run_stage3(
@@ -223,21 +267,12 @@ def run_stage3(
     V_en: List[int],
     weak_prompts: List[str] = None
 ) -> Dict[str, Any]:
-    """
-    Run complete Stage III pipeline with grid search optimization.
-    
-    Returns:
-        Dictionary with:
-        - layer_prototypes: computed prototypes per layer
-        - best_params: optimal (lambda, beta)
-        - best_gain: defaultness gain
-        - grid_results: full grid search results
-    """
+   
     weak_prompts = weak_prompts or config.weak_prompts
     
-    print("\n" + "="*70)
+    
     print("STAGE III: Intervention Edit Rule")
-    print("="*70)
+    
     
     # Compute prototypes for each layer in intervention window
     print("\nComputing prototype directions...")
@@ -323,3 +358,4 @@ def run_stage3(
         "grid_results": grid_results,
         "baseline_mean": baseline_mean
     }
+
