@@ -41,6 +41,17 @@ NeuralFoxP2/
 
 ---
 
+## Neural FOXP2 at a glance
+
+The figure below sketches the three main components of Neural FOXP2. On the left we have the base language model and the residual stream activations that we probe layer by layer. In the middle we train sparse autoencoders on these activations and obtain a dictionary style feature basis. On the right we summarise the learned language neuron dictionary, where each feature is associated with example Hindi and Spanish tokens.
+
+<p align="center">
+  <img src="foxp2_pipeline.png" alt="Neural FOXP2 pipeline: language model activations, sparse autoencoders, and language neuron dictionary" width="800">
+</p>
+
+
+---
+
 ## Pipeline Overview
 
 Both language pipelines follow the same three-stage process:
@@ -156,3 +167,4 @@ Each pipeline saves checkpoints after every stage:
 ## License
 
 MIT License
+
