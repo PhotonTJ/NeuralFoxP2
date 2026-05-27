@@ -23,9 +23,8 @@ class Config:
     lambda_sparse: float = 5e-3
     
     # Data settings
+    target_language: str = "hindi"
     n_prompts: int = 2500
-    dataset_name: str = "cfilt/iitb-english-hindi"
-    dataset_split: str = "test"
     seed: int = 42
     
     # Stage I settings

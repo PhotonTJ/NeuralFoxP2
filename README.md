@@ -2,48 +2,35 @@
 
 **Language Steering via Sparse Autoencoder Interventions — Multi-Language Pipeline**
 
-Neural FOXP2 identifies and manipulates language-specific neurons inside Large Language Models using Sparse Autoencoders. This repository supports **Hindi** and **Spanish** pipelines, selectable at runtime.
-(To keep the presentation concise, this repository includes analysis for only two languages. The approach, however, is readily extensible to additional languages, as noted in the paper.)
+Neural FOXP2 identifies and manipulates language-specific neurons inside Large Language Models using Sparse Autoencoders. This repository supports **Hindi**, **Spanish**, **Chinese**, **Bengali**, and **Telugu**, selectable at runtime.
+(To keep the presentation concise, this repository includes analysis for five languages. The approach, however, is readily extensible to additional languages.)
 ---
 
 ## Project Structure
 
 ```
 NeuralFoxP2/
-├── main.py              # Root launcher (language selector)
+├── main.py              # Root launcher (language selector & pipeline execution)
 ├── config.py            # Shared configuration & hyperparameters
+├── requirements.txt     # Python dependencies
 ├── README.md            # This file
 │
-├── hindi/               # Hindi ↔ English pipeline
-│   ├── main.py          # Pipeline entry point
-│   ├── config.py        # (imports shared config)
-│   ├── data.py          # Data loading & preprocessing
-│   ├── models.py        # SAE class & model loading
-│   ├── utils.py         # Helper functions
-│   ├── stage1.py        # Stage I  — Language neuron localization
-│   ├── stage2.py        # Stage II — Steering direction identification
-│   ├── stage3.py        # Stage III — Intervention edit rule
-│   ├── requirements.txt
-│   └── README.md
-│
-└── spanish/             # Spanish ↔ English pipeline
-    ├── main.py
-    ├── config.py
-    ├── data.py
-    ├── models.py
-    ├── utils.py
-    ├── stage1.py
-    ├── stage2.py
-    ├── stage3.py
-    ├── requirements.txt
-    └── README.md
+└── neural_foxp2/        # Unified language-agnostic pipeline package
+    ├── __init__.py      
+    ├── languages.py     # Language registry & configurations
+    ├── data.py          # Data loading & preprocessing
+    ├── models.py        # SAE class & model loading
+    ├── utils.py         # Helper functions
+    ├── stage1.py        # Stage I  — Language neuron localization
+    ├── stage2.py        # Stage II — Steering direction identification
+    └── stage3.py        # Stage III — Intervention edit rule
 ```
 
 ---
 
 ## Pipeline Overview
 
-Both language pipelines follow the same three-stage process:
+All language pipelines follow the same three-stage process:
 
 | Stage | Name | What it does |
 |-------|------|-------------|
@@ -65,19 +52,17 @@ Both language pipelines follow the same three-stage process:
 ## Installation
 
 ```bash
-cd D:\NeuralFoxP2
+cd NeuralFoxP2
 
-# Install dependencies (same for both languages)
-pip install -r hindi/requirements.txt
+# Install dependencies
+pip install -r requirements.txt
 ```
 
 ---
 
 ## Usage
 
-### Recommended — via root launcher
-
-The root `main.py` lets you pick the language and forwards all arguments to the selected pipeline.
+The root `main.py` lets you pick the language and forwards all arguments to the pipeline.
 
 ```bash
 # Full Hindi pipeline
@@ -96,23 +81,13 @@ python main.py --language hindi --stage 1 --hf-token YOUR_TOKEN
 python main.py --language spanish --stage 2 --resume-from ./outputs/stage1_checkpoint.pkl
 ```
 
-### Alternative — run directly from a language folder
-
-```bash
-cd hindi
-python main.py --hf-token YOUR_TOKEN --layers 8-23 --n-prompts 2500
-
-cd ../spanish
-python main.py --hf-token YOUR_TOKEN --layers 8-23 --n-prompts 2500
-```
-
 ---
 
 ## CLI Arguments
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| `--language` | *(required)* | Language pipeline: `hindi` or `spanish` *(root launcher only)* |
+| `--language` | `hindi` | Target language (`hindi`, `spanish`, `chinese`, `bengali`, `telugu`) |
 | `--hf-token` | `""` | HuggingFace API token |
 | `--layers` | `8-23` | Layer range (e.g. `8-23` or `18`) |
 | `--n-prompts` | `2500` | Number of parallel prompts |

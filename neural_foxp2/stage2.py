@@ -1,11 +1,20 @@
+"""
+Neural FOXP2 — Stage II: Low-Rank Steering Directions & Intervention Window
+
+Identifies dominant language-shift directions via layerwise SVD and selects
+a contiguous intervention window where steering is strongest and most stable.
+"""
 import torch
 import numpy as np
 from typing import Dict, List, Tuple, Any
 from tqdm import tqdm
+import sys
+import os
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import config
-from models import SparseAutoencoder
-from utils import get_residuals
+from .models import SparseAutoencoder
+from .utils import get_residuals
 
 
 def compute_layer_activations(
@@ -15,7 +24,7 @@ def compute_layer_activations(
     layer_idx: int,
     sae: SparseAutoencoder
 ) -> List[Tuple[np.ndarray, np.ndarray]]:
-
+    """Compute paired (English, target) SAE activations at a given layer."""
     device = next(model.parameters()).device
     activations = []
     for pair in prompts:
@@ -24,20 +33,20 @@ def compute_layer_activations(
             dtype=torch.float32,
             device=device
         ).unsqueeze(0)
-        
+
         h_en = h_en / (h_en.norm() + 1e-6)
         z_en = sae.encode(h_en)[0].detach().cpu().numpy()
-        
-        h_hi = torch.tensor(
-            get_residuals(model, tokenizer, pair["hi"], layer_idx),
+
+        h_tgt = torch.tensor(
+            get_residuals(model, tokenizer, pair["tgt"], layer_idx),
             dtype=torch.float32,
             device=device
         ).unsqueeze(0)
-        
-        h_hi = h_hi / (h_hi.norm() + 1e-6)
-        z_hi = sae.encode(h_hi)[0].detach().cpu().numpy()
-        
-        activations.append((z_en, z_hi))
+
+        h_tgt = h_tgt / (h_tgt.norm() + 1e-6)
+        z_tgt = sae.encode(h_tgt)[0].detach().cpu().numpy()
+
+        activations.append((z_en, z_tgt))
     return activations
 
 
@@ -49,22 +58,22 @@ def compute_language_shift_matrix(
     sae: SparseAutoencoder,
     language_neurons: List[int]
 ) -> np.ndarray:
-   
+    """Compute the language-shift matrix ΔZ projected onto language-neuron support."""
     activations = compute_layer_activations(model, tokenizer, prompts, layer_idx, sae)
 
     idx = np.asarray(language_neurons, dtype=int)
     delta_z_list = []
-    for z_en, z_hi in activations:
-        delta_z = z_hi - z_en
+    for z_en, z_tgt in activations:
+        delta_z = z_tgt - z_en
         restricted = np.zeros_like(delta_z)
-        restricted[idx]= delta_z[idx]
+        restricted[idx] = delta_z[idx]
         delta_z_list.append(restricted)
-    
+
     return np.stack(delta_z_list)
 
 
 def compute_effective_rank(singular_values: np.ndarray) -> float:
-    
+    """Compute effective rank via spectral entropy."""
     s2 = singular_values ** 2
     total = s2.sum()
     if total < 1e-10:
@@ -76,7 +85,7 @@ def compute_effective_rank(singular_values: np.ndarray) -> float:
 
 
 def find_eigengap(singular_values: np.ndarray, r_max: int) -> int:
-    
+    """Find the index of the largest spectral gap."""
     if len(singular_values) < 2:
         return 1
     gaps = singular_values[:-1] / (singular_values[1:] + 1e-10)
@@ -88,24 +97,24 @@ def compute_steering_directions(
     delta_Z: np.ndarray,
     r_max: int = None
 ) -> Tuple[np.ndarray, np.ndarray, int]:
-    
+    """Compute SVD of the language-shift matrix and determine steering rank."""
     r_max = r_max or config.r_max
-    
+
     U, S, Vt = np.linalg.svd(delta_Z, full_matrices=False)
-    
+
     r_eff = int(np.ceil(compute_effective_rank(S)))
     r_eff = min(r_eff, r_max)
-    
+
     r_gap = find_eigengap(S, r_max)
-    
+
     r = min(r_eff, r_gap)
     r = max(r, 1)
-    
+
     return S, Vt.T, r
 
 
 def compute_spectral_mass(singular_values: np.ndarray, r: int) -> float:
-    
+    """Compute the fraction of spectral mass captured by the top-r components."""
     s2 = singular_values ** 2
     return s2[:r].sum() / (s2.sum() + 1e-10)
 
@@ -114,27 +123,27 @@ def compute_stability_bootstrap(
     delta_Z: np.ndarray,
     n_bootstrap: int = None
 ) -> float:
-    
+    """Evaluate steering subspace stability via bootstrap resampling."""
     n_bootstrap = n_bootstrap or config.n_bootstrap
     n = delta_Z.shape[0]
     projectors = []
-    
+
     for _ in range(n_bootstrap):
         idx = np.random.choice(n, n, replace=True)
         sample = delta_Z[idx]
-        
+
         S, V, r = compute_steering_directions(sample)
-        
+
         V_r = V[:, :r]
         P = V_r @ V_r.T
         projectors.append(P)
-    
+
     consistencies = []
     for i in range(len(projectors)):
-        for j in range(i+1, len(projectors)):
+        for j in range(i + 1, len(projectors)):
             trace = np.trace(projectors[i] @ projectors[j])
             consistencies.append(trace / np.trace(projectors[i]))
-    
+
     return np.median(consistencies) if consistencies else 1.0
 
 
@@ -143,23 +152,23 @@ def find_best_contiguous_window(
     min_window: int = None,
     max_window: int = None
 ) -> Tuple[List[int], float]:
-    
+    """Find the contiguous layer window that maximizes Mass * Stability."""
     min_window = min_window or config.min_window
     max_window = max_window or config.max_window
-    
+
     layers = sorted(layer_results.keys())
     best_window = None
     best_score = -1
-    
+
     for start_idx in range(len(layers)):
         for end_idx in range(start_idx + min_window - 1, min(start_idx + max_window, len(layers))):
-            window = layers[start_idx:end_idx+1]
+            window = layers[start_idx:end_idx + 1]
             score = sum(layer_results[l]["score"] for l in window)
-            
+
             if score > best_score:
                 best_score = score
                 best_window = window
-    
+
     return best_window, best_score
 
 
@@ -171,20 +180,20 @@ def run_stage2(
     language_neurons_per_layer: Dict[int, List[int]],
     layer_range: List[int] = None
 ) -> Dict[str, Any]:
-    
+    """Run Stage II: Identify low-rank steering directions and intervention window."""
     layer_range = layer_range or config.layer_range
-    
+
     print("\n" + "="*70)
     print("STAGE II: Identify Low-Rank Steering Directions")
     print("="*70)
-    
+
     layer_results = {}
-    
+
     for layer_idx in tqdm(layer_range, desc="Stage II: Layer Analysis"):
         try:
             sae = sae_per_layer[layer_idx]
             language_neurons = language_neurons_per_layer[layer_idx]
-            
+
             # Compute language shift matrix
             delta_Z = compute_language_shift_matrix(
                 model, tokenizer,
@@ -203,9 +212,7 @@ def run_stage2(
                 layer_idx, sae, language_neurons
             )
             # Bootstrap stability
-            stability = compute_stability_bootstrap(
-                delta_Z_stability
-            )
+            stability = compute_stability_bootstrap(delta_Z_stability)
 
             layer_results[layer_idx] = {
                 "singular_values": S,
@@ -221,16 +228,15 @@ def run_stage2(
 
         except Exception as e:
             print(f"  Layer {layer_idx}: Error - {e}")
-    
+
     # Select best contiguous window
     intervention_window, window_score = find_best_contiguous_window(layer_results)
-    
+
     print(f"\nIntervention Window: {intervention_window}")
     print(f"Window Score: {window_score:.4f}")
-    
+
     return {
         "layer_results": layer_results,
         "intervention_window": intervention_window,
         "window_score": window_score
     }
-

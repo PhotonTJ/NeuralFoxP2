@@ -1,13 +1,18 @@
 """
 Neural FOXP2 Models Module
 
-Contains the Sparse Autoencoder class and model loading utilities.
+Contains the Sparse Autoencoder class, model loading utilities,
+and architecture-aware layer access helpers.
 """
 import torch
 import torch.nn as nn
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from huggingface_hub import login
+import sys
+import os
 
+# Add parent directory to path so config.py can be imported
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import config
 
 
@@ -40,13 +45,35 @@ class SparseAutoencoder(nn.Module):
         return recon, z
 
 
+def get_model_layers(model) -> nn.ModuleList:
+    """
+    Return the list of transformer layer modules, regardless of architecture.
+    
+    Supports:
+      - LLaMA / Mistral / Qwen: model.model.layers
+      - Falcon: model.transformer.h
+      - GPT-NeoX: model.gpt_neox.layers
+    """
+    if hasattr(model, 'model') and hasattr(model.model, 'layers'):
+        return model.model.layers  # LLaMA, Mistral, Qwen
+    elif hasattr(model, 'transformer') and hasattr(model.transformer, 'h'):
+        return model.transformer.h  # Falcon, GPT-2 family
+    elif hasattr(model, 'gpt_neox') and hasattr(model.gpt_neox, 'layers'):
+        return model.gpt_neox.layers  # GPT-NeoX
+    else:
+        raise ValueError(
+            f"Unsupported model architecture: {type(model).__name__}. "
+            f"Cannot locate transformer layers."
+        )
+
+
 def load_model_and_tokenizer(
     model_name: str = None,
     hf_token: str = None,
     device_map: str = "auto"
 ):
     """
-    Load the LLaMA model and tokenizer.
+    Load a causal language model and tokenizer.
     
     Args:
         model_name: HuggingFace model identifier
@@ -54,7 +81,7 @@ def load_model_and_tokenizer(
         device_map: Device placement strategy
         
     Returns:
-        model, tokenizer tuple
+        (model, tokenizer) tuple
     """
     model_name = model_name or config.model_name
     hf_token = hf_token or config.hf_token
@@ -74,6 +101,9 @@ def load_model_and_tokenizer(
     tokenizer.pad_token = tokenizer.eos_token
     model.eval()
     
-    print(f"Model loaded successfully on {next(model.parameters()).device}")
+    # Verify layer access works
+    layers = get_model_layers(model)
+    print(f"Model loaded successfully. Architecture: {type(model).__name__}, "
+          f"{len(layers)} layers, device={next(model.parameters()).device}")
     
     return model, tokenizer

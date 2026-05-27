@@ -1,17 +1,30 @@
+"""
+Neural FOXP2 — Stage I: Localize Language Neurons in a SAE Dictionary Basis
+
+Identifies language-selective SAE features using selectivity and causal
+logit-mass lift metrics.
+"""
 import torch
 import numpy as np
 from typing import Dict, List, Tuple, Any
 from tqdm import tqdm
+import sys
+import os
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from config import config
-from models import SparseAutoencoder
-from utils import (
+from .models import SparseAutoencoder, get_model_layers
+from .utils import (
     get_residuals,
     early_language_mass,
     compute_selectivity,
     normalize_activations
 )
+
+
 class SAEFeatureIntervention:
+    """Hook that intervenes on a single SAE feature by adding alpha * e_j in dictionary space."""
+    
     def __init__(self, sae: SparseAutoencoder, feature_idx: int, alpha: float):
         self.sae = sae
         self.j = feature_idx
@@ -22,18 +35,18 @@ class SAEFeatureIntervention:
         h_orig = output[0] if is_tuple else output
         h = h_orig.clone()
 
-        
         if h.dim() == 3:
             h_last = h[:, -1, :]
-        elif h.dim()==2:
+        elif h.dim() == 2:
             h_last = h
         else:
-            raise RuntimeError(f"Unexpected hidden state shape: {h.shape}") 
+            raise RuntimeError(f"Unexpected hidden state shape: {h.shape}")
 
         z_delta = torch.zeros(
-            1, 
+            1,
             self.sae.n_features,
-            device=h.device)
+            device=h.device
+        )
         z_delta[0, self.j] = self.alpha
 
         delta_h = self.sae.decode(z_delta)
@@ -57,17 +70,17 @@ def train_sae(
     lr: float = None,
     lambda_sparse: float = None
 ) -> SparseAutoencoder:
-
+    """Train a Sparse Autoencoder on residual activations at a given layer."""
     device = next(model.parameters()).device
     n_features = n_features or config.n_features
     epochs = epochs or config.epochs
     lr = lr or config.lr
     lambda_sparse = lambda_sparse or config.lambda_sparse
-    
+
     acts = []
     for pair in matched_prompts:
         acts.append(get_residuals(model, tokenizer, pair["en"], layer))
-        acts.append(get_residuals(model, tokenizer, pair["hi"], layer))
+        acts.append(get_residuals(model, tokenizer, pair["tgt"], layer))
 
     acts = torch.tensor(
         np.stack(acts),
@@ -84,27 +97,26 @@ def train_sae(
     optimizer = torch.optim.Adam(sae.parameters(), lr=lr)
 
     batch_size = 512 if acts.size(0) > 512 else acts.size(0)
-    
+
     for _ in tqdm(range(epochs), desc=f"Training SAE Layer {layer}"):
-        
         perm = torch.randperm(acts.size(0), device=device)
         acts_shuffled = acts[perm]
 
         for i in range(0, acts_shuffled.size(0), batch_size):
-
             batch = acts_shuffled[i : i + batch_size]
 
             z = sae.encode(batch)
             recon = sae.decode(z)
-    
+
             recon_loss = ((batch - recon) ** 2).mean()
             sparse_loss = z.abs().sum(dim=1).mean()
             loss = recon_loss + lambda_sparse * sparse_loss
-            
+
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            
+
+        # Column-norm constraint
         with torch.no_grad():
             sae.W[:] = sae.W / (sae.W.norm(dim=0, keepdim=True) + 1e-6)
 
@@ -117,18 +129,18 @@ def train_all_saes(
     matched_prompts: List[Dict],
     layer_range: List[int] = None
 ) -> Dict[int, SparseAutoencoder]:
-    
+    """Train SAEs for all layers in the specified range."""
     layer_range = layer_range or config.layer_range
     sae_per_layer = {}
-    
+
     for layer in layer_range:
         print(f"\n{'='*60}")
         print(f"Training SAE for Layer {layer}")
         print(f"{'='*60}")
-        
+
         sae = train_sae(model, tokenizer, matched_prompts, layer)
         sae_per_layer[layer] = sae
-        
+
     return sae_per_layer
 
 
@@ -140,10 +152,10 @@ def compute_language_activations(
     matched_prompts: List[Dict],
     layer: int
 ) -> Tuple[np.ndarray, np.ndarray]:
-
+    """Compute SAE feature activations for English and target-language prompts."""
     device = next(model.parameters()).device
-    
-    z_en, z_hi = [], []
+
+    z_en_list, z_tgt_list = [], []
 
     for pair in matched_prompts:
         h_en = torch.tensor(
@@ -151,19 +163,19 @@ def compute_language_activations(
             dtype=torch.float32,
             device=device
         ).unsqueeze(0)
-        h_hi = torch.tensor(
-            get_residuals(model, tokenizer, pair["hi"], layer), 
+        h_tgt = torch.tensor(
+            get_residuals(model, tokenizer, pair["tgt"], layer),
             dtype=torch.float32,
-            device= device
+            device=device
         ).unsqueeze(0)
 
         h_en = h_en / (h_en.norm() + 1e-6)
-        h_hi = h_hi / (h_hi.norm() + 1e-6)
+        h_tgt = h_tgt / (h_tgt.norm() + 1e-6)
 
-        z_en.append(sae.encode(h_en)[0].cpu().numpy())
-        z_hi.append(sae.encode(h_hi)[0].cpu().numpy())
+        z_en_list.append(sae.encode(h_en)[0].cpu().numpy())
+        z_tgt_list.append(sae.encode(h_tgt)[0].cpu().numpy())
 
-    return np.stack(z_en), np.stack(z_hi)
+    return np.stack(z_en_list), np.stack(z_tgt_list)
 
 
 def compute_feature_lift(
@@ -174,27 +186,27 @@ def compute_feature_lift(
     feature_idx: int,
     prompts: List[str],
     baseline_masses: Dict[str, float],
-    V_hi: List[int],
+    V_tgt: List[int],
     V_en: List[int],
     alphas: Tuple[float, ...] = None
 ) -> float:
-    
+    """Compute the causal logit-mass lift slope for a single SAE feature."""
     alphas = alphas or config.lift_alphas
+    layers = get_model_layers(model)
     slopes = []
 
     for alpha in alphas:
-       
         hook = SAEFeatureIntervention(sae, feature_idx, alpha)
-        handle = model.model.layers[layer].register_forward_hook(hook)
+        handle = layers[layer].register_forward_hook(hook, with_kwargs=True)
 
         deltas = []
         for p in prompts:
             inputs = tokenizer(p, return_tensors="pt").to(model.device)
             outputs = model(**inputs)
-                
-            mass = early_language_mass(outputs.logits[:, -1, :], V_hi, V_en)
+
+            mass = early_language_mass(outputs.logits[:, -1, :], V_tgt, V_en).item()
             deltas.append(mass - baseline_masses[p])
-            
+
         handle.remove()
         slopes.append(np.mean(deltas) / alpha)
 
@@ -205,71 +217,74 @@ def run_stage1(
     model,
     tokenizer,
     matched_prompts: List[Dict],
-    V_hi: List[int],
+    V_tgt: List[int],
     V_en: List[int],
     layer_range: List[int] = None,
     weak_prompts: List[str] = None
 ) -> Dict[str, Any]:
-    
+    """Run Stage I: Localize language-selective SAE features."""
     layer_range = layer_range or config.layer_range
     weak_prompts = weak_prompts or config.weak_prompts
-    
+
     print("\n" + "="*70)
     print("STAGE I-A: Training SAEs")
     print("="*70)
     sae_per_layer = train_all_saes(model, tokenizer, matched_prompts, layer_range)
-    
+
     selectivity_per_layer = {}
     top_features_per_layer = {}
     feature_lifts_per_layer = {}
     language_neurons_per_layer = {}
     stage1_output_per_layer = {}
-    
+
     for layer in layer_range:
         print(f"\n{'='*60}")
         print(f"Stage I-B/C: Processing Layer {layer}")
         print(f"{'='*60}")
-        
+
         sae = sae_per_layer[layer]
-        
-        
-        z_en, z_hi = compute_language_activations(model, tokenizer, sae, matched_prompts, layer)
-        selectivity = compute_selectivity(z_en, z_hi)
+
+        # Stage I-A: Compute selectivity
+        z_en, z_tgt = compute_language_activations(model, tokenizer, sae, matched_prompts, layer)
+        selectivity = compute_selectivity(z_en, z_tgt)
         selectivity_per_layer[layer] = selectivity
-        
-        
+
+        # Select top-K features by selectivity
         top_idx = np.argsort(selectivity)[-config.top_k_features:]
         top_features_per_layer[layer] = top_idx
-        
+
+        # Stage I-B: Compute baseline masses for weak prompts
         baseline_masses = {}
         for p in weak_prompts:
             inputs = tokenizer(p, return_tensors="pt").to(model.device)
             outputs = model(**inputs)
-            mass = early_language_mass(outputs.logits[:, -1, :], V_hi, V_en)
+            mass = early_language_mass(outputs.logits[:, -1, :], V_tgt, V_en).item()
             baseline_masses[p] = mass
+
+        # Compute causal lift for top features
         feature_lifts = {}
         for j in top_idx:
             lift = compute_feature_lift(
                 model, tokenizer, sae, layer, int(j),
-                weak_prompts, baseline_masses, V_hi, V_en
+                weak_prompts, baseline_masses, V_tgt, V_en
             )
             feature_lifts[j] = lift
         feature_lifts_per_layer[layer] = feature_lifts
-        
-        
+
+        # Stage I-C: Rank by joint score = max(Sel, 0) * max(LiftSlope, 0)
         S = np.maximum(selectivity[top_idx], 0)
         C = np.maximum(np.array([feature_lifts[j] for j in top_idx]), 0)
         joint_scores = S * C
-        
+
         ranked_indices = np.argsort(joint_scores)[::-1]
         ranked_features = top_idx[ranked_indices]
         ranked_scores = joint_scores[ranked_indices]
-        
+
         language_neurons = [int(j) for j, score in zip(ranked_features, ranked_scores) if score > 0]
         language_neurons_per_layer[layer] = language_neurons
-        
+
         print(f"Layer {layer}: {len(language_neurons)} language neurons identified")
-        
+
         stage1_output_per_layer[layer] = {
             "layer": layer,
             "selectivity": selectivity,
@@ -278,11 +293,10 @@ def run_stage1(
             "language_neurons": language_neurons,
             "joint_scores": dict(zip(ranked_features.tolist(), ranked_scores.tolist()))
         }
-    
+
     return {
         "sae_per_layer": sae_per_layer,
         "selectivity_per_layer": selectivity_per_layer,
         "language_neurons_per_layer": language_neurons_per_layer,
         "stage1_output_per_layer": stage1_output_per_layer
     }
-
