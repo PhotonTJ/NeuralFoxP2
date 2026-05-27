@@ -3,7 +3,7 @@
 **Language Steering via Sparse Autoencoder Interventions — Multi-Language Pipeline**
 
 Neural FOXP2 identifies and manipulates language-specific neurons inside Large Language Models using Sparse Autoencoders. This repository supports **Hindi** and **Spanish** pipelines, selectable at runtime.
-
+(To keep the presentation concise, this repository includes analysis for only two languages. The approach, however, is readily extensible to additional languages, as noted in the paper.)
 ---
 
 ## Project Structure
