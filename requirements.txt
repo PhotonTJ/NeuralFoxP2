@@ -1,6 +1,13 @@
-torch
-numpy
-transformers
+torch>=2.3
+transformers>=4.56      # tested with 5.18; needs Llama / Gemma2 / Qwen3 classes
+accelerate>=0.30
+safetensors
 huggingface_hub
-datasets
-tqdm
+datasets>=2.19
+numpy
+scikit-learn
+tokenizers
+# evaluation
+fasttext-wheel          # GlotLID language ID (falls back to a script heuristic if missing)
+sacrebleu               # FLORES+ chrF++ in scripts/evaluate.py --translation
+lm-eval>=0.4            # downstream benchmarks on the exported checkpoints

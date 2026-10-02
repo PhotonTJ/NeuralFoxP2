@@ -1,0 +1,5229 @@
+{
+ "meta": {
+  "target": "am",
+  "model": "llama31-8b",
+  "contrast": "response",
+  "n_pairs": 600,
+  "base_dM_lift": -0.5103520750999451,
+  "report": {
+   "0": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.3566366732120514,
+     "fvu_thr_on_pre_x_decnorm": 0.356632262468338,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.356632262468338
+    },
+    "n_tgt": 50,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "1": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4605841338634491,
+     "fvu_thr_on_pre_x_decnorm": 0.46057412028312683,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.46057412028312683
+    },
+    "n_tgt": 52,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "2": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.45052433013916016,
+     "fvu_thr_on_pre_x_decnorm": 0.45052191615104675,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.45052191615104675
+    },
+    "n_tgt": 47,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "3": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4950103163719177,
+     "fvu_thr_on_pre_x_decnorm": 0.49572622776031494,
+     "convention": "thr_on_pre",
+     "fvu": 0.4950103163719177
+    },
+    "n_tgt": 40,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "4": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4901864230632782,
+     "fvu_thr_on_pre_x_decnorm": 0.4926425814628601,
+     "convention": "thr_on_pre",
+     "fvu": 0.4901864230632782
+    },
+    "n_tgt": 38,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "5": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.48539936542510986,
+     "fvu_thr_on_pre_x_decnorm": 0.48888278007507324,
+     "convention": "thr_on_pre",
+     "fvu": 0.48539936542510986
+    },
+    "n_tgt": 51,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "6": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.5368401408195496,
+     "fvu_thr_on_pre_x_decnorm": 0.5425442457199097,
+     "convention": "thr_on_pre",
+     "fvu": 0.5368401408195496
+    },
+    "n_tgt": 52,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "7": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.5870709419250488,
+     "fvu_thr_on_pre_x_decnorm": 0.5952069759368896,
+     "convention": "thr_on_pre",
+     "fvu": 0.5870709419250488
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "8": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.640906810760498,
+     "fvu_thr_on_pre_x_decnorm": 0.654238224029541,
+     "convention": "thr_on_pre",
+     "fvu": 0.640906810760498
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "9": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.6674884557723999,
+     "fvu_thr_on_pre_x_decnorm": 0.6830636858940125,
+     "convention": "thr_on_pre",
+     "fvu": 0.6674884557723999
+    },
+    "n_tgt": 62,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "10": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.7393372058868408,
+     "fvu_thr_on_pre_x_decnorm": 0.7622894048690796,
+     "convention": "thr_on_pre",
+     "fvu": 0.7393372058868408
+    },
+    "n_tgt": 57,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "11": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.7581021785736084,
+     "fvu_thr_on_pre_x_decnorm": 0.781205952167511,
+     "convention": "thr_on_pre",
+     "fvu": 0.7581021785736084
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "12": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.6991776823997498,
+     "fvu_thr_on_pre_x_decnorm": 0.7228409647941589,
+     "convention": "thr_on_pre",
+     "fvu": 0.6991776823997498
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "13": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.6864179372787476,
+     "fvu_thr_on_pre_x_decnorm": 0.7112565040588379,
+     "convention": "thr_on_pre",
+     "fvu": 0.6864179372787476
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "14": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.6427810192108154,
+     "fvu_thr_on_pre_x_decnorm": 0.6682881712913513,
+     "convention": "thr_on_pre",
+     "fvu": 0.6427810192108154
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "15": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.567722499370575,
+     "fvu_thr_on_pre_x_decnorm": 0.5966145992279053,
+     "convention": "thr_on_pre",
+     "fvu": 0.567722499370575
+    },
+    "n_tgt": 60,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "16": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.54432213306427,
+     "fvu_thr_on_pre_x_decnorm": 0.5786954760551453,
+     "convention": "thr_on_pre",
+     "fvu": 0.54432213306427
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "17": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4843868613243103,
+     "fvu_thr_on_pre_x_decnorm": 0.5072091817855835,
+     "convention": "thr_on_pre",
+     "fvu": 0.4843868613243103
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "18": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4546806812286377,
+     "fvu_thr_on_pre_x_decnorm": 0.4691574275493622,
+     "convention": "thr_on_pre",
+     "fvu": 0.4546806812286377
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "19": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.455153226852417,
+     "fvu_thr_on_pre_x_decnorm": 0.4692363739013672,
+     "convention": "thr_on_pre",
+     "fvu": 0.455153226852417
+    },
+    "n_tgt": 54,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "20": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.45230773091316223,
+     "fvu_thr_on_pre_x_decnorm": 0.45835432410240173,
+     "convention": "thr_on_pre",
+     "fvu": 0.45230773091316223
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "21": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4492616653442383,
+     "fvu_thr_on_pre_x_decnorm": 0.45405054092407227,
+     "convention": "thr_on_pre",
+     "fvu": 0.4492616653442383
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "22": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4554692804813385,
+     "fvu_thr_on_pre_x_decnorm": 0.4573039710521698,
+     "convention": "thr_on_pre",
+     "fvu": 0.4554692804813385
+    },
+    "n_tgt": 60,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "23": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.462490051984787,
+     "fvu_thr_on_pre_x_decnorm": 0.45989641547203064,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.45989641547203064
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "24": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4758605360984802,
+     "fvu_thr_on_pre_x_decnorm": 0.46881353855133057,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.46881353855133057
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "25": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.4941740334033966,
+     "fvu_thr_on_pre_x_decnorm": 0.4812401831150055,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.4812401831150055
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "26": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.5167526006698608,
+     "fvu_thr_on_pre_x_decnorm": 0.4969935119152069,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.4969935119152069
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "27": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.5415048003196716,
+     "fvu_thr_on_pre_x_decnorm": 0.517089307308197,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.517089307308197
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "28": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.5644586086273193,
+     "fvu_thr_on_pre_x_decnorm": 0.5308026671409607,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.5308026671409607
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "29": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.582784116268158,
+     "fvu_thr_on_pre_x_decnorm": 0.5465725660324097,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.5465725660324097
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "30": {
+    "fvu": {
+     "fvu_thr_on_pre": 0.6249594688415527,
+     "fvu_thr_on_pre_x_decnorm": 0.5788072943687439,
+     "convention": "thr_on_pre_x_decnorm",
+     "fvu": 0.5788072943687439
+    },
+    "n_tgt": 36,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "31": {
+    "fvu": {
+     "fvu_thr_on_pre": 7.317368507385254,
+     "fvu_thr_on_pre_x_decnorm": 19.1035213470459,
+     "convention": "thr_on_pre",
+     "fvu": 7.317368507385254
+    },
+    "n_tgt": 42,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   }
+  }
+ },
+ "affinity": {
+  "0": [
+   {
+    "tokens": [
+     "\u30fc\u30d7",
+     "_lite",
+     "radan",
+     "odate",
+     "adu",
+     "\u03af\u03c9\u03bd",
+     "uze",
+     "ilitating",
+     "rzy",
+     "\u093f\u0924"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "CD",
+     "rez",
+     "\u4ef7",
+     "hausen",
+     "CRE",
+     " subpoena",
+     " interpolate",
+     "anguage",
+     " Walsh",
+     " spl"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "gle",
+     "gie",
+     " Cove",
+     "iangle",
+     "_compile",
+     " Cecil",
+     "orget",
+     "lectron",
+     "eko"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Uvs",
+     "\u30fc\u30c0",
+     "mony",
+     "ejs",
+     " Vice",
+     " vice",
+     ".IsNullOr",
+     "istrovstv\u00ed",
+     ".MixedReality",
+     "criptor"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "aran",
+     "arov",
+     "ject",
+     " \u4e16",
+     ".mousePosition",
+     "\u043a\u0435\u0442",
+     "CTest",
+     "Quotes",
+     "aku",
+     "\u4ed5"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "pora",
+     "onym",
+     "itu",
+     "esch",
+     "egr",
+     "ivet",
+     "ropa",
+     "eh",
+     "HK",
+     "arrant"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Reg",
+     "neau",
+     "\u0422\u0430",
+     " Rena",
+     "\u00fcrn",
+     " En",
+     " Polly",
+     "Script",
+     " Chandler",
+     "\u00f3z"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "acl",
+     "seo",
+     "aub",
+     "udas",
+     "edii",
+     ".orm",
+     "teness",
+     "\u00e7\u00e3o",
+     "d\u00fc",
+     " Vul"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "jax",
+     "ia",
+     "eya",
+     "\u7ec7",
+     "man",
+     "acos",
+     "rimp",
+     " fil",
+     "zi",
+     " conf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ori",
+     "antly",
+     "bai",
+     " Heights",
+     "/javascript",
+     "obl",
+     "readcr",
+     " Agricult",
+     " pens",
+     "\u30f3\u30bf"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "1": [
+   {
+    "tokens": [
+     "WI",
+     "\u4ee3",
+     "utor",
+     "\ufffd",
+     "pheric",
+     " Costa",
+     "%%%%%%%%",
+     ".chapter",
+     "667",
+     "enger"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " impressed",
+     "usch",
+     " Lyons",
+     "Wnd",
+     "uko",
+     "utherland",
+     "\ufffd",
+     "imler",
+     " Schro",
+     " Huntington"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "atin",
+     " Ta",
+     "504",
+     "\u5d0e",
+     " ta",
+     "\ufffd",
+     "antino",
+     "terms",
+     "ryo",
+     "emption"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ed9",
+     "bilt",
+     "ucz",
+     "usto",
+     "imens",
+     "acent",
+     "datatable",
+     "uss",
+     "DateFormat",
+     "opc"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "esium",
+     "\ufffd",
+     "ANGLES",
+     "-gnu",
+     "(equalTo",
+     "igans",
+     "\uc99d",
+     "lif",
+     "iram",
+     "bsites"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "efa",
+     "annes",
+     "\u3063\u3068",
+     "ucken",
+     ".hs",
+     "asley",
+     "\ud0c4",
+     "NSMutable",
+     "\ufffd",
+     "azen"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "bum",
+     "richt",
+     "erras",
+     "\u00f1as",
+     "\u044d\u0442\u043e\u043c\u0443",
+     " Freeman",
+     "PointerException",
+     "ogi",
+     "avy",
+     "\u1ed7ng"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "essian",
+     "ERSHEY",
+     "praak",
+     "locker",
+     "quarter",
+     "ilities",
+     " sapi",
+     "arty",
+     "reds",
+     "iday"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "//{{",
+     "andal",
+     "rift",
+     "/lists",
+     " Circular",
+     "opoulos",
+     "::_('",
+     " regular",
+     "ietf",
+     "batis"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Stern",
+     " Boeh",
+     "arris",
+     " Taylor",
+     "ay",
+     "le",
+     "\u00e8le",
+     " cooldown",
+     " Mental",
+     "\u0441\u0442\u0430\u0432"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "2": [
+   {
+    "tokens": [
+     " alike",
+     "ajar",
+     "iko",
+     " Hel",
+     "rena",
+     "\ufffd",
+     "\u03bd\u03bf\u03c2",
+     "ile",
+     "\u0628\u064a\u0629",
+     "era"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "blr",
+     "enda",
+     "ixin",
+     "orden",
+     "mint",
+     "anden",
+     "ajor",
+     "w",
+     "outh"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ahi",
+     "rend",
+     "attern",
+     "och",
+     "media",
+     "uda",
+     "erek",
+     "edia",
+     "[position",
+     " Median"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Wyn",
+     "borg",
+     " Barg",
+     " evening",
+     " matrix",
+     "indsay",
+     "ucs",
+     "ynet",
+     " Ol",
+     "ieder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "aside",
+     "ansa",
+     "ToProps",
+     "ansas",
+     "ANNEL",
+     "tn",
+     "\ufffd",
+     "706",
+     "eton",
+     "minor"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "assin",
+     "ibold",
+     ":value",
+     "aghetti",
+     "addField",
+     "apult",
+     "\u041c\u041e",
+     "\u03c0\u03b9\u03c3",
+     "\u0627\u0634\u06cc",
+     " Salah"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "itu",
+     " minor",
+     " Lans",
+     "ampler",
+     "oco",
+     "ivet",
+     " Shaw",
+     "utr",
+     "\u00e4tz",
+     "itas"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Outlet",
+     "kins",
+     " Outlet",
+     "aro",
+     "\u0105",
+     " exact",
+     "271",
+     " backing",
+     "avers",
+     " Crud"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ed",
+     "edBy",
+     "edl",
+     "edn",
+     "ED",
+     "edir",
+     "edo",
+     "\u0629",
+     "ly",
+     "edu"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ERSHEY",
+     "essian",
+     "quarter",
+     "praak",
+     "locker",
+     "arty",
+     "ichen",
+     "izons",
+     " sapi",
+     "iday"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "3": [
+   {
+    "tokens": [
+     " Same",
+     "utan",
+     "ami",
+     "162",
+     "ja",
+     "\ufffd\ufffd",
+     " same",
+     "\ufffd",
+     "ubb",
+     " SAME"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u00fap",
+     " \u0437\u0430\u0432\u0438",
+     "//{{",
+     "erdem",
+     " \u043f\u043e\u0431\u0430",
+     "agnar",
+     "alette",
+     ".scalablytyped",
+     "esub",
+     "irket"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Nonnull",
+     "CEL",
+     "orden",
+     "ored",
+     "edin",
+     " PANEL",
+     ".datasource",
+     "\ufffd",
+     "kir",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "essian",
+     "fst",
+     "\u00fasqueda",
+     "ERSHEY",
+     "quarter",
+     "ry",
+     ".mybatisplus",
+     "ichen",
+     "rema",
+     "locker"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u00fcck",
+     "ress",
+     "fast",
+     "sworth",
+     "il",
+     " Hosp",
+     "\\widgets",
+     " Ell",
+     " Toastr",
+     "ien"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "397",
+     "anz",
+     "aporan",
+     "owitz",
+     "452",
+     "529",
+     "uess",
+     "ocity",
+     "isay",
+     "180"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "******/",
+     "raj",
+     "ourg",
+     "707",
+     "\u1ea1n",
+     "atto",
+     "edx",
+     " Roth",
+     " A\u011f",
+     " reserves"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " CONTRIBUTORS",
+     "ServerError",
+     "atsu",
+     "\ufffd\ufffd",
+     "_ERR",
+     "quina",
+     "urma",
+     "leur",
+     "onom",
+     " nast"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".reflect",
+     "\tfinally",
+     "fromJson",
+     "stype",
+     "inen",
+     "uner",
+     " \u06a9\u0648\u062f",
+     "jie",
+     "_WINDOWS",
+     "715"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "upp",
+     " C",
+     "ade",
+     "alic",
+     " ",
+     "ataka",
+     "xl",
+     " Kad",
+     " Hed",
+     " only"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "4": [
+   {
+    "tokens": [
+     "Nonnull",
+     "orne",
+     "bourne",
+     "\uc9d3",
+     "enda",
+     " LENG",
+     "blind",
+     "-invalid",
+     "ored",
+     "[,]"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "soever",
+     "rd",
+     "ertz",
+     "\u0440\u043e\u043a",
+     "ematics",
+     "gow",
+     "lap",
+     "loe",
+     "kre",
+     "aptic"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "edn",
+     "obra",
+     " aff",
+     "gif",
+     "\u00e7o",
+     "enie",
+     "malink",
+     "doi",
+     "\u03ac\u03c2",
+     "zip"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "'gc",
+     "a\u011f",
+     "icol",
+     "interopRequireDefault",
+     "\ufffd\ufffd",
+     "okol",
+     "avit",
+     "ys",
+     "isi",
+     ".ib"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uc6c3",
+     "\u0435\u0440\u043e\u0432",
+     "\u00e6r",
+     ".Ultra",
+     "uite",
+     "acco",
+     "riday",
+     " sched",
+     "\u5e79\u7dda",
+     "redo"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ezier",
+     " Dawn",
+     "_lazy",
+     " une",
+     " ensemble",
+     " cryptoc",
+     " remote",
+     " organis",
+     "la\u010d",
+     " arada"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0440\u044f",
+     "\u0430\u0440\u0456\u0432",
+     "\u0161ek",
+     "_thr",
+     " ph\u00e9p",
+     "LOT",
+     "dae",
+     " Gibbs",
+     ".itemView",
+     "/download"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ered",
+     "esk",
+     "aton",
+     "\u00f4i",
+     "735",
+     "374",
+     " Colomb",
+     "032",
+     " barr",
+     " intellig"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "lz",
+     "unan",
+     "orie",
+     "pong",
+     "unas",
+     " koc",
+     " advertisement",
+     "aire",
+     ".expression",
+     "inyin"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uppen",
+     "affer",
+     " Ware",
+     "umble",
+     "\u00e6",
+     " \u0432\u0441\u0435\u0433\u043e",
+     "yd",
+     "uge",
+     "bin",
+     "rapy"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "5": [
+   {
+    "tokens": [
+     "vell",
+     " setups",
+     " ActionTypes",
+     " \u25c4",
+     "OLDER",
+     "\u043e\u0431\u043e\u0432",
+     " fault",
+     "\ufffd",
+     "esen",
+     "alin"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "stre",
+     " McL",
+     "orde",
+     "\u01b0\u1eddn",
+     " predecess",
+     "imension",
+     " \u0111\u00f2i",
+     "fab",
+     " Hers",
+     "RunWith"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "orry",
+     "\u0434\u0435\u0439\u0441\u0442\u0432",
+     "imulator",
+     "anged",
+     "\u1eb1m",
+     "inct",
+     "\u1ed9p",
+     "lland",
+     "aget"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0440\u044f",
+     "inde",
+     ".itemView",
+     "\u0161ek",
+     "dae",
+     "\u0430\u0440\u0456\u0432",
+     "insic",
+     " ph\u00e9p",
+     " Bender",
+     "/logs"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "mlin",
+     "olib",
+     "anna",
+     "\u3059\u304e",
+     "ClientRect",
+     " sor",
+     ".Groups",
+     "\u043e\u0440\u0438",
+     "branch",
+     "_HT"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rd",
+     "quarter",
+     "zeitig",
+     "soever",
+     "TEGER",
+     "_pdu",
+     "quarters",
+     "ulin",
+     ".emf",
+     "fully"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uc5f4",
+     "upe",
+     "etti",
+     "orda",
+     "atest",
+     "lei",
+     "lingen",
+     ".Serial",
+     "eleri",
+     "lant"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "interopRequireDefault",
+     "\ufffd\ufffd",
+     " klu",
+     ".ib",
+     " eskort",
+     "ouv",
+     "ayah",
+     " spons",
+     " Stem",
+     "=<?=$"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u30ef\u30a4\u30c8",
+     "alu",
+     "abox",
+     "\u4e00\u6b21",
+     "ll",
+     "ettes",
+     " miss",
+     "Portland",
+     "Bearer",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "inkel",
+     " Henderson",
+     " suite",
+     "170",
+     " Cyr",
+     " polarity",
+     "\u5b8f",
+     " Tall",
+     " Val",
+     "ows"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "6": [
+   {
+    "tokens": [
+     "aksi",
+     " Walsh",
+     " Benton",
+     "\u03c4\u03b9\u03bf",
+     " Shel",
+     "ieu",
+     "uem",
+     "EG",
+     "un",
+     "\u0628\u064a\u0629"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Pins",
+     "auce",
+     "plat",
+     "orde",
+     "olland",
+     "\u093e\u092a\u0928",
+     "615",
+     " Tort",
+     "ung",
+     "aug"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Bieber",
+     "aub",
+     " miss",
+     "ag",
+     " Kle",
+     " Bra",
+     "ez",
+     " Albuquerque",
+     " Jacobs",
+     " Verd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "opyright",
+     "uous",
+     "\u0648\u0631\u0634",
+     "deaux",
+     "ably",
+     "../../../",
+     "y\u0131",
+     "anger",
+     "als",
+     "/Foundation"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Rape",
+     " Basket",
+     " Thing",
+     "ne",
+     "265",
+     "\u30ef\u30a4\u30c8",
+     " Workplace",
+     " bounding",
+     "aru",
+     "Binding"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "serter",
+     "-thumbnails",
+     "shire",
+     ".scalablytyped",
+     "bilt",
+     "aroo",
+     "ime",
+     "\ufffd\ufffd",
+     "agu",
+     "enance"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "onation",
+     "itan",
+     "\u0e43\u0e08",
+     " latter",
+     "ened",
+     "BSD",
+     "olet",
+     "icts",
+     "ening",
+     "cpy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "aus",
+     "atie",
+     "\u7af9",
+     "\ufffd",
+     "itions",
+     " Rencontres",
+     "sez",
+     " Moore",
+     ".dest",
+     "adel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "istrovstv\u00ed",
+     " Sher",
+     "ingen",
+     "y\u00fck",
+     "orca",
+     "idle",
+     "fak",
+     "issen",
+     " McCoy",
+     " Shoot"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ing",
+     "\ufe0f",
+     "d\u00fcr",
+     "/tiny",
+     "\u00f6tt",
+     "eken",
+     "quential",
+     " Coh",
+     "/compiler",
+     ".lists"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "7": [
+   {
+    "tokens": [
+     " Benton",
+     "aksi",
+     "arrow",
+     "nen",
+     "\u03c4\u03b9\u03bf",
+     "/npm",
+     "\ufffd",
+     "ibox",
+     "iaux",
+     "OWL"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffdu",
+     "ucken",
+     " Andrews",
+     "ampie",
+     "\ufffd\ufffd",
+     "ucci",
+     "istically",
+     " g",
+     " Sheridan",
+     "/logging"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "odesk",
+     "emon",
+     "\ufffd",
+     "umas",
+     "edin",
+     "\ufffd",
+     "\ufffd",
+     "odore",
+     "enberg"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "heid",
+     "orget",
+     "reas",
+     "ahoo",
+     "ish",
+     "blem",
+     "atio",
+     "itions",
+     "ells",
+     "orama"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "edBy",
+     "\u0441\u044f",
+     "ed",
+     "\ub2e4\ub294",
+     "\ub2e4",
+     "tep",
+     "enticated",
+     "-toggler",
+     "\u06a9\u0647",
+     "\u3044"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0447\u0438\u0439",
+     "opoulos",
+     "isoft",
+     "ccoli",
+     "-syntax",
+     "llum",
+     "shan",
+     "llib",
+     "_OPENGL",
+     "chal"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "eid",
+     "eut",
+     "ussen",
+     "avern",
+     " B\u00f6l",
+     "icum",
+     "\u5df4",
+     " Closure",
+     " Dread",
+     "hani"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "addir",
+     "ders",
+     "\ub2c8\ub2e4",
+     "zman",
+     "\\Bridge",
+     ".gstatic",
+     "arlar",
+     "eneg",
+     "\u0437\u0438"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ufffd",
+     "adal",
+     "heimer",
+     "ince",
+     "ing",
+     "//:",
+     "unda",
+     "OperationException",
+     "abama"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ERSHEY",
+     "essian",
+     "iday",
+     "ry",
+     "rema",
+     "izons",
+     "OwnProperty",
+     "oglobin",
+     "ilities",
+     "icap"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "8": [
+   {
+    "tokens": [
+     " Benton",
+     "\ufffd",
+     "cio",
+     "\u03c4\u03b9\u03bf",
+     "orro",
+     "\ufffd",
+     "nen",
+     "ARK",
+     "acker",
+     "aaS"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "amp",
+     "\u4efd",
+     " quoi",
+     "ispens",
+     ".orientation",
+     "forced",
+     "avec",
+     "\u043e\u0439\u043d\u043e",
+     "_Destroy",
+     "edeki"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "lei",
+     "AMI",
+     " unforgettable",
+     "etti",
+     "olf",
+     " ylabel",
+     "indle",
+     "::$",
+     "lingen"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "odesk",
+     "chner",
+     "ogie",
+     "\ufffd\ufffd",
+     "oren",
+     " [[[",
+     "ladu",
+     "lfw",
+     "\ufffd",
+     "egal"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "soever",
+     "rd",
+     "ERSHEY",
+     "ORIZONTAL",
+     "ilde",
+     "ry",
+     "reesome",
+     "IGHL",
+     "%%%%%%%%%%%%%%%%",
+     "ony"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "olie",
+     " tr\u01b0ng",
+     "chine",
+     "/entity",
+     "\ufffd",
+     "ninger",
+     "\ufffd\ufffd",
+     " Davies"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\tTokenName",
+     "/Dk",
+     "umbn",
+     "icontrol",
+     "readcr",
+     " \u0435\u0441\u0442\u0435",
+     "ViewState",
+     "rowable",
+     " meanwhile",
+     "/lg"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Reform",
+     "bsp",
+     "\u30fc\u30d6\u30eb",
+     "\uac74",
+     "apa",
+     " Cah",
+     "ka\u00e7",
+     " LOCK",
+     "usk",
+     " Standards"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u043d\u0430\u0434",
+     "238",
+     "tog",
+     "arken",
+     "riangle",
+     "onta",
+     "isphere",
+     "Verdana",
+     " \uc791",
+     "lander"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ders",
+     "\u0410\u0440\u0445\u0456\u0432",
+     ".gstatic",
+     "defgroup",
+     "\u0437\u0438",
+     "urette",
+     "addir",
+     "\u00e1ky",
+     "esto",
+     "addtogroup"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "9": [
+   {
+    "tokens": [
+     "uong",
+     "ERGE",
+     "\u03c4\u03b9\u03bf",
+     "\ufffd",
+     "GridColumn",
+     "OWL",
+     " bow",
+     " Benton",
+     "nen",
+     "ODY"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "ampler",
+     "amp",
+     "\u043b\u0438\u0439",
+     " Allan",
+     "/crypto",
+     "ingt",
+     "AMPLE",
+     "_lng",
+     " Manufacturers"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "soever",
+     "rd",
+     "ry",
+     "ERSHEY",
+     "IGHL",
+     "reesome",
+     "ilde",
+     "irst",
+     "(es",
+     "%%%%%%%%%%%%%%%%"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "_Runtime",
+     " dors",
+     "anken",
+     "esso",
+     "onde",
+     " Portland",
+     "ynn",
+     "\u01a0",
+     "yaw",
+     "\u043c\u0435\u0447"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ncoder",
+     "ilib",
+     "-caret",
+     "raman",
+     "ogi",
+     "oya",
+     ".trailing",
+     "_Lean",
+     "ecom",
+     " plac"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u043e\u043b\u044f",
+     "edes",
+     " Ober",
+     " island",
+     "bai",
+     "inou",
+     "Carrier",
+     "\ufffd",
+     "eways",
+     "\u062e\u0648"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "202",
+     " Biden",
+     " Tik",
+     "https",
+     " COVID",
+     "\u06f2\u06f0\u06f2",
+     " covid",
+     " Covid",
+     " https",
+     " Discord"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ASE",
+     "\u5f0f",
+     "ouble",
+     "ISK",
+     "antee",
+     "nar",
+     "zeros",
+     "quares",
+     "\u043e\u043a\u0441",
+     "siz"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uner",
+     "kdir",
+     " incel",
+     "ker",
+     " lease",
+     " leased",
+     "\u904a",
+     "ustum",
+     " late",
+     "eller"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "linger",
+     "criptor",
+     "#__",
+     "riet",
+     "vince",
+     "uede",
+     "uthor",
+     "alog",
+     "ylvania",
+     ".ide"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "10": [
+   {
+    "tokens": [
+     "olk",
+     "/crypto",
+     "scenario",
+     "overs",
+     "amp",
+     " PartialView",
+     "ely",
+     "\u043b\u0438\u0439",
+     " Pins",
+     "ub"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " proverb",
+     "ift",
+     "olf",
+     "\u0120",
+     " warmth",
+     "\u74dc",
+     "\ub85c\uc6b4",
+     "\ufffd",
+     "\u6c38\u4e45",
+     "Berry"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5099",
+     "\u5907",
+     " nutshell",
+     "umer",
+     "nock",
+     "159",
+     "ibility",
+     "abbit",
+     "zell",
+     "adget"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "soever",
+     "rd",
+     "ilde",
+     "ry",
+     "IGHL",
+     "reesome",
+     "%%%%%%%%%%%%%%%%",
+     "ERSHEY",
+     "ertz",
+     "hhh"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ena",
+     "ose",
+     "sters",
+     "owski",
+     "auge",
+     " ngang",
+     "strand",
+     "bread",
+     "bilt",
+     "anna"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ing",
+     "erm",
+     "oom",
+     "uous",
+     ")prepare",
+     "antee",
+     "ment",
+     "erk",
+     "ments",
+     "uko"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "prog",
+     "ckill",
+     "zes",
+     "zhou",
+     "addons",
+     "idUser",
+     "ches",
+     "CTS",
+     "ctica"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u06c0",
+     "umbed",
+     "ulen",
+     "nop",
+     "ollo",
+     "ersh",
+     "uhe",
+     "ancode",
+     "rchive",
+     "indsight"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "angelo",
+     "ablish",
+     "\u0441\u044c",
+     "\u03c3\u03b7",
+     "\u30e3",
+     "\u0940\u092f",
+     "cy",
+     "cratch",
+     ".deb",
+     "\u0441\u0435\u043d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Davies",
+     "ucken",
+     ".geo",
+     " vat",
+     "urg",
+     "iston",
+     "\ufffd",
+     "ickle",
+     "utan",
+     "kazy"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "11": [
+   {
+    "tokens": [
+     " tricky",
+     "ampler",
+     " Pins",
+     "AMPLE",
+     "/crypto",
+     " fluid",
+     "yp",
+     " assum",
+     "zyst",
+     "Votes"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "issen",
+     "\u010din",
+     "UMAN",
+     "lant",
+     ".rpm",
+     "OLOR",
+     ".AutoComplete",
+     " Days",
+     "\ufffd",
+     "soever"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "lient",
+     "jabi",
+     " Carm",
+     "\u0e23\u0e13",
+     "URN",
+     "eturn",
+     "elig",
+     "opers",
+     "qid",
+     " dissolved"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "gram",
+     "oice",
+     "paces",
+     "ans",
+     "essian",
+     "\u0648\u0627\u0631",
+     "bilt",
+     " ActionTypes",
+     "fly",
+     "anism"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "soever",
+     "rd",
+     "IGHL",
+     "ilde",
+     "irst",
+     "hhh",
+     "ERSHEY",
+     "(es",
+     "ertz",
+     "ORIZONTAL"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AMI",
+     "\u043e\u0442\u044c",
+     "ift",
+     "\u0120",
+     "\ufffd",
+     "\ufffd",
+     "\u0e31\u0e22",
+     "\u3005",
+     "uestion",
+     " setFrame"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "nock",
+     "ombo",
+     "peria",
+     " Ler",
+     "ypad",
+     " Padding",
+     " Wake",
+     "ippy",
+     "367",
+     " con"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "202",
+     "https",
+     "uzu",
+     " cra",
+     " https",
+     "uien",
+     "aleb",
+     " COVID",
+     "deaux",
+     " Biden"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Portland",
+     "zcze",
+     "ibur",
+     "arus",
+     " Dess",
+     "ourke",
+     "onu",
+     "yaw",
+     "\u0e21\u0e32\u0e22",
+     "ptime"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "otron",
+     "atar",
+     " Liberties",
+     "iscrim",
+     "]\u200f",
+     " gratuits",
+     "svp",
+     "ijken",
+     "iland",
+     "ivre"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "12": [
+   {
+    "tokens": [
+     "\ufffd",
+     "lant",
+     "avenport",
+     "\ufffd",
+     "\ufffd",
+     "ume",
+     "UMAN",
+     "\ufffd",
+     "roof",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "iaux",
+     "\ufffd",
+     "upal",
+     "WINDOW",
+     "/../",
+     "\ufffd",
+     "\u6851",
+     ".simps",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "../../../",
+     "amt",
+     "idth",
+     "lew",
+     "rd",
+     "naires",
+     "hin",
+     "eer",
+     "wart",
+     "ional"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "slt",
+     "elah",
+     "\u0441\u043b",
+     "\u5907",
+     "erm",
+     "ust",
+     "ute",
+     "intr",
+     "sic",
+     "quire"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ing",
+     "\ufe0f",
+     "d\u00fcr",
+     "erif",
+     "er",
+     "eken",
+     "UPPORTED",
+     "quential",
+     "ev",
+     "ING"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u3044\u308b",
+     "elic",
+     "ALLY",
+     "ental",
+     "ucket",
+     "\u0627\u0646\u06cc",
+     "\u30a5",
+     "\ub9bf",
+     "-pane",
+     "\u1ee9"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ously",
+     " \u1ea5y",
+     "ESS",
+     "\u03c0\u03cc",
+     "skyt",
+     "\u094d\u0920",
+     "\u0435\u043d\u043a\u0430",
+     "ruit",
+     "ship",
+     "ning"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0452",
+     "reesome",
+     "onne",
+     " Richardson",
+     "ipeg",
+     "\u0e19\u0e43\u0e08",
+     "iston",
+     "_codigo",
+     "codegen",
+     "565"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0161ak",
+     "coli",
+     "-like",
+     "../../../",
+     "\u30f3\u30ba",
+     "cco",
+     "contr",
+     " tslib",
+     "lessly",
+     "FAULT"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ihar",
+     "ustil",
+     "-\u0442",
+     "\u044b\u043b",
+     "ledge",
+     "aji",
+     "ocode",
+     "_FF",
+     "eres",
+     "OMB"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "13": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\u0161ek",
+     "_cmds",
+     "upal",
+     ".ActionListener",
+     "\ufffd",
+     "/cop",
+     "\u6851",
+     "\ufffd",
+     "/../"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Pir",
+     " Dash",
+     " ray",
+     " Kang",
+     "alion",
+     ".rem",
+     "ILI",
+     "dash",
+     " Nev",
+     " Mir"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "quire",
+     "letcher",
+     "angles",
+     "egin",
+     "akk",
+     "kb",
+     "open",
+     "ym",
+     "oper",
+     "ferences"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ating",
+     "atest",
+     "deaux",
+     "nem",
+     "anger",
+     "ipped",
+     "oldem",
+     "omi",
+     "ansson",
+     "ately"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "bsite",
+     " EntityState",
+     "EATURE",
+     "ErrorHandler",
+     "andler",
+     "\u03bd\u03b5\u03b9",
+     "ORIZONTAL",
+     "ivia",
+     "\u9669",
+     "-toggler"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " McDon",
+     "ilin",
+     "olt",
+     " Sext",
+     "asse",
+     "aket",
+     " Pett",
+     "\u00e0",
+     " l",
+     "rote"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "stor",
+     "itesi",
+     "_mpi",
+     "GTK",
+     "arendra",
+     "zas",
+     " Garr",
+     "bairro",
+     "VI",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "'gc",
+     "jo",
+     "dehyde",
+     "iol",
+     "langs",
+     "iban",
+     "-thumbnail",
+     " sug",
+     "\u304f\u3060"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ably",
+     "../../../",
+     "ing",
+     "ment",
+     "eer",
+     "anas",
+     "standing",
+     "ships",
+     "wart",
+     "stell"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "14": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ugal",
+     " cast",
+     " GOODMAN",
+     "resses",
+     ".tax",
+     " Witch",
+     "\u00eb",
+     "\u0437\u043c",
+     "/we",
+     "ist\u00e9"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "ounce",
+     "\ufffd",
+     "/../",
+     "\ufffd",
+     "\ufffd",
+     "embre",
+     "olen"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u010der",
+     " \uc591",
+     ".keywords",
+     " Cruc",
+     "piel",
+     "ENE",
+     "pora",
+     "ESS",
+     ".InnerText",
+     " \u0432\u0438\u0434\u0435"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Erotische",
+     "\u5acc",
+     "ynn",
+     "ongan",
+     "Screens",
+     "\u51cc",
+     "creens",
+     ".protobuf",
+     "ivent",
+     "tober"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "APPED",
+     "ataka",
+     "ppy",
+     "\u585a",
+     " TBD",
+     " Cameras",
+     "illion",
+     "ente",
+     " Err",
+     "Err"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "oulos",
+     "ollo",
+     " the",
+     " a",
+     "\u5c71\u5e02",
+     "/etc",
+     " top",
+     "eil",
+     " f",
+     " individual"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " my",
+     "\u6211",
+     " t\u00f4i",
+     "\u8ba9\u6211",
+     " saya",
+     "\u7ed9\u6211",
+     "\u662f\u6211",
+     " \u043c\u043d\u0435",
+     "\u6211\u7684",
+     "my"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "837",
+     " Andrews",
+     "ATEGORIES",
+     " \ufffd",
+     "ayo",
+     "eller",
+     " bil",
+     " hik",
+     " Perkins",
+     " Dy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " drift",
+     "uset",
+     "ogh",
+     " kinds",
+     "\ufffd",
+     "oger",
+     " Gle",
+     " ado",
+     "\u00e9ric",
+     " Kelley"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "15": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u093e:",
+     ".JPG",
+     ":",
+     " \ufffd",
+     ".PNG",
+     "ohana",
+     ".tif",
+     "\u06cc\u0641",
+     " =",
+     "**:"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "maz",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     " \u0431\u0430",
+     "ounce",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "imest",
+     "arro",
+     "ibur",
+     " seni",
+     " \u1edf",
+     "igid",
+     ":animated",
+     "inker",
+     " overseas",
+     " Ive"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Mansion",
+     " pur",
+     "lab",
+     "zik",
+     "pur",
+     "rosso",
+     "Lab",
+     "Realm",
+     "zburg",
+     "addir"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u010der",
+     " componentDid",
+     " immigrant",
+     " immigr",
+     " \uc591",
+     " Unt",
+     " \u0432\u0438\u0434\u0435",
+     ".keywords",
+     " crossorigin",
+     "\ufffd\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2460",
+     "erdem",
+     " first",
+     "\u307e\u305a",
+     "TEGER",
+     " \uccab",
+     "hong",
+     "\u0148",
+     " Normal",
+     "01"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "aper",
+     " he",
+     "APER",
+     " Born",
+     " Casc",
+     "anlar",
+     " \u0909\u0938\u0928",
+     "berry",
+     "\u4ed6",
+     "(solution"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " answers",
+     " answer",
+     " answered",
+     " Answer",
+     "\u7b54\u6848",
+     "Answer",
+     " Answers",
+     "answer",
+     "answers",
+     " ANSW"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Labels",
+     " Miscellaneous",
+     "urge",
+     " testimon",
+     "urm",
+     " vest",
+     " UIT",
+     "izmet",
+     "KE",
+     " Vest"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "16": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ethiopian",
+     " Ethiopia",
+     " Add",
+     "Portland",
+     "ovaly",
+     "rtl",
+     "ADD",
+     " \u0627\u0644\u064a\u0645\u0646",
+     " Ethi",
+     "SizePolicy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "vanized",
+     "antry",
+     "hrad",
+     "entine",
+     "bane",
+     "mates",
+     "phabet",
+     "lico",
+     "\u7cfb",
+     "hores"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ua",
+     "score",
+     "\ufffd",
+     "imizer",
+     "SCORE",
+     "deaux",
+     "CLUDING",
+     "eder",
+     "sert",
+     "urance"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     " tier",
+     "t",
+     " Cro",
+     "pl",
+     " cro",
+     "Cro",
+     " precip",
+     " Sund",
+     " sweet"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "pa",
+     "arters",
+     " Gerr",
+     " fin",
+     "ategorical",
+     "\u0447\u0438\u043d\u0438",
+     "exampleInput",
+     " ump",
+     "etting",
+     "hist"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "oggled",
+     "alysis",
+     " UIManager",
+     " rdr",
+     ".HorizontalAlignment",
+     "leurs",
+     "ICLE",
+     "Wonder",
+     "ALER",
+     ".go"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " hereby",
+     " announce",
+     " announces",
+     " annonce",
+     " Announcement",
+     " announcing",
+     " announced",
+     "announce",
+     "\u516c\u544a",
+     " announcement"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5019",
+     "BT",
+     "eton",
+     "elen",
+     "bower",
+     "\u0948\u0917",
+     "ecta",
+     "olated",
+     "WEB",
+     "ET"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u00d7\n\n",
+     " yyn",
+     "RuleContext",
+     "oui",
+     "\u010de",
+     "ulpt",
+     "erland",
+     "\u015bnie",
+     "\u0437\u0432",
+     " \u30ec\u30c7\u30a3\u30fc\u30b9"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "17": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " tier",
+     "\ufffd",
+     " Mountain",
+     "\ufffd",
+     "Peer",
+     " Gin",
+     "_cmds",
+     " scrap",
+     " Cert",
+     "pl"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "entine",
+     "lesh",
+     "agher",
+     "lico",
+     " gall",
+     "ifornia",
+     "ileo",
+     "vn\u00ed",
+     "act",
+     "ustral"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Somalia",
+     " Tig",
+     " Ethiopia",
+     " Add",
+     " Ethiopian",
+     "/Add",
+     "SizePolicy",
+     " Buna",
+     " Rift",
+     "ADD"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "rzy",
+     " mastur",
+     " cooler",
+     "OUNDS",
+     ".gstatic",
+     "filer",
+     "unts",
+     "ufact",
+     "quartered"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufe0f",
+     " ki",
+     "\u0430\u0440\u044c",
+     "\ufffd",
+     "olle",
+     "\ufffd",
+     "\u6458\u8981",
+     "ifr",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u30e7",
+     " Sund",
+     " sund",
+     " \u200b\u200b",
+     " perimeter",
+     "\u6dfb",
+     "\u30e3",
+     " Tutorial",
+     "iamond",
+     " carve"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "etheless",
+     "pecially",
+     "icularly",
+     "sst",
+     "ahkan",
+     "ittel",
+     " shame",
+     "ically",
+     "theless",
+     "osi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Cent",
+     "etros",
+     "Cent",
+     "o\u017e",
+     ".mount",
+     "\u011bn",
+     " \ufffd",
+     "onec",
+     ".Dot",
+     "\u30d3\u30fc"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Proud",
+     "endid",
+     "zon",
+     " fur",
+     " Fur",
+     "\ufffd",
+     " jig",
+     " th",
+     "\u7af6",
+     "_fre"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "18": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "usal",
+     "%\">",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ua",
+     "edar",
+     "\u00faa",
+     "/fw",
+     "CLUDING",
+     "uae",
+     ">Returns",
+     " ua",
+     "UA",
+     "unda"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     " tier",
+     "\ufffd",
+     "\ufffd",
+     "iolet",
+     " \u0446\u0438\u043c",
+     "\ufffd",
+     " (\u00ab",
+     "marshall",
+     " scrap"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "rzy",
+     "urette",
+     "filer",
+     "\u0456\u0439",
+     "esModule",
+     "unal",
+     "assin",
+     "onavir",
+     "OnInit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ethiopia",
+     " Ethiopian",
+     " Tig",
+     "Portland",
+     " Portland",
+     "\ufffd",
+     " Somalia",
+     " Add",
+     " Ethi",
+     " fist"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "eydi",
+     "-eye",
+     "Eye",
+     "skb",
+     "\ufffd",
+     "sert",
+     " eye",
+     "agner",
+     "eye"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "etheless",
+     "pecially",
+     "theless",
+     " shame",
+     ".AutoComplete",
+     " heavens",
+     " \u0438\u043c\u0443",
+     "ically",
+     "ahkan",
+     " Ded"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "etheless",
+     "odore",
+     "atre",
+     " \u0628\u0648\u0627\u0628\u0629",
+     "ysz",
+     "adays",
+     "imdi",
+     "\u044d\u0442\u043e\u043c\u0443",
+     "datum",
+     "quarters"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Portland",
+     " Oregon",
+     "Portland",
+     "Oregon",
+     " Peru",
+     "regon",
+     " Boise",
+     " peru",
+     " Eugene",
+     " Seattle"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "19": [
+   {
+    "tokens": [
+     "istence",
+     "\ud0b9",
+     " Batt",
+     "\u1edbp",
+     "-toggler",
+     "Cop",
+     "iffs",
+     "omial",
+     "reopen",
+     "206"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ua",
+     "\u00faa",
+     "/fw",
+     " ua",
+     "UA",
+     "iek",
+     "sing",
+     "uae",
+     "edar",
+     "CLUDING"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufe0f",
+     "\ufffd",
+     "olle",
+     "\ufffd",
+     "\ufffd",
+     "\u03b8\u03b9",
+     "\ufffd",
+     "\u5370"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     " unsubscribe",
+     "\ufffd",
+     "crypto"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Aura",
+     "ISC",
+     " breakdown",
+     "isci",
+     "OI",
+     " virt",
+     "-controls",
+     "o\u010d",
+     "isc",
+     "orna"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "iek",
+     "ebek",
+     "dik",
+     "siz",
+     "tach",
+     "abus",
+     "\u0161il",
+     "+-+-+-+-+-+-+-+-",
+     "inflate",
+     "spark"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "engin",
+     "udos",
+     " Erotische",
+     "readcr",
+     ".pb",
+     "zag",
+     "apo",
+     ".gdx",
+     "unden",
+     "ategorized"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "istrovstv\u00ed",
+     "\ufffda",
+     "erece",
+     "l\u00e1da",
+     "ertest",
+     "arro",
+     "etooth",
+     " GRAT",
+     "GMEM",
+     "esModule"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "s",
+     "o",
+     "ilin",
+     "a",
+     "ate",
+     "i",
+     "umer",
+     "oje",
+     "assi",
+     "e"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "etheless",
+     "theless",
+     " heavens",
+     "pecially",
+     "identally",
+     "udeau",
+     "jeta",
+     "icularly",
+     "iate",
+     " Ded"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "20": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufe0f",
+     "olle",
+     "\ufffd",
+     "\ufffd",
+     "agus",
+     "agraph",
+     "_ASCII",
+     "hetto"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ISC",
+     "ilha",
+     "\ufffd",
+     "idla",
+     " intr",
+     "\u0e16\u0e21",
+     "\ub77c\ub3c4",
+     " virt",
+     "ilder",
+     "#__"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ua",
+     "\u00faa",
+     "UA",
+     "sing",
+     " ua",
+     "/fw",
+     "uae",
+     "\u90ce",
+     "ennent",
+     "iek"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffda",
+     "l\u00e1da",
+     " \u0442\u0432\u0430",
+     "istrovstv\u00ed",
+     "esiz",
+     "ekil",
+     ".scalablytyped",
+     "/cop",
+     "erece",
+     "ucs"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Pros",
+     "321",
+     "olec",
+     "\u00f3st",
+     ".UIManager",
+     "CRT",
+     "\u0642\u0645",
+     ".setdefault",
+     " pros",
+     ".Management"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "omik",
+     "\u9001\u6599\u7121\u6599",
+     "izes",
+     "ezi",
+     "/OR",
+     "\u897f\u7701",
+     "mbH",
+     "ioned",
+     "redient",
+     "theless"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ging",
+     "ged",
+     "gers",
+     "alog",
+     "gings",
+     "ger",
+     "gable",
+     "gart",
+     "GER",
+     "GING"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Hello",
+     "Hello",
+     " hello",
+     " Hi",
+     "Hi",
+     " hi",
+     "hello",
+     " Dear",
+     "Dear",
+     "hi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "indo",
+     "werk",
+     "\u0632\u0627",
+     "ipi",
+     " Erect",
+     "\u8457",
+     "olia",
+     "omics",
+     " sit",
+     "alach"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "21": [
+   {
+    "tokens": [
+     "\ufffd",
+     " Cups",
+     "ienen",
+     "erva",
+     "\ufffd",
+     "orre",
+     "\ufffd",
+     "\u30c7\u30a3\u30a2",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ua",
+     "UA",
+     "\u00faa",
+     " ua",
+     "uae",
+     "\u06a9\u0627\u0631\u06cc",
+     "alette",
+     "\ufffd",
+     "uali",
+     "sing"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "/fonts",
+     "\ufffd",
+     "legg",
+     "\ufffd",
+     " Benton"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "olle",
+     "\ufffd",
+     "idor",
+     "agus",
+     "\ufffd",
+     "ibox",
+     "plus",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rov\u00e9",
+     "\u03c3\u03c5",
+     "isci",
+     "\ufffd",
+     "ingle",
+     "artner",
+     "an\u00e1",
+     "ibil",
+     "lez",
+     "\u30fc\u30d1\u30fc"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "obl",
+     " secular",
+     "ning",
+     "\ufffd",
+     " dy",
+     "\ufffd",
+     "\ufffd",
+     " Ham"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "awei",
+     "\u1ebf",
+     "ertas",
+     "awai",
+     "yn",
+     "rist",
+     " v\u1ef1c",
+     "iten",
+     "erta",
+     " jint"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " while",
+     " during",
+     " whereas",
+     " since",
+     " because",
+     " until",
+     "abant",
+     "\u305f\u3061",
+     " which",
+     "ats"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " agree",
+     " Agree",
+     " excellent",
+     " AGRE",
+     "agree",
+     " agreed",
+     " Amen",
+     " Spot",
+     " agrees",
+     " agreeing"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "22": [
+   {
+    "tokens": [
+     "etype",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "erva",
+     "\ufffd",
+     "Fear",
+     "\ufffd",
+     "\ufffd",
+     "EG"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufe0f",
+     "\ufffd",
+     "\ufffd",
+     "olle",
+     "\ufffd",
+     "\u8c61",
+     "ibox",
+     "idor",
+     "\u2501"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "abus",
+     ".bio",
+     " note",
+     "\uc8fc\uc758",
+     "tach",
+     " maiden",
+     " !***",
+     " insert",
+     " headline",
+     "alars"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffda",
+     " nuest",
+     ".scalablytyped",
+     " \u0442\u0432\u0430",
+     "ekil",
+     "ordinate",
+     "Spoiler",
+     "l\u00e1da",
+     "etest",
+     "\ufffdu"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "brig",
+     "\u9ebc",
+     "chw",
+     "quirrel",
+     "\u3089",
+     " \u6295\u7a3f\u65e5",
+     "iner",
+     "zelf",
+     " unsub",
+     "antlr"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".svg",
+     ".JPG",
+     "izes",
+     "isque",
+     ".gif",
+     ".PNG",
+     "(Paint",
+     ".jpg",
+     ".htm",
+     " yana"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "inclu",
+     " Cunning",
+     "inizi",
+     " ActionTypes",
+     "ampie",
+     "iverz",
+     "ooter",
+     "ezi",
+     "_softc"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "\u2026\n\n\n",
+     " D\u00fcn",
+     "istrovstv\u00ed",
+     "\u0131s\u0131r",
+     "\u0433\u0430\u043b\u0456",
+     "ngth",
+     "juan",
+     "IIIK",
+     " TBranch"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " during",
+     " while",
+     " since",
+     " because",
+     "\u53ca\u5176",
+     " until",
+     " as",
+     " \u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u044f",
+     " via",
+     " when"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "//{{",
+     "chwitz",
+     "~-~-~-~-",
+     "\u00fc\u00e7\u00fck",
+     "/GPL",
+     " RuntimeObject",
+     "readcr",
+     ".\u03a0",
+     "nerRadius",
+     "ypse"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "23": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " note",
+     " Note",
+     "note",
+     "Note",
+     "gnore",
+     "spo",
+     "_note",
+     "ENARIO",
+     " Spo",
+     " NOTE"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffda",
+     "ekil",
+     ".scalablytyped",
+     "erece",
+     " nuest",
+     " \u0442\u0432\u0430",
+     " BITTE",
+     "jeme",
+     "ordinate",
+     " GRAT"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ":",
+     ":\n",
+     "\u093e:",
+     "\uff1a",
+     ".jpg",
+     ".JPG",
+     ".gif",
+     ".PNG",
+     "*:",
+     " |"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "zap",
+     "\ufffd",
+     "\ufffd",
+     "\ufe0f",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rious",
+     "chia",
+     "edb",
+     "lein",
+     "Invariant",
+     ".timing",
+     "\ufffd",
+     "=\"__",
+     "\ufffd",
+     "ocha"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " cred",
+     "nech",
+     "ament",
+     " cre",
+     "ais",
+     "aris",
+     "idla",
+     "::",
+     " multiplic",
+     " nem"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "gether",
+     "itionally",
+     "andin",
+     " fkk",
+     ":focus",
+     "\u0444\u0435\u0440",
+     "ickerView",
+     " escorte",
+     "imary",
+     "\u0648\u064a\u0631"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Overall",
+     "Rating",
+     " Rating",
+     " rating",
+     "Overall",
+     " overall",
+     " Pros",
+     " review",
+     " reviewed",
+     "Pros"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "24": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "unque",
+     "soever",
+     "\u1f72",
+     "chw",
+     " m\ufffd",
+     " nhi\u00ean",
+     "\u0631\u0628\u0647",
+     "\u00e1bb",
+     "chsel",
+     "abela"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "legg",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "gnore",
+     "spo",
+     "ads",
+     "drop",
+     "ENARIO",
+     "SSIP",
+     "untu",
+     " Spo",
+     "fab",
+     "atings"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     " precip",
+     "\ufffd",
+     "meg",
+     "\ufffd",
+     "\ub828",
+     "zap",
+     "illus",
+     "LinkId",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "s",
+     "o",
+     "umer",
+     "i",
+     "e",
+     "l",
+     "t",
+     "iders",
+     "\u010del",
+     "rame"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ppard",
+     "uitka",
+     "ofday",
+     "ifax",
+     "rompt",
+     "ioso",
+     "hiba",
+     "esktop",
+     "braco",
+     "jos"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "halb",
+     "neath",
+     "cluding",
+     "theless",
+     "wards",
+     "\uc6b4\ub370",
+     "ecause",
+     "withstanding",
+     "\u0438\u0442\u0435\u043b\u044c\u043d\u043e",
+     "lie\u00dflich"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "wiki",
+     " sources",
+     "herits",
+     "etooth",
+     " Wik",
+     "Wiki",
+     " hete",
+     "/sources",
+     "_Lean",
+     "ascus"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "25": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "olle",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " na",
+     "enda",
+     "itur",
+     " Plantae",
+     " Kolkata",
+     " ga",
+     " \u043d\u0430\u0442",
+     " sinon",
+     " ne",
+     " bell"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ppard",
+     "uitka",
+     "esktop",
+     "ofday",
+     "isclosed",
+     "UAGE",
+     "rompt",
+     "jos",
+     "P\u0159ed",
+     "ernaut"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u043e\u043b\u044c\u043a\u0443",
+     "wise",
+     " nhi\u00ean",
+     "ilateral",
+     "lie\u00dflich",
+     "ynchronously",
+     "adecimal",
+     "unque",
+     "empre",
+     "quam"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffda",
+     " nuest",
+     "alled",
+     "erece",
+     "ujeme",
+     "ordinate",
+     " \u0442\u0432\u0430",
+     " GRAT",
+     "antity",
+     " carte"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     " \ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " typeId",
+     " stage",
+     "icity",
+     "\u266a",
+     " Dit",
+     "ollen",
+     " sooner",
+     "achten",
+     " dit",
+     " Towers"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "26": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "olle",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "agher",
+     " Gall",
+     " gall",
+     "antry",
+     " bladder",
+     "atin",
+     "ingly",
+     "antly",
+     "ows",
+     "bl"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " mu",
+     "\u00fc\u015f",
+     "\u00f2",
+     "\u0436\u0456",
+     " Mu",
+     "\u00e8",
+     "\u00f3",
+     "\u00e9",
+     "\u00e4",
+     "\u59ca"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "wise",
+     " nhi\u00ean",
+     "unque",
+     "fois",
+     "\uc800",
+     "WISE",
+     "quam",
+     "lie\u00dflich",
+     "uiten",
+     "ilateral"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".appspot",
+     " \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c",
+     " \u0444\u0435\u0434\u0435\u0440\u0430\u043b\u044c",
+     "@gmail",
+     "\ufeffusing",
+     "eldorf",
+     "\u0433\u0430\u043b\u0456",
+     "andest",
+     "Intialized",
+     ".firebaseapp"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "herits",
+     "malink",
+     "wiki",
+     "ascus",
+     "htags",
+     "etooth",
+     " sources",
+     "raki",
+     "laces",
+     "_Lean"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "vic",
+     "otland",
+     " fisse",
+     "\u7e54",
+     "affle",
+     "ENARIO",
+     "inel",
+     "kola",
+     "846",
+     "enario"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "etheless",
+     "ahkan",
+     "iii",
+     " shame",
+     "pecially",
+     "fortunately",
+     "avez",
+     "\u00e4chst",
+     "erdings",
+     "ieee"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "27": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "cite",
+     "foot",
+     "\ufffd",
+     "text",
+     "/lang",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " acest",
+     " THIS",
+     " \u0111\u00f3",
+     "\u6b64",
+     " \u3053\u306e",
+     " n\u00e0y",
+     " This",
+     "-this",
+     "_this",
+     " \u6b64"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     " secular",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "enny",
+     "ubl",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "vida",
+     " Brid"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " GRAT",
+     " nuest",
+     "\ufffda",
+     " recept",
+     " BITTE",
+     " online",
+     "CHIP",
+     "ekil",
+     "luet",
+     " \u0442\u0432\u0430"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "s",
+     "o",
+     "acemark",
+     "i\u0161",
+     "\u010del",
+     "oftware",
+     "de\u015f",
+     "eus",
+     "\u3050",
+     "sheets"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "brane",
+     "zd",
+     " \u3011",
+     " \ufffd",
+     "\ufffd\ufffd",
+     "--+",
+     "\ufffd",
+     "aidu",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AndView",
+     "ous",
+     "riority",
+     "cy",
+     "amento",
+     "cloth",
+     "pedia",
+     "cope",
+     "phere",
+     "bone"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "t",
+     "e",
+     "s",
+     "r",
+     "l",
+     "\ufe0f",
+     "m",
+     "n",
+     "g",
+     "ele"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "28": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "s",
+     "o",
+     "371",
+     "assin",
+     "\u0443",
+     "_MATH",
+     "e",
+     "sheets",
+     "a",
+     "\u010del"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     "\ufffd",
+     "togroup",
+     "\ufffd",
+     "CallCheck",
+     "747",
+     "bage",
+     " \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c",
+     " %-",
+     " responseObject"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " mu",
+     "\u00b5",
+     "\u00e4",
+     "_mu",
+     " m\u00f3",
+     " Mu",
+     "\u0436\u0456",
+     "UDO",
+     "enen",
+     ".bunifuFlatButton"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "alles",
+     "CJK",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\u0178",
+     "\ufffd",
+     "\ufffd",
+     "aty"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "ille",
+     "uve",
+     "ivate",
+     "combe",
+     "conds",
+     "\u0e2d\u0e23",
+     " Bud"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "zdy",
+     "afx",
+     "orno",
+     "\u30fc\u30c7",
+     " Goodman",
+     "aidu",
+     "osg",
+     "ACION",
+     ".scalablytyped",
+     "ephir"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "29": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     " cop",
+     "iltr",
+     "170",
+     "yle",
+     "ogy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ting",
+     "tering",
+     "fusc",
+     "dot",
+     ".dot",
+     "tery",
+     "dash",
+     "ter",
+     "NetBar",
+     " dot"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     " Bart",
+     "ohana",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "adin",
+     "embed",
+     "drop",
+     "gravity",
+     "caption",
+     "SSIP",
+     "ecko",
+     "pull",
+     "quote",
+     "ICODE"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "stanov",
+     "048",
+     "resents",
+     "icularly",
+     "\u9001\u6599\u7121\u6599",
+     "026",
+     " BITTE",
+     "\u0942\u0939",
+     "ebo",
+     "rve"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ces",
+     "200",
+     "423",
+     "\u0442\u0438",
+     "arra",
+     "275",
+     "555",
+     "#ad",
+     "208",
+     "440"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u05d1",
+     "\u05d5\ufffd",
+     "\u05e9",
+     "\u05dc",
+     "icina",
+     "\ufffd",
+     "\u05e8",
+     "\u05d3",
+     "achel",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "30": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2026.\n\n",
+     "erif",
+     ".Dictionary",
+     " -*-\r\n",
+     " nackte",
+     ".attachment",
+     "\ufffd\ufffd",
+     ".getElements",
+     ".DropDown",
+     "\u0396"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\u0435\u0432\u0438",
+     "\u0e43\u0e08",
+     "Malloc",
+     "sse"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff08",
+     "\u300a",
+     "\uff1a",
+     " \uff08",
+     "\u3010",
+     "\u3001",
+     "\u3002",
+     "\uff09",
+     "\u300c",
+     "\u3000"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\n\n",
+     "malink",
+     "\ufffd",
+     " |\n\n",
+     ")\n\n",
+     "laces",
+     " ba\u011flant\u0131lar",
+     " =\n\n",
+     "weise",
+     "]\n\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".scalablytyped",
+     "/Foundation",
+     "rubu",
+     "GuidId",
+     ".SizeType",
+     "IIIK",
+     "Nuitka",
+     "jspx",
+     "iParam",
+     "UsageId"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " The",
+     " This",
+     " There",
+     " It",
+     " If",
+     " Although",
+     " When",
+     " As",
+     " We",
+     " These"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "31": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd\ufffd",
+     "\ufffd\ufffd",
+     "\ufffd\ufffd",
+     " \u00f6den",
+     " eskort",
+     "\ufffd\ufffd",
+     " prostitu",
+     " rencont",
+     "-wsj",
+     "\ufffd\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ColumnsMode",
+     " erotik",
+     "TargetException",
+     " fetisch",
+     " pornost",
+     "PasswordEncoder",
+     "ckill",
+     "AccessorType",
+     " eskorte",
+     " iddi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " born",
+     " graduated",
+     " currently",
+     " originally",
+     " living",
+     " Born",
+     " Originally",
+     " Currently",
+     " native",
+     "Originally"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " trough",
+     " threw",
+     " foe",
+     " thru",
+     " form",
+     " acc",
+     " inorder",
+     " fron",
+     " ont",
+     " thro"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\u0bcd\ufffd",
+     "\ufffd",
+     " difficult",
+     "\u0bbf\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Sms",
+     " Whatsapp",
+     " Url",
+     "/Delete",
+     " Btn",
+     " Css",
+     " Csv",
+     "/U",
+     "/Web",
+     "/Edit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ",",
+     ".",
+     "-",
+     "S",
+     "B",
+     "D",
+     "-H",
+     "C",
+     "G",
+     "P"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Flex",
+     " Orbit",
+     " Bright",
+     " Spectrum",
+     " Pulse",
+     " Dream",
+     " Opt",
+     " Wave",
+     " Echo",
+     " Insight"
+    ],
+    "target_script_frac": 0.0
+   }
+  ]
+ }
+}
