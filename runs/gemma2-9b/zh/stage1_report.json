@@ -1,0 +1,6733 @@
+{
+ "meta": {
+  "target": "zh",
+  "model": "gemma2-9b",
+  "contrast": "response",
+  "n_pairs": 600,
+  "base_dM_lift": -0.36528754234313965,
+  "report": {
+   "0": {
+    "fvu": {
+     "fvu": 0.18801464140415192
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.018032786885245903
+   },
+   "1": {
+    "fvu": {
+     "fvu": 0.27020740509033203
+    },
+    "n_tgt": 50,
+    "n_en": 32,
+    "mean_target_script_frac": 0.05800000000000001
+   },
+   "2": {
+    "fvu": {
+     "fvu": 0.28540584444999695
+    },
+    "n_tgt": 62,
+    "n_en": 32,
+    "mean_target_script_frac": 0.07903225806451614
+   },
+   "3": {
+    "fvu": {
+     "fvu": 0.2812504172325134
+    },
+    "n_tgt": 60,
+    "n_en": 32,
+    "mean_target_script_frac": 0.05
+   },
+   "4": {
+    "fvu": {
+     "fvu": 0.29615065455436707
+    },
+    "n_tgt": 58,
+    "n_en": 32,
+    "mean_target_script_frac": 0.04310344827586208
+   },
+   "5": {
+    "fvu": {
+     "fvu": 0.2629438638687134
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.09836065573770492
+   },
+   "6": {
+    "fvu": {
+     "fvu": 0.2823811173439026
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.11406250000000001
+   },
+   "7": {
+    "fvu": {
+     "fvu": 0.2759217917919159
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.13220338983050847
+   },
+   "8": {
+    "fvu": {
+     "fvu": 0.26674777269363403
+    },
+    "n_tgt": 46,
+    "n_en": 32,
+    "mean_target_script_frac": 0.058695652173913045
+   },
+   "9": {
+    "fvu": {
+     "fvu": 0.27737653255462646
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.03220338983050847
+   },
+   "10": {
+    "fvu": {
+     "fvu": 0.2791876494884491
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.045454545454545456
+   },
+   "11": {
+    "fvu": {
+     "fvu": 0.2961418032646179
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.054545454545454564
+   },
+   "12": {
+    "fvu": {
+     "fvu": 0.3024117350578308
+    },
+    "n_tgt": 50,
+    "n_en": 32,
+    "mean_target_script_frac": 0.027999999999999997
+   },
+   "13": {
+    "fvu": {
+     "fvu": 0.2979627847671509
+    },
+    "n_tgt": 54,
+    "n_en": 32,
+    "mean_target_script_frac": 0.03333333333333333
+   },
+   "14": {
+    "fvu": {
+     "fvu": 0.3792537450790405
+    },
+    "n_tgt": 57,
+    "n_en": 32,
+    "mean_target_script_frac": 0.015789473684210527
+   },
+   "15": {
+    "fvu": {
+     "fvu": 0.3373710811138153
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.011475409836065575
+   },
+   "16": {
+    "fvu": {
+     "fvu": 0.4153563976287842
+    },
+    "n_tgt": 50,
+    "n_en": 32,
+    "mean_target_script_frac": 0.026000000000000006
+   },
+   "17": {
+    "fvu": {
+     "fvu": 0.4138585031032562
+    },
+    "n_tgt": 56,
+    "n_en": 32,
+    "mean_target_script_frac": 0.014285714285714287
+   },
+   "18": {
+    "fvu": {
+     "fvu": 0.43164175748825073
+    },
+    "n_tgt": 53,
+    "n_en": 32,
+    "mean_target_script_frac": 0.024528301886792458
+   },
+   "19": {
+    "fvu": {
+     "fvu": 0.3564335107803345
+    },
+    "n_tgt": 63,
+    "n_en": 32,
+    "mean_target_script_frac": 0.02222222222222222
+   },
+   "20": {
+    "fvu": {
+     "fvu": 0.4446053206920624
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.03125
+   },
+   "21": {
+    "fvu": {
+     "fvu": 0.37481689453125
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.028125000000000004
+   },
+   "22": {
+    "fvu": {
+     "fvu": 0.35259899497032166
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0328125
+   },
+   "23": {
+    "fvu": {
+     "fvu": 0.3630164563655853
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.026562500000000003
+   },
+   "24": {
+    "fvu": {
+     "fvu": 0.34728601574897766
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.024590163934426233
+   },
+   "25": {
+    "fvu": {
+     "fvu": 0.3409227728843689
+    },
+    "n_tgt": 50,
+    "n_en": 32,
+    "mean_target_script_frac": 0.034
+   },
+   "26": {
+    "fvu": {
+     "fvu": 0.35060033202171326
+    },
+    "n_tgt": 47,
+    "n_en": 32,
+    "mean_target_script_frac": 0.04042553191489361
+   },
+   "27": {
+    "fvu": {
+     "fvu": 0.31585732102394104
+    },
+    "n_tgt": 58,
+    "n_en": 32,
+    "mean_target_script_frac": 0.022413793103448276
+   },
+   "28": {
+    "fvu": {
+     "fvu": 0.30792558193206787
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0288135593220339
+   },
+   "29": {
+    "fvu": {
+     "fvu": 0.3008801341056824
+    },
+    "n_tgt": 51,
+    "n_en": 32,
+    "mean_target_script_frac": 0.00980392156862745
+   },
+   "30": {
+    "fvu": {
+     "fvu": 0.2923724949359894
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.031147540983606555
+   },
+   "31": {
+    "fvu": {
+     "fvu": 0.28639301657676697
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.022950819672131147
+   },
+   "32": {
+    "fvu": {
+     "fvu": 0.287570059299469
+    },
+    "n_tgt": 41,
+    "n_en": 32,
+    "mean_target_script_frac": 0.02195121951219512
+   },
+   "33": {
+    "fvu": {
+     "fvu": 0.29113778471946716
+    },
+    "n_tgt": 56,
+    "n_en": 32,
+    "mean_target_script_frac": 0.02142857142857143
+   },
+   "34": {
+    "fvu": {
+     "fvu": 0.29978275299072266
+    },
+    "n_tgt": 49,
+    "n_en": 32,
+    "mean_target_script_frac": 0.034693877551020415
+   },
+   "35": {
+    "fvu": {
+     "fvu": 0.3091103434562683
+    },
+    "n_tgt": 54,
+    "n_en": 32,
+    "mean_target_script_frac": 0.014814814814814815
+   },
+   "36": {
+    "fvu": {
+     "fvu": 0.313098281621933
+    },
+    "n_tgt": 47,
+    "n_en": 32,
+    "mean_target_script_frac": 0.02340425531914894
+   },
+   "37": {
+    "fvu": {
+     "fvu": 0.32850539684295654
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.03636363636363636
+   },
+   "38": {
+    "fvu": {
+     "fvu": 0.345176637172699
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.059375
+   },
+   "39": {
+    "fvu": {
+     "fvu": 0.3651643991470337
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.053125
+   },
+   "40": {
+    "fvu": {
+     "fvu": 0.3491418659687042
+    },
+    "n_tgt": 62,
+    "n_en": 32,
+    "mean_target_script_frac": 0.08870967741935484
+   },
+   "41": {
+    "fvu": {
+     "fvu": 0.2971230149269104
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.203125
+   }
+  }
+ },
+ "affinity": {
+  "0": [
+   {
+    "tokens": [
+     " it\u017felf",
+     " plea\u017fure",
+     " Administrativna",
+     " ainfi",
+     " my\u017felf",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     " AssemblyTitle",
+     " ind\u00edgen",
+     "parsedMessage",
+     "\u017felves"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Sistema",
+     " forma",
+     " casa",
+     " evento",
+     " cultura",
+     " sistema",
+     " modelo",
+     " tema",
+     " elemento",
+     " norma"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<h1>",
+     "<strong>",
+     "The",
+     "1",
+     "<",
+     "2",
+     "\n\n",
+     "A",
+     "\n",
+     "I"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<bos>",
+     "nip",
+     "cyc",
+     "butt",
+     "orb",
+     "luc",
+     "hob",
+     "imm",
+     "Berg",
+     "belt"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " fu",
+     " Fu",
+     "Fu",
+     "fu",
+     "sho",
+     "\u043f\u0443",
+     "}*/",
+     "pu",
+     " Fusion",
+     " Krist"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rungsseite",
+     "webElementXpaths",
+     " converters",
+     "AppMethodBeat",
+     " Himo",
+     " underwriting",
+     " moto",
+     " kon",
+     "EndContext",
+     "ScopeManager"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " da\u00df",
+     " mu\u00df",
+     " skall",
+     " l\u00e4\u00dft",
+     " chiefly",
+     " gewi\u00df",
+     " znacz",
+     " principally",
+     " mu\u00dfte",
+     " ilustracja"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " tax",
+     " TAX",
+     "tax",
+     "Tax",
+     " taxes",
+     " Tax",
+     " shocking",
+     " taxed",
+     " taxation",
+     "TAX"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "enumi",
+     " prevailing",
+     "\u5168\u4f53\u306e",
+     "glVertex",
+     "Egypte",
+     "queles",
+     "Rectangle",
+     " recurrent",
+     " recettes",
+     "UserRole"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " rewards",
+     " recompensa",
+     " reward",
+     "rewards",
+     "Rewards",
+     "tagHelperRunner",
+     " rent",
+     " compens",
+     " Rewards",
+     "WebElementEntity"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "1": [
+   {
+    "tokens": [
+     "\uff1a",
+     " vuestro",
+     " vuestra",
+     " Inscrivez",
+     " Wikiseite",
+     " chr\u00e9tiens",
+     "\u3001",
+     "\uff0c",
+     " \u00e9toit",
+     " extranjero"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ee5",
+     "\u5728",
+     "\u4ece",
+     "\u7531",
+     "\u5f9e",
+     "\u662f\u4ee5",
+     "\u901a\u8fc7",
+     "\u662f",
+     "\u5c31\u5728",
+     "\u628a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " \u03b5\u03c0\u03b9",
+     " \u03b1\u03bd\u03b1",
+     " prze",
+     " \u03ba\u03b1\u03c4\u03b1",
+     " d\u00e9s",
+     " \u03b4\u03b9\u03b1",
+     " Besch",
+     "besch",
+     " \u0440\u0430\u0441",
+     " przy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5fd1",
+     "\u65e5\u95b2\u89a7",
+     " ocen",
+     "\u5fa8",
+     "\u042d\u0442\u043e",
+     "\u8712",
+     "')}}",
+     "\u5c96",
+     "\u6458\u8981",
+     " \ubd84\uc11d"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "<unused68>",
+     "<unused51>",
+     "<unused41>",
+     "<unused47>",
+     "<unused3>",
+     "<pad>",
+     "<unused14>",
+     "<unused16>",
+     "<unused74>",
+     "<unused79>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " lass",
+     " clim",
+     " jakarta",
+     " z\u00f3",
+     " \u0414\u0430\u0442\u0430",
+     "\ufeff//",
+     "\u0449\u0438",
+     " destina",
+     " cif",
+     " mecan"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5468\u6cfd\u6977",
+     "\u53f6\u51cc\u5929",
+     "mybatisplus",
+     "nonatomic",
+     "\u043b\u0430\u043a\u0442\u0438\u043a\u0430",
+     " Poli",
+     " he",
+     "\u5357\u6d54",
+     " Empire",
+     "ABC"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     " HasFactory",
+     "linawan",
+     "\uea04",
+     "\uec1d",
+     " que\u017fto",
+     "\ue840",
+     "\ue85a",
+     "\ud81a\udc7b",
+     "\u4e45\u3057\u3076",
+     " de\u017f\u017fen"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " lateinit",
+     "\u0645\u0642\u0627\u0644\u0647",
+     " GenerationType",
+     " IBOutlet",
+     " AssemblyTitle",
+     "__;",
+     " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+     ",\u200e",
+     "\u0644\u06cc\u0633",
+     "\u06a9"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<bos>",
+     " duyg",
+     "mens",
+     "unc",
+     "ek\u0161",
+     " interviewer",
+     "himo",
+     "po\u015bred",
+     "nap",
+     "nip"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "2": [
+   {
+    "tokens": [
+     "\u4ed6",
+     "\u6211",
+     "\u4f60",
+     "\u5979",
+     "\u6211\u4eec",
+     "\u4ed6\u4eec",
+     "\u4ed6\u5011",
+     "\u5b83",
+     "\u6211\u5011",
+     " \u5979"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4ee5",
+     "\u4ece",
+     "\u5728",
+     "\u6bd4",
+     "\u7531",
+     "\u5230",
+     "\u662f",
+     "\u5f9e",
+     "\u5411",
+     "\u6709"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " stockbild",
+     " \u0633\u0643\u0627\u0646\u064a\u0629",
+     "Despu\u00e9s",
+     "\u017fchen",
+     "deauna",
+     " que\u017fta",
+     " antes",
+     "parsedMessage",
+     "adpleegd",
+     " finalmente"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<bos>",
+     "ek\u0161",
+     "po\u015bred",
+     " duyg",
+     "v\u00e9ny",
+     "mens",
+     " \u0627\u0644\u0627\u0648\u0644",
+     "ls\u0151",
+     " \u05e9\u05d7",
+     "koz\u00f3"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u51fa\u7248\u5e74",
+     " le\u017fs",
+     " who\u017fe",
+     " lass",
+     "AnchorStyles",
+     "\u6700\u5feb\u66f4\u65b0",
+     "\u0413\u041b\u0410",
+     " di\u00e9",
+     " contin\u00faas",
+     "stdbool"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " AssemblyCompany",
+     "LookAnd",
+     "SequentialGroup",
+     " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+     "\ua3ac",
+     "\uec1d",
+     " de\u017f\u017fen",
+     "\ue704",
+     "WriteTagHelper",
+     "fromnode"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " auroit",
+     "]='\\",
+     " mijne",
+     "\u0012",
+     " Durchsch",
+     "PHeader",
+     " avoient",
+     "Parcelize",
+     "RenderAtEndOf",
+     "\u5b88"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " iParam",
+     "nonatomic",
+     " \u4e0a\u5348",
+     "rawDesc",
+     " arr",
+     " inc",
+     "mybatisplus",
+     " setId",
+     "IBinder",
+     " \u05d6"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u4e0b",
+     "\u524d",
+     "\u5f8c",
+     "\u540e",
+     " \u4e0b",
+     "\u5185",
+     "\u4e0a",
+     " \u540e",
+     "\u5916",
+     "\u4e0b\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "Transcripci\u00f3n",
+     " Hoy",
+     "Hoy",
+     " los",
+     "Descripci\u00f3n",
+     " el",
+     " Mej",
+     "Resumen",
+     "Referencias",
+     "Funciones"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "3": [
+   {
+    "tokens": [
+     "\u65e5\u95b2\u89a7",
+     "\u5fd1",
+     "\u0628\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+     "\u042d\u0442\u043e",
+     " \u7121\u6599",
+     "\u0421\u043f\u043e\u0459\u0430\u0448\u045a\u0435",
+     "\u6700\u5feb\u66f4\u65b0",
+     "\u51dd\u571f",
+     "\u4eba\u751f",
+     "\u773c"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     " '\\\\;'",
+     "ValueStyle",
+     " \u0635\u0648\u062a\u064a\u0647",
+     " \u0645\u062a\u0639\u0644\u0642\u0647",
+     " MainAxisSize",
+     " AssemblyTitle",
+     " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+     " \u0644\u064a\u0646\u0643",
+     "<unused51>",
+     "<unused41>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " auroit",
+     "Parcelize",
+     "RenderAtEndOf",
+     "]='\\",
+     "\u0012",
+     " alugar",
+     "]')",
+     " feroit",
+     "\u00f3gio",
+     " protoimpl"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u017fch",
+     " \u017fta",
+     " fa\u017ft",
+     "\u017felf",
+     " my\u017felf",
+     " \u017fche",
+     " chofe",
+     " Jefus",
+     " tranf",
+     " \u017ftate"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " so",
+     "\u2019",
+     "\u90e8",
+     "\u0e07",
+     " Zug",
+     " bakal",
+     "\u8d77",
+     " \"",
+     "<table>",
+     " against"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u591a",
+     " grande",
+     "\u9ad8",
+     " GRANDE",
+     "fromnode",
+     "InputBorder",
+     " useAppContext",
+     "\u322f",
+     "\u51fa\u7248\u5e74",
+     "grande"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "uckoo",
+     "ug",
+     " Wur",
+     "uge",
+     "uuu",
+     "ufu",
+     "ulink",
+     "ubu",
+     "uum",
+     " Gug"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "addCriterion",
+     "mybatisplus",
+     "ibatis",
+     "oredCriteria",
+     "layui",
+     "ConstraintMaker",
+     "WireFormatLite",
+     "\u4e28",
+     " <>\",",
+     "printStackTrace"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u2019",
+     " China",
+     " socialista",
+     " d",
+     " sino",
+     " chinois",
+     " i",
+     " chino",
+     "China",
+     " Chinese"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     "\u0642\u0627\u06cc\u0646\u0627\u0642\u200c\u0644\u0627\u0631",
+     "internalType",
+     "%\uff0c",
+     "\u0e21\u0e2d\u0e07",
+     "C\u00f2n",
+     " fathom",
+     " aufzu",
+     "\u0e01\u0e47",
+     " gevo"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "4": [
+   {
+    "tokens": [
+     "\u0012",
+     "multer",
+     "PMailer",
+     "\u6700\u5feb\u66f4\u65b0",
+     "+#+#",
+     "TypedDataSet",
+     "extAlignment",
+     "Parcelize",
+     "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+     "UIControlState"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u51fa\u7248\u5e74",
+     " \u017fche",
+     "fromnode",
+     " que\u017fta",
+     " ver\u017fch",
+     "GEBURTSDATUM",
+     " Re\u017f",
+     " photolibrary",
+     " \u017fch",
+     " be\u017fch"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u0119k",
+     "\u4f86\u8aaa",
+     "\u6765\u8bf4",
+     " aprobaci\u00f3n",
+     " excepto",
+     " karar",
+     " fermer",
+     " Time",
+     " impacto",
+     " renuncia"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "i\u00e8me",
+     "\u06f0\u06f0",
+     "ology",
+     "ised",
+     " miniaturka",
+     " cre\u0219",
+     "sbereich",
+     " ma\u0219",
+     " zimowa",
+     " Jur\u00ed"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "kiyor",
+     "vistar",
+     "cuador",
+     " bont\u00e9",
+     "intenant",
+     "ihnachts",
+     "WriteTagHelper",
+     " pauv",
+     "gawai",
+     "mov"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<bos>",
+     "po\u015bred",
+     " duyg",
+     "ek\u0161",
+     "v\u00e9ny",
+     "koz\u00f3",
+     "JKLM",
+     " \u0627\u0644\u0627\u0648\u0644",
+     "yszer",
+     "zia\u0142"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff1a",
+     "\uff1f",
+     "\uff1b",
+     "\uff09",
+     "\uff01",
+     " \uff1a",
+     "\uff09\uff1a",
+     "\uff0c",
+     " \uff08",
+     "\uff09\uff1b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " BrowserModule",
+     "UrlResolution",
+     " Gl",
+     "RunWith",
+     "\u00e9t",
+     " useRef",
+     "WEBPACK",
+     " Mr",
+     "\u0418\u0441\u043a\u04d9\u0440\u043c\u04d9\u043b\u04d9\u0440",
+     "Mr"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " mobili",
+     " pulver",
+     " triang",
+     " exfoli",
+     "uxta",
+     " seques",
+     " revital",
+     " democrati",
+     " recons",
+     " decim"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " miniaturka",
+     " autorytatywna",
+     " Ge\u017f",
+     " EnglishChoose",
+     " _(\"",
+     "\u533f\u540d\u4f7f\u7528\u8005",
+     "TokenNameLBRACE",
+     "LikeLiked",
+     " \"\u00bf",
+     "TokenNameCOMMA"
+    ],
+    "target_script_frac": 0.1
+   }
+  ],
+  "5": [
+   {
+    "tokens": [
+     "\u0012",
+     "\u6700\u5feb\u66f4\u65b0",
+     "\u70b9\u6b64\u4e3e\u62a5",
+     "Parcelize",
+     "PMailer",
+     "toThrow",
+     "\u24e7",
+     "abestanden",
+     "};*/",
+     "GEBURTSDATUM"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "Hozz\u00e1f\u00e9r\u00e9s",
+     "Erstellt",
+     "istoitu",
+     "----</",
+     "R\u00fcyada",
+     " lenker",
+     "dost\u0119p",
+     "kuuta",
+     "Witam",
+     "'+"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5927",
+     "\u5c0f",
+     " \u5927",
+     "\u9ad8",
+     " \u5c0f",
+     "\u65b0",
+     "\u4e00",
+     "\u2f24",
+     " Xia",
+     "\ub300"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "=$?",
+     "\u671f\u520a\u8bba\u6587",
+     "%)$",
+     "esModule",
+     "endpush",
+     " OnInit",
+     " prune",
+     "tagHelperRunner",
+     " chloro",
+     "uxxxx"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u628a",
+     "\u7531",
+     "\u5bf9",
+     "stackrel",
+     "\u6bd4",
+     "\u5c31\u628a",
+     " \u0627\u0632",
+     "\u662f\u7531",
+     " wyda",
+     "exitRule"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u06f0\u06f0",
+     "i\u00e8me",
+     " ma\u0219",
+     "ology",
+     "\u0627\u064b",
+     "ised",
+     "ly",
+     "<h3>",
+     " \u017eaid",
+     " cre\u0219"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " autorytatywna",
+     " miniaturka",
+     " Ge\u017f",
+     " ilustracja",
+     " okuyay\u0131m",
+     " Bewu\u00dft",
+     " The\u017fe",
+     " Catawiki",
+     "awtextra",
+     "pulseira"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Yuan",
+     " Tian",
+     " Wei",
+     " Jiang",
+     " Zhou",
+     " Zhu",
+     " Zheng",
+     "Yuan",
+     " Zhang",
+     "Wei"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Personendaten",
+     "GEBURTSDATUM",
+     " autorytatywna",
+     "Portail",
+     "Autoritn\u00ed",
+     "expandindo",
+     "KURZBESCHREIBUNG",
+     " propOrder",
+     " EconPapers",
+     "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " disambiguazione",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     " Offisielt",
+     " Wikiseite",
+     " \u00e9toient",
+     " ainfi",
+     " dezelve",
+     " mijne",
+     "reportWebVitals",
+     " zijne"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "6": [
+   {
+    "tokens": [
+     "Personendaten",
+     " \u0432\u0456\u043a\u0456",
+     "\u043d\u0456\u0446\u0438\u043f\u0430\u043b\u0456",
+     "pr\u00fcche",
+     "\u041e\u0434\u043d\u043e",
+     " simp",
+     "\u0411\u0438\u043e\u0433\u0440\u0430\u0444\u0438\u044f",
+     "ENDIF",
+     "mortem",
+     "DeleteBehavior"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "mybatisplus",
+     "ibatis",
+     "addCriterion",
+     "layui",
+     " Beijing",
+     " referrerpolicy",
+     "oredCriteria",
+     " China",
+     " Shanghai",
+     " chinois"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Tikang",
+     "tad\u0131r",
+     " schne",
+     " Gaetano",
+     "BagConstraints",
+     "Hola",
+     "asteroide",
+     "tanleria",
+     "hoku",
+     "AsUp"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Handlung",
+     "\u00e9roport",
+     "ulario",
+     "\u23a9",
+     "windowFixed",
+     " Spisak",
+     "sscanf",
+     "KeySpec",
+     "sertation",
+     "pr\u00fcche"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " origin",
+     " ['./",
+     "\u610f\u7fa9",
+     "\u3068\u3053\u308d\u3067\u3059",
+     " resumen",
+     " tarih",
+     " desempen",
+     " Ursprung",
+     "Utf",
+     " Merkmale"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " autorytatywna",
+     " miniaturka",
+     " Ge\u017f",
+     "LikeLiked",
+     " Ge\u017fch",
+     " typelib",
+     "erintah",
+     " EnglishChoose",
+     " setUsername",
+     "IUrlHelper"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ieteur",
+     "\u671f\u520a\u8bba\u6587",
+     "\u0445\u044c\u0442\u0430\u043d",
+     "medriver",
+     "WriteTagHelper",
+     "%)$",
+     "__(/*!",
+     " OnInit",
+     "ghijklmnop",
+     "gdx"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "ce\u011fine",
+     "alga",
+     "\u30b7\u30f3\u30b0",
+     "isible",
+     "transQ",
+     "\u0441\u043e\u043b\u044e",
+     "aware",
+     "\u660e\u65e5",
+     "\u4f5c",
+     " \u0627\u0644\u0645\u0639\u0631\u0641"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u6700\u8fd1",
+     "\u4ee5\u524d",
+     "webElementXpaths",
+     "\u4eca\u5e74",
+     ")\";\r",
+     ")\");\r",
+     " fr\u00fcher",
+     ">);",
+     "\u540e\u9762",
+     "\"}}>"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\ue315",
+     "<unused16>",
+     "<unused14>",
+     "<unused8>",
+     "<unused41>",
+     "<unused79>",
+     "<unused23>",
+     "<unused28>",
+     "<unused3>",
+     "[@BOS@]"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "7": [
+   {
+    "tokens": [
+     " TestBed",
+     " Rosh",
+     "pantalones",
+     " Sog",
+     "\u0628\u0633\u0645",
+     "unculus",
+     " Hoc",
+     "tanleria",
+     "uesia",
+     "Sog"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     " Wikiseite",
+     " mijne",
+     " zijne",
+     " Offisielt",
+     " \u00e9toient",
+     " ainfi",
+     " dezelve",
+     " disambiguazione",
+     " avoient"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u662f",
+     "\u4ee5",
+     " Abonnez",
+     "\u6709",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "\u662f\u4ee5",
+     "\u5728",
+     "\u5230",
+     "\u5bf9",
+     "\u4ece"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u628a",
+     "\u5c07",
+     "\u5bf9",
+     "GEBURTSDATUM",
+     " \u628a",
+     "\u5c06",
+     "\u5c0d",
+     "TagMode",
+     "\u4ed6\u5bf9",
+     "\u6211\u628a"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "ibatis",
+     "isLogin",
+     "layui",
+     "isShow",
+     "atguigu",
+     " adopts",
+     " Guangdong",
+     "\ufe31",
+     "oredCriteria",
+     " referrerpolicy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Weblinks",
+     "Jegyzetek",
+     "\u0e42\u0e1b",
+     "\u0627\u0644\u0645\u0631\u0627\u062c\u0639",
+     " website",
+     " feature",
+     "Forr\u00e1sok",
+     " Tsch",
+     "\u03a0\u03b1\u03c1\u03b1\u03c0\u03bf\u03bc\u03c0\u03ad\u03c2",
+     "Hozz\u00e1f\u00e9r\u00e9s"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "addContainerGap",
+     "theless",
+     " Ver\u017f",
+     " \u017fte",
+     "al\u0131\u015f",
+     " pr\u00f3pri",
+     " belangrij",
+     "z\u00e1ll",
+     " t\u00e6",
+     " Ver\u00e4nder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e2d",
+     "\u4e0a",
+     " \u4e2d",
+     "\u4e0b",
+     "\u91cc",
+     "\u751f\u6d3b\u4e2d",
+     " Viena",
+     " \u4e0a",
+     "\u540e\u9762",
+     "\u91cc\u9762"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654",
+     " \u0627\u0644\u0645\u0639\u0631\u0641",
+     "licable",
+     "ignez",
+     "nze",
+     " Nelly",
+     "transQ",
+     "riga",
+     "----</",
+     " Jasmin"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "kiyor",
+     "vistar",
+     "\u2939",
+     "WriteTagHelper",
+     "cuador",
+     " Ivar",
+     "strator",
+     "atasaray",
+     "dbach",
+     "intenant"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "8": [
+   {
+    "tokens": [
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "\u5fd1",
+     "adaptiveStyles",
+     "WindowConstants",
+     "});*/",
+     "\u65e5\u767a\u58f2",
+     "\u539f\u59cb\u5185\u5bb9",
+     "keits",
+     "shtml",
+     "\u6700\u5feb\u66f4\u65b0"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     " \u00e9toient",
+     " ainfi",
+     " mijne",
+     " dezelve",
+     " Offisielt",
+     " avoient",
+     " Wikiseite",
+     " zijne",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     " feroit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5e16\u6700\u540e\u7531",
+     " nahilalakip",
+     " /\\.(",
+     "SequentialGroup",
+     " CanadaChoose",
+     "<thead>",
+     " h\u0131rka",
+     " /\\.",
+     " la\u017f\u017fen",
+     " m\u00fc\u017f\u017fen"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " \u0644\u064a\u0646\u0643",
+     " it\u017felf",
+     " GenerationType",
+     "\udb40\udc62",
+     " fa\u017ft",
+     " \u017fta",
+     " \u017fte",
+     " them\u017felves",
+     " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+     " hou\u017fe"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ChildScrollView",
+     " EconPapers",
+     " newly",
+     " Newly",
+     " highly",
+     " previously",
+     " widely",
+     " mildly",
+     "HtmlAttribute",
+     "WebControls"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u017fche",
+     "audrait",
+     "InputBorder",
+     " \u017fou",
+     " \u017ftre",
+     " Re\u017f",
+     "HomeAsUpEnabled",
+     "cifix",
+     " \u017fta",
+     " \u017fol"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " my\u017felf",
+     " him\u017felf",
+     "Unavailable",
+     " it\u017felf",
+     " Majefty",
+     " }}}",
+     "\"]));",
+     " u\u017fed",
+     " \u017feveral",
+     "})));"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Lindberg",
+     "inigung",
+     "AnimationsModule",
+     "Ahhhh",
+     " izan",
+     " Andersson",
+     " Parenthood",
+     "\u0bc7\u0bb0",
+     "IOLOGY",
+     "J"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "verwijspagina",
+     " OMITBAD",
+     "IntoConstraints",
+     " Paglinawan",
+     "\u09a4\u09a5\u09cd\u09af\u09b8\u09c2\u09a4\u09cd\u09b0",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " snippetHide",
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     "AndEndTag",
+     "AutoresizingMask"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Portail",
+     "Revenir",
+     "homonymie",
+     "Naissance",
+     " Chantal",
+     "Corps",
+     " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+     " Caron",
+     " Signalez",
+     " Perrin"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "9": [
+   {
+    "tokens": [
+     "\u5fd1",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "UIControlState",
+     "__*/",
+     "endpush",
+     "ViewFeatures",
+     "})->",
+     "</tfoot>",
+     "});*/"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " referrerpolicy",
+     ":\u2728",
+     "ibatis",
+     "mybatisplus",
+     "addCriterion",
+     "httphttps",
+     "\u53d1\u8868\u4e8e",
+     "baomidou",
+     "printStackTrace",
+     "saraba"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "GEBURTSDATUM",
+     " \ue70d",
+     " ProtoMessage",
+     " disambiguazione",
+     "RenderAtEndOf",
+     "\">'.$",
+     "=\"'.$",
+     " disponibilit\u00e9s",
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     "OOTDTY"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "pr\u00fcche",
+     "Personendaten",
+     " CreateTagHelper",
+     " typelib",
+     "TokenNameLBRACE",
+     "DATABASES",
+     "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+     "\u0928\u0932\u093f\u0916\u093f\u0924",
+     "\u5e81",
+     "Lester"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " Wikiseite",
+     " ainfi",
+     " zijne",
+     " disambiguazione",
+     " Offisielt",
+     " dezelve",
+     " \u00e9toient",
+     " mijne",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     " feroit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AxisAlignment",
+     "uxxxx",
+     "\u671f\u520a\u8bba\u6587",
+     " Mej\u00eda",
+     " Rys",
+     "metheus",
+     "Bissau",
+     "%)$",
+     "Esp\u00e8ce",
+     "\u0445\u044c\u0442\u0430\u043d"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " newly",
+     "ChildScrollView",
+     " EconPapers",
+     " Newly",
+     "principalColumn",
+     "HideFlags",
+     " insuffisamment",
+     " previously",
+     "Newly",
+     "newly"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Maloney",
+     " Esposito",
+     " Aitken",
+     " other",
+     " Donnelly",
+     " Hodges",
+     " Pellegrini",
+     "er",
+     " Scherer",
+     "\u2665\u2665"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "issipp",
+     "SharedCtor",
+     " ind\u00edgen",
+     " consultato",
+     " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+     " <<<<<<<<<<<<<<",
+     "arynge",
+     "PerformLayout",
+     "adaptiveStyles",
+     "zzleHttp"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ud835\udcf5",
+     "<bos>",
+     "enskap",
+     "\ud835\udcfe",
+     "\ud835\udcee",
+     "\ud835\udced",
+     "\ud835\udcec",
+     "\u30f3",
+     "\ud835\udcf8",
+     "\ud835\udceb"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "10": [
+   {
+    "tokens": [
+     "\u5fd1",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "windowFixed",
+     "ViewFeatures",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "});*/",
+     "\u0421\u043f\u043e\u0459\u0430\u0448\u045a\u0435",
+     "})->",
+     "endpush",
+     "adaptiveStyles"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " europa",
+     " inder",
+     "ScopeManager",
+     "$.}",
+     "FetchType",
+     " nepal",
+     " pascal",
+     " NIS",
+     "ThroughAttribute",
+     " halve"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0012",
+     "RenderAtEndOf",
+     "\ufeff/**",
+     "Parcelize",
+     " Exacts",
+     "PMailer",
+     "SBATCH",
+     " bankas\u0131",
+     " transfieras",
+     " CreateTagHelper"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "bootstrapcdn",
+     " him\u017felf",
+     " le\u017fs",
+     " fa\u017ft",
+     " it\u017felf",
+     " them\u017felves",
+     " Jefus",
+     " hou\u017fe",
+     "\u017felf",
+     " my\u017felf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+     "\udb40\udc6e",
+     "\u24e7",
+     "RegressionTest",
+     "MemoryWarning",
+     "nteral",
+     " que\u017fta",
+     "ni\u017f\u017fe",
+     " nahilalakip"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AxisAlignment",
+     "\u671f\u520a\u8bba\u6587",
+     "Bissau",
+     "uxxxx",
+     " Mej\u00eda",
+     " Rys",
+     "esModule",
+     "%)$",
+     " OnInit",
+     "Esp\u00e8ce"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " Offisielt",
+     " disambiguazione",
+     " zijne",
+     " Wikiseite",
+     "DebuggerNonUser",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     " mijne",
+     " ainfi",
+     " dezelve",
+     "Hochspringen"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5728",
+     "GEBURTSDATUM",
+     " \u5728",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     "\u7684\u5728",
+     "providedIn",
+     "\u5c31\u5728",
+     "\u662f\u5728",
+     "underset",
+     "\u0421\u043f\u0430\u0441\u044b\u043b\u043a\u0456"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "<unused79>",
+     "<unused41>",
+     "[@BOS@]",
+     "<unused8>",
+     "<unused43>",
+     "<unused51>",
+     "<unused28>",
+     "<unused23>",
+     "<unused14>",
+     "<unused16>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ChildScrollView",
+     " EconPapers",
+     " insuffisamment",
+     " betweenstory",
+     " Ver\u017f",
+     " hitherto",
+     "WritableDatabase",
+     " FSU",
+     "ValueGenerated",
+     " highly"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "11": [
+   {
+    "tokens": [
+     "endpush",
+     "\u5fd1",
+     "ViewFeatures",
+     "FetchType",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "__*/",
+     "};*/",
+     "WindowConstants",
+     "});*/"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "mybatisplus",
+     "printStackTrace",
+     "ibatis",
+     "fastjson",
+     ":\u2728",
+     "oredCriteria",
+     " referrerpolicy",
+     "addCriterion",
+     " Shanghai",
+     " chinois"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "\u24e7",
+     "ni\u017f\u017fe",
+     " la\u017f\u017fen",
+     "runt",
+     "\u00e9sultats",
+     " \u0645\u0634\u0627\u0631\u06a9\u062a\u200c\u06a9\u0646\u0646\u062f\u06af\u0627\u0646",
+     "\udb40\udc6e",
+     " m\u00fc\u017f\u017fen",
+     "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "<unused74>",
+     "<unused52>",
+     "<unused41>",
+     "<unused43>",
+     "<unused8>",
+     "[@BOS@]",
+     "<unused14>",
+     "<unused28>",
+     "<unused79>",
+     "<pad>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " miniaturka",
+     " Ver\u017f",
+     "setViewportView",
+     " royaltyfri",
+     "tvguidetime",
+     " \u017find",
+     " Ge\u017f",
+     "parsedMessage",
+     "RegressionTest",
+     " Majefty"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ing",
+     " f\u00f6res",
+     "aktery",
+     " INITI",
+     " empaque",
+     "Aggi",
+     " \u043f\u043e\u043d\u0438",
+     " Initi",
+     "ed",
+     " \u043e\u0447\u0438"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " AssemblyCulture",
+     "\u092a\u092f\u093e",
+     "DockStyle",
+     "tanleria",
+     " Walkover",
+     "WebElementEntity",
+     " defaultstate",
+     " TestBed",
+     " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+     " \u05e9\u05d5\u05dc\u05d9\u05d9\u05dd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "kiyor",
+     "cuador",
+     "stor",
+     "strator",
+     " Roskov",
+     " bont\u00e9",
+     " mauva",
+     "act\u00e9risti",
+     " Viator",
+     "intenant"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Chinese",
+     "Chinese",
+     " chinese",
+     " chinois",
+     " CHINESE",
+     " Asian",
+     " Chine",
+     " China",
+     " cinese",
+     "China"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".*\")]",
+     "uxxxx",
+     "\ufeff<?",
+     "+:+",
+     "InstrumentedTest",
+     " monasterio",
+     "TypedDataSet",
+     "----</",
+     " ModelExpression",
+     " kasarigan"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "12": [
+   {
+    "tokens": [
+     "endpush",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "\u5fd1",
+     "ViewFeatures",
+     "QMetaType",
+     "adaptiveStyles",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     " JpaRepository",
+     "enderror",
+     "SequentialGroup"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "bootstrapcdn",
+     "&\r",
+     " my\u017felf",
+     " him\u017felf",
+     " hou\u017fe",
+     " it\u017felf",
+     "requireNonNull",
+     ")':",
+     "Personensuche",
+     ")\uff1a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "MigrationBuilder",
+     " calendriers",
+     "ChildScrollView",
+     "contentLoaded",
+     "LookAnd",
+     " okuyay\u0131m",
+     " }</",
+     "})),",
+     "__*/",
+     " autorytatywna"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "balleur",
+     "runt",
+     "\u24e7",
+     " Selig",
+     "phorus",
+     " springfox",
+     "IVI",
+     "terse",
+     "MathML"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " que\u017fta",
+     "<unused41>",
+     "[@BOS@]",
+     "<unused8>",
+     "<unused52>",
+     "<unused74>",
+     "<unused51>",
+     "<unused28>",
+     "<unused14>",
+     "<unused16>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "PerformLayout",
+     "\ue04a",
+     " Normdatei",
+     " Signalez",
+     "+#+",
+     "\u023d",
+     "EndInit",
+     " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+     " \u064a\u062a\u064a\u0645\u0647",
+     " \u017fein"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " pseudo",
+     " Pseudo",
+     "Pseudo",
+     "pseudo",
+     " neo",
+     " quasi",
+     " hyper",
+     " \u0443\u043b\u044c\u0442\u0440\u0430",
+     " cyber",
+     " electro"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Lighthouse",
+     " Ecommerce",
+     " scones",
+     " crin",
+     " rhubarb",
+     " fiduciary",
+     " gummy",
+     " Dummies",
+     " C\u00e6sar",
+     " slicer"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "NUMX",
+     " XNUMX",
+     " clear",
+     "erez",
+     " basically",
+     " ab",
+     " halfway",
+     " Initiate",
+     " knock",
+     " cross"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "+#+#",
+     "\u00dfig",
+     "titleMargin",
+     " inform\u00e9e",
+     "findpost",
+     "WriteTagHelper",
+     "enterOuterAlt",
+     "istungs",
+     "************/",
+     "TagMode"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "13": [
+   {
+    "tokens": [
+     "\u5fd1",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "endpush",
+     "ViewFeatures",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "UrlResolution",
+     "enderror",
+     " JpaRepository",
+     "FetchType",
+     "WindowConstants"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "setVerticalGroup",
+     "pr\u00fcche",
+     " CreateTagHelper",
+     "hyrchwyd",
+     "typeorm",
+     "migrationBuilder",
+     "DropTable",
+     " reprodu\u00e7\u00e3o",
+     " titolata",
+     "vignon"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     "providedIn",
+     "\u017byciorys",
+     "\udb40\udc63",
+     " disambiguazione",
+     "LikeLiked",
+     "}}/>",
+     "LikeLike",
+     " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+     " \u062a\u0643\u0628\u0631\u0647\u0627"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "theless",
+     "ly",
+     "addContainerGap",
+     "\u00e4hk\u00f6",
+     "\ue04a",
+     " \u017fte",
+     "al\u0131\u015f",
+     "?,?,",
+     "ized",
+     " Ver\u00e4nder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "mybatisplus",
+     "fastjson",
+     "addCriterion",
+     "\u53d1\u8868\u4e8e",
+     ":\u2728",
+     " <>\",",
+     "Shanghai",
+     "baomidou",
+     " Shanghai",
+     " Beijing"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " miniaturka",
+     " Ver\u017f",
+     " royaltyfri",
+     " Re\u017f",
+     " Pristup",
+     " Ge\u017f",
+     " auffi",
+     " plufieurs",
+     " ge\u017f",
+     "richTextPanel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufeff/**",
+     "SBATCH",
+     " Exacts",
+     " Signalez",
+     " transfieras",
+     "\u0012",
+     "Parcelize",
+     "kh\u00e1u",
+     "RenderAtEndOf",
+     "enderror"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ValueStyle",
+     "Kaynak\u00e7a",
+     "Enllaces",
+     "\ufeff<?",
+     " disambiguazione",
+     " Cabral",
+     "hoeddwyd",
+     " kayna\u011f\u0131ndan",
+     "TargetException",
+     "Refer\u00e8ncies"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " pne",
+     " NIS",
+     " desto",
+     " remon",
+     "principalTable",
+     " esat",
+     "aspectj",
+     " eter",
+     "\u0628\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+     " Soi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rungsseite",
+     "\u09a4\u09c7",
+     "R\u00fcyada",
+     "\u00fcyada",
+     "atically",
+     "\u0bbf\u0bb2\u0bcd",
+     "\u65b9\u306b",
+     "\u4e0b\u306b",
+     " EconPapers",
+     "\u90e8\u306b"
+    ],
+    "target_script_frac": 0.3
+   }
+  ],
+  "14": [
+   {
+    "tokens": [
+     "\u0627\u0644\u062f\u0631\u0627\u0633\u0647",
+     " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     "Aholisi",
+     " desierto",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     " \u064a\u062a\u064a\u0645\u0647",
+     "providedIn",
+     " disambiguazione",
+     "endroit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " betweenstory",
+     "tanleria",
+     " Audiodateien",
+     "\u00e9sultats",
+     " Jefus",
+     "batore",
+     "ni\u017f\u017fe",
+     " An\u017f",
+     " hou\u017fe",
+     "\u017fcher"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " surla",
+     "CppMethod",
+     "LookAnd",
+     "cerpt",
+     "verwijspagina",
+     "[]>(",
+     "axel",
+     "\ufeff/**",
+     "sidemargin",
+     "lees"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<bos>",
+     "\u00edtm\u00e9ny",
+     "\ud835\udcf5",
+     "\ud835\udceb",
+     "koz\u00e1s",
+     "\ud835\udcf4",
+     "\ud835\udced",
+     "enskap",
+     "\ud835\udcee",
+     "\ud835\udcf2"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "i\u00e8me",
+     " miniaturka",
+     " zijne",
+     "iyle",
+     " unterkunft",
+     "sweise",
+     " Gr\u00fcsse",
+     " dezelve",
+     " die\u00df",
+     "\u06cc\u062a\u06cc"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " miniaturka",
+     " Ver\u017f",
+     "parsedMessage",
+     " Re\u017f",
+     " The\u017fe",
+     " auffi",
+     " Ge\u017f",
+     " royaltyfri",
+     "InjectAttribute",
+     "IntoConstraints"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxxxx",
+     " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+     " betweenstory",
+     "RegistryLite",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     " ivelany",
+     " Inf\u00f3rmanos",
+     "IUrlHelper",
+     "i\u017ften",
+     " otomatig"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " is",
+     "los",
+     "ynb",
+     " was",
+     " won",
+     "ID",
+     "ox",
+     "grab",
+     " Partners",
+     " inoltre"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "UrlResolution",
+     " VD",
+     "Hochspringen",
+     " :\",",
+     "Hozz\u00e1f\u00e9r\u00e9s",
+     " CAI",
+     " pne",
+     " sema",
+     " afs",
+     " NIS"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "SourceChecksum",
+     " betweenstory",
+     " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+     "\u0410\u0440\u0445\u0456\u0432\u043e\u0432\u0430\u043d\u043e",
+     " \u0633\u0643\u0627\u0646\u064a\u0629",
+     " otomatig",
+     "ChildScrollView",
+     " JpaRepository",
+     " disponibilit\u00e9s",
+     " EconPapers"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "15": [
+   {
+    "tokens": [
+     "\ue020",
+     "(\"\")]\r",
+     "tigem",
+     "vud",
+     "TokenNameLBRACE",
+     "\u00b9)",
+     " tung",
+     " strto",
+     "Wut",
+     "inburgh"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "openzeppelin",
+     " toner",
+     "\ufeff<?",
+     " genti",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     "estament",
+     "toObject",
+     "utility",
+     " hant",
+     " Genti"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ver\u017f",
+     " miniaturka",
+     " Re\u017f",
+     " plufieurs",
+     " Pristup",
+     " royaltyfri",
+     " auffi",
+     " Majefty",
+     " An\u017f",
+     " The\u017fe"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "tonode",
+     ")++;",
+     "featureID",
+     "EDEFAULT",
+     "Personensuche",
+     " \u062a\u0639\u062f\u0649",
+     " \u017fich",
+     " ?\",",
+     "\u0418\u0441\u043a\u04d9\u0440\u043c\u04d9\u043b\u04d9\u0440",
+     " &___"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "balleur",
+     " \u0645\u0634\u0627\u0631\u06a9\u062a\u200c\u06a9\u0646\u0646\u062f\u06af\u0627\u0646",
+     " springfox",
+     "\u0627\u0644\u062d\u064a\u0627\u0647",
+     "\uac01\uc8fc",
+     "xes",
+     " Etr",
+     " bbs",
+     " PSL"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Asian",
+     " Asians",
+     " Chinese",
+     " asian",
+     "Asian",
+     "Chinese",
+     " chinese",
+     " chinois",
+     " CHINESE",
+     " asi\u00e1tica"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+     "########.",
+     "#+#",
+     " snippetHide",
+     "webElementXpaths",
+     "httphttps",
+     "IContainer",
+     "hyrchwyd",
+     "libft",
+     "afficheront"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Wikiseite",
+     " disambiguazione",
+     " ainfi",
+     " Offisielt",
+     " zijne",
+     "printStackTrace",
+     " mijne",
+     " dezelve",
+     "Diweddarwch",
+     "+#+#"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " pseudo",
+     " Pseudo",
+     "Pseudo",
+     " semi",
+     " quasi",
+     " multi",
+     " hyper",
+     " anti",
+     " electro",
+     " neo"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " okuyay\u0131m",
+     " BIBSYS",
+     "contentLoaded",
+     "\u00c9gypte",
+     "abestanden",
+     "DispatchToProps",
+     " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+     "\"]);\r",
+     " \u010dern\u00e1",
+     " MainAxisSize"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "16": [
+   {
+    "tokens": [
+     "\u017byciorys",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     "});*/",
+     "UrlResolution",
+     "GEBURTSDATUM",
+     " defaultstate",
+     "elemField",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "HasForeignKey"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " que\u017fta",
+     "linawan",
+     "\u017felben",
+     "i\u017fen",
+     " ge\u017fch",
+     " nahilalakip",
+     "\u00f0s\u00ed\u00f0a",
+     "\u30ed\u30a6\u30a3\u30f3",
+     " Ge\u017fch",
+     " autorytatywna"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Chinese",
+     " China",
+     " Chinese",
+     "China",
+     " chinois",
+     " CHINESE",
+     " chinese",
+     " chinoise",
+     " CHINA",
+     " cinese"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ver\u017f",
+     " miniaturka",
+     " Re\u017f",
+     " plufieurs",
+     " ge\u017f",
+     " royaltyfri",
+     " ver\u017f",
+     " Majefty",
+     " An\u017f",
+     " auffi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " trans",
+     "ValueGeneration",
+     " tung",
+     "fputs",
+     "erder",
+     " lis",
+     " ethnic",
+     " Earth",
+     "inheritdoc",
+     " apor"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ujednoznacz",
+     "boz",
+     " ***!",
+     "celana",
+     "cientos",
+     " Pulse",
+     "\u0437\u044b\u043a\u0430",
+     " v\u0101",
+     " Cedex",
+     " ddelweddau"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " betweenstory",
+     "ingeki",
+     "Tikang",
+     "tanleria",
+     "uxxxx",
+     " nonUne",
+     " autorytatywna",
+     " AssemblyCulture",
+     " Jefus",
+     " stimulus"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " transfieras",
+     "\ufeff/**",
+     " Exacts",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863",
+     "DebuggerStep",
+     " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+     "SBATCH",
+     "RenderAtEndOf",
+     "enderror",
+     "ISupport"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "httphttps",
+     " HasFactory",
+     " \u0645\u0634\u064a\u0646",
+     "WriteBarrier",
+     "\u5e16\u6700\u540e\u7531",
+     "\u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0627\u062a",
+     "AndEndTag",
+     "tagHelperRunner",
+     "\ufeff/*",
+     " ***!"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "rungsseite",
+     " protoimpl",
+     "enumii",
+     " Normdatei",
+     " snippetHide",
+     " nakalista",
+     " \u064a\u062a\u064a\u0645\u0647",
+     " BorderSide",
+     "ValueStyle",
+     " defaultstate"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "17": [
+   {
+    "tokens": [
+     "\u017byciorys",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "GEBURTSDATUM",
+     "UrlResolution",
+     "HasForeignKey",
+     "adaptiveStyles",
+     " defaultstate",
+     "});*/",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     " Wiktionnaire"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " Chinese",
+     "Chinese",
+     " China",
+     "China",
+     " chinois",
+     " CHINESE",
+     " chinese",
+     " CHINA",
+     " cinese",
+     " chinoise"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " HasFactory",
+     "XmlAccessType",
+     "DebuggerStep",
+     "transQ",
+     "\u5e16\u6700\u540e\u7531",
+     "(!__",
+     "twimg",
+     " Waray",
+     " inform\u00e9e",
+     "Spolja\u0161nje"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " transfieras",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863",
+     " utafitiHapana",
+     "\ufeff/**",
+     " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+     " OnTrigger",
+     " $_\"",
+     "ISupport",
+     "(&:",
+     "ambi\u00e9n"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " springfox",
+     "runt",
+     "\u24e7",
+     "\uac01\uc8fc",
+     " \u0645\u0634\u0627\u0631\u06a9\u062a\u200c\u06a9\u0646\u0646\u062f\u06af\u0627\u0646",
+     " nahilalakip",
+     " EconPapers",
+     "-};",
+     "ni\u017f\u017fe"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ver\u017f",
+     " Re\u017f",
+     " ge\u017f",
+     " miniaturka",
+     " An\u017f",
+     " Majefty",
+     " ver\u017f",
+     " auffi",
+     " que\u017fta",
+     " un\u017f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "contentLoaded",
+     "pr\u00fcche",
+     " Dmit",
+     " translation",
+     " Mawr",
+     "EnableWeb",
+     "naby",
+     " computationally",
+     "PageIndex",
+     " vig"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " betweenstory",
+     " AssemblyCulture",
+     " autorytatywna",
+     " linkovi",
+     "Leg\u0103turi",
+     "transQ",
+     "\u23a9",
+     "Filmographie",
+     " waer",
+     "ingeki"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "jsxFileName",
+     "providedIn",
+     "\u062a\u0642\u0627\u0648\u0649",
+     "\u0627\u0644\u062d\u064a\u0627\u0647",
+     "\u041f\u043e\u0440\u0442\u0430\u043b\u0438",
+     " \u0570\u0572\u0578\u0582\u0574\u0576\u0565\u0580",
+     "UnknownFields",
+     "antMatchers",
+     "}}],",
+     "getDrawable"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "piram",
+     "Portail",
+     ")++;",
+     " !?",
+     "\u24e7",
+     "\u0628\u0648\u0627\u0628\u0629",
+     "formik",
+     "ScopeManager",
+     "\u0423\u0414\u041a",
+     ")\uff1a"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "18": [
+   {
+    "tokens": [
+     "\u017byciorys",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "UrlResolution",
+     "});*/",
+     "HasForeignKey",
+     " Wiktionnaire",
+     "})*/",
+     "GEBURTSDATUM",
+     "};*/",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "setVerticalGroup",
+     " nahilalakip",
+     " \u0627\u0644\u062d\u0631\u0647",
+     " MessageBoxIcon",
+     " Normdatei",
+     "RRect",
+     " Taktlose",
+     "\u0628\u0648\u0627\u0628\u0629",
+     "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+     " onFailure"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " transfieras",
+     "(&:",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863",
+     "\ufeff/**",
+     " OnTrigger",
+     "SBATCH",
+     "\u0012",
+     "DebuggerStep",
+     " utafitiHapana",
+     " \u0648\u064a\u0643\u064a\u067e\u064a\u062f\u064a\u0627"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " Ver\u017f",
+     " Re\u017f",
+     " miniaturka",
+     " ge\u017f",
+     " plufieurs",
+     " An\u017f",
+     " ver\u017f",
+     " royaltyfri",
+     " auffi",
+     " Majefty"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " China",
+     "China",
+     "Chinese",
+     " Chinese",
+     " CHINA",
+     " chinois",
+     " CHINESE",
+     " chinese",
+     " chinoise",
+     "CHINA"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "addPreferredGap",
+     "PageFactory",
+     "djangoproject",
+     "glGet",
+     "kl\u00e4",
+     "Iacute",
+     " squ",
+     "getC",
+     " dis",
+     " sp"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u30ed\u30a6\u30a3\u30f3",
+     "\u2939",
+     "tvguidetime",
+     "ConstraintMaker",
+     "WriteTagHelper",
+     "\ue315",
+     " INTERESAR",
+     " kaarangay",
+     " \u043c\u04d9\u043a\u0430\u043b",
+     "uxxxx"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " otherwise",
+     " \u2462",
+     " Fremantle",
+     "Fech",
+     ")});",
+     "ourke",
+     "\")));",
+     " Yorke",
+     " Otherwise",
+     " })}"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ConstraintMaker",
+     "MLLoader",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     "uxxxx",
+     "IntoConstraints",
+     "IsContent",
+     "parsedMessage",
+     "OGND",
+     "tagHelperRunner",
+     "KommentareTeilen"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Asian",
+     " Asians",
+     " Singapore",
+     " Singapur",
+     " Chinese",
+     "Asian",
+     "Singapore",
+     " Asia",
+     "Chinese",
+     " chinois"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "19": [
+   {
+    "tokens": [
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "UrlResolution",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " Wiktionnaire",
+     "elemField",
+     "\u5fd1",
+     "HasForeignKey",
+     "ViewFeatures",
+     "uxxxx",
+     "FunctionFlags"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " springfox",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "-};",
+     "balleur",
+     "runt",
+     " \u0645\u0634\u0627\u0631\u06a9\u062a\u200c\u06a9\u0646\u0646\u062f\u06af\u0627\u0646",
+     " bbs",
+     " '%'",
+     "NUMX",
+     "hmi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Erreferentziak",
+     " inform\u00e9e",
+     "abestanden",
+     "\ue315",
+     " pinulongan",
+     " snippetHide",
+     " incre\u00ed",
+     " validamos",
+     " Meksiku",
+     " invokingState"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "########.",
+     "TagHelper",
+     " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+     "DIPSETTING",
+     "\\{\\\\",
+     "RTLE",
+     "\u575e",
+     "irited",
+     "BagConstraints",
+     " \u0645\u062d\u0641\u0648\u0638\u0629"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " Wikiseite",
+     " zijne",
+     " Offisielt",
+     " mijne",
+     " enfans",
+     " R\u00e1p",
+     " dezelve",
+     "printStackTrace",
+     " feroit",
+     " \u010dlov"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<bos>",
+     " getF",
+     "\"]=",
+     "bbene",
+     " getM",
+     "]==\"",
+     "ly",
+     "om\u00e1ny",
+     "<h3>",
+     " getP"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "pop",
+     " Steg",
+     "\u2461",
+     "th",
+     "ou",
+     "\u6697",
+     "iecie",
+     "\n\n",
+     " \u00ab",
+     "name"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "jsxFileName",
+     "RequestMapping",
+     " valt",
+     " BoxDecoration",
+     "\u0627\u0644\u062d\u064a\u0627\u0647",
+     "providedIn",
+     " typelib",
+     "adpleegd",
+     "ineno",
+     " prominently"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Asian",
+     " Asians",
+     "Asian",
+     " Chinese",
+     " asian",
+     " Singapore",
+     " chinois",
+     " Asia",
+     " chino",
+     "Chinese"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "tonode",
+     " cadrul",
+     " handelt",
+     " selaku",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     " alt\u0131n",
+     " reproduce",
+     "liceerd",
+     "litter",
+     ")\uff1a"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "20": [
+   {
+    "tokens": [
+     "China",
+     " China",
+     "Zhang",
+     " CHINA",
+     "Chinese",
+     " Zhang",
+     ":\u2728",
+     " Beijing",
+     "Beijing",
+     " Shanghai"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "\u017byciorys",
+     "adaptiveStyles",
+     "HasForeignKey",
+     "\u53d1\u8868\u4e8e",
+     "});*/",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     "};*/",
+     "UrlResolution",
+     " disambiguazione"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     ":\u2728",
+     " consid\u00e9ration",
+     " libremente",
+     " Freiheit",
+     " Freien",
+     "\u6137",
+     "Besides",
+     " recommand",
+     " Canad\u00e1",
+     " chinois"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " disambiguazione",
+     "\u53d1\u8868\u4e8e",
+     "GEBURTSDATUM",
+     "utian",
+     "\u043d\u043e\u0432\u043d\u0438\u0448\u0442\u0432\u043e",
+     " GenerationType",
+     " <>\",",
+     "uxxxx",
+     " diputados",
+     "ochond"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " springfox",
+     "NUMX",
+     " \u0645\u0634\u0627\u0631\u06a9\u062a\u200c\u06a9\u0646\u0646\u062f\u06af\u0627\u0646",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " m\u00fc\u017f\u017fen",
+     " GenerationType",
+     "izin",
+     " }}\"></",
+     "\u24e7",
+     "runt"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "MigrationBuilder",
+     "PerformLayout",
+     " sauce",
+     " gy",
+     " funky",
+     "futter",
+     " swag",
+     "HasColumnName",
+     " stuff",
+     " crew"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " elegido",
+     " perdi\u00f3",
+     "Observable",
+     " participaron",
+     " wiederhol",
+     " esclavos",
+     " dej\u00f3",
+     " zako",
+     " taraf\u0131ndan",
+     " perder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ConstraintMaker",
+     "uxxxx",
+     "MLLoader",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     "KommentareTeilen",
+     "NUMX",
+     "IntoConstraints",
+     " Chwiliwch",
+     "]\")]",
+     "IsContent"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "::__",
+     " Inter",
+     " Dis",
+     "\u0458\u0430\u043d\u0438",
+     " uns",
+     " partial",
+     " \u0627\u0644\u062a\u062d",
+     "($_",
+     " \u03b1\u03bd\u03b1",
+     " dis"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " stockbild",
+     " ComVisible",
+     "Hochspringen",
+     " VD",
+     " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+     " depositphotos",
+     ".\",\r",
+     "UrlResolution",
+     "\u2082,",
+     "\u9983"
+    ],
+    "target_script_frac": 0.1
+   }
+  ],
+  "21": [
+   {
+    "tokens": [
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "uxxxx",
+     "\u65e5\u95b2\u89a7",
+     "\u0644\u064a\u0646\u0643\u0627\u062a",
+     "});*/",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "UrlResolution",
+     "\u5fd1",
+     "elemField",
+     " ujednoznacz"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     ":\u2728",
+     " <>\",",
+     "\u53d1\u8868\u4e8e",
+     "OGND",
+     "mybatisplus",
+     "ChildScrollView",
+     " <=\",",
+     "\u7701\u5e02\u9547",
+     "layui",
+     "baomidou"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u0445\u044c\u0442\u0430\u043d",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     " NSCoder",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     "hoeddwyd",
+     " CanadaChoose",
+     "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654",
+     " dAtA",
+     " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+     "V\u00e4lislingid"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "l\u00e1mpara",
+     " Autorisations",
+     "protetor",
+     " nonUne",
+     " independencia",
+     " d\u00e9bar",
+     "@[+][",
+     " \u00edndice",
+     " generaci\u00f3n",
+     ".\ufeff"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     "uxxxx",
+     "KommentareTeilen",
+     "ConstraintMaker",
+     "NUMX",
+     "expandindo",
+     "MLLoader",
+     "IntoConstraints",
+     "httphttps",
+     " Chwiliwch"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " defaultstate",
+     " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+     "Personendaten",
+     " \u043c\u04d9\u043a\u0430\u043b",
+     "ftagPool",
+     "ResumeLayout",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     "numerusform",
+     "ViewFeatures",
+     "bootstrapcdn"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Betten",
+     "\u4e4e",
+     " cyber",
+     "Rodriguez",
+     "qrstuvwxyz",
+     "splatz",
+     "isNullOrEmpty",
+     " Inc",
+     "caffe",
+     "mitglied"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u0420\u0435\u0444\u0435\u0440\u0435\u043d\u0446\u0435",
+     "\u053e\u0561\u0576\u0578\u0569",
+     " opra",
+     "Refer\u00e8ncies",
+     " partielle",
+     "WEBPACK",
+     " snippetHide",
+     " activit\u00e9",
+     " desempenho",
+     "itest"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " being",
+     "OGND",
+     " stringBy",
+     " having",
+     "mybatisplus",
+     " making",
+     " getting",
+     " Wiktionnaire",
+     " contin\u00faas",
+     "MENAFN"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u043d\u0430",
+     " forState",
+     "\u0110\u1ec3",
+     " Chwiliwch",
+     " \u03c3\u03c4\u03bf\u03bd",
+     "mappedBy",
+     "\u041d\u0430",
+     " \u043f\u0440\u0438",
+     " \u041d\u0430",
+     "\u0628\u0648\u0627\u0628\u0629"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "22": [
+   {
+    "tokens": [
+     " Wiktionnaire",
+     " d\u00e9sol\u00e9s",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "UrlResolution",
+     "\u53d1\u8868\u4e8e",
+     "GEBURTSDATUM",
+     " JpaRepository",
+     "});*/",
+     "})*/",
+     "}*/\r"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u53d1\u8868\u4e8e",
+     ":\u2728",
+     " referrerpolicy",
+     "httphttps",
+     "OGND",
+     " autorytatywna",
+     "endpush",
+     "nestjs",
+     "mybatisplus",
+     " chinois"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "__(/*!",
+     "MLLoader",
+     "$_['",
+     " \u0648\u064a\u0643\u064a\u067e\u064a\u062f\u064a\u0627",
+     "TableBody",
+     " JAXBElement",
+     "tts",
+     "rylic",
+     "))));",
+     "\u5e16\u6700\u540e\u7531"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "colgante",
+     "l\u00e1mpara",
+     " Punct",
+     ").",
+     "\u201d.",
+     " generaci\u00f3n",
+     " estruct",
+     "\n\n",
+     "<strong>",
+     " garante"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Offisielt",
+     " zijne",
+     " feroit",
+     " Wikiseite",
+     " auroit",
+     "printStackTrace",
+     " avoient",
+     " zimowa",
+     " ter\u00e7a",
+     " enfans"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxxxx",
+     "InstrumentedTest",
+     "fromnode",
+     "<b>",
+     " private",
+     "<strong>",
+     " editText",
+     "\n\n\n",
+     "endregion",
+     "':"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ver\u017f",
+     " royaltyfri",
+     " ProtoMessage",
+     " typelib",
+     "unuh",
+     " An\u017f",
+     " Re\u017f",
+     " CreateTagHelper",
+     " ge\u017f",
+     "InjectAttribute"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " China",
+     "China",
+     " Chinese",
+     "Chinese",
+     " CHINA",
+     " chinois",
+     " Chine",
+     " chinoise",
+     "CHINA",
+     "\u662f\u4e2d\u56fd"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " gyhoeddwyd",
+     " EconPapers",
+     "ResumeLayout",
+     "AddTagHelper",
+     "WriteBarrier",
+     "Datuak",
+     "colhead",
+     " BoxFit",
+     "OrBuilder",
+     " NSCoder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ue315",
+     "pexpr",
+     " <<<<<<<<<<<<<<",
+     " createSprite",
+     "########.",
+     " AssemblyCompany",
+     "ManagedBean",
+     "ngdoc",
+     " Pte",
+     "\ufeff/*"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "23": [
+   {
+    "tokens": [
+     " \u0644\u064a\u0646\u0643",
+     "\u09a4\u09a5\u09cd\u09af\u09b8\u09c2\u09a4\u09cd\u09b0",
+     "Kaynak\u00e7a",
+     "\u05d4\u05e2\u05e8\u05d5\u05ea",
+     "\u0628\u0648\u0627\u0628\u0629",
+     "Enllaces",
+     "\u062d\u064a\u0627\u062a\u0647\u0627",
+     "ensburg",
+     "\u062d\u064a\u0627\u062a\u0647",
+     " externi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "afficheront",
+     "XmlAccessType",
+     " inform\u00e9e",
+     "\udb40\udc63",
+     "ValueGenerated",
+     "elemField",
+     " StatelessWidget",
+     "numerusform",
+     "yarnpkg",
+     " ar\u015fivlendi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ConstraintMaker",
+     " betweenstory",
+     "\u043d\u043e\u0432\u043d\u0438\u0448\u0442\u0432\u043e",
+     " AssemblyCulture",
+     "\u2778",
+     "SpringRunner",
+     " \u064a\u062a\u064a\u0645\u0647",
+     "ponses",
+     "usercontent",
+     " BrowserModule"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u062a\u0627\u0646\u064a\u0647",
+     "aksanaan",
+     "objectif",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     "AlterField",
+     "k\u00f6nnen",
+     "Portale",
+     "\u8981\u5728",
+     "[](",
+     " \u0645\u0631\u0626\u064a\u0647"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "Erreferentziak",
+     " zufolge",
+     "\u00e8cie",
+     "retudo",
+     "liceerd",
+     " ifade",
+     " fallait",
+     " p\u0101r",
+     "\u53eb\u6211",
+     "Refer\u00e8ncies"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u0012",
+     "rijfs",
+     "\u66d6\u6627\u3055\u56de\u907f",
+     "enschutzer",
+     "ITECT",
+     "issory",
+     "toThrow",
+     "encodeWith",
+     "arangay",
+     "li\u017fh"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "EndInit",
+     " gyhoeddwyd",
+     "endpush",
+     " rel\u00e2che",
+     "TypedDataSet",
+     "WebVitals",
+     "########.",
+     "oneofs",
+     "didSet",
+     "AddTagHelper"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "XmlAccessorType",
+     "windowFixed",
+     "\u0628\u0648\u0627\u0628\u0629",
+     "\u2266)",
+     "Viited",
+     "pr\u00fcche",
+     "}}]{",
+     " Labyrinth",
+     " Vole",
+     "arraycopy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ja",
+     "1",
+     "</strong>",
+     "<eos>",
+     "\u201d.",
+     "je",
+     "<strong>",
+     "\".",
+     "\u200b",
+     "http"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u51fa\u7248\u5e74",
+     "\u4f8b\u53e5",
+     "urlopen",
+     " l\u01b0\u1ee3ng",
+     "und",
+     "AndEndTag",
+     "http",
+     "\u6d74\u3073",
+     "jne",
+     "heus"
+    ],
+    "target_script_frac": 0.3
+   }
+  ],
+  "24": [
+   {
+    "tokens": [
+     " disambiguazione",
+     "\u53d1\u8868\u4e8e",
+     " OMITBAD",
+     " Wiktionnaire",
+     "\u043d\u043e\u0432\u043d\u0438\u0448\u0442\u0432\u043e",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "verwijspagina",
+     "stateMutability",
+     "uxxxx",
+     "});*/"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " badan",
+     " ruinas",
+     " Tourisme",
+     " tourn\u00e9e",
+     " Einrichtungen",
+     " flechas",
+     " distritos",
+     " d\u00e9lic",
+     " Baumann",
+     " esp\u00edrit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Chinese",
+     "Chinese",
+     " China",
+     "China",
+     " chinois",
+     " CHINESE",
+     " chinese",
+     " chinoise",
+     " CHINA",
+     " Chine"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "interopRequire",
+     "liceerd",
+     "\ufeff/*",
+     "LookAnd",
+     " surla",
+     " correspon",
+     "invokeLater",
+     "corresponding",
+     "\u201c\u2026\u201d",
+     " correspondant"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Roskov",
+     "__*/",
+     " faint",
+     "estris",
+     "Erreferentziak",
+     "\u5185",
+     "rawDesc",
+     " \u0913\u0930",
+     " \u03b1\u03c0\u03bf\u03c4\u03b5",
+     " offer"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "richTextPanel",
+     "awtextra",
+     "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+     "expandindo",
+     "CloseOperation",
+     "oredCriteria",
+     "tanleria",
+     "TypedDataSet",
+     "RTGC",
+     "ciel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " por",
+     " sol",
+     " ou",
+     " bal",
+     " [",
+     " sur",
+     "...",
+     "ActiveRecord",
+     "ManyToMany",
+     "</em>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "__(/*!",
+     "Please",
+     " imp",
+     "Pl",
+     "Finding",
+     "pl",
+     "PL",
+     " pl",
+     " ru",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " '@/",
+     "Bioaccumulative",
+     " FetchType",
+     " wezen",
+     " Certified",
+     " \u0c38\u0c4c\u0c15\u0c30\u0c4d\u0c2f",
+     "PyTuple",
+     "TypedDataSet",
+     "unconfirmed",
+     "baga"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "CardHeader",
+     "GEBURTSDATUM",
+     "ApiModelProperty",
+     "zegor",
+     "AutoField",
+     " hairline",
+     "ApiOperation",
+     " EY",
+     " Acker",
+     " kar\u015f"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "25": [
+   {
+    "tokens": [
+     "+#+#",
+     "\\{\\\\",
+     ".*\")]",
+     "///<",
+     ";#",
+     "mates",
+     " \u062a\u0639\u0627\u0644\u0649",
+     "semibold",
+     "<>();",
+     "translation"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u53d1\u8868\u4e8e",
+     "corresponding",
+     "Containing",
+     " Containing",
+     " initComponents",
+     "findpost",
+     " pinulongan",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     " disambiguazione",
+     "}}]{"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " nakalista",
+     " otomatig",
+     "Vidite",
+     "RegistryLite",
+     "ptonshire",
+     "RenderAtEndOf",
+     "Tikang",
+     "SourceChecksum",
+     "TypedDataSet",
+     "MigrationBuilder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AddTagHelper",
+     "tagHelperRunner",
+     " CreateTagHelper",
+     "RenderAtEndOf",
+     " autorytatywna",
+     "ConstraintMaker",
+     "IntoConstraints",
+     "MLLoader",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "httphttps"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " insuffisamment",
+     "ellido",
+     " communiquez",
+     " t\u00edo",
+     "\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c",
+     " \u0627\u0645\u0631",
+     "arrol",
+     "junta",
+     " \u0391\u03bd\u03b1\u03ba\u03c4\u03ae\u03b8\u03b7\u03ba\u03b5",
+     " rebajas"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " kasarigan",
+     " Reverso",
+     "salms",
+     "Portail",
+     "\u064a\u0645\u064a\u062f\u064a\u0627",
+     " ModelExpression",
+     " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+     "Hentet",
+     "\udb40\udc63",
+     " insuffisamment"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ":",
+     "                               ",
+     " =",
+     "-",
+     "\n",
+     "----------------",
+     "1",
+     "2",
+     " -",
+     ")))"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " rospy",
+     "ValueGeneration",
+     "\u00e9valuateur",
+     "\u4f8b\u53e5",
+     "afficheront",
+     " INTERESAR",
+     "hel",
+     "getOut",
+     "uxxxx",
+     "antMatchers"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "))){",
+     "\"])){",
+     "(\"\")){",
+     "PostInfinity",
+     " \u2026",
+     " ucapnya",
+     " \u8df3\u8f6c\u81f3",
+     " Rauch",
+     "http",
+     "<eos>"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "leyici",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " GreatSchools",
+     " Users",
+     "\ub214",
+     "\u00e4llningar",
+     "Pranala",
+     " statistiques",
+     "wayat",
+     " playera"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "26": [
+   {
+    "tokens": [
+     " ola",
+     "antMatchers",
+     "Spolja\u0161nje",
+     " rospy",
+     "\u5b9e\u73b0",
+     "egis",
+     "und",
+     "ola",
+     " \u0639\u0632\u06cc\u0632",
+     "bil"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " <<<<<<<<<<<<<<",
+     " math\u00e9matiques",
+     "uxxxx",
+     "!(\"{}\",",
+     " adapt\u00e9es",
+     "OOTDTY",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "\u2162",
+     "stateMutability",
+     " disambiguazione"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "IntoConstraints",
+     "]';",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     " CanadaChoose",
+     " correctes",
+     " defaultstate",
+     "hoeddwyd",
+     "\u0445\u044c\u0442\u0430\u043d",
+     " ErrIntOverflow",
+     "]\")]"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "gouv",
+     " Mengh",
+     "TokenNameEQUAL",
+     "WriteTagHelper",
+     "ForRow",
+     "Subview",
+     "and\u0131",
+     " utafiti",
+     " relev",
+     " expose"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "msgTypes",
+     " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438",
+     "J\u00een",
+     "setVerticalGroup",
+     "mobileqq",
+     "initWithFrame",
+     " noDo",
+     "mergeFrom",
+     " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902",
+     "Jeografia"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u017fammen",
+     "<unused28>",
+     "<unused41>",
+     "[@BOS@]",
+     "<unused14>",
+     "<unused17>",
+     "<unused23>",
+     "<unused8>",
+     "<pad>",
+     "<unused3>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     "corresponding",
+     "Corresponding",
+     " bulunan",
+     " initComponents",
+     "xymatrix",
+     " corresponding",
+     "HasAnnotation",
+     "deta",
+     " Corresponding"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " GreatSchools",
+     "\u1ee3t",
+     "getKeyCode",
+     " l\u01b0\u1ee3t",
+     "\u0e2d\u0e31\u0e19",
+     " faptul",
+     "\u044f\u0431\u0440\u0435",
+     "setLine",
+     " Empres",
+     "\u043f\u044b\u0442"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "tonode",
+     " transf\u00e9rez",
+     "stddef",
+     "jsonwebtoken",
+     " ricordi",
+     "chaff",
+     "afir",
+     "\u4e4b\u4e00",
+     "kkk",
+     "aldi"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "<eos>",
+     "\n\n",
+     "//",
+     "\".",
+     ").",
+     "\"></",
+     "/*",
+     ".\u201d",
+     "\"",
+     "\u201d."
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "27": [
+   {
+    "tokens": [
+     "parsedMessage",
+     "IntoConstraints",
+     "MLLoader",
+     "ConstraintMaker",
+     "uxxxx",
+     "IUrlHelper",
+     "ScopeManager",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     "NUMX",
+     "httphttps"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " tra",
+     " gu",
+     " Gu",
+     "\u044f\u0431\u0440\u0435",
+     "numerusform",
+     " su",
+     " pas",
+     " \u0441\u0443",
+     "antMatchers",
+     "stre"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "corresponding",
+     " Containing",
+     "Corresponding",
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     " Spre",
+     "\u300c",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "\u300e",
+     " corresponding",
+     " \u043d\u0430\u0445\u043e\u0434\u044f"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " \u0645\u0634\u064a\u0646",
+     "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+     "ArgsConstructor",
+     " nonUne",
+     "SharedCtor",
+     "!*\\",
+     " PeEnEo",
+     "InjectAttribute",
+     " postIndex",
+     " tartalomaj\u00e1nl\u00f3"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u1ed8",
+     " \uc0c1\uc138",
+     " XNUMX",
+     "+#+",
+     "enumii",
+     "\u0436\u0438\u0442\u0435",
+     " Pesquisa",
+     "remarks",
+     "Timeout",
+     "DllImport"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ud835\udcee",
+     "<bos>",
+     "\ud835\udcf5",
+     "\u30f3",
+     "\ud835\udcff",
+     "\ud835\udcf2",
+     "er",
+     "o",
+     "\ud835\udced",
+     "\ud835\udcf8"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "transQ",
+     " betweenstory",
+     "sandalia",
+     "pantaloni",
+     " okuyay\u0131m",
+     "latimes",
+     "paisaje",
+     " nonUne",
+     "roleId",
+     "spesies"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxxxx",
+     "  ",
+     "fromnode",
+     " ,",
+     " <=>",
+     "   ",
+     " betweenstory",
+     " bekasi",
+     "transQ",
+     " alts\u00e5"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AsUp",
+     "fromnode",
+     "\u05d4\u05e2\u05e8\u05d5\u05ea",
+     "\u044d\u0442\u043e\u043c\u0443",
+     "ConstraintMaker",
+     " Neglect",
+     "FormTagHelper",
+     "makeConstraints",
+     "ThroughAttribute",
+     "\u0004"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\n\n",
+     ").",
+     "\n\n\n",
+     "\u3002",
+     ")),",
+     "].",
+     "))));",
+     "<eos>",
+     "])),",
+     " ,"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "28": [
+   {
+    "tokens": [
+     "numerusform",
+     " tra",
+     " gu",
+     "\u043d\u043e\u0432\u0438\u0434",
+     "\u044f\u0431\u0440\u0435",
+     " './../",
+     " Kers",
+     " Luc",
+     " Gu",
+     "unters"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "transQ",
+     " betweenstory",
+     " que\u017fto",
+     "<unused28>",
+     "<unused41>",
+     "<unused17>",
+     "<unused47>",
+     "<unused51>",
+     "[@BOS@]",
+     "<unused14>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "RefNanny",
+     "Tikang",
+     "\u4e8e",
+     "\u4ee5",
+     " using",
+     " quickly",
+     " by",
+     " through",
+     " mediante",
+     " repeatedly"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "AsUp",
+     "ConstraintMaker",
+     "\u044d\u0442\u043e\u043c\u0443",
+     " nahilalakip",
+     "\ufeff<?",
+     "tagHelperRunner",
+     "makeConstraints",
+     " Neglect",
+     "\u05d4\u05e2\u05e8\u05d5\u05ea",
+     "UserScript"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u04d9\u0440\u043c\u04d9\u043b\u04d9\u0440",
+     " nakalista",
+     "\ue315",
+     " BoxFit",
+     " nahilalakip",
+     "flashdata",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     "fjspx",
+     "ponses",
+     "findpost"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     ".*\")]",
+     "TagMode",
+     " Wiktionnaire",
+     "Tembelea",
+     "AndEndTag",
+     " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+     " getItemCount",
+     " &___"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " (\"",
+     " (\u201c",
+     " ('",
+     " (\u201e",
+     " \uff08",
+     " (\u2018",
+     " (=",
+     " (\u00ab"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff1b",
+     " tr\u00e9s",
+     "\uff1a",
+     "terea",
+     " \uff1a",
+     "Analysis",
+     "\u3002\u3002\u3002\u3002",
+     "customized",
+     "\uff0c",
+     " \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " autorytatywna",
+     " CreateTagHelper",
+     " \u0935\u093f\u0936\u094d\u0935\u0938\u0928\u0940\u092f\u0924\u093e",
+     "\u24e7",
+     "\u00c9let",
+     " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+     "\u3082\u3068",
+     " Oka",
+     "__':",
+     " uska"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "IntoConstraints",
+     "]';",
+     " defaultstate",
+     "AnchorStyles",
+     "\u0627\u0644\u062d\u064a\u0627\u0647",
+     "hoeddwyd",
+     "\u7701\u5e02\u9547",
+     " CreateTagHelper",
+     " surla",
+     "\u671f\u520a\u8bba\u6587"
+    ],
+    "target_script_frac": 0.2
+   }
+  ],
+  "29": [
+   {
+    "tokens": [
+     "numerusform",
+     "uxxxx",
+     "writeFieldEnd",
+     "Spolja\u0161nje",
+     " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438",
+     "dataclass",
+     "basicConfig",
+     "\u044f\u0431\u0440\u0435",
+     " HasFactory",
+     " tra"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "InjectAttribute",
+     "setVerticalGroup",
+     "sizeCache",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     "GEBURTSDATUM",
+     " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438",
+     "J\u00een",
+     "expandindo",
+     "mergeFrom",
+     "AdapterView"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u671f\u520a\u8bba\u6587",
+     " \ubc0f",
+     "Aholisi",
+     " shall",
+     "ftagPool",
+     " pertanto",
+     " tevens",
+     " simak",
+     "HideFlags",
+     " s\u0103u"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "---|---|",
+     " \u2013,",
+     "\u2033]",
+     ")\u060c",
+     "?]",
+     "\u201d)",
+     "\u201d),",
+     "\"\",\r",
+     " \"-\",",
+     ")$-"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "RepeatedField",
+     "uxxxx",
+     "\u064a\u0645\u064a\u062f\u064a\u0627",
+     " ActivatedRoute",
+     "InstrumentedTest",
+     " inform\u00e9e",
+     "getMenuInflater",
+     "onChangeText",
+     " SYLLABLE",
+     " \u039e"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "chargez",
+     "iterran\u00e9e",
+     "f\u00f8lgelig",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     "]-->",
+     "\u306b",
+     "]]]",
+     "\u27a1",
+     "toBeDefined",
+     "']],"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " sonno",
+     " morire",
+     "openzeppelin",
+     " HttpNotFound",
+     "expandindo",
+     " desnuda",
+     " popoli",
+     " pesco\u00e7o",
+     "}{*}{",
+     " escena"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AnchorStyles",
+     " \u043c\u04d9\u043a\u0430\u043b\u04d9",
+     "httphttps",
+     "GenerationType",
+     "complexContent",
+     "SourceChecksum",
+     "ItemBackground",
+     " }}\"></",
+     "\u017fehen",
+     " $_\""
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AndEndTag",
+     " ProtoMessage",
+     "StoryboardSegue",
+     "SBATCH",
+     " disambiguazione",
+     "modelBuilder",
+     "RTLR",
+     "ViewInit",
+     "EndProject",
+     " Italijani"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "TypedDataSet",
+     " linkovi",
+     " nakalista",
+     " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+     " TextAlign",
+     "<unused41>",
+     "[@BOS@]",
+     "<unused8>",
+     "<unused17>",
+     "<unused23>"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "30": [
+   {
+    "tokens": [
+     "\u4eba",
+     "ambilan",
+     "\u2161",
+     " Subsequently",
+     "\u4ee5",
+     "\u2162",
+     "\u2160",
+     "\u3001",
+     "\u25b3",
+     "\uff01"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "  ",
+     "\n",
+     "\n\n",
+     "(",
+     "   ",
+     ".",
+     "1",
+     "    ",
+     " ",
+     "\n\n\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "setVerticalGroup",
+     "GEBURTSDATUM",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     "MemoryWarning",
+     "Port\u00e1ly",
+     "sizeCache",
+     " betweenstory",
+     "J\u00een",
+     "SharedCtor",
+     " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " el\u00e1stica",
+     " actualidad",
+     "AsUp",
+     " ex\u00e9cu",
+     "DispatchToProps",
+     " \"\"],",
+     " hidr\u00e1ulica",
+     "__\":\r",
+     " navide\u00f1os",
+     "*/]."
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Oleh",
+     " Poids",
+     "mybatisplus",
+     "mobileqq",
+     "providedIn",
+     " Hauteur",
+     " contemporain",
+     "Contactez",
+     " chr\u00e9tien",
+     "\u0446\u0435\u0440\u0442"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "i\u017fen",
+     "i\u017ften",
+     "\u017fehen",
+     "\u017fchaft",
+     "ni\u017f\u017fe",
+     "GenerationType",
+     "i\u017fchen",
+     " tartalomaj\u00e1nl\u00f3",
+     "\u00e9sultats",
+     "\u017fcher"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " (\"",
+     " (\u201c",
+     " ('",
+     " ($",
+     " \uff08",
+     "(",
+     " (\u2018",
+     " (\u00ab"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " betweenstory",
+     "parsedMessage",
+     " PeEnEo",
+     "copg",
+     " FetchType",
+     "AISSEE",
+     " AppCompatTheme",
+     " Inverter",
+     "\u0627\u0644\u062d\u064a\u0627\u0647",
+     " MPR"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "hoeddwyd",
+     "\u041f\u043e\u043f\u0438\u0441",
+     " autorytatywna",
+     "MigrationBuilder",
+     "########.",
+     " enfans",
+     " Bioaccumulative",
+     " intStringLen",
+     "richTextPanel",
+     "IUrlHelper"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Diweddarwch",
+     "executeQuery",
+     "ertale",
+     "redhat",
+     "EditorGUILayout",
+     " Volker",
+     "metheus",
+     "esgue",
+     " Kenn",
+     " Franz"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "31": [
+   {
+    "tokens": [
+     "\u4eba",
+     "\uff5e",
+     "ambilan",
+     "\u4ee5",
+     " pertenece",
+     "\u2026\u2026",
+     "\uff01",
+     "\u300c",
+     "\u81ea",
+     " aplicable"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "setVerticalGroup",
+     "J\u00een",
+     " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+     "sizeCache",
+     "Port\u00e1ly",
+     "MemoryWarning",
+     "ScopeManager",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     "mergeFrom",
+     " '{@"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u043d\u0456\u0446\u0438\u043f\u0430\u043b\u0456",
+     "CppMethod",
+     " CreateTagHelper",
+     " nahilalakip",
+     " \u0628\u0631\u0627\u0646\u064a\u0647",
+     "BeginContext",
+     "toEqual",
+     "enumi",
+     "\u062d\u0648\u0627\u0644\u06c1",
+     " surla"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "IntoConstraints",
+     "\u043d\u0456\u0446\u0438\u043f\u0430\u043b\u0456",
+     " ***!",
+     "AnchorStyles",
+     "\ue738",
+     "DockStyle",
+     " defaultstate",
+     "IBOutlet",
+     " Normdatei",
+     "\u0627\u0644\u062d\u064a\u0627\u0647"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Administrativna",
+     "djangoproject",
+     "Autoritn\u00ed",
+     " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+     "Geograf\u00eda",
+     " censiti",
+     " TAMBI\u00c9N",
+     "dirkan",
+     " CreateTagHelper",
+     " \u00fcbrigens"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxxxx",
+     "))}",
+     "]));",
+     " ))",
+     " ),",
+     "]]",
+     "}}}\\",
+     ")));",
+     "\u201d).",
+     ").\u201d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ResumeLayout",
+     "Personendaten",
+     " defaultstate",
+     " iNdEx",
+     "ftagPool",
+     "\u0627\u0644\u062f\u0631\u0627\u0633\u0647",
+     " \u043c\u04d9\u043a\u0430\u043b",
+     "bootstrapcdn",
+     "########.",
+     " HasFactory"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxxxx",
+     "zzleHttp",
+     "tagHelperRunner",
+     "\u0445\u044c\u0442\u0430\u043d",
+     " wireType",
+     "ChildScrollView",
+     "ISupport",
+     "RTSC",
+     " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902",
+     "UnknownFieldSet"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " upstream",
+     " mainstream",
+     " comprehensively",
+     " NEV",
+     " comprehensive",
+     " strategic",
+     " connotation",
+     " layout",
+     " breakthroughs",
+     " diversified"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "istream",
+     "woff",
+     " bcm",
+     " (!(",
+     " bien",
+     " concer",
+     "Deps",
+     "melody",
+     " fol",
+     " tal"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "32": [
+   {
+    "tokens": [
+     "uxxxx",
+     "zydent",
+     "Classification",
+     "sorter",
+     " imagina",
+     "Aggregation",
+     "bande",
+     " jones",
+     "Highlight",
+     "Jones"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "skr",
+     " bili",
+     " ThemeData",
+     " blogger",
+     " offline",
+     " bloggers",
+     " WeChat",
+     " Bili",
+     " leetcode",
+     " netizens"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "hoeddwyd",
+     " autorytatywna",
+     " ***!",
+     "IUrlHelper",
+     "ViewFeatures",
+     " inform\u00e9e",
+     "setArguments",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     "\u041f\u043e\u043f\u0438\u0441",
+     "ViewImports"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0628\u064a\u0647\u0627",
+     " Italijanski",
+     " MIM",
+     " BIS",
+     " SRS",
+     " GIP",
+     " Nus",
+     " IMA",
+     " phy",
+     " pinulongan"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " entire",
+     " \u201c",
+     "\u5f53",
+     " Near",
+     "\u300a",
+     "\u4ee5",
+     "\u5f53\u521d",
+     "\u767e",
+     " \u064a\u062a\u0645",
+     "\u201d"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " (\"",
+     " (\u201c",
+     " ('",
+     "(",
+     " (\u2018",
+     " ($",
+     " \uff08",
+     " (\u00ab"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "mybatisplus",
+     " voli",
+     " petra",
+     "\u03c1",
+     "yy",
+     "grounds",
+     "parque",
+     " Reverso",
+     "Oleh",
+     "\u3005"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " actualidad",
+     " sint\u00e9tica",
+     " hidr\u00e1ulica",
+     " ex\u00e9cu",
+     " colectiva",
+     " el\u00e1stica",
+     " directiva",
+     "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654",
+     " paysage",
+     " \u00e9tranger"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0004",
+     " dumne",
+     " setuptools",
+     "\u0442\u0430\u0440\u0430\u0442\u0443\u0440\u0430",
+     "lapsingToolbar",
+     "setImageBitmap",
+     " actionMode",
+     " alcuna",
+     "ModelAdmin",
+     " Bucure"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " unable",
+     " extremely",
+     " very",
+     "extremely",
+     " quite",
+     " considered",
+     " extremamente",
+     " able",
+     " highly",
+     " unlikely"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "33": [
+   {
+    "tokens": [
+     "\u3082\u306e\u3067\u3059",
+     "\u3053\u3068\u306a\u304f",
+     " \u0645\u06cc\u200c\u062a\u0648\u0627\u0646\u06cc\u062f",
+     "ambilan",
+     " trebui",
+     "\u5834\u5408\u306b\u306f",
+     " ni\u0105",
+     " aquello",
+     "ind\u0259",
+     " conocemos"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " yyl",
+     "engagent",
+     " Reverso",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863",
+     " Heights",
+     " Hacking",
+     "Oleh",
+     " voli",
+     "emoc",
+     " peix"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "<unused14>",
+     "[@BOS@]",
+     "<unused17>",
+     "<unused41>",
+     "<unused28>",
+     "<unused16>",
+     "<unused23>",
+     "<unused8>",
+     "<pad>",
+     "<unused3>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " selectively",
+     " actively",
+     " forcefully",
+     " forcibly",
+     " take",
+     " make",
+     " \u0430\u043a\u0442\u0438\u0432\u043d\u043e",
+     "JoinColumn",
+     " give",
+     "\u8fdb\u884c"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " \u092e\u0947\u0902",
+     "\uc5d0",
+     "\uc5d0\uc11c",
+     "\u4e2d",
+     " where",
+     " donde",
+     " o\u00f9",
+     " d\u00e4r",
+     " \u0645\u06cc\u06ba",
+     " midst"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "forth",
+     "\u062d\u064a\u0627\u062a\u0647",
+     " Bouch",
+     "protoimpl",
+     " undergoing",
+     " PIP",
+     "\u5916\u90e8\u9023\u7d50",
+     "\uc11c",
+     " yep",
+     "\ub9cc"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " offline",
+     " Weibo",
+     " blogger",
+     " bloggers",
+     " cp",
+     " netizens",
+     " bili",
+     " CP",
+     " netizen",
+     " Bili"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "er",
+     "]-->",
+     "}`,",
+     "\u306b",
+     "\u06f0\u06f0",
+     "Tembelea",
+     "iterran\u00e9e",
+     "\u0645",
+     "endcsname",
+     "an"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "setVerticalGroup",
+     "Tikang",
+     "sizeCache",
+     " happiness",
+     "GIVEREF",
+     " heureuse",
+     "SpringBootTest",
+     "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+     " '{@",
+     "SequentialGroup"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " \u25c4",
+     "parsedMessage",
+     " XNUMX",
+     "expandindo",
+     "endphp",
+     " \u25bc",
+     " \u0635\u0648\u062a\u064a\u0647",
+     " IMA",
+     "<unused8>",
+     "<unused1>"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "34": [
+   {
+    "tokens": [
+     "\u4ee5",
+     "\u4eca",
+     "\u5728",
+     "\uff0c",
+     " \u4ee5",
+     "\u5f53",
+     " \u201c",
+     "resizingMask",
+     " \u064a\u062a\u0645",
+     "\u300a"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "JoinColumn",
+     "\u5e16\u6700\u540e\u7531",
+     " re",
+     " \u0430\u043a\u0442\u0438\u0432\u043d\u043e",
+     " bravely",
+     "OGND",
+     " selectively",
+     "\u4e00\u8d77",
+     " turn",
+     " raise"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     "\uff1a",
+     "\u3002",
+     "--",
+     "---",
+     "\uff1b",
+     "\uff01",
+     " \uff1a",
+     "\u3010",
+     "Classification"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<unused14>",
+     "[@BOS@]",
+     "<unused28>",
+     "<unused41>",
+     "<unused23>",
+     "<unused17>",
+     "<unused42>",
+     "<unused51>",
+     "<unused3>",
+     "<unused8>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "krebs",
+     "paigns",
+     " @\"/",
+     " adi",
+     " \u0645\u062a",
+     "ENIX",
+     " Etr",
+     "sule",
+     " nahilalakip",
+     "kreis"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " WeChat",
+     " Weibo",
+     " offline",
+     "setVerticalGroup",
+     " fubject",
+     "Interpretation",
+     " avoient",
+     " netizens",
+     " barrage",
+     "UniformLocation"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     " est",
+     " pere",
+     " jeweils",
+     " \u00e9",
+     " vertra",
+     " zad",
+     " vuelve",
+     " enfer",
+     "Localized"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " autorytatywna",
+     "hoeddwyd",
+     " ***!",
+     " inform\u00e9e",
+     "ViewImports",
+     "setArguments",
+     "IUrlHelper",
+     " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+     " EconPapers",
+     "richTextPanel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "wi\u017fe",
+     "Personensuche",
+     " Audiodateien",
+     " autorytatywna",
+     " Escort",
+     " Talents",
+     " talents",
+     " comprehensively",
+     "ne\u017fs",
+     " NEV"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "NameInMap",
+     " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+     " twit",
+     " unexpectedly",
+     "ionage",
+     " bombs",
+     " improvised",
+     " furi",
+     "\u043d\u043e\u0432\u043d\u0438\u0448",
+     " accusing"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "35": [
+   {
+    "tokens": [
+     "ised",
+     "a\u00e7\u00e3o",
+     "i\u00e8me",
+     "ians",
+     "bbene",
+     "\u06f0",
+     "sbereich",
+     "a\u00e7\u00f5es",
+     "aus",
+     "ology"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u092e\u0947\u0902",
+     "\uc5d0",
+     " where",
+     "\uc5d0\uc11c",
+     " \u0645\u06cc\u06ba",
+     "\u4e2d",
+     " o\u00f9",
+     "\u306b",
+     "\u0aae\u0abe\u0a82",
+     "\u09a4\u09c7"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "ly",
+     "theless",
+     "adays",
+     "ness",
+     "teen",
+     "nya",
+     "\ufe0f",
+     "ity",
+     "neath",
+     "ductory"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxxxx",
+     "InstrumentedTest",
+     "bibfield",
+     "bibinfo",
+     " \u062f\u0649",
+     "weightedMode",
+     " qu\u00e6",
+     "\u0301",
+     "tvguidetime",
+     "citenamefont"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "imetsu",
+     " Aether",
+     "GOTREF",
+     "########.",
+     " Signalez",
+     " \u017find",
+     " que\u017fta",
+     " gui",
+     " doInBackground",
+     "\u043d\u043e\u0432\u043d\u0438\u0448\u0442\u0432\u043e"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u092c\u091c\u093e\u092f",
+     " APE",
+     "\u062a\u0645\u0628\u0631",
+     "nezeu",
+     " propOrder",
+     "tembro",
+     " Obrador",
+     "Aholisi",
+     "orithmic",
+     "\u00e6us"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "+#+#",
+     " piece",
+     "individual",
+     "rag",
+     "uth",
+     " individuelles",
+     "hilangan",
+     " \u0440\u0430\u0441\u0442",
+     "genstein",
+     "st\u00fcck"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ,",
+     " )",
+     " \uff0c",
+     " ,\r",
+     " .\u201d",
+     " ).",
+     " \u060c",
+     " ),",
+     " ;",
+     " ."
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "UnitPrice",
+     "Handled",
+     " nakalista",
+     " truthfully",
+     " Dazu",
+     " registered",
+     "CreateTime",
+     " unit",
+     " betr\u00e4gt",
+     " expediente"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " infrastruktur",
+     " aprovecha",
+     " settlement",
+     "settlement",
+     " profumo",
+     "holiday",
+     "exploitation",
+     " exploitation",
+     " settlements",
+     " explotaci\u00f3n"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "36": [
+   {
+    "tokens": [
+     " Wicidata",
+     ":\u2728",
+     "yntaxException",
+     "expandindo",
+     " betweenstory",
+     " Wikimedijinoj",
+     " HasFactory",
+     " neutre",
+     " Paglinawan",
+     " jsPsych"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " shameless",
+     " beaten",
+     " slapped",
+     " dog",
+     " scolded",
+     "sco",
+     " fucking",
+     " fooled",
+     " shit",
+     " tricked"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " comigo",
+     " fa\u00e7o",
+     "Aholisi",
+     "\u5373\u53ef",
+     " shall",
+     " kyse",
+     "\u4e86\u55ce",
+     " preghiera",
+     " berlaku",
+     " \uc788\uc73c\uba70"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "i\u00e8me",
+     "ised",
+     "a\u00e7\u00e3o",
+     "ians",
+     "\u06f0",
+     "bbene",
+     "sbereich",
+     "aus",
+     "ologist",
+     "ology"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<eos>",
+     " [\u2026]",
+     "\n\n",
+     "\n",
+     "...",
+     "\\\\",
+     " ...",
+     " [...]",
+     ",...",
+     "\n\n\n\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "AutoScaleMode",
+     "AndEndTag",
+     " ProtoMessage",
+     "RTLR",
+     " estekak",
+     " kysy",
+     "OGND",
+     " nakalista",
+     "XmlAccessType",
+     " ar\u015fivlendi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " piece",
+     "individual",
+     " individual",
+     " individuelles",
+     "piece",
+     " Individual",
+     "+#+#",
+     "uth",
+     " bit",
+     " pair"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "fucking",
+     " instinct",
+     " subconsciously",
+     " \u03be",
+     " incredibly",
+     " opri",
+     " subconscious",
+     " asso",
+     " asoci",
+     " narcis"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+     "featureID",
+     " my\u017felf",
+     " nahilalakip",
+     "DoubleQuotes",
+     "RenderAtEndOf",
+     "ItemBackground",
+     " feroit",
+     " Majefty",
+     "tonsoft"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " jsPsych",
+     " fa\u021b\u0103",
+     "SourceChecksum",
+     "EFIAPI",
+     "subTitle",
+     ")_/\u00af",
+     "istoitu",
+     "nodeList",
+     ")++;",
+     " stanga"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "37": [
+   {
+    "tokens": [
+     "\uff0c",
+     "\u3002",
+     "\uff1a",
+     "\u3001",
+     "\uff08",
+     "\uff01",
+     "\uff1b",
+     " ,",
+     "\u3000",
+     "\u3010"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2019",
+     " se",
+     " la",
+     " dans",
+     " vuelve",
+     " The",
+     " besch",
+     " soll",
+     " taraf\u0131ndan",
+     " jeweils"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " successively",
+     " CreateTagHelper",
+     " <=\",",
+     " \u0645\u0634\u064a\u0646",
+     " jScrollPane",
+     "SpringRunner",
+     "DeleteBehavior",
+     " successfully",
+     "successfully",
+     " Successfully"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     "IVEREF",
+     " ARN",
+     "gwick",
+     "centages",
+     "\u043d\u0456\u0446\u0438\u043f\u0430",
+     "ographic",
+     "Viited",
+     "spender",
+     "kespeare"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " autorytatywna",
+     "wi\u017fe",
+     " offline",
+     " intelligent",
+     " ecology",
+     " ecological",
+     " poffe",
+     " upstream",
+     " empowerment",
+     " upgrading"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " attempting",
+     "Personensuche",
+     " defaultstate",
+     "Referencies",
+     ":\u2728",
+     "obtain",
+     " individuals",
+     " Attempt",
+     " attempt",
+     " remainder"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ());",
+     " ++;",
+     "bibfield",
+     " '/':",
+     " \uf06e",
+     " zwi\u017fchen",
+     "\u017ficht",
+     " endregion",
+     " >\",",
+     " Wei\u017fe"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<eos>",
+     " [\u2026]",
+     " ...",
+     " \u2026",
+     "...",
+     "[\u2026]",
+     "[...]",
+     " [...]",
+     "https",
+     "\\\\"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " NSCoder",
+     "+#+#",
+     " '\\\\;'",
+     " ReactDOM",
+     "PullParser",
+     "AutoScaleMode",
+     " betweenstory",
+     " protoimpl",
+     "\u044b\u0433\u0430\u043d\u0430",
+     "KommentareTeilen"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u300a",
+     "\u300c",
+     "\u300e",
+     "\u201c",
+     ":\u2728",
+     " \u306a\u308a",
+     "ambilan",
+     "\u7684\u662f",
+     "\u81ea\u5df1\u5728",
+     "Near"
+    ],
+    "target_script_frac": 0.2
+   }
+  ],
+  "38": [
+   {
+    "tokens": [
+     "\uff08",
+     "\u3010",
+     "\uff1a",
+     "\uff1f",
+     "\uff01",
+     "\u3000\u3000",
+     "\u4e00",
+     "\u548c",
+     "\uff1b",
+     "\u4e8b"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "cub",
+     "resist",
+     " BorderRadius",
+     "featureID",
+     "sweet",
+     "activation",
+     "(",
+     "hust",
+     "stem",
+     "awesome"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Ford\u00edt\u00e1s",
+     " Inscrivez",
+     "\u0627\u0644\u062f\u0631\u0627\u0633\u0647",
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     " L\u00e9g",
+     "Literatuur",
+     " kasarigan",
+     " Lingkungan",
+     " noDo",
+     "pulseira"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "<unused74>",
+     "<unused47>",
+     "<unused28>",
+     "<unused43>",
+     "<unused3>",
+     "[@BOS@]",
+     "<unused14>",
+     "<unused17>",
+     "<unused80>",
+     "<pad>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " And",
+     "subTitle",
+     " Of",
+     " ",
+     "emailAddress",
+     "nodeList",
+     " A",
+     " L",
+     " He",
+     ")++;"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5176",
+     "\u201c",
+     "\u2018\u2018",
+     "\u2018",
+     "\u4ee5",
+     "\u300a",
+     "S",
+     "Near",
+     "\u300c",
+     "\u5177\u6709"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     " individual",
+     "individual",
+     " Individual",
+     "+#+#",
+     "Individual",
+     "\u500b",
+     " individuelles",
+     "\uac1c",
+     " \u0440\u0430\u0441\u0442",
+     " \uac1c"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " Wi",
+     " Web",
+     " Ly",
+     " Mail",
+     " UI",
+     " Q",
+     " Job",
+     " Com",
+     " Unity",
+     " `"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " shameless",
+     " beaten",
+     " nonsense",
+     " fooled",
+     " fooling",
+     " fucking",
+     " slapped",
+     " tricks",
+     " scolded",
+     " crazy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " barrage",
+     " brushing",
+     " brushed",
+     "vincible",
+     " CP",
+     "doge",
+     "mmate",
+     "hhhhhhhh",
+     "imetsu",
+     "legion"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "39": [
+   {
+    "tokens": [
+     "\u5c0f",
+     "\u4e0a",
+     "\u5927",
+     "\u4e0b",
+     "\u4e00",
+     "\u7b49",
+     "\u548c",
+     "\u4eba",
+     "\u4ee5",
+     "\u540d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "Tembelea",
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     " \u064a\u062a\u064a\u0645\u0647",
+     "\u0410\u0440\u0445\u0456\u0432\u043e\u0432\u0430\u043d\u043e",
+     "IsMutable",
+     "Datuak",
+     " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+     "httphttps",
+     "HasAnnotation",
+     " surla"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Ford\u00edt\u00e1s",
+     " Inscrivez",
+     " L\u00e9g",
+     "pulseira",
+     "Literatuur",
+     " Grecs",
+     "colgante",
+     " enfans",
+     " Holy",
+     "convite"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "cub",
+     "(",
+     "conj",
+     "coverage",
+     "activation",
+     "middle",
+     "covered",
+     " betweenstory",
+     "bean",
+     "classification"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u628a",
+     "\u8fdb\u884c",
+     "OGND",
+     "\u5c06",
+     "\u5411",
+     " sz\u00e1m\u00e1ra",
+     "\u5927\u529b",
+     "\u76f4\u63a5",
+     "\u4e0b\u8f7d\u9644\u4ef6",
+     " grosir"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u201c",
+     "\u300a",
+     "\u300c",
+     "\u5176",
+     "Near",
+     "\u2018",
+     "\u300e",
+     "\u8fd1",
+     "\u4eca",
+     "near"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u3001",
+     "\uff08",
+     "\uff1a",
+     "\u3001\u201c",
+     "\uff0c",
+     "\u3001\u300c",
+     "\uff1b",
+     "\uff01",
+     "\uff09",
+     "\uff09\u3001"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "providedIn",
+     " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+     " ***!",
+     " propOrder",
+     "SpringBootTest",
+     "ModelAdmin",
+     "Demikian",
+     "\u200b\u200b",
+     " GenerationType",
+     "osoba"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ":\u2728",
+     " ffilmiau",
+     " CreateTagHelper",
+     " principle",
+     "Principle",
+     "ItemLayout",
+     " consultato",
+     " reference",
+     "principle",
+     "\u044b\u0433\u0430\u043d\u0430"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " defaultstate",
+     "ContentLoaded",
+     "BagConstraints",
+     " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+     "MemoryWarning",
+     " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+     " \u0641\u0631\u064a\u0628\u064a\u0633",
+     "httphttps",
+     "MeasureSpec",
+     " estekak"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "40": [
+   {
+    "tokens": [
+     "\u5dae",
+     "\u5341\u5b57",
+     "\u7b86",
+     "\u8500",
+     "\u8d8a",
+     "\u884c\u7a0b",
+     "\u5de8",
+     "\u5650",
+     "\u4ea4",
+     "\u5f0d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " \u064a\u062a\u064a\u0645\u0647",
+     " XNUMX",
+     " surla",
+     "\u5df4",
+     "NUMX",
+     "Datuak",
+     "Aholisi",
+     "\u65af",
+     "\u514b",
+     "pecial"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "OGND",
+     "Personendaten",
+     " \u0627\u0644\u062d\u0631\u0647",
+     " endwhile",
+     "ArgumentParser",
+     "\u51fa\u7248\u5e74",
+     "########.",
+     " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+     "AnimationsModule",
+     " BoxFit"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u4e86\u55ce",
+     "\u5979\u5011",
+     "\u5011",
+     "\u74b0\u5883",
+     "\u5f71\u97ff",
+     "\u65b0\u3057\u3044",
+     "\u79c1\u305f\u3061\u306f",
+     "\u30a8\u30cd\u30eb\u30ae\u30fc",
+     "\u5f7c\u3089\u306f",
+     "\u5e02\u5834"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     " een",
+     " eine",
+     " m\u1ed9t",
+     " isang",
+     " sebuah",
+     " einen",
+     " ein",
+     " una",
+     " einer",
+     " \u090f\u0915"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "OOO",
+     "aaa",
+     "acterium",
+     "\u093e\u0930\u0940",
+     "hlung",
+     "Absch",
+     "\u015fil",
+     "arakhand",
+     " enco",
+     "uition"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " lentejuelas",
+     " h\u00famedo",
+     " terciopelo",
+     " m\u00e1rmol",
+     " Jerusal\u00e9n",
+     " piedras",
+     " perlas",
+     " museos",
+     " hormig\u00f3n",
+     "quillas"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " que\u017fta",
+     "uxxxx",
+     " $_(",
+     "[@BOS@]",
+     "<unused52>",
+     "<unused16>",
+     "<unused41>",
+     "<unused23>",
+     "<unused8>",
+     "<unused14>"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "general",
+     "natural",
+     "evidence",
+     "system",
+     "micro",
+     "Heavy",
+     "easy",
+     "small",
+     "example",
+     "target"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "XmlAccessorType",
+     "ConstraintMaker",
+     "-------\f",
+     "PreExecute",
+     " HFILL",
+     " belongs",
+     "StoryboardSegue",
+     " pertenece",
+     "\u4e3a",
+     "convergence"
+    ],
+    "target_script_frac": 0.1
+   }
+  ],
+  "41": [
+   {
+    "tokens": [
+     "<unused41>",
+     "<unused17>",
+     "<unused52>",
+     "\u5404\u6837\u7684",
+     "<unused28>",
+     "<unused14>",
+     "<unused42>",
+     "<unused43>",
+     "[@BOS@]",
+     "<unused8>"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\uff08\uff09",
+     "\u201d\uff08",
+     "\u201d\uff0c",
+     ")\uff1a",
+     "\u201d\u3002",
+     ")\uff0c",
+     "\u201d\u3001\u201c",
+     ")\u3001",
+     "\uff1a[",
+     "\uff1f\u201d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4fe2",
+     " ,,",
+     "\u8ee2\u8eca",
+     "\u7e02",
+     "\u4e8a",
+     "\u8580",
+     " cupcakes",
+     "\u2fb3",
+     "\u2ec4",
+     "Dichloropropane"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     " fieltro",
+     " lentejuelas",
+     "guantes",
+     " almendras",
+     " ganchillo",
+     " vuestros",
+     " nueces",
+     " burbujas",
+     " rodillas",
+     "colgante"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "R\u00fcyada",
+     "\u4e2d\u56fd",
+     "\u5317\u4eac",
+     "\u4e2d\u570b",
+     "Pune",
+     "\u4e0a\u6d77",
+     "tanooga",
+     "\u5357\u4eac",
+     "\u56db\u5ddd",
+     "mybatisplus"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "cal\u00e7a",
+     "caneca",
+     "pulseira",
+     "sapato",
+     "sand\u00e1lia",
+     "pecabe",
+     "\u00e1genes",
+     "attutto",
+     "limiento",
+     "jaqueta"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6d69",
+     " fils",
+     "\u88d5",
+     " chevalier",
+     " galo",
+     "\u5f18",
+     " encre",
+     " fonder",
+     " gar\u00e7on",
+     " syl"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u8fdb\u884c",
+     "\u9032\u884c",
+     " Inf\u00f3rmanos",
+     "\u5229\u7528",
+     "\u63d0\u4f9b",
+     "\u505a",
+     "\u505a\u51fa",
+     "\u628a",
+     "\u5efa\u7acb",
+     "R\u00fcyada"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u4e00\u52a8",
+     "UpInside",
+     "ficulty",
+     " \u064a\u062a\u064a\u0645\u0647",
+     "\u4f4e\u5934",
+     "surfaces",
+     "\u7b11\u7740",
+     "\u95ea\u8fc7",
+     "\u5fcd\u4e0d\u4f4f",
+     "ContentLoaded"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     "\u3002",
+     "\u4e86",
+     "\u7684\u540c\u65f6",
+     "\u5373\u53ef",
+     "\u5e76\u4e14",
+     "\u800c",
+     " asimismo",
+     "\u4ece\u800c",
+     "expandindo"
+    ],
+    "target_script_frac": 0.6
+   }
+  ]
+ }
+}
