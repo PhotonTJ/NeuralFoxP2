@@ -80,7 +80,8 @@ def export_checkpoint(artifact: dict, base: str, out_dir: str, arch: str, copy: 
     cfg.update({"architectures": [cls],
                 "auto_map": {"AutoModelForCausalLM": f"modeling_foxp2.{cls}"},
                 "foxp2": fc, "foxp2_gamma": fc.get("gamma", 1.0), "foxp2_mode": fc["mode"],
-                "foxp2_k_decode": fc["k_decode"], "foxp2_use_gate": fc["use_gate"]})
+                "foxp2_k_decode": fc["k_decode"], "foxp2_use_gate": fc["use_gate"],
+                "foxp2_sink_factor": fc.get("sink_factor", 5.0)})
     json.dump(cfg, open(os.path.join(out_dir, "config.json"), "w"), indent=1)
 
     # ---- tokenizer and other small files ----

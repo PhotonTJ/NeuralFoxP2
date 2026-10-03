@@ -1,0 +1,5773 @@
+{
+ "meta": {
+  "target": "zh",
+  "model": "qwen3-8b",
+  "contrast": "response",
+  "n_pairs": 600,
+  "base_dM_lift": -0.29658082127571106,
+  "report": {
+   "0": {
+    "fvu": {
+     "fvu": 0.09938590228557587
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.44590163934426225
+   },
+   "1": {
+    "fvu": {
+     "fvu": 0.10030757635831833
+    },
+    "n_tgt": 28,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5428571428571428
+   },
+   "2": {
+    "fvu": {
+     "fvu": 0.1128101795911789
+    },
+    "n_tgt": 46,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5369565217391303
+   },
+   "3": {
+    "fvu": {
+     "fvu": 0.12579043209552765
+    },
+    "n_tgt": 43,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5093023255813953
+   },
+   "4": {
+    "fvu": {
+     "fvu": 0.14314410090446472
+    },
+    "n_tgt": 50,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5319999999999999
+   },
+   "5": {
+    "fvu": {
+     "fvu": 0.19630196690559387
+    },
+    "n_tgt": 39,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5153846153846153
+   },
+   "6": {
+    "fvu": {
+     "fvu": 0.2368319183588028
+    },
+    "n_tgt": 35,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5514285714285715
+   },
+   "7": {
+    "fvu": {
+     "fvu": 0.2709083557128906
+    },
+    "n_tgt": 40,
+    "n_en": 32,
+    "mean_target_script_frac": 0.53
+   },
+   "8": {
+    "fvu": {
+     "fvu": 0.28525009751319885
+    },
+    "n_tgt": 36,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6499999999999999
+   },
+   "9": {
+    "fvu": {
+     "fvu": 0.2909475862979889
+    },
+    "n_tgt": 22,
+    "n_en": 32,
+    "mean_target_script_frac": 0.609090909090909
+   },
+   "10": {
+    "fvu": {
+     "fvu": 0.2815476357936859
+    },
+    "n_tgt": 29,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6896551724137931
+   },
+   "11": {
+    "fvu": {
+     "fvu": 0.2927096486091614
+    },
+    "n_tgt": 25,
+    "n_en": 32,
+    "mean_target_script_frac": 0.584
+   },
+   "12": {
+    "fvu": {
+     "fvu": 0.3184894621372223
+    },
+    "n_tgt": 22,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6363636363636364
+   },
+   "13": {
+    "fvu": {
+     "fvu": 0.33069396018981934
+    },
+    "n_tgt": 33,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5818181818181819
+   },
+   "14": {
+    "fvu": {
+     "fvu": 0.33993080258369446
+    },
+    "n_tgt": 31,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6032258064516128
+   },
+   "15": {
+    "fvu": {
+     "fvu": 0.37262874841690063
+    },
+    "n_tgt": 38,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5921052631578948
+   },
+   "16": {
+    "fvu": {
+     "fvu": 0.38911378383636475
+    },
+    "n_tgt": 41,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5414634146341464
+   },
+   "17": {
+    "fvu": {
+     "fvu": 0.41241219639778137
+    },
+    "n_tgt": 46,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6760869565217391
+   },
+   "18": {
+    "fvu": {
+     "fvu": 0.4274604022502899
+    },
+    "n_tgt": 37,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6810810810810811
+   },
+   "19": {
+    "fvu": {
+     "fvu": 0.4368606507778168
+    },
+    "n_tgt": 40,
+    "n_en": 32,
+    "mean_target_script_frac": 0.555
+   },
+   "20": {
+    "fvu": {
+     "fvu": 0.45196443796157837
+    },
+    "n_tgt": 34,
+    "n_en": 32,
+    "mean_target_script_frac": 0.5970588235294118
+   },
+   "21": {
+    "fvu": {
+     "fvu": 0.4482623338699341
+    },
+    "n_tgt": 43,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6534883720930232
+   },
+   "22": {
+    "fvu": {
+     "fvu": 0.414948433637619
+    },
+    "n_tgt": 58,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6344827586206897
+   },
+   "23": {
+    "fvu": {
+     "fvu": 0.38474130630493164
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7372881355932204
+   },
+   "24": {
+    "fvu": {
+     "fvu": 0.36737164855003357
+    },
+    "n_tgt": 46,
+    "n_en": 32,
+    "mean_target_script_frac": 0.717391304347826
+   },
+   "25": {
+    "fvu": {
+     "fvu": 0.3596619665622711
+    },
+    "n_tgt": 39,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6923076923076923
+   },
+   "26": {
+    "fvu": {
+     "fvu": 0.3580380380153656
+    },
+    "n_tgt": 49,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7448979591836735
+   },
+   "27": {
+    "fvu": {
+     "fvu": 0.3518194854259491
+    },
+    "n_tgt": 46,
+    "n_en": 32,
+    "mean_target_script_frac": 0.726086956521739
+   },
+   "28": {
+    "fvu": {
+     "fvu": 0.34644758701324463
+    },
+    "n_tgt": 40,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7875
+   },
+   "29": {
+    "fvu": {
+     "fvu": 0.3455456793308258
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.8200000000000002
+   },
+   "30": {
+    "fvu": {
+     "fvu": 0.3580946624279022
+    },
+    "n_tgt": 48,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7395833333333334
+   },
+   "31": {
+    "fvu": {
+     "fvu": 0.36565592885017395
+    },
+    "n_tgt": 47,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7425531914893617
+   },
+   "32": {
+    "fvu": {
+     "fvu": 0.38923150300979614
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7453125
+   },
+   "33": {
+    "fvu": {
+     "fvu": 0.41771790385246277
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.7868852459016393
+   },
+   "34": {
+    "fvu": {
+     "fvu": 0.46368205547332764
+    },
+    "n_tgt": 44,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6749999999999999
+   },
+   "35": {
+    "fvu": {
+     "fvu": 0.325935423374176
+    },
+    "n_tgt": 44,
+    "n_en": 32,
+    "mean_target_script_frac": 0.6909090909090909
+   }
+  }
+ },
+ "affinity": {
+  "0": [
+   {
+    "tokens": [
+     "\u9759\u6001",
+     "\u952d",
+     "\u8d70\u52bf\u56fe",
+     "\u30a4\u30f3\u30bf\u30fc\ufffd",
+     "\u6f6e\u6e7f",
+     "\u5e03\u62c9",
+     "oyer",
+     "\u00e9rc",
+     "ResultsController",
+     "\u5168\u81ea\u52a8"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "dac",
+     "sa",
+     "OMPI",
+     "\u7aff",
+     "-instance",
+     "\u88ab\u76d7",
+     " enqu",
+     "aut",
+     " realistically",
+     "\u5d07\u9ad8"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "Opts",
+     "quil",
+     "\u91c7\u7528",
+     " m\u1ea5t",
+     "\u0435\u0441\u044c",
+     "\u516c\u7528",
+     "\u4f20",
+     "\u8b66",
+     "Vir",
+     "\u4faf"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u8dfa",
+     "\u632f\u308a",
+     "WithURL",
+     "_HDR",
+     " rehe",
+     "\u5339",
+     "\u90e8",
+     "het",
+     " tossing",
+     "hurst"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "emd",
+     "\u62db",
+     "DOM",
+     "HOUSE",
+     "\u65af\u57fa",
+     "dump",
+     "EDIA",
+     "\u7538",
+     "aceous",
+     "sst"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "hall",
+     "winner",
+     " Orb",
+     "\u00f6h",
+     " stitch",
+     "Toggle",
+     " wij",
+     "\u4e2d\u5b58\u5728\u7684",
+     "payer",
+     "heroes"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "tol",
+     "\u718a",
+     "\u603b\u8ba1",
+     "sk",
+     "multiline",
+     "Scalars",
+     "arious",
+     "\u7ec4\u4ef6",
+     "mus",
+     " sting"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u8f6c\u8f7d",
+     "\u597d\u770b\u7684",
+     "\u4e00\u4ef6\u4e8b\u60c5",
+     "\u4ec5\u4ec5",
+     " hole",
+     "\u7ed1",
+     " updater",
+     "\u610f\u89c1\u53cd\u9988",
+     " Lone",
+     "\u4ec5"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "zar",
+     "\u5fad",
+     "\u6aab",
+     "viar",
+     " candid",
+     "\u64e6",
+     "ungi",
+     "\u65af\u57fa",
+     " Associ",
+     " reusable"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u6765\u5386",
+     "\u7406\u89e3\u548c",
+     "\u535a\u5f08",
+     "ennon",
+     "oh",
+     "kest",
+     "resolved",
+     "ohn",
+     "\u879f",
+     "-notch"
+    ],
+    "target_script_frac": 0.4
+   }
+  ],
+  "1": [
+   {
+    "tokens": [
+     "\u9762\u76ee",
+     "\u60b2",
+     "\u4ec0\u4e48\u90fd",
+     "\u6b66\u58eb",
+     "pivot",
+     " forth",
+     " subst",
+     "\u5192",
+     "\u8e0f",
+     "\u7280"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "integration",
+     "\u63a8\u51fa\u7684",
+     "Messenger",
+     " swe",
+     " integration",
+     "Integration",
+     " Integration",
+     "\u695e",
+     "\u6d89",
+     "emoji"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u4ea4\u6613\u4e2d\u5fc3",
+     "\u95eb",
+     "\u548c\u6280\u672f",
+     "\u7684\u4eba",
+     "\u5f00",
+     "\u603b",
+     "\u670d\u4ece",
+     "\u4fd7",
+     "\u53d1\u6325\u4e86",
+     "\u8ddf\u968f"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u800c\u4e0d\u662f",
+     " rather",
+     "\u800c\u975e",
+     "reuse",
+     "rather",
+     "\u5728\u4eac",
+     "\u7684\u4e00\u79cd",
+     "\u9886\u5bfc",
+     "-pointer",
+     "wp"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "plier",
+     "wen",
+     "dek",
+     " turnover",
+     "\u82c7",
+     "\u5bb9\u6613",
+     "\u7269\u54c1",
+     "\ufffd",
+     "\u8df3",
+     "\u6808"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u4ee5\u4e0b\u662f",
+     "\u62e5\u62a4",
+     "\u4ee3\u8a00",
+     "\u503e\u5411",
+     "\u5546\u4f1a",
+     ".fi",
+     "gens",
+     "\u7ef4\u6743",
+     "\u793a\u8303",
+     "\u5efa\u6784"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u724c",
+     " RD",
+     "tape",
+     "-Allow",
+     "\ufffd\ufffd",
+     "\u5df2\u4e45\u7684",
+     "-Key",
+     "(rep",
+     "assis",
+     "\u2190"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "ONY",
+     "kt",
+     "\u91d1\u8272",
+     "Golden",
+     "\u5f0f\u7684",
+     " Yug",
+     " Golden",
+     "tm",
+     "\u4e09\u4f4d",
+     "ktor"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u6709\u7684",
+     "\u8bf4\u7684\u662f",
+     "encoder",
+     "\u5f97\u4e86",
+     "\u4e00\u5927\u6279",
+     "\u4e0d\u4e4f",
+     "thern",
+     "Decoder",
+     "nameof",
+     "\u62d9"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u55ec",
+     "Whilst",
+     "\u4e86\u81ea\u5df1\u7684",
+     "\u610f",
+     "ahi",
+     "\u8d2f",
+     "\u4e2d\u56fd\u653f\u5e9c",
+     "\u8c03\u914d",
+     "bbing",
+     "\u5c94"
+    ],
+    "target_script_frac": 0.7
+   }
+  ],
+  "2": [
+   {
+    "tokens": [
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u7279\u5b9a",
+     "\u56fa\u5b9a\u7684",
+     "\u67d0\u4e2a",
+     "\u4e0d\u540c\u7684",
+     "\u5404\u81ea\u7684",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u53d1\u751f\u7684",
+     "\u4f5c\u51fa",
+     "\u65e5\u5e38"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u7684\u57fa\u7840\u4e0a",
+     "\u57fa\u7840\u4e0a",
+     "\u7684\u5e26\u9886\u4e0b",
+     "\u73af\u5883\u4e2d",
+     "\u7684\u5e2e\u52a9\u4e0b",
+     "\u8303\u56f4\u5185",
+     "\u5b9e\u8df5\u4e2d",
+     "\u610f\u4e49\u4e0a",
+     "\u770b\u6765",
+     "\u9762\u524d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " felon",
+     "\u5b9e\u4f53",
+     "\u5949",
+     "\u62bd",
+     " soph",
+     "\u65e5\u5728",
+     "\u7167\u6837",
+     "\u72af\u89c4",
+     "\u8d70",
+     "\u53ca\u4ee5\u4e0a"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "iniz",
+     " hind",
+     "\u8f78",
+     "pluck",
+     " Mistress",
+     "\u542d",
+     " omin",
+     " zd",
+     "\u660e\u5a9a",
+     ",idx"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "ooks",
+     "ivable",
+     "\u5170",
+     "\u5339",
+     "ounce",
+     "\u81ea",
+     "-direction",
+     "\u56fa\u5b9a",
+     "\u8ba1",
+     "\u5854"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u4e0d\u540c\u7a0b\u5ea6",
+     "\u5927\u5927\u5c0f\u5c0f",
+     "\u573a\u5408",
+     "\u7684\u4e8b\u5b9e",
+     "\u4e8b\u5b9e",
+     "\u7410",
+     "\u548c\u5730\u533a",
+     "\u6bd4\u5982",
+     "upp",
+     "pill"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u6d3b",
+     "\u96c6\u7fa4",
+     " Deg",
+     "\u900f",
+     " gul",
+     "\u4efb\u610f",
+     "\u5883\u5916",
+     "\u6444",
+     "\u5df2",
+     " unborn"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     " decre",
+     "ator",
+     "\u4e00\u4e16",
+     "\u800c\u8a00",
+     "kah",
+     "ichert",
+     "\u770b\u4f60",
+     "atur",
+     "sector",
+     "acf"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u706b",
+     "ammer",
+     "\u88d5",
+     " \u2026\n\n",
+     " l\u1eddi",
+     "\u8d8a",
+     " BK",
+     "\u522b",
+     "\u8868\u767d",
+     "\u4ecd\u672a"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "reuse",
+     "kas",
+     " rather",
+     "gre",
+     "rene",
+     "-rel",
+     "\u7b79",
+     "\u800c\u4e0d\u662f",
+     "\u8d77\u6765\u4e86",
+     "cd"
+    ],
+    "target_script_frac": 0.3
+   }
+  ],
+  "3": [
+   {
+    "tokens": [
+     " -\n\n",
+     " +\n\n",
+     "=\n\n",
+     " =\n\n",
+     "+\n\n",
+     "\u2022\n\n",
+     " /\n\n",
+     "\uff1a\n\n",
+     "\u2026\u2026\n\n",
+     "\u3001\n\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u81f3\u5c11",
+     "(Arg",
+     "\u9996\u5148",
+     "(Mod",
+     "\tMethod",
+     "\u6700\u5c0f",
+     "\u4faf",
+     " reordered",
+     "(ARG",
+     "-unstyled"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u4e0d\u540c\u7a0b\u5ea6",
+     "\u5305\u62ec",
+     "\u73af\u8282",
+     "\u5927\u5927\u5c0f\u5c0f",
+     "\u6bd4\u5982",
+     "\u548c\u5730\u533a",
+     "hammer",
+     "\u5730\u533a\u7684",
+     "\u96f6\u90e8\u4ef6",
+     "\u8bf8\u5982"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u200b\u200b",
+     "\u2026\n",
+     " **",
+     " ...\n",
+     "...\n",
+     "\u7992",
+     "\u6608",
+     " [\u2026",
+     "\u6ddf",
+     "\u7883"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u5f88\u597d\u7684",
+     "htag",
+     "\u6d88\u606f\u79f0",
+     "\u5f88\u5f3a",
+     "\u7279\u8272\u7684",
+     "\u5f71\u54cd\u529b\u7684",
+     "\u592a\u591a\u7684",
+     "\u8f83\u5f3a\u7684",
+     "\u8db3\u591f\u7684",
+     "\u62a5\u9053\u79f0"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u62bd",
+     "\u5949",
+     " felon",
+     "\u5b9e\u4f53",
+     "bra",
+     "\u53ca\u4ee5\u4e0a",
+     "rogen",
+     "\u57f9\u517b\u5b66\u751f",
+     "\u81ea\u5df1\u559c\u6b22",
+     "rieve"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u7684\u57fa\u7840\u4e0a",
+     "\u57fa\u7840\u4e0a",
+     "\u73af\u5883\u4e2d",
+     "\u770b\u6765",
+     "\u5b9e\u8df5\u4e2d",
+     "\u610f\u4e49\u4e0a",
+     "\u8303\u56f4\u5185",
+     "\u7684\u5e26\u9886\u4e0b",
+     "\u7684\u5e2e\u52a9\u4e0b",
+     "\u4e3e\u884c\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u548c\u793e\u4f1a",
+     " shave",
+     "\u7684\u4e3b\u9898",
+     "\u5c42\u51fa\u4e0d\u7a77",
+     "\u6cbc",
+     "\u7529",
+     "duk",
+     "\u672c\u8eab",
+     "registry",
+     "\u7406\u8bba"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u4fdd",
+     " curing",
+     "sharing",
+     "habi",
+     " Rd",
+     "UpdatedAt",
+     "suma",
+     " Ru",
+     "\u7ea4",
+     " EntryPoint"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u5e55\u540e",
+     " overhead",
+     "\u6536\u5272",
+     "\u4e00\u65e6",
+     "umat",
+     " endure",
+     "OTO",
+     "olars",
+     "\u989d\u5916",
+     "iate"
+    ],
+    "target_script_frac": 0.4
+   }
+  ],
+  "4": [
+   {
+    "tokens": [
+     "\u4e0d\u5fcd",
+     "\u589e\u91cf",
+     "\u8d8a\u662f",
+     "\u6709\u4e00\u5929",
+     "\u53cb\u4eec",
+     "\u628a\u8fd9\u4e9b",
+     " onLoad",
+     "\u8d8a",
+     "\u670d",
+     " d\u1ea7n"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "rello",
+     "ogram",
+     "\u8877",
+     "icz",
+     "TemplateName",
+     "agli",
+     "\u7459",
+     "_SMALL",
+     " numRows",
+     "lett"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "mouseleave",
+     "Ping",
+     " Wild",
+     "__,__",
+     "kos",
+     " reluctantly",
+     "_fin",
+     "=event",
+     "dyn",
+     "\u91ce"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u800c\u8a00",
+     "\u7fa4",
+     "\u541b",
+     "\u5229\u7528",
+     "Flat",
+     "\u5de7\u5408",
+     "\u5371",
+     " \u043b\u0438",
+     "\u5982\u4e0b",
+     "\u66d9"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "lags",
+     "chner",
+     "eways",
+     "pressor",
+     "-paced",
+     "\u4e00\u7fa4",
+     "icer",
+     "indexed",
+     "l\u00e4",
+     "aper"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "'",
+     "`",
+     "\u7ec4\u6210\u90e8\u5206",
+     "\u53cc\u91cd",
+     "\u4f7c",
+     "\u90a3\u4e00\u523b",
+     "\u4ee3\u8868\u6027",
+     "\u2593",
+     "\u516d\u4e2a",
+     "\u4f18"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u7edf",
+     "\u4f01",
+     "\u7728\u773c",
+     "\u548c\u4e2a\u4eba",
+     "\u7554",
+     "\u7f29",
+     "\u8ff9",
+     "\u4e1a",
+     "\u8ff7",
+     "\u5b66"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "/js",
+     "\u54c8\u4f5b",
+     "\u9632\u75ab",
+     "\u5b9a\u5236",
+     " Custom",
+     " Dolphin",
+     " virus",
+     " Virus",
+     "\u9501\u5b9a",
+     "ernals"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     "unnel",
+     "\u7d22\u53d6",
+     " unaware",
+     " fiber",
+     "udit",
+     "\u548c",
+     " \ufffd",
+     "lock",
+     " Geo"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u5ab1",
+     "\u200b\u200b",
+     "\ufe0f",
+     "\u6ddf",
+     "airo",
+     " Vir",
+     "\u5019\u9009",
+     "\ufffd",
+     "ugo",
+     "\u6f7d"
+    ],
+    "target_script_frac": 0.4
+   }
+  ],
+  "5": [
+   {
+    "tokens": [
+     "\u2010",
+     "\r\n",
+     "-",
+     " \r\n",
+     "\r",
+     "\\xe",
+     "\uff0e",
+     "\n",
+     "\\xc",
+     "_"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "htag",
+     "\u5f88\u5f3a",
+     "\u660e\u663e\u7684",
+     "\u4e86\u4e00\u4e9b",
+     "\u7684\u4e00\u4e9b",
+     "\u8f83\u5f3a\u7684",
+     "\u592a\u591a\u7684",
+     "\u5f88\u597d\u7684",
+     "\u788d",
+     "\u592a\u591a"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "edd",
+     "clc",
+     "subs",
+     "\u683c\u5c07",
+     "Author",
+     "Warnings",
+     "\ufe0f",
+     "\ufffd",
+     "\u4f60\u559c\u6b22",
+     "irect"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "/js",
+     "\u54c8\u4f5b",
+     " wow",
+     "\u9632\u75ab",
+     " unthinkable",
+     " Forecast",
+     "\u76f8\u5173\u4fe1\u606f",
+     " Custom",
+     "_eth",
+     " economics"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u4f53\u7cfb",
+     "ilar",
+     "\u548c\u4e2a\u4eba",
+     "\u517c",
+     "  \n",
+     "ADVERTISEMENT",
+     "\u5404\u79cd",
+     " \u200b\u200b",
+     " domestic",
+     "\uff1a\n"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\"",
+     "Than",
+     "omy",
+     "\u4e2d\u65ad",
+     "\u673a\u5668",
+     "False",
+     "g",
+     "\"\"\n",
+     "\u4e3b\u8425",
+     "degrees"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u4e86\u5427",
+     "\u4e86\u81ea\u5df1\u7684",
+     " Advantage",
+     "\u53d7\u5230\u4e86",
+     "NO",
+     "\u6ce8\u610f\u5230",
+     "\u76ef\u7740",
+     " \u043f\u0440\u0438\u044f\u0442\u043d",
+     "VM",
+     "\u4e86\u4e00\u573a"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u6700\u5c0f",
+     " \u0410\u043b\u0435\u043a\u0441\u0430\u043d",
+     "\u81f3\u5c11",
+     "\u5927",
+     "\u6784\u6210",
+     "\u590d\u5408",
+     "\u6700",
+     "\u535c",
+     "\u4f8b\u5916",
+     "\u4f18\u5148"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u6b83",
+     "_DEFINED",
+     "\u76f8\u5173\u65b0\u95fb",
+     ".Strings",
+     "\u969b",
+     " sal",
+     "\u8bfb\u540e\u611f",
+     " lect",
+     "\u516e",
+     "st\u00e4nd"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "it",
+     "inals",
+     "ub",
+     "vas",
+     " kh",
+     "iers",
+     "flows",
+     "ff",
+     "un",
+     "av"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "6": [
+   {
+    "tokens": [
+     "\"",
+     "\n\n\n",
+     "\"*",
+     "\r\n",
+     "\"#",
+     "ing",
+     "*",
+     "'",
+     "erne",
+     "ness"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6f84",
+     "\u5c31\u662f\u4e00\u4e2a",
+     "OFFSET",
+     "ambi",
+     "CLICK",
+     "PAT",
+     "\u5e73\u5b89",
+     "\u4e0d\u662f\u4e00\u4e2a",
+     "\u5230\u6700\u540e",
+     "pat"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u6b64\u57fa\u7840\u4e0a",
+     "oes",
+     "eso",
+     "\u6ee9",
+     " pylint",
+     " blanco",
+     "aidu",
+     "\u6d3e",
+     "eping",
+     "aran"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u83ab\u8fc7\u4e8e",
+     "\u5219\u662f",
+     "\u8303\u7574",
+     "\u624d\u662f",
+     "\u65b9\u9488",
+     "\u54ea\u4e00\u4e2a",
+     "\u53eb\u58f0",
+     "\u7ec4\u6210\u90e8\u5206",
+     " Blvd",
+     "\u888b\u5b50"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u306e\u3067",
+     "\u4eba\u90fd",
+     "\u513f",
+     "\u304f\u308c",
+     "\u30f3\u30b0",
+     "\u044f\u043d",
+     "------+",
+     "hood",
+     "\u3044\u307e\u3059\u304c",
+     "\u4f46\u4e0d\u9650\u4e8e"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u6df1\u5165",
+     " \u0447\u0430",
+     "\u53f7",
+     "\u0443\u0448\u043a\u0438",
+     "Composer",
+     " faker",
+     "WhatsApp",
+     "liable",
+     "\u6ce8\u610f\u4e8b\u9879",
+     "\u7d2b"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u60a8\u7684",
+     "\u60a8",
+     "\u63a8\u8350",
+     "\u4f60\u7684",
+     "\u7fa4",
+     "\u60a8\u53ef\u4ee5",
+     "\u6253\u9020",
+     "\u6210\u529f",
+     "\u7f51\u7ea2",
+     "\u4e0b"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "achten",
+     " dataGridViewTextBoxColumn",
+     "\u90a3\u5929",
+     "actionDate",
+     "\u822c\u7684",
+     ".hits",
+     "_VM",
+     "_yes",
+     "-induced",
+     "illez"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "burgh",
+     "arker",
+     " fh",
+     "\u670d",
+     "pheric",
+     "CJK",
+     "ilha",
+     "\u547d",
+     "\u0131n\u0131z",
+     "\u4e2d\u5173"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u4e8c\u5b57",
+     " gele",
+     "\u6302",
+     "\u523a",
+     "\u8c10",
+     "\u4eba\u5fc3",
+     "\u4fdd\u9c9c",
+     "\u4e4e",
+     "-Ta",
+     "\u53ea\u662f"
+    ],
+    "target_script_frac": 0.8
+   }
+  ],
+  "7": [
+   {
+    "tokens": [
+     "\u200b",
+     "\u82f1\u8bed",
+     " \u200b",
+     "markdown",
+     " <!--[",
+     "engl",
+     " wordpress",
+     " ly",
+     " markdown",
+     "WordPress"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u83ab\u8fc7\u4e8e",
+     "\u624d\u662f",
+     "\u54ea\u4e00\u4e2a",
+     "\u8303\u7574",
+     "\u53eb\u58f0",
+     "\u888b\u5b50",
+     "\u4eec\u90fd",
+     "\u548c\u4ed6\u7684",
+     "\u7ec4\u6210\u90e8\u5206",
+     "\u5219\u662f"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5f88\u5f3a",
+     "\u592a\u591a\u7684",
+     "htag",
+     "\u5f88\u597d\u7684",
+     "\u7279\u8272\u7684",
+     "\u8db3\u591f\u7684",
+     "\u660e\u663e\u7684",
+     "\u4e00\u5b9a\u7684",
+     "\u592a\u591a",
+     "\u8f83\u5f3a\u7684"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u6211\u4eec\u7684",
+     "\u7ecf\u5386\u4e86",
+     "\u5b9e\u8df5\u4e2d",
+     "\u7f3a\u4e4f",
+     "\u7f3a\u5c11",
+     "\u8fd9\u65b9\u9762",
+     "\u7ecf\u5386",
+     "\u8fd9\u4e00\u70b9",
+     "\u8ff7\u4fe1",
+     "\u601d\u8003"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\"",
+     "\r\n",
+     "'",
+     "\n\n\n",
+     "ing",
+     "*",
+     "-",
+     "er",
+     "\u0629",
+     "y"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Trans",
+     " wre",
+     " trans",
+     "\u70b9\u8bc4",
+     "trans",
+     "\u5408\u5531",
+     "\ufffd",
+     "\u96bc",
+     " Chow",
+     "ISK"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u6211\u5df2\u7ecf",
+     "\u6715",
+     "\u8fd9\u662f\u6211\u4eec",
+     " receiver",
+     " rece",
+     " broadcasting",
+     " docking",
+     "serve",
+     "\u626b\u4e00\u626b",
+     "aug"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "rics",
+     " Verf\u00fcgung",
+     "\u7ba1\u59d4\u4f1a",
+     "y\u00fc",
+     "enticate",
+     "ll",
+     ".LayoutParams",
+     "vely",
+     "IGINAL",
+     "alytics"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u77e9\u9635",
+     "\u7f51",
+     "\u751f\u6210",
+     "\u4e8c",
+     "\u6570",
+     "\uff09\n",
+     "\u8be6\u60c5",
+     "\u4f46\u662f",
+     "\u00e1",
+     "\u7ed3"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u8fd9\u51e0",
+     "\u4e00\u4e8b",
+     " someday",
+     "\u8fd9\u5176\u4e2d",
+     "\u5176\u4ed6\u7684",
+     "\u8fd9\u6837\u4e00\u6765",
+     "\u6216\u8005\u662f",
+     "ucker",
+     "\u4ee5\u4e0a\u7684",
+     "\u8fd9\u4e2a\u4e16\u754c"
+    ],
+    "target_script_frac": 0.8
+   }
+  ],
+  "8": [
+   {
+    "tokens": [
+     "\u4eba\u90fd",
+     "\u306e\u3067",
+     "\u7684\u4e00\u5207",
+     "\u7684\u4e00\u4e9b",
+     "iates",
+     "i",
+     "\u30f3\u30b0",
+     "\ub370",
+     "\u7684\u5fc3",
+     "\u7684\u4e00"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u54bd\u5589",
+     "\u539f\u6807\u9898",
+     "\u4e00\u65b9\u9762",
+     "\u8c8c",
+     "\u751f\u751f",
+     "\u594b",
+     "\u666f",
+     "\u753b",
+     "\u043e\u043b\u043e\u0432",
+     "ouver"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u671f\u671b",
+     "\u7269\u8d28",
+     "\u201c",
+     "\u53e6\u4e00",
+     "`",
+     "'",
+     "\u5178\u578b",
+     "\u8ff9\u8c61",
+     "\u81ea\u6211",
+     "\u81ea\u7531"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u6beb\u65e0",
+     "\u6b27\u6d32",
+     "\u534e\u4eba",
+     "\u904d\u53ca",
+     "\u8054\u76df",
+     "\u589e\u591a",
+     "\u7ec4\u6210\u7684",
+     "\u5728\u7f8e\u56fd",
+     " Fir",
+     "\u79cd\u65cf"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u7684\u4e00",
+     "\u7684\u4e00\u4e9b",
+     "\u6574\u4e2a",
+     "\u7684\u60c5",
+     "\u5728\u8fd9",
+     "\u7684\u597d",
+     "\u5c48",
+     " own",
+     "\u7684\u4e00\u5207",
+     "\u6240\u5728\u7684"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\ud83c\udffb",
+     "\u513f",
+     "\ufe0f",
+     " \u200b\u200b",
+     "\u7136\u662f",
+     "\u5152",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ufffd",
+     "een"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "EDA",
+     "\u7814",
+     "\u0438\u0432\u0430\u044e\u0442",
+     "KO",
+     "ional",
+     "ivate",
+     "\u53ec",
+     "oco",
+     "ische",
+     "iri"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u662f\u4e00\u6b3e",
+     "\u662f\u4e00\u5ea7",
+     "zas",
+     "-collection",
+     "ores",
+     " CONST",
+     "onders",
+     "anos",
+     "seconds",
+     "\u662f\u6211\u4eec"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u57fa\u7840\u4e0a",
+     "\u610f\u4e49\u4e0a",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u4ec0\u4e48\u5730\u65b9",
+     "\u6307\u5bfc\u4e0b",
+     "\u5e02\u573a\u4e0a",
+     "\u6bd4\u8d5b\u4e2d",
+     "\u8303\u56f4\u5185",
+     "...]",
+     "\u7684\u57fa\u7840\u4e0a"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     " fair",
+     "\u5c31\u4e0d\u80fd",
+     "\u4e0d\u884c",
+     "\u516c\u5e73",
+     "\u4e0d\u5c11",
+     "\u5927\u4eba",
+     " fairness",
+     "azu",
+     "UILT",
+     "\u65f7"
+    ],
+    "target_script_frac": 0.6
+   }
+  ],
+  "9": [
+   {
+    "tokens": [
+     "\u57fa\u4e8e",
+     "\u6587\u7ae0",
+     "\uff1a\n",
+     "\u6982\u62ec",
+     "\u4f5c\u8005",
+     "\u6309\u7167",
+     "\u5408\u6210",
+     "\u80cc\u666f",
+     "\u5982\u4f55",
+     "\u81f4"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u6b27\u6d32",
+     "\u5728\u7f8e\u56fd",
+     "\u96c7",
+     "\u7231\u5c14\u5170",
+     "\u6cd5\u6848",
+     "\u7f8e\u56fd",
+     "\u7ec4\u6210\u7684",
+     "\u5404\u56fd",
+     "\u5317\u7f8e",
+     "\u7f57\u9a6c"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5e42",
+     "ad",
+     "\ub7f0",
+     "ectomy",
+     "\u5c0f\u7a0b\u5e8f",
+     "\u877e",
+     " coin",
+     "sgi",
+     "\u5b89\u5168\u611f",
+     "engo"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "e",
+     "ness",
+     "ection",
+     "ing",
+     "enticate",
+     "eer",
+     "een",
+     "eve",
+     "eel",
+     "eft"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u30d3\u30b8\u30cd",
+     "\u30a8\u30cd\u30eb",
+     "\u30bf\u30a4\u30df",
+     "\u30db\u30c6",
+     " #__",
+     "\u4f7f\u7528\u7db2\u8def",
+     "\u30a2\u30e1\u30ea",
+     "\u30b7\u30f3\u30d7",
+     "\u30b1\u30fc\ufffd",
+     "\u3044\u3089\u3063"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u4e00\u6bb5",
+     "\u4e00\u6761",
+     "\u4efd",
+     "\u4e00\u79cd",
+     "\u4e00\u4efd",
+     "\u65b9\u9762\u7684",
+     "\u672c\u4e66",
+     "\u7bc7\u6587\u7ae0",
+     "\u51e0\u4e2a",
+     "\u4e00\u5957"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " Qing",
+     " Jian",
+     " Jiang",
+     " Jing",
+     " Guang",
+     " Chinese",
+     " Zheng",
+     " Xia",
+     "\u662f\u4e2d\u56fd",
+     "qing"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " noqa",
+     "\u6697",
+     " others",
+     "\u306a\u3089\u306a\u3044",
+     " Woodward",
+     "\u0301",
+     "++++++++",
+     " gonna",
+     "\u85dc",
+     " discrim"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u4e9b",
+     "\u4f7f\u5f97",
+     "s",
+     "\u610f\u5473\u7740",
+     "\u505a\u6cd5",
+     "\u975e\u5e38",
+     "\u6240\u8c13\u7684",
+     "/th",
+     "\u5c31\u8981",
+     "\u65e0\u7591"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u7f51\u7ea2",
+     "\u5237",
+     "\u63a8\u8350",
+     "\u6253\u5361",
+     "\u6ee1\u6ee1\u7684",
+     "\u5feb",
+     "\u7684\u670b\u53cb",
+     "\u7a7f\u642d",
+     "\u5206\u4eab",
+     "\u6296\u97f3"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "10": [
+   {
+    "tokens": [
+     "\u5011",
+     "/or",
+     "enticate",
+     " sca",
+     "\u6fd1",
+     " nun",
+     "OfClass",
+     " \u0434\u0435\u043d",
+     "OfType",
+     "_strerror"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u5df2\u4e45\u7684",
+     "\u8fc7\u7684",
+     "\u53d1\u5c55\u7684",
+     "\u7c7b\u578b\u7684",
+     "\u7279\u8272\u7684",
+     "\u4e0b\u6765\u7684",
+     "\u60c5",
+     "\u4e0b\u7684",
+     "\u79f0\u4e4b",
+     "\u5728\u5185\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u6700\u540e",
+     "\u79bb",
+     "\u6301\u6709",
+     "\u5168",
+     "\u4f20",
+     "\u4e2d\u5c71",
+     " Elli",
+     "\u5f02",
+     "\u7b2c"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     ".bunifuFlatButton",
+     "\u4e00\u534a",
+     " \u7684",
+     "\u7a81",
+     "\u4f4d\u7f6e",
+     "\u80af\u5b9a",
+     "\u4e86",
+     "\u65b9\u5411",
+     "\u4e00\u81f4",
+     "\u7b56\u7565"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u75c7",
+     "\u886b",
+     "\u5668",
+     "\u9986",
+     "werk",
+     "\u677f",
+     "\u5c40",
+     "\u043d\u0438\u043a",
+     "\u671f",
+     "\u4e66\u4e2d"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u77e5\u4e4e",
+     "Criterion",
+     "\u524d\u8f88",
+     "\u8bfb\u8005",
+     "\u4f5c\u8005",
+     "\u4e1c\u4e9a",
+     "\u539f\u521b",
+     "\u65d7\u8230",
+     "\u7ffb",
+     " authoritarian"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u7ec4\u6210\u7684",
+     " Hav",
+     "\u53ca\u5176",
+     "\u51e0\u4e4e",
+     "\u6b27\u6d32",
+     "\u96c7",
+     "\u6beb\u65e0",
+     "\u73b0",
+     "\u6cd5\u6848",
+     "\u904d\u53ca"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     " noqa",
+     "\u306a\u3089\u306a\u3044",
+     "\u6697",
+     " discrim",
+     "\u0301",
+     "\u85dc",
+     "_supply",
+     "arme",
+     " gonna",
+     "++++++++"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "rics",
+     "issen",
+     ".comm",
+     "bidden",
+     " drama",
+     "atic",
+     "-turned",
+     "oretical",
+     "igo",
+     "\u6d8c\u73b0\u51fa"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u6e05",
+     "\u51ac",
+     "\u4e00",
+     "\u6865",
+     "\u6eaa",
+     "\u65b0",
+     "\u5c1a",
+     "\u7b26",
+     "\u5357",
+     "\u6c60"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "11": [
+   {
+    "tokens": [
+     "\u4e00\u534a",
+     "\u80af\u5b9a",
+     "ImplOptions",
+     ".bunifuFlatButton",
+     "\u6beb\u7c73",
+     "\u7ea7\u522b\u7684",
+     "\u7b56\u7565",
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "\u7684\u65f6\u95f4",
+     "\u4e00\u8d77"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "cel",
+     "/of",
+     "erior",
+     "ness",
+     "wards",
+     "\u65bc",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u201c",
+     "\u5ba4",
+     "lined"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u6700\u540e",
+     "odore",
+     "\u7b2c",
+     "\u4f20",
+     "\u6301\u6709",
+     "\u4e2d\u5c71",
+     " Elli",
+     "\u81f3\u5c11",
+     "\u79bb"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u7684",
+     "\u7684\u4ea7\u54c1",
+     "\u7684\u4eba\u7269",
+     "\u7684\u6bd4\u8d5b",
+     "\u7684\u4eba\u751f",
+     "\u7684\u5c0f",
+     "\u7684\u4eba",
+     "\u7684\u4ef7\u683c",
+     "\u7684\u5de5\u4f5c",
+     "\u7684\u60c5"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u6216\u591a",
+     "\u5168\u65b0\u7684",
+     "\u5b8c\u6574\u7684",
+     "\u5c0f\u5c0f\u7684",
+     "\u7279\u6b8a\u7684",
+     "zelf",
+     "\u4ec0\u4e48\u6837\u7684",
+     "\u53eb\u505a",
+     "-half",
+     "\u5177\u4f53\u7684"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u5f88\u5f3a",
+     "\u5f88\u597d\u7684",
+     "htag",
+     "\u660e\u663e\u7684",
+     "\u5f88\u6df1",
+     "\u5f88\u5927\u7684",
+     "\u5f3a\u70c8\u7684",
+     "htags",
+     "\u5f88\u9ad8\u7684",
+     "\u8db3\u591f\u7684"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     " noqa",
+     "\u306a\u3089\u306a\u3044",
+     "\u6697",
+     "\u0301",
+     " discrim",
+     "arme",
+     "\u85dc",
+     "elves",
+     " panda",
+     "++++++++"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "sticks",
+     "swith",
+     "alice",
+     "inals",
+     "it",
+     "iton",
+     "edList",
+     "Str",
+     "flows",
+     "ancel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Sullivan",
+     "jet",
+     " Crowley",
+     " Suffolk",
+     " TObject",
+     " Physician",
+     " Cassidy",
+     " Sheridan",
+     " Bever",
+     " Veterinary"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6027",
+     "\u800c\u53c8",
+     "\u5730",
+     "\u8fdb\u884c",
+     "\u6027\u7684",
+     "\u4f7f\u7528",
+     "\u5316",
+     "\u5904\u7406",
+     " \u0410\u043b\u0435\u043a\u0441\u0430\u043d",
+     " \u041f\u043e\u0447\u0435\u043c"
+    ],
+    "target_script_frac": 0.8
+   }
+  ],
+  "12": [
+   {
+    "tokens": [
+     "\u5011",
+     "\u77ad\u89e3\u4e26",
+     "\u683c\u5c07",
+     "\u4fdd\u9a7e\u62a4",
+     "\u800c\u4e14\u8fd8",
+     " laure",
+     "egral",
+     "\u3044\u3089\u3063",
+     " trotz",
+     "entifier"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u7ba1\u59d4\u4f1a",
+     "rics",
+     "ll",
+     " Verf\u00fcgung",
+     "enticate",
+     "vely",
+     "eenth",
+     "iface",
+     "ecs",
+     "\u0430\u043f"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u8003\u8651\u5230",
+     "\u8fd9\u65b9\u9762",
+     "\u6211\u4eec\u7684",
+     "\u6ce8\u610f\u5230",
+     "\u7b14\u8005",
+     "\u5b9e\u8df5\u4e2d",
+     "\u8fd9\u6bb5\u65f6\u95f4",
+     "\u4f17\u591a",
+     "\u8fd9\u4e00\u70b9",
+     "\u6b64\u57fa\u7840\u4e0a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u77ed\u65f6\u95f4\u5185",
+     "\u9053\u8def\u4e0a",
+     "\u57fa\u7840\u4e0a",
+     "\u7b2c\u4e00\u65f6\u95f4",
+     "\u6218\u573a\u4e0a",
+     "\u80cc\u666f\u4e0b",
+     "\u6307\u5bfc\u4e0b",
+     "\u821e\u53f0\u4e0a",
+     "\u8111\u6d77\u4e2d",
+     "\u73af\u5883\u4e0b"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5df2\u4e45\u7684",
+     "\u8fc7\u7684",
+     "\u53d1\u5c55\u7684",
+     "\u4e0b\u7684",
+     "\u5185\u7684",
+     "\u540e\u7684",
+     "CAF",
+     "\u6837\u7684",
+     "\u7279\u8272\u7684",
+     "\u610f\u4e49\u4e0a\u7684"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u200b\u200b",
+     "\u5152",
+     " \u200e",
+     "\u200b",
+     "\u5d34",
+     "\u2011",
+     "amp",
+     "\ufffd",
+     " \u00ad"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u6027",
+     "\u5316",
+     "\u6027\u548c",
+     "\u6027\u7684",
+     "\u578b",
+     "\u7ba1\u7406",
+     "\u7c7b",
+     "\u5206",
+     "\u5c42\u9762",
+     "\u5316\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "istry",
+     "hood",
+     "\u4e0e\u5176\u4ed6",
+     "\u65cf\u81ea\u6cbb\u53bf",
+     "frey",
+     "\u2122",
+     "\u4e00\u4f53",
+     "\u6216\u5176\u4ed6",
+     "Prompt",
+     "\u6216\u8005\u5176\u4ed6"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "gether",
+     "\u0629",
+     "entication",
+     "\u4eec",
+     "\u4f55",
+     "ation",
+     "\u4ed6",
+     "zelf",
+     "orary",
+     "\u5c0f"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u7ec4\u6210\u90e8\u5206",
+     "\u83ab\u8fc7\u4e8e",
+     "\u8303\u7574",
+     "\u548c\u4ed6\u7684",
+     "\uff0c\u5728",
+     "\u4ee5\u53ca",
+     "oretical",
+     "\u548c",
+     "\u53eb\u505a",
+     "\u53eb\u58f0"
+    ],
+    "target_script_frac": 0.9
+   }
+  ],
+  "13": [
+   {
+    "tokens": [
+     "\u7ba1\u59d4\u4f1a",
+     "enticate",
+     "ll",
+     " Verf\u00fcgung",
+     "rics",
+     "\u3082\u306e",
+     ".LayoutParams",
+     "vely",
+     "\u0430\u043f",
+     "alytics"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u3001",
+     "\u63a5",
+     "\u81ea\u7136",
+     "\u3002",
+     "\u7269",
+     "\u6750\u6599",
+     "\u671f\u671b",
+     "\u6301",
+     "\u4e00\u76f4",
+     "\u7269\u8d28"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     " t\u00fa",
+     " wet",
+     " imper",
+     "\u0438\u043b\u0430",
+     "\u0442\u0443",
+     "\u83b2",
+     "IRE",
+     "\u6709\u4e00",
+     "-public",
+     "\u7f18"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u6027",
+     "\uff08",
+     "\u5316",
+     "\u5f0f",
+     "\u578b",
+     "\u5ea6",
+     "\u4ee3",
+     "\u79d1",
+     "\u7684",
+     "\u91d1"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u5e74\u6765",
+     "\u65e5\u5b50",
+     "\u5e74\u7684",
+     "\u539f\u672c",
+     "\u5927\u5927\u5c0f\u5c0f",
+     "\u5730\u65b9",
+     "\u4e0d\u5fc5\u8981\u7684",
+     "\u65b9\u9762\u7684",
+     "\u96f6\u788e",
+     "\u5206\u6563"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\ud83c\udffb",
+     "\ufe0f",
+     "\u513f",
+     "\ud83c\udffc",
+     "\u7136\u662f",
+     "\ud83c\udffd",
+     "\u5b50\u91cc",
+     " \u200b\u200b",
+     "\u5152",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u5011",
+     "\u683c\u5c07",
+     "\u77ad\u89e3\u4e26",
+     " trotz",
+     "\u3044\u3089\u3063",
+     "\u4fdd\u9a7e\u62a4",
+     " laure",
+     "\u800c\u4e14\u8fd8",
+     "\u501f\u9322",
+     "\u304a\u3059\u3059"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     " Buck",
+     "_ALREADY",
+     " Welch",
+     "\u5f62",
+     "\u4e45\u4e45",
+     "\u5f62\u6001",
+     "\u8fbd",
+     " lifetime",
+     "\u6cf0",
+     "/res"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u6027",
+     "\u6027\u7684",
+     "\u6027\u548c",
+     "ness",
+     "\u578b",
+     "\u75c7",
+     "\u6027\u5f3a",
+     "ity",
+     "\u5f0f",
+     "\u4e3b\u4e49"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "e",
+     "ness",
+     "ection",
+     "ing",
+     "eel",
+     "een",
+     "eer",
+     "eed",
+     "a",
+     "ein"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "14": [
+   {
+    "tokens": [
+     "\u82f1\u8bed",
+     "\u8bd1",
+     "\u50cf",
+     "\u7ffb\u8bd1",
+     "\u8bf4\u660e",
+     "\u82f1\u6587",
+     "\u4e0d\u540c",
+     "\u8fd9",
+     "\u6240\u6709",
+     "\u6697\u793a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e43\u81f3",
+     "\u800c\u975e",
+     "\u5373\u4fbf",
+     "\u751a\u81f3",
+     "AI",
+     " AI",
+     "\u91cd\u5851",
+     "\u5b9a\u5236",
+     " adept",
+     "\u9ad8\u6548"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     " Cabinets",
+     "izzo",
+     "ILES",
+     " Mention",
+     "\u8c28",
+     "\u9732\u5929",
+     "achs",
+     "/mp",
+     " AIM",
+     " CCS"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u5b9e\u8df5\u4e2d",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u9047\u5230",
+     "\u8003\u8651\u5230",
+     "\u8fc7\u7a0b\u4e2d",
+     "\u73b0\u5b9e\u4e2d",
+     "\u6ce8\u610f\u5230",
+     "\u8fd9\u6bb5\u65f6\u95f4",
+     "\u5de5\u4f5c\u4e2d",
+     "\u9002\u5f53\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u7684\u8bdd",
+     "\u5e76\u4e0d\u4ee3\u8868",
+     "\u7684\u540c\u65f6",
+     "\u4e45\u4e86",
+     "\u8d8a\u591a",
+     "\u610f\u5473\u7740",
+     "\u7684\u4eba\u90fd",
+     "\u5c31\u610f\u5473\u7740",
+     "\u4e86\u4e00",
+     "\u5219"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u8bd1",
+     " translated",
+     " translation",
+     "translated",
+     " translations",
+     " Translation",
+     " translators",
+     "\u7ffb\u8bd1",
+     " translating",
+     " translate"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u7fc1",
+     "\u5de6",
+     "\u0448\u0438\u0432",
+     "\u6028",
+     "Iterations",
+     "_hdl",
+     " iter",
+     "ichel",
+     " matrix"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u6027",
+     "\u5668",
+     "\u6027\u7684",
+     "\u75c7",
+     "\u6027\u548c",
+     "\u7269",
+     "\u578b",
+     "ness",
+     "\u5b50",
+     "\u6027\u5f3a"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "enticate",
+     "IGINAL",
+     "\u5011",
+     "autiful",
+     "aurants",
+     "ategy",
+     "ctrine",
+     "ftware",
+     "finity",
+     "orary"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u5351",
+     "\u629b",
+     "/sm",
+     "\u629b\u5f03",
+     "\u8d64",
+     "\u7eb5",
+     " THROW",
+     "\u4e09\u9879",
+     "\u00fdt",
+     "\u4e9a\u9a6c\u900a"
+    ],
+    "target_script_frac": 0.7
+   }
+  ],
+  "15": [
+   {
+    "tokens": [
+     "ivate",
+     "agram",
+     "lint",
+     "nar",
+     "\ufffd\u5355",
+     "amate",
+     "olist",
+     "earch",
+     ".imag",
+     "\u5b57"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u0435\u0441",
+     "\u4e3b\u9898",
+     "/sm",
+     " boot",
+     " \ufffd",
+     " iter",
+     "\u3002\u3002\u3002",
+     "\u60ac",
+     " [#",
+     "(ar"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " contenders",
+     "\u6392\u540d",
+     "\u540d\u5355",
+     " notable",
+     "\u4e0a\u699c",
+     "\u8001\u724c",
+     "\u524d\u5217",
+     " rankings",
+     " standout",
+     " favorites"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u4e45\u4e86",
+     "\u518d\u591a",
+     "\u4e86\u4e00",
+     "\u4e86\u5f88\u591a",
+     "\u4e86\u8bb8\u591a",
+     "\u7814\u7a76\u8868\u660e",
+     "\u4e5f\u597d",
+     "\u5230\u8fd9\u91cc",
+     "\u4e86\u597d",
+     "\u8fc7\u7a0b\u4e2d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u6cba",
+     "\u59c8",
+     "\u5a7b",
+     "\u6faa",
+     "\u5788",
+     "\u59a7",
+     "ugins",
+     "/OR",
+     " etc",
+     " ----------------------------------------------------------------"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     " vs",
+     "anka",
+     "onian",
+     "\u6539\u9769",
+     " capitalism",
+     "lew",
+     " blames",
+     "\u6b4c\u8bcd",
+     " reform",
+     " blamed"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "ouden",
+     "\ufffd",
+     "\u804a\u5929",
+     " chat",
+     " itself",
+     " Baltic",
+     "\u672c\u8eab",
+     "\u9886\u519b",
+     "/block",
+     " holders"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\uff0c\n",
+     "\u5f80",
+     " *,\n",
+     "\u60a8",
+     "\u5c0f\u7f16",
+     "\u547c\u5438",
+     "/apps",
+     "\u989c\u503c",
+     "\u4eca\u65e5",
+     "\u8ba9\u6211\u4eec"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "mic",
+     "l\u00e2",
+     "-)",
+     "\u54c1\u7c7b",
+     "irling",
+     "ArgsConstructor",
+     "lesh",
+     "anch",
+     "lian",
+     "\u4e95"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u6027\u5f3a",
+     "\u5f97\u5f88",
+     "\u4e86\u5f88\u591a",
+     "\u4e45\u4e86",
+     "\u4e0d\u4e86",
+     "\u5230\u4e86",
+     "\u4e86\u8bb8\u591a",
+     "\u4e0e\u5426",
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u8d77\u6765\u4e86"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "16": [
+   {
+    "tokens": [
+     "\u4f3d",
+     "\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435",
+     "_ARGUMENT",
+     "\u4e2d\u6587",
+     "\u5baa",
+     "\u4e00\u884c",
+     "\u514b\u65af",
+     "oston",
+     "\u5929\u624d",
+     "(ar"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u56de\u7b54",
+     " \ufffd",
+     "\ud83c\udf1f",
+     " \ufffd",
+     "\u7684\u56de\u7b54",
+     "\u6807\u9898",
+     "\uff1a\n\n",
+     " Markdown",
+     "\u5438\u5f15\u66f4\u591a",
+     "\ud83c\udf89"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u59c8",
+     "\u5a7b",
+     "\u6faa",
+     "/OR",
+     "\u59a7",
+     "\u6cba",
+     " ----------------------------------------------------------------------------------------------------------------",
+     "\u539f\u6807\u9898",
+     "\u73bf",
+     "\u5788"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "ryn",
+     "pher",
+     "\u54c1\u7c7b",
+     "acho",
+     "\u5c45\u5bb6",
+     "irling",
+     "Billy",
+     "rogen",
+     " Avery",
+     "igon"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u0300",
+     "\u0451\u043d",
+     "\u0080\u0099",
+     "ively",
+     "\u0080\ufffd",
+     "ilde",
+     "orial",
+     "\u0301",
+     "\u591a\u534a",
+     " \u200b\u200b"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "/plain",
+     "\u8fd4\u56de\u641c\u72d0",
+     "\u200e",
+     "\u4e3a\u5565",
+     ".motion",
+     ".CG",
+     "usize",
+     "oriented",
+     "elijk",
+     " precinct"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u5011",
+     "enticate",
+     "egral",
+     " trotz",
+     "entifier",
+     "\ufffd\ufffd",
+     "autiful",
+     "ategy",
+     " laure",
+     "\u015bmy"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u6216\u591a",
+     "\uc529",
+     "zelf",
+     "-half",
+     " sola",
+     "\u5b8c\u6574\u7684",
+     "\u4e9b",
+     "\u9aa4",
+     "sters",
+     "st"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u5e74\u6765",
+     "\u6240\u8c13\u7684",
+     "\u65e5\u5b50",
+     "\u5e74\u7684",
+     "\u539f\u672c",
+     "\u91cd\u8981\u7684",
+     "\u65b9\u9762\u7684",
+     "\u7c7b\u578b\u7684",
+     "\u8bf8\u5982",
+     "\u65f6\u5019"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u00c2",
+     " Wend",
+     "\u5757\u94b1",
+     " **",
+     "]interface",
+     "swift",
+     "\u4e00\u5957",
+     "adow",
+     "\u200e",
+     "esch"
+    ],
+    "target_script_frac": 0.2
+   }
+  ],
+  "17": [
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u0080\ufffd",
+     "\u0300",
+     "\u0080\u0099",
+     "orial",
+     "ilde",
+     "aeda",
+     "\u00e8le",
+     "\u00adt",
+     "\u00ading"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5728\u6211\u56fd",
+     " \"\\\n",
+     "esch",
+     "rou",
+     " Dwight",
+     " \"+\n",
+     "]interface",
+     "\u8033\u6735",
+     "\u5757\u94b1",
+     "\u6607"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u8bf4\u6211",
+     "/generated",
+     "\u00b7",
+     "\u0e40\u0e01\u0e23",
+     "memberof",
+     ".Guna",
+     "\u7cbe\u5f69\u7684",
+     " cul",
+     "\u4e4b\u4e0b",
+     " \u00b7"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u770b\u4f3c",
+     "\u4e43\u81f3",
+     " Seeder",
+     "\u0440\u0438\u043d",
+     "\u6df1\u8015",
+     "\u65e2\u8981",
+     "\u4e0d\u53ef\u6216\u7f3a",
+     "\u5373\u4fbf",
+     "\u4e0d\u4ec5\u80fd",
+     ")(\n"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u5b9e\u8df5\u4e2d",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u8fc7\u7a0b\u4e2d",
+     "\u8003\u8651\u5230",
+     "\u5de5\u4f5c\u4e2d",
+     "\u9047\u5230",
+     "\u73b0\u5b9e\u4e2d",
+     "\u8fd9\u65b9\u9762",
+     "\u8fc7\u7a0b\u5f53\u4e2d",
+     "\u8c08\u5230"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "oria",
+     "ropy",
+     "(P",
+     " (`",
+     "(IF",
+     " (**",
+     "\u7b80\u79f0",
+     "\u767d",
+     "\u9650\u65f6",
+     " ("
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "/chart",
+     "\u542c\u7740",
+     "\u564e",
+     "\u3084\u3089",
+     "\u628a\u8fd9\u4e2a",
+     " nextState",
+     "\u4e0d\u514b",
+     "\u53d7\u4e0d\u4e86",
+     " dov",
+     "\u7ff3"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u67d0\u79cd\u7a0b\u5ea6",
+     "\u4e0d\u540c\u7684",
+     "\u77ed\u65f6\u95f4\u5185",
+     "\u67d0\u4e2a",
+     "\u5404\u81ea\u7684",
+     "\u7279\u5b9a",
+     "\u540c\u4e00\u4e2a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5bd3",
+     "\u516c\u4f17\u53f7",
+     "\u4e92\u8054",
+     "ides",
+     "swith",
+     "\u4e13\u4eab",
+     "lopedia",
+     " crowd",
+     "bol",
+     "combe"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     " english",
+     ".Never",
+     "\u82e5\u60a8",
+     "\u4e3b\u529e\u65b9",
+     " translated",
+     "\u7ffb\u8bd1",
+     "\u7576\u60a8",
+     " laz",
+     "\u5206\u5f69",
+     "\u4ffe"
+    ],
+    "target_script_frac": 0.6
+   }
+  ],
+  "18": [
+   {
+    "tokens": [
+     " rejo",
+     " (?)",
+     " (=",
+     "\u4f1a\u957f",
+     "reshold",
+     "\u5185\u8863",
+     "\u65b0\u9648\u4ee3\u8c22",
+     "\u4e4b\u4eba",
+     ">\\<^",
+     " underwear"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u8003\u8651\u5230",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u9047\u5230",
+     "\u73b0\u4ee3\u793e\u4f1a",
+     "\u8fd9\u65b9\u9762",
+     "\u5b9e\u8df5\u4e2d",
+     "\u4e00\u4e9b",
+     "\u73b0\u5b9e\u4e2d",
+     "\u6211\u4eec\u7684",
+     "\u67d0\u4e9b"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " servic",
+     " Accept",
+     " iq",
+     "datal",
+     " mixin",
+     "\u62ab",
+     " Chill",
+     " prem",
+     " dese",
+     "\u2f74"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u62bc",
+     "\u5835",
+     " mi\u1ec7ng",
+     "bounce",
+     "\u6728\u8d28",
+     "chal",
+     " balk",
+     " rej",
+     " assignable",
+     "\u514d\u7a0e"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u9664\u4e86",
+     "\u4e00\u65b9\u9762",
+     "\u5bf9\u4e8e",
+     "\u65e0\u8bba\u662f",
+     "\u672c",
+     "\u65e2\u6709",
+     "\u539f\u672c",
+     "\u968f\u7740",
+     "\u4ece",
+     "\u5927\u90e8\u5206"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u56fa\u7136",
+     "\u5e76\u4e0d\u4ee3\u8868",
+     "\u4e5f\u597d",
+     "\u81ea\u7136\u662f",
+     "\u5219\u662f",
+     "\u610f\u5473\u7740",
+     "\u4e0d\u4ee3\u8868",
+     "\u7684\u8bdd",
+     "\u5f53\u7136\u662f",
+     "\u5219"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5982\u6b64",
+     "UDA",
+     "ouch",
+     "astes",
+     "\u0e2f",
+     "_refl",
+     "n\u00e9e",
+     "\u4e0b\u6c89",
+     "adoras",
+     "unken"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u4ec0\u9ebd",
+     " thumbs",
+     "\u9ebd",
+     "\u548c\u5e73",
+     "acco",
+     "_ctxt",
+     "\u5565",
+     "\u0451\u0442",
+     "\u4e3a\u5565"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\ud83c\udffb",
+     "\ufe0f",
+     "\u513f",
+     " \u200b\u200b",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\u7136\u662f",
+     "\u5152",
+     "\u5b50\u91cc",
+     "\u4e4e"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u0080\ufffd",
+     "\u0080\u0099",
+     "\u0300",
+     "\u8001\u4eba\u5bb6",
+     "\u00ading",
+     "ilde",
+     "/audio",
+     "orial",
+     "\u00adt"
+    ],
+    "target_script_frac": 0.1
+   }
+  ],
+  "19": [
+   {
+    "tokens": [
+     "\u4ec0\u9ebd",
+     " \u200b\u200b",
+     "bai",
+     "\f\n",
+     ".lambda",
+     "Chi",
+     "))-",
+     "/plain",
+     "_chi",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "____",
+     "\uff5c",
+     " ____",
+     "\u4e28",
+     " ______",
+     " \n\n\n",
+     "\n \n",
+     " _____",
+     "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+     " \ufffd"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u3044\u3089\u3063",
+     "\u304a\u4e92",
+     "\u3fe0",
+     "\u304a\u3059\u3059",
+     "\u53cd\u8150\u5021",
+     "\u5bb6\u55bb\u6237",
+     "\u8feb\u4e0d\u53ca",
+     "\u4e5d\u5927\u7cbe\u795e",
+     "\u3068\u306b\u304b",
+     "\u626b\u9ed1\u9664"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u4e00\u4e9b",
+     "\u67d0\u4e9b",
+     "\u8c08\u5230",
+     "\u8003\u8651\u5230",
+     "\u73b0\u4ee3\u793e\u4f1a",
+     "\u6ce8\u610f\u5230",
+     "\u4f20\u7edf\u7684",
+     "\u8fd9\u79cd",
+     "\u8fc7\u53bb\u7684",
+     "\u4f17\u591a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u8bf4\u7684\u662f",
+     "rdf",
+     "\u8bdd\u8bf4",
+     "\u8bf4\u5230\u8fd9\u91cc",
+     "\u4e3a\u6293",
+     " proverb",
+     "\u606b",
+     "\u8bf4\u7740",
+     "yii",
+     ",[],"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u6253\u51fa",
+     "ges",
+     " Linked",
+     "masters",
+     "\u9553",
+     "OrNull",
+     " routine",
+     "\u5708\u5b50",
+     "\u9088",
+     "cape"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "&nbsp",
+     "&#",
+     "&amp",
+     " &#",
+     "@qq",
+     "\ufffd",
+     " sparing",
+     "\u4e00\u8d2f",
+     " Rh",
+     "&utm"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u662f\u4e00\u4f4d",
+     "\u7f51\u8baf",
+     "\u662f\u6307",
+     "iles",
+     "\u662f\u4ed6",
+     "\u662f",
+     " sy",
+     "\u662f\u4e00\u4e2a",
+     "\u662f\u6211\u4eec",
+     "inheritDoc"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u9664\u4e86",
+     "\u5982\u679c",
+     "\u5373\u4f7f",
+     "\u5373\u4f7f\u662f",
+     "\u53ea\u8981",
+     "\u901a\u8fc7",
+     "\u65e0\u8bba\u662f",
+     "\u4ece",
+     "\u8fd9\u4e9b",
+     "\u65e2"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "-on",
+     "\u4e4b\u529b",
+     "ium",
+     "phere",
+     " b",
+     " lift",
+     ".tim",
+     "\u767e",
+     "oria",
+     "ninger"
+    ],
+    "target_script_frac": 0.2
+   }
+  ],
+  "20": [
+   {
+    "tokens": [
+     "\u200e",
+     " desp",
+     "\u5468\u6069\u6765",
+     " Clo",
+     "-desc",
+     " ENT",
+     "\u6217",
+     " transl",
+     " Cron",
+     " bilingual"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\uff01\uff01\n\n",
+     "\u7f51\u8baf",
+     " #\n\n",
+     "\u754c\u7b2c\u4e00",
+     "\u200b\u200b",
+     " /\n",
+     "??\n\n",
+     " ::\n",
+     "!!\n\n",
+     "\u8fd9\u4e2a\u8bcd"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "`",
+     "\u81ea\u7136",
+     "\u7279\u6b8a",
+     "\u9ad8",
+     "\u7269\u7406",
+     "\u975e",
+     "\u7269\u8d28",
+     "\u539f\u59cb",
+     "\u3001",
+     "\u81ea\u6211"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     " vs",
+     "\u662f\u4e00\u79cd",
+     "\u56fa\u7136",
+     "izing",
+     " ::=",
+     "\u516c\u7f51\u5b89\u5907",
+     "\u09ab",
+     "onium",
+     "\u9738",
+     "izaci\u00f3n"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "&#",
+     " PIPE",
+     "\ufffd\ufffd",
+     "&amp",
+     " &#",
+     "{@",
+     "clazz",
+     "\u001b[",
+     "\ufffd",
+     "<\\/"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "otope",
+     "\u3063\u304d\u308a",
+     "\u4e9b",
+     "\u56fa\u5b9a\u7684",
+     "\u201c",
+     "\u81ea\u5df1",
+     "\u6307",
+     "\u5176\u4ed6",
+     "\u6837\u7684",
+     "\u81ea\u7136"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     ".TryParse",
+     "theless",
+     "_Str",
+     " impro",
+     "\u7684\u610f\u601d",
+     "alion",
+     "ITHER",
+     "\u7bb4",
+     "kart",
+     "\u062a\u0631\u0648"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     ".Expect",
+     "\u6faa",
+     " ----------------------------------------------------------------",
+     "ategory",
+     ".Types",
+     "ugins",
+     "\u4f18\u5148",
+     "\u59c8",
+     "\u6cba",
+     "uiltin"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u5df2\u4e45\u7684",
+     "\u4e86\u5f88\u591a",
+     "\u4e0b\u6765\u7684",
+     "\u5316\u7684",
+     "\u4e86\u4e00",
+     "\u597d\u7684",
+     "\u4ec0\u4e48\u6837\u7684",
+     "\u4e86\u8bb8\u591a",
+     "\u8fd9\u6837\u4e00\u4e2a",
+     "\u4e86\u4e00\u4e2a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "...\",\n",
+     "\u67e5\u770b\u5168\u6587",
+     "/aws",
+     " Stripe",
+     " \u2588\u2588\u2588\u2588\u2588",
+     " obsc",
+     " \u200b\u200b",
+     "/command",
+     "\u00fcst",
+     "isNew"
+    ],
+    "target_script_frac": 0.1
+   }
+  ],
+  "21": [
+   {
+    "tokens": [
+     "\u666e\u901a\u7684",
+     "\u4e2a\u591a",
+     "\u9ad8\u5ea6",
+     "\u5176\u4e2d\u4e4b\u4e00",
+     "\u4e9b",
+     "\u5176\u4ed6",
+     "\u600e\u4e48\u56de\u4e8b",
+     "\u56fa\u5b9a\u7684",
+     "\u65f6\u5019",
+     "\u666e\u901a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "`",
+     "\u76ee\u7684\u662f",
+     "\u81ea\u7136",
+     "\u7269\u7406",
+     "\u7279\u6b8a",
+     "\u9ad8",
+     "\u7269\u8d28",
+     "\u975e",
+     "\u6b63",
+     "\u81ea\u6211"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u8fbe",
+     "\u6eaa",
+     "\u5eb5",
+     "\u4e91",
+     "\u6c5f",
+     "\u5b89",
+     "\u5357",
+     "\u5fb7",
+     "\u7530",
+     "\u54e5"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\ufffd\ufffd",
+     "/gallery",
+     "\u0155",
+     "\u4e3b\u573a",
+     "...\",",
+     "itte",
+     "])**",
+     "\u3069\u3053\u308d",
+     "\u5bd3",
+     "\u600f"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u7ffb\u8bd1",
+     "\u610f\u601d\u662f",
+     "\u8bd1",
+     " Translation",
+     " translation",
+     "\u7684\u610f\u601d",
+     " translators",
+     "translation",
+     " translations",
+     " translated"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u57fa",
+     "\u975e",
+     "\u96c6",
+     " \u200b\u200b",
+     "\u4fdd\u62a4",
+     "\u4ee3",
+     "\u4e0e",
+     "\u6c60",
+     "\u53ca",
+     "\u7684"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     " uncert",
+     " ReSharper",
+     "\u7aae",
+     "\u7682",
+     "/display",
+     "\u564e",
+     "Gov",
+     ".assertEquals",
+     "\u6d77\u7ef5",
+     " \u043f\u0441"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u5934",
+     "\u6d41",
+     "\u7740",
+     "\u4e86\u4e2a",
+     "\u5598",
+     "\u4e86",
+     "\u7eb3",
+     "\u7740\u624b",
+     "\u624b",
+     "\u4e0b\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u60c5\u51b5\u4e0b",
+     "\u65f6\u95f4\u5185",
+     "\u73af\u5883\u4e0b",
+     "\u6027\u7684",
+     "\u72b6\u6001\u4e0b",
+     "\u7814\u7a76\u8868\u660e",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u6761\u4ef6\u4e0b",
+     "\u6570\u636e\u663e\u793a",
+     "\u4e5f\u597d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u6216\u591a",
+     "\uc529",
+     "-half",
+     "st",
+     "zelf",
+     "-third",
+     " sola",
+     " v\u00e0i",
+     "\u4e9b",
+     "\u5b8c\u6574\u7684"
+    ],
+    "target_script_frac": 0.3
+   }
+  ],
+  "22": [
+   {
+    "tokens": [
+     "\u7814\u7a76\u8868\u660e",
+     "\u60c5\u51b5\u4e0b",
+     "\u4e4b\u6240\u4ee5",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u8d44\u6599\u663e\u793a",
+     "\u539f\u56e0\u662f",
+     "\u5728\u8fd9\u79cd",
+     "\u4e5f\u597d",
+     "etheless",
+     "\u800c\u8a00"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u76f4",
+     "\u60c5\u51b5\u8fdb\u884c",
+     "\u7231\u4f60",
+     "],$",
+     "\u5176\u4e2d\u6709",
+     "\u8c23",
+     "\u4ec0\u4e48\u4e8b",
+     "vi",
+     "\u1ed5i",
+     "\u9753"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u7684",
+     "\u975e",
+     "\u548c",
+     "\u4e0e",
+     "\u5728",
+     "\u5168",
+     "\u4f9d",
+     "\u53cd",
+     "\u53ca",
+     "\u7b49"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u800c\u4e0d",
+     "\u661f",
+     "\u5fc3",
+     "\u4e00",
+     "\u5c71",
+     "\u6865",
+     "\u82b1",
+     "\u4e2d\u6709",
+     "\u77e5",
+     "\u6211"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " pronounce",
+     "\u8fd1",
+     "\u97f3",
+     " pronounced",
+     "pron",
+     " spelled",
+     " pronunciation",
+     "awi",
+     "endi",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\u897f\u8def",
+     "ame",
+     "n\u00ed",
+     "lessly",
+     "\u00f3n",
+     "\u012b",
+     "yk",
+     "ivic",
+     "mine",
+     "\u00e1n"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     " translated",
+     "translation",
+     "\u7ffb\u8bd1",
+     " translation",
+     " translators",
+     "\u8bd1",
+     " translating",
+     " Translation",
+     " translates",
+     "translated"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     " \u201e",
+     "\u201f",
+     "\u00a0",
+     " \u201c",
+     "\u301e",
+     "\u201e",
+     " \u201d",
+     "\u6709\u4e24\u79cd",
+     "\u201b",
+     ":\n\n"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\n \n",
+     "\uff5c",
+     "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+     "____",
+     " \n \n",
+     " |",
+     " ____",
+     "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+     "\u4e28",
+     "\n\n\n\n\n\n\n\n"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u304a\u4e92",
+     "\u6240\u8b02",
+     "\u8a31\u591a",
+     "\u8bf8\u5982",
+     " progressively",
+     " similarly",
+     "\u5fc5\u8981\u7684",
+     "\u4ec0\u4e48\u610f\u601d",
+     " un",
+     "\u4f17\u6240\u5468\u77e5"
+    ],
+    "target_script_frac": 0.7
+   }
+  ],
+  "23": [
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u4ec0\u4e48\u610f\u601d",
+     "\u82f1\u6587",
+     "\u7ffb\u8bd1",
+     " happiest",
+     "\u064e\u0627",
+     "\u770b\u4e0d\u61c2",
+     "\u5199\u51fa",
+     " transl",
+     " [#"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u8ddf",
+     "\u5728\u8fd9\u65b9\u9762",
+     "\u5728\u8fd9\u79cd",
+     "\u4ee5\u4e0b\u662f",
+     "\u8bd1",
+     "\u4eba\u4eec",
+     " filetype",
+     "\u4e00\u79cd",
+     "\u8ddf\u6211",
+     "\u5728\u4e00\u4e2a"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "...'",
+     " whats",
+     "...',",
+     "...",
+     "..\\",
+     " thru",
+     "..'",
+     " \\`",
+     " Uncategorized",
+     "','#"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u56fa\u5b9a\u7684",
+     "\u4e2a\u591a",
+     "\u4e9b",
+     "\u3063\u304d\u308a",
+     "\u666e\u901a\u7684",
+     "\u5148",
+     "\u6307",
+     "\u51fa\u4e8e",
+     "\u600e",
+     "\u6309\u7167"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u77ed\u65f6\u95f4\u5185",
+     "\u5b9e\u8df5\u4e2d",
+     "\u67d0\u79cd\u7a0b\u5ea6",
+     "\u7279\u5b9a",
+     "\u540c\u4e00\u4e2a",
+     "\u4e0d\u540c\u7684",
+     "\u4eba\u7fa4\u4e2d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " ([",
+     " (\n",
+     " \uff08",
+     " (\n\n",
+     " (\ufffd",
+     " (\\",
+     " ((",
+     " (#"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u63ed\u79d8",
+     "\u63a2\u7d22",
+     "\uff1a",
+     "\u63ed\u793a",
+     "\u6307\u5357",
+     "\u8be6\u89e3",
+     "\u65b0\u7bc7\u7ae0",
+     " fascinating",
+     "\u7684\u79d8\u5bc6",
+     " intriguing"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     " stuff",
+     " stuck",
+     "Trying",
+     " things",
+     "Spoiler",
+     " \u200b\u200b",
+     "ething",
+     " \u0431\u0443\u043a\u0432",
+     " nothing",
+     "\u200b\u200b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8bf8\u5982",
+     "\u7279\u5b9a",
+     "\u67d0\u4e9b",
+     "\u4e00\u7cfb\u5217",
+     "\u8a31\u591a",
+     "\u51e0\u4e4e\u6240\u6709",
+     "\u6240\u6709",
+     "\u4e00\u79cd",
+     "\u4e13\u95e8\u4e3a",
+     "\u4e00\u7ec4"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e4b\u6240\u4ee5",
+     "\u7814\u7a76\u8868\u660e",
+     "\u867d\u7136",
+     "\u6b63\u662f\u56e0\u4e3a",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u6709\u4e00\u4e9b",
+     "\u5e86\u5e78",
+     "\u5e74\u4ee5\u6765",
+     "\u6709\u4e00\u5929",
+     "\u867d"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "24": [
+   {
+    "tokens": [
+     " (",
+     " ([",
+     " \uff08",
+     " (\n",
+     "\uff08",
+     " (\n\n",
+     " (\r\n",
+     "\u3002\uff08",
+     " (**",
+     " (\\"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u77ed\u65f6\u95f4\u5185",
+     "\u7279\u5b9a",
+     "\u67d0\u79cd\u7a0b\u5ea6",
+     "\u540c\u4e00\u4e2a",
+     "\u4e0d\u540c\u7684",
+     "\u67d0\u4e2a",
+     "\u5b9e\u8df5\u4e2d"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5982\u679c\u6211\u4eec",
+     "\u7136\u800c",
+     "\u8fd9\u610f\u5473\u7740",
+     "\u5c3d\u7ba1",
+     "\u867d\u7136",
+     "\u5982\u679c",
+     "\u5f53",
+     "\u8fd9\u4e9b",
+     "\u4e00\u65e6",
+     "\u8fd9\u9879"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     "(",
+     " \uff08",
+     " (\"",
+     " (=",
+     " (\u201c",
+     " ('",
+     " ($",
+     " (~"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd\u8ba4",
+     "\u5965\u5730",
+     "APON",
+     "\uff01\n\n\n\n",
+     " UNUSED",
+     "_spin",
+     "ArrayOf",
+     "\u6900",
+     " inconsist",
+     " PartialView"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u56fa\u5b9a\u7684",
+     "\u3063\u304d\u308a",
+     "\u51fa\u4e8e",
+     "\u6307",
+     " \ubb3c\ub860",
+     "otope",
+     "\u6309\u7167",
+     "\u600e",
+     "\u4e9b",
+     "\u7ad9\u5728"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u59c6",
+     "\u683c",
+     "\u62c9",
+     "\u5c14",
+     "\u5384",
+     "\u8036",
+     "\u745f",
+     "\u5fb7",
+     "\u74e6",
+     "\u7279"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u516c\u7f51\u5b89\u5907",
+     "\u7814\u7a76\u8868\u660e",
+     "\u62a5\u544a\u663e\u793a",
+     "\u7f51\u8baf",
+     "\u62a5\u8bb0\u8005",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u95ee\u9898\u662f",
+     "\u6570\u636e\u663e\u793a",
+     " says",
+     "\u53cb\u4eec"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u3001",
+     "\u3001\u201c",
+     "\u3001\u3001",
+     "\u3001\u300c",
+     "\uff64",
+     "\u3001\n\n",
+     "\u300d\u300c",
+     "\uff09\u3001",
+     "\ufffd",
+     "-,"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e3a\u4ec0\u4e48\u4f1a",
+     "\u6709\u54ea\u4e9b",
+     "\u4e3a\u4ec0\u4e48\u8981",
+     "\u5982\u4f55",
+     "\u4e3a\u4ec0\u4e48",
+     "\u600e\u4e48",
+     "\u4e3a\u4f55",
+     "\u600e\u6837",
+     "\u6709\u4ec0\u4e48",
+     "\u662f\u4ec0\u4e48"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "25": [
+   {
+    "tokens": [
+     "\u662f\u6307",
+     "\uff1a",
+     "\uff1a\n",
+     "\u7b80\u4ecb",
+     "\u6307\u7684\u662f",
+     "\u662f\u6211\u4eec",
+     "\u662f\u4e00\u4e2a",
+     "\u662f\u5728",
+     "\u4e4b\u6240\u4ee5",
+     "\u867d\u7136"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\uff1a<",
+     "\u5217\u8868",
+     "\u82f1\u6587",
+     "\u6b21\u6570",
+     "\u4e2d\u6587",
+     "\u683c",
+     "\u89d2",
+     "\u6574",
+     "\u901a",
+     "\u8499"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u4e3a\u4ec0\u4e48\u4f1a",
+     "\u4e3a\u4ec0\u4e48\u8981",
+     "\u5982\u4f55",
+     "\u4e0e",
+     "\u4e3a\u4ec0\u4e48",
+     "\u4e2d\u7684",
+     "\u6709\u54ea\u4e9b",
+     "\u662f\u5982\u4f55",
+     "\u7684\u672c\u8d28",
+     "\u4e3a\u4f55"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     " ([",
+     " \uff08",
+     " (\n",
+     " (\n\n",
+     "\u3002\uff08",
+     "\uff08",
+     " (\r\n",
+     " (**",
+     "\"("
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5c3d\u7ba1",
+     "\u8fd9\u610f\u5473\u7740",
+     "\u867d\u7136",
+     "\u5728\u8fd9\u4e2a",
+     "\u8fd9\u4e9b",
+     "\u5728\u8fd9\u79cd",
+     "\u7136\u800c",
+     "\u8fd9\u9879",
+     "\u5982\u679c\u6211\u4eec",
+     "\u5728\u8fd9"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5168",
+     "\u8054\u90a6",
+     "\u7814\u7a76",
+     "\u81ea\u7531",
+     "\u975e",
+     "\u591a",
+     "\u6cd5\u6848",
+     "\u4e2d\u5fc3",
+     "\u8054\u76df",
+     "\u53ca"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4f5c\u4e3a\u4e00\u79cd",
+     "\u4f5c\u4e3a\u4e00\u540d",
+     "\u4f5c\u4e3a\u4e00\u4e2a",
+     "\u4f5c\u4e3a",
+     "\u662f\u4e00\u9879",
+     "\u4f5c\u70ba",
+     "\u662f\u4e00\u6b3e",
+     "\u4e00\u76f4\u4ee5\u6765",
+     "\u662f\u4e00\u79cd",
+     "\u8fd1\u5e74\u6765"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " (\"",
+     " (\u201c",
+     " \uff08",
+     "(",
+     " (=",
+     " ('",
+     " ($",
+     " (~"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7279\u6b8a",
+     "\u76ee\u7684\u662f",
+     "\u67d0\u4e9b",
+     "\u5404\u4e2a",
+     "\u9ad8",
+     "\u5168\u90e8",
+     "\u6bcf\u4e00\u4e2a",
+     "\u975e",
+     "\u81ea\u7136",
+     "\u67d0\u4e2a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " noqa",
+     "Tre",
+     "\u65b0\u4e09",
+     " Panda",
+     " tut",
+     " lil",
+     "ymm",
+     " Fah",
+     "\u65b9\u5706",
+     " bet"
+    ],
+    "target_script_frac": 0.2
+   }
+  ],
+  "26": [
+   {
+    "tokens": [
+     "\u96c6",
+     "\u4e8c",
+     "\u6027",
+     "\u8005",
+     "\uff1a",
+     "\u540d",
+     "\u5217\u8868",
+     "\u4e09",
+     "\u4eba",
+     "\u516d"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u4ec0\u4e48\u610f\u601d",
+     "\u064e\u0627",
+     "\u8584",
+     "\u0301",
+     "\u8bd1",
+     "\u7ffb\u8bd1",
+     "\u7231\u4f60",
+     "\u6587\u6863",
+     "\u043f\u0438\u0441\u0430\u043d\u0438\u0435"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u4e3a\u5e7f\u5927",
+     "\u90fd\u6709\u7740",
+     "\u5907\u53d7",
+     "\u3068\u3044\u3048\u3070",
+     "\u6709\u7740",
+     "\u65e0\u6570",
+     "\u5e2d\u5377",
+     " captivating",
+     " countless",
+     "\u6108\u53d1"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u8bf8\u5982",
+     "\u5e7f\u6cdb\u7684",
+     "\u540d\u4e3a",
+     "\u8a31\u591a",
+     "\u4e00\u7cfb\u5217",
+     "\u8bb8\u591a",
+     "\u4e00\u79cd",
+     "\u51e0\u4e4e\u6240\u6709",
+     "\u90a3\u4e9b",
+     "\u7528\u4e8e"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5c3d\u7ba1",
+     "\u7136\u800c",
+     "\u867d\u7136",
+     "\u8fd9\u610f\u5473\u7740",
+     "\u8fd9\u4e9b",
+     "\u8fd9\u9879",
+     "\u5982\u679c\u6211\u4eec",
+     "\u6362\u53e5\u8bdd\u8bf4",
+     "\u5373\u4f7f",
+     "\u5982\u679c"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u67d0\u4e9b",
+     "\u6bcf\u4e00\u4e2a",
+     "\u67d0\u4e2a",
+     "\u51e0\u4e2a",
+     "\u5404\u4e2a",
+     "\u7279\u6b8a",
+     "`",
+     "\u76ee\u7684\u662f",
+     "\u4e24\u4e2a",
+     "\u975e"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u4e3a\u4ec0\u4e48\u8981",
+     "\u6709\u5f88\u591a\u79cd",
+     "\u767e\u79d1",
+     "\u4e3a\u4ec0\u4e48\u4f1a",
+     "\u662f\u6211\u4eec",
+     "\u6709\u54ea\u4e9b",
+     "\u306b\u304a\u3051\u308b",
+     "\u57fa\u7840\u77e5\u8bc6",
+     "\u7684\u672c\u8d28",
+     "\u4e4b\u6240\u4ee5"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u63ed\u79d8",
+     "\u63a2\u7d22",
+     "\u6307\u5357",
+     "\u7684\u91cd\u8981\u6027",
+     "\u63a2\u8ba8",
+     "\u8be6\u89e3",
+     "\u63ed\u793a",
+     "\u4e4b\u65c5",
+     "\u7684\u9b45\u529b",
+     " Insights"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u00a0\u00a0\u00a0",
+     "\u516c\u7f51\u5b89\u5907",
+     "\u3000",
+     "\u00a0\u00a0\u00a0\u00a0",
+     "\u00a0\u00a0",
+     "\uff1a",
+     "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+     "\u79be",
+     " \u00a0",
+     "\u5dde\u5e02"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u82f1\u6587",
+     "(The",
+     "\uff08",
+     "\u82f1\u8bed",
+     " \u0430\u043d\u0433",
+     "(Guid",
+     "(M",
+     "(Number",
+     "\u62fc\u97f3",
+     "(A"
+    ],
+    "target_script_frac": 0.3
+   }
+  ],
+  "27": [
+   {
+    "tokens": [
+     "\u5217\u8868",
+     "\u4e2d\u6587",
+     "\u540d",
+     "\u82f1\u6587",
+     "\u6574",
+     "\u96c6",
+     "\u7b26",
+     "\u683c",
+     "\u516d",
+     "\u4e09"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u8fd9\u4e00\u5207",
+     "\u6c38\u8fdc",
+     "\u5fc3\u7075",
+     "\u65e0\u6570",
+     "\u4eff\u4f5b",
+     "\u6df1\u6df1",
+     "\u90a3\u4e00\u523b",
+     "\u8fd9\u7247",
+     "\u6bcf\u4e00\u6b21",
+     "\u8fd9\u5ea7\u57ce\u5e02"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u662f\u4e00\u79cd",
+     "\u662f\u6211\u56fd",
+     "\u662f\u4e00\u4e2a",
+     "\u4f5c\u4e3a\u4e00\u79cd",
+     "\u662f\u6211\u4eec",
+     "\u662f\u4e2d\u56fd",
+     "\u4f5c\u4e3a",
+     "\u662f\u6307",
+     "\u662f\u4e00\u9879",
+     "\u4f5c\u4e3a\u4e00\u4e2a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u800c\u975e",
+     "\u672a\u80fd",
+     "\u6df1\u5165",
+     "\u663e\u8457",
+     "\u65e8\u5728",
+     "\u63ed\u793a",
+     "\u9075\u5faa",
+     "STEM",
+     "\u5373\u4fbf",
+     "\u770b\u4f3c"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u5fb7\u5c14",
+     "\u683c",
+     "\u745f",
+     "\u585e\u5c14",
+     "\u59c6",
+     "\u88d4",
+     "\u5384",
+     "\u7f57\u65af",
+     "\u5c14\u65af",
+     "\u6d77\u5c14"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\uff0c\u5728",
+     "\uff0c",
+     "\uff0c\u9ed8\u8ba4",
+     "\u060c",
+     "\uff0c\u8bf7",
+     "\uff0c\u5219",
+     ",",
+     "\uff0c\u5e76",
+     "\uff0c\u201c",
+     "**,"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     "\u51fa\u4e8e",
+     "\u65f6\u5019",
+     "\u8981",
+     "\u4e3a\u4e86",
+     "\u6307",
+     "\u666e\u901a\u7684",
+     "\u56e0\u4e3a",
+     "\u4e9b",
+     "\u5176\u4ed6",
+     "\u7528"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u81ea\u5df1\u7684",
+     "\u4ed6\u4eba",
+     "\u67d0\u4e9b",
+     "\u65b9\u5f0f",
+     "\u81ea\u5bb6",
+     "\u5404\u7c7b",
+     "\u8fc7\u7a0b",
+     "\u67d0\u4e2a",
+     "\u540c\u4e00",
+     "\u6574\u4e2a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u72b6",
+     "\u6c0f",
+     "\u6c28\u9178",
+     "\u6c27",
+     "\u6b96",
+     "\u6001",
+     "\u9176",
+     "\u7c7b",
+     "\u6746\u83cc",
+     "\u6027"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4ee5\u53ca",
+     "\u548c",
+     "\uff0c\u5728",
+     "\u4eec",
+     "\u6027",
+     "\uff0c",
+     "\u72b6\u51b5",
+     "\u60c5\u51b5",
+     "\u6216\u662f",
+     "\u4e4b\u65c5"
+    ],
+    "target_script_frac": 0.9
+   }
+  ],
+  "28": [
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u82f1\u6587",
+     "\u5217\u8868",
+     "\u6574",
+     "\u540d",
+     "ToolStripMenuItem",
+     "\u0301",
+     "\u96c6",
+     "\u683c",
+     "\u65e5"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\ud83c\udf1f",
+     "\u4ee5\u4e0b\u662f",
+     "\ud83d\udd0d",
+     "\u6311\u6218",
+     "\uff1a\n\n",
+     "\uff1f\n\n",
+     "\u663e\u8457",
+     "\u786e\u4fdd",
+     "\u76f8\u8f83\u4e8e"
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u5355\u8bcd",
+     "\u82f1\u8bed",
+     "\u8bcd\u6c47",
+     "\u82f1\u6587",
+     "\u8bed\u6cd5",
+     "\u8bcd",
+     "\u53e5",
+     "\u82f1",
+     "\u53e5\u5b50",
+     "\u8bd1"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5fc3\u7075",
+     "\u6bcf\u4e00\u6b21",
+     "\u4eba\u751f",
+     "\u8fd9\u4e00\u5207",
+     "\u7684\u4eba\u751f",
+     "\u65e0\u6570",
+     "\u6bcf\u4e2a\u4eba",
+     "\u4eff\u4f5b",
+     "\u8fd9\u573a",
+     "\u6df1\u6df1"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e3a\u5e7f\u5927",
+     "\u51ed\u501f\u7740",
+     "\u8fd1\u5e74\u6765",
+     "\u9762\u4e34\u7740",
+     "\u73b0\u5982\u4eca",
+     "\u5907\u53d7",
+     "\u6709\u7740",
+     "\u4e00\u76f4\u4ee5\u6765",
+     "\u8fce\u6765\u4e86",
+     " fascinating"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u67d0\u4e9b",
+     "\u6bcf\u4e00\u4e2a",
+     "\u5168\u90e8",
+     "\u5404\u4e2a",
+     "\u7279\u6b8a",
+     "\u51e0\u4e2a",
+     "\u79cd\u79cd",
+     "\u5fc5\u8981",
+     "\u67d0\u4e2a",
+     "\u8bf8\u591a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     "(C",
+     "(T",
+     "(S",
+     "(R",
+     "(N",
+     "(A",
+     "(B",
+     "(P",
+     "(L"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u975e",
+     "\u5168",
+     "\u591a",
+     "\u53cc",
+     "\u9ad8",
+     "\u539f\u59cb",
+     "\u65e0",
+     "\u53cd",
+     "\u4f4e",
+     "\u6700\u5c0f"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e00\u4e2a",
+     "\u4e00\u79cd",
+     "\u4e00\u4e2a\u5c0f",
+     "\u4e00\u4e2a\u65b0\u7684",
+     "\u4e00\u6b3e",
+     "\u4e00\u500b",
+     "\u4e00\u4e2a\u804c\u4e1a",
+     "\u4e00\u9879",
+     "\u7684\u4e00\u4e2a",
+     "\u4e86\u4e00\u4e2a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e4b\u65c5",
+     "\u4e4b\u8def",
+     "\u4e4b",
+     "\u7248",
+     "\u7cfb\u5217",
+     "\u4e4b\u5730",
+     "\u7ec4\u5408",
+     "\u65f6\u523b",
+     "\u5c0f",
+     "\u578b"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "29": [
+   {
+    "tokens": [
+     "\u200b\u200b",
+     " \u200b\u200b",
+     " covid",
+     " Covid",
+     "COVID",
+     " Biden",
+     "\u84ec\u52c3\u53d1\u5c55",
+     "\u98d9\u5347",
+     "\ubcf4\uace0",
+     "\u51e0\u4e4e\u6ca1\u6709"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "\u800c\u975e",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\u672a\u80fd",
+     "\u80cc\u666f",
+     " \u82e5\u8981",
+     "\u63ed\u793a",
+     "\u88ab\u89c6\u4e3a",
+     "\u6311\u6218",
+     "\u5982\u540c",
+     "\u4f46\u4e0d\u9650\u4e8e"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u540d",
+     "\u96c6",
+     "\u82f1\u6587",
+     "\u5217\u8868",
+     "\u6574",
+     "\u6570",
+     "\u4eba",
+     "\u65e5",
+     "\u4e0a",
+     "\u4e2d\u6587"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " (\"",
+     " \uff08",
+     " ('",
+     " (\u201c",
+     " ($",
+     "(",
+     " (`",
+     " (~"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e4b\u65c5",
+     "\u4e4b\u8def",
+     "\u4e4b",
+     "\u4e4b\u591c",
+     "\u4e3b\u4e49",
+     "\u822c\u7684",
+     "\u5c11\u5973",
+     "\u4e16\u754c",
+     "\u6548\u5e94",
+     "\u751f\u6daf"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u69c1",
+     "\u205a",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "igli",
+     "\u65f6\u95f4\u548c",
+     "\u4ee5\u4e0b\u51e0\u4e2a",
+     "\u548c",
+     "\u7684",
+     "\u855e",
+     " ***"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u67d0\u79cd\u7a0b\u5ea6",
+     "\u77ed\u65f6\u95f4\u5185",
+     "\u4efb\u4f55\u65f6\u5019",
+     "\u5b9e\u8df5\u4e2d",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u77ed\u671f\u5185",
+     "\u73b0\u5b9e\u4e2d",
+     "\u4e0d\u77e5\u4e0d\u89c9"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u65e0\u6570",
+     "\u90a3\u4efd",
+     "\u5145\u6ee1\u4e86",
+     "\u8fd9\u573a",
+     "\u6563\u53d1\u7740",
+     "\u65e0\u6570\u6b21",
+     "\u4ee4\u4eba",
+     "\u4eff\u4f5b",
+     "\u6df1\u6df1",
+     "\u7684\u9b45\u529b"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u7814\u7a76",
+     "\u5168",
+     "\u8054\u5408",
+     "\u5927\u5b66",
+     "\u56fd\u9645",
+     "\u6cd5\u6848",
+     "\u4e2d\u5fc3",
+     "\u81ea\u7531",
+     "\u7684",
+     "\u53ca"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5927\u5168",
+     "\u63ed\u79d8",
+     "\u7684\u91cd\u8981\u6027",
+     "\u653b\u7565",
+     "\u6307\u5357",
+     "\u6587\u6848",
+     "\u5fc3\u5f97\u4f53\u4f1a",
+     "\u8303\u6587",
+     "SEO",
+     "\u8003\u7814"
+    ],
+    "target_script_frac": 0.9
+   }
+  ],
+  "30": [
+   {
+    "tokens": [
+     "\u800c\u975e",
+     "\u672a\u80fd",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\u53ef\u80fd",
+     "\u80cc\u666f",
+     " \u82e5\u8981",
+     "\u8bc4\u4f30",
+     "\u88ab\u89c6\u4e3a",
+     "\u56e2\u961f",
+     "\u7279\u5b9a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u8457",
+     "\u00e1n\u00ed",
+     "\u77ad",
+     "\u00adi",
+     "\u5f8c",
+     "\u9032",
+     " colours",
+     " p\u0159",
+     "_colour",
+     "\u7d50"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     ",",
+     "\uff0c",
+     "\uff0c\u5728",
+     "\u060c",
+     "\uff0c\u9ed8\u8ba4",
+     "\uff0c\u8bf7",
+     "\uff0c\u5219",
+     "\uff0c\u300a",
+     "\uff0c\u201c",
+     ",\n"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u65e0\u6570",
+     "\u6bcf\u4e00\u6b21",
+     "\u4eba\u751f\u7684",
+     "\u6bcf\u4e00\u4e2a\u4eba",
+     "\u5fc3\u7075",
+     "\u6bcf\u4e2a\u4eba",
+     "\u6df1\u6df1",
+     "\u52c7\u6562",
+     "\u7684\u4eba\u751f",
+     "\u4eba\u751f"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u3001",
+     "\u3001\u201c",
+     "\u3001\u300c",
+     "\u3001\u3001",
+     "\u3001\n\n",
+     "\uff64",
+     "\uff09\u3001",
+     "\u300d\u300c",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u65f6\u5019",
+     "`",
+     "\u51e0\u4e2a",
+     "\u201c",
+     "\u6240\u8c13",
+     "'",
+     "\u4e24\u4e2a",
+     "\u975e",
+     "\u4f8b\u5b50",
+     "\u90a3\u4efd"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     "\u4e3a\u5e7f\u5927",
+     "\u4ee5\u5176",
+     "\u56e0\u5176",
+     "\u72ec\u5177",
+     "\u51ed\u501f\u7740",
+     " boasts",
+     "\u5907\u53d7",
+     "\u6709\u7740",
+     "\u90fd\u6709\u7740",
+     "\u5f15\u8d77\u4e86"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u662f\u4e00\u79cd",
+     "\u662f",
+     "\u662f\u4e2d\u56fd",
+     "\u662f\u4e00\u4e2a",
+     "\u662f\u4e00",
+     "\u662f\u6211\u56fd",
+     "\u662f\u6307",
+     "\u662f\u4e00\u9879",
+     "\u662f\u6211\u4eec",
+     "\u53c8\u79f0"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " \uff08",
+     " (\"",
+     "(",
+     " (\u201c",
+     " ('",
+     " ($",
+     " (\ufffd",
+     " (_"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u69c1",
+     "\u205a",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\u855e",
+     "\u4e0e\u5176\u4ed6",
+     "\u4ee5\u4e0b\u51e0\u4e2a",
+     "\u54e6",
+     "\u4ecd\u7136",
+     "igli",
+     "\u548c"
+    ],
+    "target_script_frac": 0.8
+   }
+  ],
+  "31": [
+   {
+    "tokens": [
+     "\u6750",
+     "\u5177",
+     "\u5f8c",
+     "\u8457",
+     " p\u0159",
+     "\u9032",
+     "\u6c1b",
+     "\u77ad",
+     "\u00e1n\u00ed",
+     "\u6a21"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "(A",
+     "(S",
+     "(B",
+     "(C",
+     "(G",
+     "(H",
+     "(D",
+     "(The",
+     "(M",
+     "(T"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u65e0\u6570",
+     "\u6bcf\u4e00\u6b21",
+     "\u5145\u6ee1\u4e86",
+     "\u4e00\u6b21\u6b21",
+     "\u5c81\u6708",
+     "\u4eba\u751f\u7684",
+     "\u90a3\u4efd",
+     "\u6bcf\u4e00\u4e2a\u4eba",
+     "\u6c38\u6052",
+     "\u6df1\u6df1"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u6ddf",
+     "\u626b\u9ed1\u9664",
+     "\u644f",
+     "early",
+     "remaining",
+     "third",
+     "guess",
+     "non",
+     "rain",
+     "black"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " \uff08",
+     " (\"",
+     "(",
+     " ('",
+     " (\u201c",
+     " (\n",
+     " ($",
+     " (\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     ",",
+     "\uff0c\u5728",
+     "\u060c",
+     "\uff0c\u201c",
+     "\uff0c\u300a",
+     "\uff0c\u9ed8\u8ba4",
+     "\uff0c\n",
+     "\uff0c\u8bf7",
+     "\uff0c\u5e76"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     "\u69c1",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\u4ee5\u4e0b\u51e0\u4e2a",
+     "\u65f6\u95f4\u548c",
+     "\u4e0e\u5176\u4ed6",
+     "\u548c\u5176\u4ed6",
+     "\u855e",
+     "\u7b49\u591a\u4e2a",
+     "\u54c1\u724c\u5f62\u8c61",
+     "\u7ecf\u9a8c\u548c"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u7279\u5b9a",
+     "\u6f5c\u5728",
+     "\u975e",
+     "\u5e94\u7528\u7a0b\u5e8f",
+     "\u66ff\u4ee3",
+     "\u89e3\u51b3\u65b9\u6848",
+     "\u516c\u5171",
+     "\u53ef",
+     "\u53ef\u7528",
+     "\u5de5\u5177"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u77ed\u65f6\u95f4\u5185",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u67d0\u79cd\u7a0b\u5ea6",
+     "\u90a3\u513f",
+     "\u540c\u4e00\u4e2a",
+     "\u5b9e\u8df5\u4e2d",
+     "\u4e0d\u540c\u7684",
+     "\u7279\u5b9a",
+     "\u4e0d\u77e5\u4e0d\u89c9"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     ",www",
+     "\u00b8",
+     "\u3001\u201c",
+     "\uff0c\u201c",
+     "',['../",
+     "[,]",
+     "\uff0c\u300a",
+     "\u951b"
+    ],
+    "target_script_frac": 0.1
+   }
+  ],
+  "32": [
+   {
+    "tokens": [
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\u800c\u975e",
+     " \u82e5\u8981",
+     "\u53ef\u80fd",
+     "\u672a\u80fd",
+     "\u80cc\u666f",
+     "\uff1f\n\n",
+     "\uff1a\n\n",
+     "\u88ab\u89c6\u4e3a",
+     "\u5c1d\u8bd5"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u0007",
+     "\u0006",
+     "\ufffd",
+     "\b",
+     "\u0005",
+     ",",
+     "\uff0e",
+     "\ufffd",
+     "&#",
+     "\uff0c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8457",
+     " p\u0159",
+     "\u9032",
+     "\u8207",
+     "\u5f8c",
+     "\u00e1n\u00ed",
+     "\u7576",
+     "\u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b",
+     "\u6703",
+     "\u9019"
+    ],
+    "target_script_frac": 0.7
+   },
+   {
+    "tokens": [
+     " (",
+     "\uff08",
+     " (\"",
+     " \uff08",
+     " (\u201c",
+     " ($",
+     " ('",
+     " (\ufffd",
+     "(",
+     " (~"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff1a",
+     "\uff1a\n",
+     "\u7b80\u4ecb",
+     "\uff1a\n\n",
+     ":\n",
+     ":",
+     "\u6982\u8ff0",
+     " \uff1a",
+     "\uff1a\u201c",
+     "\u6982\u51b5"
+    ],
+    "target_script_frac": 0.3
+   },
+   {
+    "tokens": [
+     "(S",
+     "(A",
+     "(C",
+     "(B",
+     "(D",
+     "(H",
+     "(G",
+     "(P",
+     "(M",
+     "(T"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6bcf\u4e00\u4e2a\u4eba",
+     "\u6bcf\u4e00\u6b21",
+     "\u7684\u6545\u4e8b",
+     "\u7684\u4eba\u751f",
+     "\u8ffd\u6c42",
+     "\u65e0\u6570",
+     "\u8fd9\u4e00\u5207",
+     "\u8fd9\u573a",
+     "\u7684\u529b\u91cf",
+     "\u5851\u9020"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u3001",
+     "\u3001\u201c",
+     "\u3001\u300c",
+     "\u3001\u3001",
+     "\u3001\n\n",
+     "\uff64",
+     "\uff09\u3001",
+     "\u300d\u300c",
+     "\ufffd",
+     "\uff0c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "M",
+     "L",
+     "R",
+     "S",
+     "C",
+     "T",
+     "H",
+     "V",
+     "K",
+     "G"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     "\uff0c\u201c",
+     "\uff0c\u5728",
+     "\u6211\u4eec",
+     "\uff0c\u300a",
+     "\u6211\u4eec\u53ef\u4ee5",
+     "\u4ed6\u4eec",
+     "\u5b83",
+     "\u060c",
+     "\u5927\u5bb6"
+    ],
+    "target_script_frac": 0.6
+   }
+  ],
+  "33": [
+   {
+    "tokens": [
+     "\u69c1",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "\u4ee5\u4e0b\u51e0\u4e2a",
+     "\u4ee5\u4e0b\u662f",
+     "\u88ab\u89c6\u4e3a",
+     "\u65e0\u6cd5",
+     "\u9700\u8981\u6ce8\u610f",
+     "\u548c\u5176\u4ed6",
+     "\u4e0e\u5176\u4ed6",
+     "\uff1f\n\n"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "(S",
+     "\uff08",
+     "(A",
+     "(B",
+     "(C",
+     "(D",
+     "(M",
+     "(G",
+     "(T",
+     "(L"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8207",
+     "\u9032",
+     "\u9019",
+     "\u6703",
+     "\u5c0d",
+     "\u8a9e",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     "\u73fe",
+     "\u0438\u043d\u0434\u0438\u0432",
+     "\u7576"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u53ef\u80fd",
+     "\u63d0\u5230",
+     "\u786e\u5b9e",
+     "\u901a\u5e38\u662f",
+     "\u901a\u5e38",
+     "\u9009\u9879",
+     "\u800c\u975e",
+     "\u53ef\u80fd\u662f",
+     "\u4f46\u5b9e\u9645\u4e0a",
+     "\u53ef\u80fd\u5b58\u5728"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u90fd\u6709\u7740",
+     "\u5907\u53d7",
+     "\u8bb8",
+     "\u6709\u7740",
+     "\u5907",
+     "\u8a31",
+     "\u4e3a\u5e7f\u5927",
+     "\u8a31\u591a",
+     " boasts",
+     "\u5099"
+    ],
+    "target_script_frac": 0.9
+   },
+   {
+    "tokens": [
+     "\u3001",
+     "\u3001\u201c",
+     "\u3001\u3001",
+     "\uff64",
+     "\u3001\u300c",
+     "\u3001\n\n",
+     "\u7b49",
+     "\uff0c",
+     "\uff09\u3001",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u548c",
+     "\u6027",
+     "\u5316",
+     "\u6cd5",
+     "\u6a21\u5f0f",
+     "\u5de5\u5177",
+     "\u7cfb\u7edf",
+     "\u548c\u5176\u4ed6",
+     "\u5b66",
+     "\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5361",
+     "\u5e03",
+     "\u62c9",
+     "\u8d39",
+     "\u6258",
+     "\u79d1",
+     "\u683c",
+     "\u827e",
+     "\u57c3",
+     "\u5e93"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4eba\u7684",
+     "\u5b50",
+     "\u6599",
+     "\u5e74\u7684",
+     "\u5316\u7684",
+     "\u670d",
+     "\u9ad8\u7684",
+     "\u4e0b\u6765\u7684",
+     "\u5f0f\u7684",
+     "\u4e0b\u7684"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4e13\u5bb6",
+     "\u827a\u672f\u5bb6",
+     "\u5de5\u4eba",
+     "\u5de5\u4f5c\u8005",
+     "\u5de5\u7a0b\u5e08",
+     "\u53c2\u4e0e\u8005",
+     "\u7ecf\u7406",
+     "\u4ece\u4e1a\u8005",
+     "\u4f5c\u5bb6",
+     "\u79d1\u5b66\u5bb6"
+    ],
+    "target_script_frac": 1.0
+   }
+  ],
+  "34": [
+   {
+    "tokens": [
+     "\u7684",
+     "\u548c",
+     "\u4e0e",
+     "\u4e0d",
+     "\u6709",
+     "\u5728",
+     "\u4ee5",
+     "\u6700",
+     "\u7528",
+     "\u5927"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "*\n\n",
+     "\uff1f\n\n",
+     "\uff1a\n\n",
+     "**\n\n",
+     " \u82e5\u8981",
+     "\u793e\u4ea4\u5a92\u4f53",
+     "...]\n\n",
+     "...\"\n\n",
+     "\u3002\u201d\n\n",
+     "\u201d\u3002\n\n"
+    ],
+    "target_script_frac": 0.2
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     "\uff0c\u5728",
+     "\u060c",
+     ",",
+     "\uff0c\u9ed8\u8ba4",
+     "\uff0c\u300a",
+     "\uff0c\u8bf7",
+     "\uff0c\u201c",
+     "\uff0c\u5219",
+     "\uff0c\u5e76"
+    ],
+    "target_script_frac": 0.5
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     " \ufffd",
+     " \ufffd",
+     " \ufffd",
+     " \ufffd",
+     "\u4eec",
+     "**",
+     " \u200b\u200b",
+     "\n",
+     " \ufffd"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "\u8207",
+     "\u5c0d",
+     "\u9019",
+     "\u9032",
+     "\u6642",
+     "\u5f8c",
+     "\u65bc",
+     "\u7576",
+     "\u8a9e",
+     "\u70ba"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u4ee5\u4e0b\u662f",
+     "---\n\n",
+     "\u786e\u4fdd",
+     "\u4ee5\u4e0b",
+     " \u82e5\u8981",
+     "\u9009\u9879",
+     " **",
+     " `-",
+     "\u5982\u679c\u60a8",
+     " `["
+    ],
+    "target_script_frac": 0.6
+   },
+   {
+    "tokens": [
+     "\u201c",
+     " \u201c",
+     "\u201c(",
+     "\uff0c\u201c",
+     "\u201cA",
+     " \"",
+     "\u201cThe",
+     "\u201cI",
+     "\u201cIn",
+     " \u201c["
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u897f\u73ed\u7259",
+     "\u610f\u5927\u5229",
+     "\u5370\u5ea6",
+     "\u67ec\u57d4",
+     "\u8377\u5170",
+     "\u5df4",
+     "\u5e0c\u814a",
+     "\u5317",
+     "\u82f1\u56fd",
+     "\u6cd5\u56fd"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u89e3\u51b3\u95ee\u9898",
+     "\u8fdb\u884c",
+     "\u5904\u7406",
+     "\u8fdb\u5165",
+     "\u5b8c\u6210",
+     "\u5b66\u4e60",
+     "\u63a5\u53d7\u91c7\u8bbf",
+     "\u601d\u8003",
+     "\u6536\u96c6",
+     "\u4f20\u9012"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "[[",
+     "\u2014\n\n",
+     " [[",
+     " \u2014\n\n",
+     " ![",
+     "[\n",
+     "\u2013\n\n",
+     "![",
+     " [_",
+     " [\n\n"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "35": [
+   {
+    "tokens": [
+     "\u4e0d",
+     "\u4e0e",
+     "\u7684",
+     "\u5bf9",
+     "\u5728",
+     "\u6709",
+     "\u66f4",
+     "\u88ab",
+     "\u7528",
+     "\u591a"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "<|endoftext|>",
+     "\u67e5\u770b\u66f4\u591a",
+     "\u305d\u308c\u305e",
+     "/providers",
+     "\u3002</",
+     "\ufffds",
+     "{\r\n",
+     "\uff1a</",
+     "/interfaces",
+     ".\"\r\n"
+    ],
+    "target_script_frac": 0.1
+   },
+   {
+    "tokens": [
+     "2",
+     "3",
+     "1",
+     "5",
+     "6",
+     "0",
+     "4",
+     "8",
+     "7",
+     "9"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\uff0c",
+     ",",
+     "\uff0c\u5728",
+     "\u060c",
+     "\uff0c\u201c",
+     "\uff0c\u8bf7",
+     "\uff0c\u300a",
+     "\uff0c\u5219",
+     "\uff0c\u9ed8\u8ba4",
+     "\uff0c\n"
+    ],
+    "target_script_frac": 0.4
+   },
+   {
+    "tokens": [
+     " ...\n\n",
+     "...\n\n",
+     "...\"\n\n",
+     " ...\"\n\n",
+     "\u2026\n\n",
+     "\n\n",
+     " \u2026\n\n",
+     "\u3002\n\n",
+     "**\n\n",
+     " \n\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8fdb\u884c",
+     "\u5904\u7406",
+     "\u8fdb\u5165",
+     "\u4f20\u64ad",
+     "\u5b9e\u65bd",
+     "\u5b8c\u6210",
+     "\u5f00\u5c55",
+     "\u5efa\u9020",
+     "\u5236\u9020",
+     "\u83b7\u53d6"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u201c",
+     "\"",
+     " \"",
+     " \u201c",
+     "\u300c",
+     "\uff02",
+     " '",
+     "\u201c(",
+     "\u2018",
+     "\u201d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5728",
+     " \u5728",
+     "\u5728\u4e00",
+     " dalam",
+     "\u5728\u5176",
+     " trong",
+     "\u5728\u4ed6",
+     "\u5728\u6211",
+     "\u5728\u8fd9",
+     "\u5728\u4e00\u4e2a"
+    ],
+    "target_script_frac": 0.8
+   },
+   {
+    "tokens": [
+     "\u4f5c\u4e3a\u4e00\u79cd",
+     "\u4f5c\u4e3a\u4e00\u4e2a",
+     "\u4f5c\u4e3a",
+     "\u4e4b\u6240\u4ee5",
+     "\u7684\u6700\u5927",
+     "\u4f5c\u70ba",
+     "\u6700\u5927\u7684",
+     "\u56e0\u5176",
+     "\u65e2\u7136",
+     "\u4e0d\u50cf"
+    ],
+    "target_script_frac": 1.0
+   },
+   {
+    "tokens": [
+     "\u5f88\u591a\u670b\u53cb",
+     "\u5f88\u591a\u4eba",
+     "\u5f88\u591a\u4eba\u90fd",
+     "\u76f8\u4fe1\u5927\u5bb6",
+     "\u4e0d\u5c11\u4eba",
+     "\u8bb8\u591a\u4eba",
+     "\u5f88\u591a",
+     "\u6709\u4e9b\u4eba",
+     "\u6709\u4e0d\u5c11",
+     "\u8d8a\u6765\u8d8a\u591a"
+    ],
+    "target_script_frac": 1.0
+   }
+  ]
+ }
+}

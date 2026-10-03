@@ -1,0 +1,5773 @@
+{
+ "meta": {
+  "target": "am",
+  "model": "qwen3-8b",
+  "contrast": "response",
+  "n_pairs": 600,
+  "base_dM_lift": -0.29658153653144836,
+  "report": {
+   "0": {
+    "fvu": {
+     "fvu": 0.47461599111557007
+    },
+    "n_tgt": 37,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "1": {
+    "fvu": {
+     "fvu": 0.4397898018360138
+    },
+    "n_tgt": 37,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "2": {
+    "fvu": {
+     "fvu": 0.39672616124153137
+    },
+    "n_tgt": 56,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "3": {
+    "fvu": {
+     "fvu": 0.4029870629310608
+    },
+    "n_tgt": 43,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "4": {
+    "fvu": {
+     "fvu": 0.3541952669620514
+    },
+    "n_tgt": 47,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "5": {
+    "fvu": {
+     "fvu": 0.4018860459327698
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "6": {
+    "fvu": {
+     "fvu": 0.4265572726726532
+    },
+    "n_tgt": 56,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "7": {
+    "fvu": {
+     "fvu": 0.42469900846481323
+    },
+    "n_tgt": 48,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "8": {
+    "fvu": {
+     "fvu": 0.4205460250377655
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "9": {
+    "fvu": {
+     "fvu": 0.4058189392089844
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "10": {
+    "fvu": {
+     "fvu": 0.3795074224472046
+    },
+    "n_tgt": 46,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "11": {
+    "fvu": {
+     "fvu": 0.3778996169567108
+    },
+    "n_tgt": 60,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "12": {
+    "fvu": {
+     "fvu": 0.38836556673049927
+    },
+    "n_tgt": 58,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "13": {
+    "fvu": {
+     "fvu": 0.3964560031890869
+    },
+    "n_tgt": 56,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "14": {
+    "fvu": {
+     "fvu": 0.3857780992984772
+    },
+    "n_tgt": 52,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "15": {
+    "fvu": {
+     "fvu": 0.403102844953537
+    },
+    "n_tgt": 58,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "16": {
+    "fvu": {
+     "fvu": 0.40963414311408997
+    },
+    "n_tgt": 51,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "17": {
+    "fvu": {
+     "fvu": 0.4188306927680969
+    },
+    "n_tgt": 39,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "18": {
+    "fvu": {
+     "fvu": 0.42923492193222046
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "19": {
+    "fvu": {
+     "fvu": 0.4292944669723511
+    },
+    "n_tgt": 53,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "20": {
+    "fvu": {
+     "fvu": 0.42815643548965454
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "21": {
+    "fvu": {
+     "fvu": 0.42168518900871277
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "22": {
+    "fvu": {
+     "fvu": 0.40285325050354004
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "23": {
+    "fvu": {
+     "fvu": 0.3890874981880188
+    },
+    "n_tgt": 59,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "24": {
+    "fvu": {
+     "fvu": 0.385363906621933
+    },
+    "n_tgt": 51,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "25": {
+    "fvu": {
+     "fvu": 0.37802183628082275
+    },
+    "n_tgt": 33,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "26": {
+    "fvu": {
+     "fvu": 0.3810412883758545
+    },
+    "n_tgt": 52,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "27": {
+    "fvu": {
+     "fvu": 0.37696778774261475
+    },
+    "n_tgt": 55,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "28": {
+    "fvu": {
+     "fvu": 0.3772892951965332
+    },
+    "n_tgt": 36,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "29": {
+    "fvu": {
+     "fvu": 0.3555722236633301
+    },
+    "n_tgt": 57,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "30": {
+    "fvu": {
+     "fvu": 0.36694756150245667
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "31": {
+    "fvu": {
+     "fvu": 0.38646233081817627
+    },
+    "n_tgt": 56,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "32": {
+    "fvu": {
+     "fvu": 0.4172266721725464
+    },
+    "n_tgt": 64,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "33": {
+    "fvu": {
+     "fvu": 0.4296122193336487
+    },
+    "n_tgt": 63,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "34": {
+    "fvu": {
+     "fvu": 0.4362575113773346
+    },
+    "n_tgt": 61,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   },
+   "35": {
+    "fvu": {
+     "fvu": 0.39917850494384766
+    },
+    "n_tgt": 52,
+    "n_en": 32,
+    "mean_target_script_frac": 0.0
+   }
+  }
+ },
+ "affinity": {
+  "0": [
+   {
+    "tokens": [
+     " deserving",
+     "\u6c40",
+     "_RA",
+     "\u6574",
+     "ardy",
+     "\u6761",
+     "addon",
+     "\u4e92\u52a9",
+     "[ch",
+     "\u4e25"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u65b9\u5f62",
+     "zug",
+     "\u4f9b",
+     "\u7a97\u6237",
+     "\u7a97",
+     " Reeves",
+     "\u9f52",
+     "lvl",
+     "\u6d6e",
+     "cookie"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u876e",
+     "\u88ab\u6253",
+     "\u771f\u7684",
+     "\u6211\u5e0c\u671b",
+     "emy",
+     "\u5206\u884c",
+     "irit",
+     "\u6211\u76f8\u4fe1",
+     "\u4ec0\u4e48\u90fd",
+     "pcl"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8155",
+     " rhyth",
+     "\u6210\u5e74\u4eba",
+     "\u5206\u652f\u673a\u6784",
+     "\u4e4b\u4f59",
+     " HR",
+     "\u6210\u4eba",
+     "\u4fe1\u606f\u5316",
+     "\u60cb",
+     " OBS"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "oze",
+     "ded",
+     "\u52a8\u751f\u6210",
+     "\u800c\u540e",
+     "\u4eac\u57ce",
+     "BAT",
+     " Kak",
+     "\u5fd9\u7740",
+     "])+",
+     "\u4f20\u6388"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "antt",
+     "\u8d1d\u5c14",
+     "\u6c7e",
+     "\u534a\u591c",
+     "\u51e0\u70b9",
+     " Dum",
+     "\u8fce",
+     "\u95ea\u7535",
+     "ber",
+     "oze"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "igo",
+     "\u8fd0",
+     "rror",
+     "\u5026",
+     "istring",
+     "agy",
+     "\u5370",
+     "tm",
+     "\u5305\u88c5",
+     "eu"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "teen",
+     "ETING",
+     "embr",
+     "ulent",
+     "\u043e",
+     "\ufffd",
+     "basic",
+     "wake",
+     "ycop",
+     "YA"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u597d\u4eba",
+     "\u597d\u8f6c",
+     "\u5f97\u8d77",
+     " kuk",
+     " Bourbon",
+     " M\u00e1s",
+     " Ph\u01b0\u01a1ng",
+     "\u63d0\u51fa",
+     " hem",
+     " saison"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5f84",
+     "put",
+     "\u77e5\u60c5",
+     "ains",
+     "\u4f53\u91cf",
+     "\u3057\u307e\u3046",
+     "\u043e\u043b\u044f",
+     "\u751f\u751f",
+     "la\u015ft\u0131r",
+     ":disable"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "1": [
+   {
+    "tokens": [
+     "\u7728",
+     "\u57fa\u51c6",
+     "OCR",
+     "Justice",
+     "\u0434\u0430\u0432",
+     "atta",
+     " UIS",
+     " corpus",
+     " c\u1ee9",
+     "\u722c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u624b\u811a",
+     "\u653e\u8fc7",
+     ".SC",
+     "\u5e55",
+     ".operations",
+     " SCR",
+     "ollen",
+     ".Args",
+     " ARGS",
+     "SCR"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u9762\u76ee",
+     "\u60b2",
+     "\u4ec0\u4e48\u90fd",
+     "\u6b66\u58eb",
+     "pivot",
+     " forth",
+     " subst",
+     "\u5192",
+     "\u8e0f",
+     "\u7280"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7ed9\u51fa",
+     "\u7247\u523b",
+     "Hier",
+     "\u544a\u8bc9\u4ed6",
+     "hammer",
+     " hybrids",
+     "\u6b64\u523b",
+     "\u5973\u58eb",
+     " Hier",
+     " flash"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5450",
+     "ning",
+     "etwork",
+     "NING",
+     "alysis",
+     " dolay\u0131",
+     "egative",
+     "\uae50",
+     "avigation",
+     "nect"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "(ur",
+     "\u5c01\u9762",
+     "urai",
+     "\u4e0a\u9650",
+     "\u6807\u5fd7\u6027",
+     ",__",
+     " Fucking",
+     " Sized",
+     ":UI",
+     ".ur"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u60ac",
+     "anny",
+     " gubern",
+     "dos",
+     "ews",
+     "\u80c3\u80a0",
+     "ENA",
+     "anness",
+     "ALLY",
+     "avers"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u59a8",
+     "hawk",
+     "vio",
+     " coronavirus",
+     "usercontent",
+     " denim",
+     " Karn",
+     "LF",
+     "kah",
+     " *__"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "raries",
+     "\u7b06",
+     "RARY",
+     "edin",
+     "NewLabel",
+     "ataire",
+     "ewis",
+     "UNCH",
+     "OTS",
+     "ueur"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "icia",
+     "\u5949",
+     "OUS",
+     "s",
+     "ivals",
+     "came",
+     "hay",
+     "edly",
+     "\u6709\u7684",
+     "emente"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "2": [
+   {
+    "tokens": [
+     " open",
+     " grid",
+     "\ufe0f",
+     " \ufffd",
+     " traditional",
+     " forward",
+     " prime",
+     " snow",
+     " city",
+     " color"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "heck",
+     "\u63a7\u5236\u7cfb\u7edf",
+     "#/",
+     "oha",
+     " sund",
+     "edb",
+     "\u4ff5",
+     "alt",
+     "oth",
+     "hos"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6324",
+     "\u7396",
+     "ouncing",
+     "\u60c5\u51b5\u4e0b",
+     "rex",
+     "_RUN",
+     "\u547d\u8fd0",
+     "\u603b\u4ef7",
+     "bero",
+     "moduleName"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ooks",
+     "\u5c18",
+     "OOK",
+     "\u00edo",
+     "heimer",
+     "_counters",
+     "ansk",
+     "metros",
+     "imas",
+     "asename"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u65b9\u5411",
+     "\u7f1d",
+     "\u65c1",
+     "\u672a\u77e5",
+     " Corm",
+     "\u610f\u60f3\u4e0d\u5230",
+     " innocent",
+     "\u5e95",
+     "\u5c0f\u5fc3",
+     "bfd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "edis",
+     "ifty",
+     "\u4fbf\u5229\u5e97",
+     "edBy",
+     "oku",
+     " \u043d\u0438\u0445",
+     "\u94b3",
+     "lose",
+     "APS",
+     "f\u00fch"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".Fl",
+     " Ki",
+     "ADVERTISEMENT",
+     " capitals",
+     " t\u00fcrl\u00fc",
+     "\u8fd9\u662f\u6211\u4eec",
+     "\u6302\u7740",
+     ".cleanup",
+     "ollar",
+     " Britt"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5e73\u539f",
+     "-uri",
+     " Kn",
+     "\u8bb2\u8bfe",
+     "\u624d\u662f",
+     "iet",
+     "\u8bfe\u5802",
+     "agg",
+     " bust",
+     "posted"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "dice",
+     "dsa",
+     "\u95e8\u6237",
+     "ellow",
+     "Rnd",
+     "\u5eb6",
+     " amp",
+     "\u524d\u8005",
+     "Dice",
+     "tram"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "lining",
+     "plet",
+     "\u4e00\u5708",
+     "\u4e0d\u901a",
+     "fty",
+     "fte",
+     "subcategory",
+     "VD",
+     "\u901f",
+     "rence"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "3": [
+   {
+    "tokens": [
+     "\u821e\u53f0\u4e0a",
+     " pleas",
+     "generic",
+     "arrow",
+     "\u653e\u8fc7",
+     "\u5f00\u7740",
+     " pd",
+     ".Abs",
+     "/Add",
+     "\u638f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     " mega",
+     " \ufffd",
+     " open",
+     " post",
+     " traditional",
+     " prem",
+     " splash",
+     " smart",
+     "\u4f1a\u540c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e2d",
+     "a",
+     "\u5c3e",
+     "\u53ef",
+     "\u5171",
+     "\u521d",
+     "\u4ee3",
+     "\u201c",
+     "\u706b",
+     "\u505c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u963f\u62c9\u4f2f",
+     "\u675c\u5170",
+     "\u9ad8\u4ef7",
+     "\u534e\u76db",
+     "alfa",
+     "\u5f39",
+     " Wah",
+     "\u7687\u51a0",
+     "\u6218\u573a",
+     "\u9ad8\u5730"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6574",
+     "MORE",
+     "\u88ab",
+     "\u6797",
+     "\u5728",
+     "assis",
+     "arp",
+     "\u5c11\u6570",
+     "\u6570",
+     "WARN"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5b50\u5f39",
+     "\u6b20",
+     "otp",
+     "Bullet",
+     "ath",
+     "angan",
+     "err",
+     "\u6cd5",
+     "rp",
+     "amp"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u52c3",
+     "\u4e13\u680f",
+     ".vocab",
+     "_gray",
+     "\u5931\u843d",
+     "_lost",
+     "\u0e48\u0e07",
+     "\u4e09\u5929",
+     "\u53d1\u70ed",
+     "-transition"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7b2c\u4e00",
+     "\u5236",
+     "\u901a",
+     "\u4e0a",
+     "\u4e00",
+     "\u521d\u6b65",
+     "\u770b",
+     "\u7ae0",
+     "\u652f",
+     "\u4fdd\u6301"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Gem",
+     "TMP",
+     "antry",
+     "\u5c0a",
+     " Fancy",
+     "\ufffd",
+     "InSection",
+     "+</",
+     "\u5230\u65f6\u5019",
+     "stile"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "eah",
+     " ([[",
+     "\u4e0d\u52a8",
+     "Af",
+     "\u0301",
+     "\u65e9\u665a",
+     "\u6837\u54c1",
+     "\u4fed",
+     "Outlet",
+     "\u4e86"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "4": [
+   {
+    "tokens": [
+     "_Osc",
+     "\u540f",
+     "\u9e6d",
+     "verter",
+     "\u52a0\u5feb",
+     "\u67a2",
+     "\u96b0",
+     "ArrayOf",
+     "\u529e\u597d",
+     "\u5524"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rys",
+     "ughs",
+     "\u672b\u7aef",
+     "ucer",
+     " GIS",
+     " susp",
+     " Eph",
+     "<!--[",
+     " insure",
+     "iture"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u041f\u043e\u0447\u0435\u043c",
+     " \u0410\u043b\u0435\u043a\u0441\u0430\u043d",
+     " \u043f\u043e\u0441\u043a\u043e\u043b\u044c",
+     " \u0414\u043c",
+     " \u0414\u043c\u0438\u0442\u0440",
+     " \u043d\u0430\u0440\u043a\u043e",
+     " \u043f\u0443\u0442\u0435\u0448",
+     "iska",
+     " \ub313",
+     " \u0440\u0443\u043a\u043e\u0432"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u30a2\u30e1\u30ea",
+     "\u7f3a\u70b9",
+     "\u548c\u5730\u533a",
+     "\u4e3a\u4ee3\u8868",
+     " \u00e9quip",
+     " yap\u0131lmas\u0131",
+     "IDEO",
+     "\u4e16\u754c\u7ea7",
+     "advert",
+     "\u8270\u5de8"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4eab",
+     "\u8d5e\u626c",
+     " guard",
+     "\ufffd",
+     " Esc",
+     " Dav",
+     "\u9ebb\u75f9",
+     " shape",
+     "\u77f3\u7070",
+     "\u0440\u0443\u0431"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u505c",
+     "\u795e\u79d8",
+     "\u539f\u59cb",
+     "\u8f6f",
+     "\u8ba9",
+     "\u590d",
+     "\u89e3\u51b3\u65b9\u6848",
+     "\u505c\u6b62",
+     "\u9a6c",
+     "\u540c\u6b65"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "olg",
+     "\u4e4e",
+     ".ToUpper",
+     "\u653e\u8fc7",
+     "\u9cd6",
+     " pleas",
+     "ahead",
+     " fibr",
+     "free",
+     "less"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Salem",
+     "oya",
+     "\u6995",
+     " Fuller",
+     "middle",
+     "\u516c\u6b63",
+     "yro",
+     "\u69fd",
+     "oller",
+     "ulton"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6b20",
+     "rp",
+     " weather",
+     "\u5b50\u5f39",
+     "\u6807",
+     "bris",
+     "\u89d2",
+     "\u5165",
+     "angan",
+     "\u8c26"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "|",
+     "(Conv",
+     "\u7fd8",
+     "\u9500",
+     "rolled",
+     "\u5373\u5c06\u5230\u6765",
+     "\u5c48",
+     " conv",
+     "\u5ff5",
+     "lim"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "5": [
+   {
+    "tokens": [
+     "\u516c",
+     "s",
+     "\u6709\u7528",
+     "\u6b63\u9762",
+     "\u91cd\u5fc3",
+     "\u4e94\u5927",
+     "oids",
+     " useful",
+     "\u73e0",
+     "\u4e2d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7136\u662f",
+     "\u7406\u89e3\u548c",
+     "lical",
+     "san",
+     "\u9a8c",
+     "ed",
+     "\u613f",
+     "\u5e55\u540e",
+     "rst",
+     "aben"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8d2a",
+     "\u8feb",
+     "\u94f6",
+     "\u706b\u70ed",
+     "\u751f\u547d",
+     "(png",
+     "\u6302",
+     "\u80a9\u8d1f",
+     "\u7a7a\u6c14",
+     "\u6c89"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2122",
+     " fast",
+     "\u53f8",
+     " clo",
+     "\u60f9",
+     "\u00ae",
+     " blue",
+     "\u8033\u8fb9",
+     " promising",
+     " faster"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u9760\u8c31",
+     "\u91cd\u542f",
+     "Widgets",
+     "\u771f\u76f8",
+     "\u6cbb",
+     "\u8ba9\u5b83",
+     "\u5f0f",
+     "\u0633\u064a\u0631",
+     "_hpp",
+     "\u5c65"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     ".Expressions",
+     " LIC",
+     "\u89e3\u8131",
+     "\u4e86\u5417",
+     "\textern",
+     "akash",
+     "_Column",
+     "\u52a0\u5de5\u5382",
+     "roi",
+     "spr"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u628a\u63e1",
+     "\u660e\u65e5",
+     "\u5404\u884c",
+     "\u62df\u5b9a",
+     "\u50f5",
+     "\u7b56\u5212",
+     "\u4e0d\u53d8",
+     "\u6289\u62e9",
+     "goto",
+     "\u8868\u9762\u4e0a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "EK",
+     "Lik",
+     "AMI",
+     "\u62c9",
+     "oton",
+     "\ufffd",
+     "\u0414\u0415",
+     "\u9884\u5236",
+     " Suff",
+     "\u59c6"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "iful",
+     "\u6eb6",
+     "\u901a",
+     "\u975e\u8981",
+     " Skyl",
+     "amac",
+     "\u56fd\u52a1",
+     "\u5fae",
+     "\ufffd",
+     "\u5f53\u7136\u662f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " UIB",
+     "\u4e5f\u4e0d\u77e5\u9053",
+     "UBL",
+     "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+     "\u900f\u660e",
+     "kad",
+     "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+     " Ciudad",
+     "vr",
+     "\u4e3b\u6d41"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "6": [
+   {
+    "tokens": [
+     "\u5de5\u4f5c\u7684",
+     "_using",
+     "expiry",
+     "\u652f\u63f4",
+     "tributes",
+     "\u8212",
+     "\u540f",
+     "verter",
+     "\u6539\u9769\u53d1\u5c55",
+     "\u623f\u79df"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ogh",
+     " MAD",
+     " Minds",
+     "\u7684\u4e0d\u540c",
+     " Flames",
+     "\u65f6\u62a5",
+     "styled",
+     "\u4e49\u52a1\u6559\u80b2",
+     "orf",
+     "\u8fd9\u6837\u4e00\u4e2a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "Fine",
+     " Fine",
+     "\u8d3f",
+     "backs",
+     "hawks",
+     "\u03ae",
+     " pr\u00e9cis",
+     " Vet",
+     "\u5556",
+     "fine"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "annis",
+     "ields",
+     "esterday",
+     "osemite",
+     " \u200b\u200b",
+     "amaha",
+     "vette",
+     "asmine",
+     "andex",
+     "OUN"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8fd8\u9700\u8981",
+     "\u662f\u771f\u7684",
+     "\u7792",
+     "\u4e00\u5207\u90fd",
+     " Gamer",
+     "generic",
+     " Tavern",
+     "\u8fd8\u6709\u4ec0\u4e48",
+     "\u515a\u7684\u9886\u5bfc",
+     "\u8c50"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5f97\u8d77",
+     "\u5ba2\u6237\u7684",
+     "\u4e0d\u4e86",
+     "\u534a\u4e2a",
+     "\u754c\u7684",
+     "ius",
+     "\u5fd9",
+     "\u4eba\u90fd",
+     "propri",
+     "\u51e0\u5206"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ovich",
+     "nosti",
+     "otch",
+     "\u5bf9\u9762",
+     "ovsky",
+     "ForResource",
+     "\u79d1\u6559",
+     "ogi",
+     "sonian",
+     "\u5546\u7528\u8f66"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ea4\u4ee3",
+     "\u770b\u89c1",
+     ".tem",
+     "\u5916\u9762",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     "\u773c\u524d\u7684",
+     "_reader",
+     "\u770b\u898b",
+     "velop",
+     "\u8054\u7cfb"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5f80",
+     " \u200b\u200b",
+     "\u524d\u884c",
+     "\u6eb6",
+     "bdd",
+     "\u524d\u8fdb",
+     "\u65a9",
+     "\u8865",
+     "\u51c9",
+     "\u5b88"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ZW",
+     "\u5e9f\u7269",
+     "\u676f",
+     "oreal",
+     "\u8759",
+     "\u82c7",
+     "\u6bb7",
+     "\u627f\u8f7d",
+     "\u9aed",
+     ".wav"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "7": [
+   {
+    "tokens": [
+     "ll",
+     "\u5df4\u5df4",
+     "\u4ff1",
+     "\u51b2",
+     "\u514d",
+     "\u6295\u8d44\u57fa\u91d1",
+     "\u4ee5\u6765",
+     " Stateless",
+     "gether",
+     "edes"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "/th",
+     " particular",
+     "\u73a9\u610f",
+     "(DATA",
+     "\u6fc0\u52a8",
+     "\u540c\u4e00",
+     "orage",
+     "\uc800",
+     "\u4e3a\u5951\u673a",
+     "\u0e15\u0e23\u0e07"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "_pid",
+     "nant",
+     "_placement",
+     "phet",
+     "rego",
+     "v\u00ed",
+     " chewing",
+     "npos",
+     " Coch",
+     "\u00ecn"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "e",
+     "ection",
+     "een",
+     "eed",
+     "eer",
+     "ness",
+     "ev",
+     "eel",
+     "eft",
+     "ein"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2122",
+     " Harbor",
+     "\u53f8",
+     " counterfeit",
+     " harbor",
+     " colorful",
+     " revoked",
+     " fiber",
+     " rogue",
+     " Revolutionary"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rics",
+     " Verf\u00fcgung",
+     "\u7ba1\u59d4\u4f1a",
+     "y\u00fc",
+     "enticate",
+     "ll",
+     ".LayoutParams",
+     "vely",
+     "IGINAL",
+     "alytics"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " prem",
+     " bytearray",
+     " inex",
+     "ded",
+     " ...\"",
+     "\u304b",
+     "dek",
+     " Publisher",
+     " adv",
+     " luxury"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "alan",
+     "\u5404\u65b9",
+     "aland",
+     "thag",
+     "\u8d77\u6765",
+     "\u62b1",
+     "\u800c\u5df2",
+     "\u60f3\u8d77\u6765",
+     "\u6b20",
+     "\u8001"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " resil",
+     "\u02e2",
+     " Choices",
+     "\u98de\u7fd4",
+     "vox",
+     "\u6bbf\u4e0b",
+     " Filed",
+     "\u5f00\u5de5",
+     "\u30e9\u30a4\u30d5",
+     " adel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "raph",
+     "\u6355",
+     " PTR",
+     "\u9760\u8fd1",
+     "\u699c\u9996",
+     "\u304b\u3082",
+     "\u4e0d\u901a",
+     "/pre",
+     " federation"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "8": [
+   {
+    "tokens": [
+     "/OR",
+     "blo",
+     " Pavilion",
+     "/nav",
+     " Throne",
+     " practise",
+     " Rape",
+     "Tel",
+     " ghetto",
+     "Vu"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rics",
+     "\u7ba1\u59d4\u4f1a",
+     " Verf\u00fcgung",
+     "y\u00fc",
+     "eenth",
+     "enticate",
+     "vely",
+     "ll",
+     ".LayoutParams",
+     "\u7136\u800c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e86",
+     "ments",
+     "imately",
+     "ted",
+     "\u0647",
+     "ly",
+     "ened",
+     "lah",
+     "imizer",
+     "mates"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "hurst",
+     "pickle",
+     "\u6d3d",
+     "-ahead",
+     "BOR",
+     "\u59c6",
+     "CTION",
+     " \u0441\u0440\u043e\u043a",
+     "forms",
+     "rown"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4f8b\u5916",
+     "\u5f53\u65f6\u7684",
+     "\u540c\u4e00\u4e2a",
+     "hra",
+     "\u9519",
+     "\u90a3\u4e9b",
+     "\u5269",
+     "\u8868\u9762\u4e0a",
+     "oretical",
+     "\u628a\u63e1"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "uxtap",
+     "OURNAL",
+     "upyter",
+     "acobian",
+     "igsaw",
+     "uggling",
+     "asmine",
+     "enkins",
+     "ennifer",
+     "ekyll"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8863",
+     "\u53d1",
+     "\u996d",
+     "VV",
+     "\u62c9",
+     "\ufffd",
+     "\u866b",
+     "\u4e50",
+     "aldi",
+     "\u901a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "empt",
+     "stand",
+     "cept",
+     "grad",
+     "ception",
+     "LO",
+     "geb",
+     "\u9884",
+     "ku",
+     "OL"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "annis",
+     "ields",
+     "esterday",
+     " \u200b\u200b",
+     "osemite",
+     "psilon",
+     "andex",
+     "\u9b1f",
+     "vette",
+     "AndPassword"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "vig",
+     "apos",
+     "ions",
+     "duct",
+     "etheless",
+     "appe",
+     "hora",
+     "ities",
+     "\u8fdd\u7ae0",
+     "\u51d1"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "9": [
+   {
+    "tokens": [
+     " ",
+     "1",
+     "2",
+     "es",
+     "dd",
+     "ENG",
+     "ll",
+     " Re",
+     "_marshall",
+     " _"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "annis",
+     " \u200b\u200b",
+     "ields",
+     "osemite",
+     "esterday",
+     "vette",
+     "andex",
+     "\u9b1f",
+     "psilon",
+     "AndPassword"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u3057\u307e\u3046",
+     " \u200b\u200b",
+     "ive",
+     "entifier",
+     " Dund",
+     "egers",
+     "\u4e00\u4e2a\u591a",
+     "__('",
+     "ently",
+     "WISE"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " fellow",
+     "sez",
+     " Dear",
+     " dear",
+     "\u5e2d",
+     " T\u00fcrk\u00e7e",
+     "\u670b",
+     "\u043d\u043e\u0435",
+     "\u8c0b\u6c42",
+     " briefly"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u3057\u307e\u3046",
+     "../",
+     "../../../",
+     "\ufffd",
+     "\uaed8",
+     "\u3082\u306e",
+     "ively",
+     "atically",
+     "\u4eec\u7684",
+     " t\u1eadn"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "coln",
+     "\u30d5\u30eb",
+     "dep",
+     "\u4e2d\u6700",
+     "\u7efc\u5408\u6027",
+     "weise",
+     "ungs",
+     "\u2023",
+     "-gap",
+     "amental"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8fe8",
+     "\u043f\u0440\u0430\u043a\u0442\u0438\u043a",
+     "\u6709\u7528\u7684",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     "\u731b\u70c8",
+     "\u901e",
+     "\u3042\u3063\u3066",
+     "\u0442\u0440\u0430\u0434\u0438",
+     "\u53d1\u4f5c",
+     "berra"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     " fucking",
+     " BOTH",
+     "deo",
+     "amble",
+     "adio",
+     " unlocked",
+     "sti",
+     "\ufffd",
+     "\u592a\u591a\u7684"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "/from",
+     "/out",
+     "[out",
+     "/by",
+     "/of",
+     "/to",
+     "\u4e8d",
+     "/on",
+     "/about",
+     "[from"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "/th",
+     " particular",
+     "\u4e9b",
+     " \u0436\u0435",
+     " same",
+     "-ci",
+     "same",
+     "\u65b9\u9762\u7684",
+     "\u73a9\u610f",
+     "\u5e74\u7684"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "10": [
+   {
+    "tokens": [
+     " \u200b\u200b",
+     " \\\n",
+     "antly",
+     "\\\n",
+     "uate",
+     "zig",
+     "QUE",
+     "eta",
+     "\u9877",
+     "\u51b2"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u043f\u0440\u0430\u043a\u0442\u0438\u043a",
+     "\u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     "h\u1ed5",
+     "\u0438\u043d\u0434\u0438\u0432",
+     "\u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b",
+     "\u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d",
+     "\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u0442\u0440\u0430\u0434\u0438"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "coln",
+     "getic",
+     "corp",
+     "soever",
+     " provid",
+     "\u4e2d\u6700",
+     "\u4e13",
+     "marine",
+     "-gap",
+     "\u6807\u8bed"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "st",
+     "pre",
+     "\u9884",
+     "grad",
+     "pro",
+     "\u4f55\u79cd",
+     "geb",
+     "tr",
+     "pad",
+     "empt"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "/th",
+     " particular",
+     " same",
+     "same",
+     "\u4e8c\u8005",
+     " \u0436\u0435",
+     "\u4e9b",
+     "\u540c\u4e00",
+     "\u5e74\u7684",
+     "cond"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "zee",
+     "Title",
+     "\ufffd",
+     "tec",
+     "\u4e30",
+     "tek",
+     "\u963b",
+     "mind",
+     "omite",
+     "bish"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0432\u043e\u043e\u0431\u0449\u0435",
+     "\u9ebd",
+     "\u4ea4\u4e92",
+     " firm",
+     "\u5eff",
+     "/XML",
+     " pumping",
+     "Lorem",
+     " november",
+     " s\u00fcr"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " bytearray",
+     " ...\"",
+     " inex",
+     "\u304b",
+     " prem",
+     " Publisher",
+     " ..",
+     "dek",
+     " adv",
+     " weed"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "imizer",
+     "quist",
+     "ake",
+     "burgh",
+     "ell",
+     "\u30d0\u30ea",
+     "\u4eba\u90fd",
+     " \u043f\u0443\u0442",
+     "lify"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "e",
+     "een",
+     "ection",
+     "eer",
+     "ness",
+     "eel",
+     "eed",
+     "ein",
+     "eve",
+     "eur"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "11": [
+   {
+    "tokens": [
+     "\u8fd0",
+     "\u62bc",
+     " Duty",
+     "neys",
+     "\u6df1",
+     "\u54c7",
+     "olk",
+     "olist",
+     "\u752b",
+     "\u5343\u4e07"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u662f\u6211\u56fd",
+     "\u5728\u6211\u56fd",
+     "\u662f\u6211\u4eec",
+     "\u516c\u5143",
+     "\u8fd9\u6837\u4e00\u4e2a",
+     "\u662f\u4e00\u9879",
+     "\u306b\u304a\u3051\u308b",
+     "\u4e00\u76f4\u4ee5\u6765",
+     "\u65b0\u578b\u51a0\u72b6",
+     "\u4eca"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ll",
+     "1",
+     "2",
+     "gm",
+     "es",
+     "rt",
+     "3",
+     " ",
+     "er",
+     "iele"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "_TYP",
+     "\u7c73\u7c89",
+     " Kod",
+     "enger",
+     " avi",
+     "\u5bab",
+     " Aval",
+     "attle",
+     " Moo",
+     " divorced"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7136\u662f",
+     "\u975e",
+     "\u672c",
+     "\u591a\u6b21",
+     "\u624b",
+     "\u901a",
+     "\u8c37",
+     "\u5149",
+     "\u67d0",
+     "\u5357"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u5d34",
+     "\u200b\u200b",
+     "\u5152",
+     "atica",
+     "adio",
+     " fucking",
+     "-lock",
+     " BEN",
+     "\uff65\uff65\uff65"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6f14",
+     "abox",
+     " reb",
+     " reform",
+     " intros",
+     "\u8865",
+     "\u8bc6\u522b",
+     " add",
+     "\u5efa\u8bbe\u548c",
+     "\u6f14\u53d8"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0441\u0432\u044f\u0437\u0438",
+     "lings",
+     "\u043a\u0443\u043f",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "\u0e32\u0e01",
+     "duct",
+     "\u3082\u306e",
+     "(es",
+     "appropri",
+     "\u0e2a\u0e32\u0e23"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "nesday",
+     "robe",
+     "avelength",
+     "hausen",
+     "consin",
+     "ylie",
+     "edly",
+     "pper",
+     "chester",
+     "/month"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e5f\u5c31\u662f",
+     "eed",
+     "inator",
+     "fung",
+     "\u6492",
+     "eam",
+     "\u90fd",
+     "\u4e00\u672c",
+     "idea",
+     "\u8457"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "12": [
+   {
+    "tokens": [
+     "\u6faa",
+     "\u5a7b",
+     "\u59c8",
+     "\u5ce7",
+     " etc",
+     "\u5788",
+     "\u68be",
+     "ugins",
+     "\u59a7",
+     "\u6cba"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "aly",
+     "vents",
+     "VI",
+     "swers",
+     "\u4e0d\u5408\u9002",
+     "storm",
+     "\u652f\u6301\u529b\u5ea6",
+     "DITION",
+     "raison",
+     "ais"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " gang",
+     " ain",
+     " gonna",
+     " dude",
+     " ya",
+     "\u54b1",
+     " reb",
+     " cap",
+     " dudes",
+     "\u7237"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " yap\u0131lan",
+     "\u3063\u3068",
+     "strup",
+     "\u8e6c",
+     "\u895f",
+     "erez",
+     "\u544a\u522b",
+     "\u8f6c\u5f2f",
+     "\u6cc4",
+     "olla"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7136\u662f",
+     "\u666e",
+     "\u7a81\u7136",
+     "\u591a\u6b21",
+     "\u901a",
+     "\u672c",
+     "\u51c6",
+     "\u5ef6",
+     "\u5357",
+     "\u8c37"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u53d1",
+     "\u8054",
+     "\u8863",
+     "chy",
+     "sist",
+     "\u6d46",
+     "\u6587\u4e66",
+     "\u65b9",
+     "\u53f8",
+     "naments"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u516c",
+     "eworthy",
+     "\u5230\u4e86",
+     "\u6f0f",
+     "\u062a\u0648\u0631",
+     "\u5e0c\u671b",
+     "\u9047",
+     "\u666e",
+     "\u5439",
+     "\u3079\u304d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u3053\u3068",
+     "\u7136\u662f",
+     "\u3082\u306e",
+     "\uc694",
+     "\u6e7e",
+     "\ub798",
+     "\ufffd",
+     "arily",
+     "rees",
+     "sw"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "gether",
+     "-old",
+     "-of",
+     "-turned",
+     "-last",
+     "opens",
+     "-duty",
+     "al",
+     "-up",
+     "alog"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "[email",
+     "nd",
+     "\"",
+     "*",
+     "entication",
+     "\u200e",
+     "\u0301",
+     "'",
+     "\u00a0"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "13": [
+   {
+    "tokens": [
+     "\u82f1\u8bed",
+     "\u6b67",
+     "\u672f",
+     "\u7ffb\u8bd1",
+     "\u62a5\u544a",
+     "\u987e\u95ee",
+     "\u9664",
+     "\u4ece\u4e1a",
+     "\u82f1\u6587",
+     "\u6ce1"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8e48",
+     "wards",
+     "thing",
+     "lesai",
+     "\u56de\u4e8b",
+     "stellung",
+     "\u4e4b\u7f8e",
+     "\ufffd",
+     "formance",
+     "stin"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7279",
+     "\u7ee7\u7eed",
+     "ron",
+     "\ub4dc",
+     "\u5e55",
+     "\u65af",
+     "\u592b",
+     "\u25aa",
+     "\u5236",
+     "ory"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "nd",
+     "g",
+     "*",
+     "s",
+     "\u4e3b",
+     "\"",
+     "(",
+     "1",
+     "\u7684",
+     "sm"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u540d\u8bcd",
+     "\u02c8",
+     "ones",
+     "orce",
+     " Pron",
+     "un",
+     "\u88d4",
+     "\u02cc",
+     " pron",
+     " pronunciation"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ed",
+     "fully",
+     "\u5728\u6574\u4e2a",
+     "edm",
+     "lah",
+     "edException",
+     "\u4e4e",
+     "edList",
+     "preci",
+     "emet"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "nesday",
+     "avelength",
+     "chester",
+     "ylie",
+     "consin",
+     "/month",
+     "riors",
+     "hausen",
+     "robe",
+     "fully"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "-k",
+     "\u8650",
+     "\u25be",
+     " anyways",
+     "lings",
+     "\u4e0d\u5b9a",
+     " mot",
+     " effect",
+     "\u3057\u305f\u3053\u3068",
+     ".Cmd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5176\u5b83\u95ee\u9898",
+     "edImage",
+     "cci",
+     "\u1ecd",
+     "cia",
+     ".IMAGE",
+     "\u5404\u5f0f",
+     "\u8fd9\u4e9b\u4e1c\u897f",
+     " Pa\u0144stwo",
+     "umat"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "aN",
+     "\u897f\u4e9a",
+     "GAN",
+     "\u98ce\u6247",
+     "T\u00dc",
+     "arin",
+     "itus",
+     "atha",
+     "\u7269",
+     " Britt"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "14": [
+   {
+    "tokens": [
+     "\u5df4\u5df4",
+     "enticate",
+     "swap",
+     "entication",
+     "\u0301",
+     "species",
+     "spec",
+     "space",
+     "\u563f",
+     "sa"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "jing",
+     " delights",
+     "ut",
+     "ue",
+     "\ub2c8\ub2e4",
+     "ars",
+     "inis",
+     "nger",
+     "chmod",
+     "\u6b96"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u515a\u548c",
+     ".*,",
+     "\u5e74\u81f3",
+     "\u5173\u4e8e\u6211\u4eec",
+     "\u00ads",
+     "\u00ad",
+     "\u4e2d\u56fd\u53e4\u4ee3",
+     "ul",
+     "all",
+     "\u96c6\u56e2\u65d7\u4e0b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "er",
+     "i",
+     "en",
+     "al",
+     "an",
+     "o",
+     "y",
+     "iya",
+     "i\u00e9",
+     "es"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "esome",
+     "ears",
+     " cata",
+     "bjerg",
+     "\u524d\u8fdb",
+     " Mack",
+     "-mobile",
+     "\ufffd",
+     "ugo",
+     "\u51e1\u662f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ably",
+     "coln",
+     "culated",
+     "\u0444\u043e\u043d",
+     "stu",
+     "ange",
+     "getic",
+     "amental",
+     "\u00a9",
+     "utzer"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7279",
+     "ron",
+     "agram",
+     "\u592b",
+     "\u5e55",
+     "\u5236",
+     "ory",
+     "\u5168",
+     "\ud2b8",
+     "\u8fbe"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "rift",
+     "eu",
+     "\u98ce",
+     "aN",
+     " Britt",
+     "rene",
+     "GAN",
+     "\u0642",
+     "CUS",
+     " caval"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e4e",
+     "g",
+     "\u5728",
+     "A",
+     "anga",
+     "ree",
+     "\u5f00",
+     "\u706b",
+     "1",
+     "ek"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e86\u5427",
+     "/OR",
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "\u4e00\u4ef6\u4e8b\u60c5",
+     "OURS",
+     " ALLOW",
+     "bout",
+     "\u94c2",
+     "\u701b",
+     ",:,:"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "15": [
+   {
+    "tokens": [
+     "ivate",
+     "agram",
+     "lint",
+     "nar",
+     "\ufffd\u5355",
+     "amate",
+     "olist",
+     "earch",
+     ".imag",
+     "\u5b57"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u53ef\u60dc",
+     "\u884c\u4e1a\u53d1\u5c55",
+     "\u5f53\u4e2d",
+     "\u65b0\u95fb",
+     "\u6539",
+     "\u4e0d\u5c11",
+     "!*",
+     "\u5176\u4ed6\u7684",
+     "avin",
+     "\u5176\u5b83"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "->",
+     " \uc0dd\uc131",
+     "e",
+     "\u4ea4\u4e92",
+     "=>",
+     "<=",
+     " user",
+     "m",
+     "==",
+     "TODO"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5708\u5b50",
+     "ayan",
+     "\u7c73\u7c89",
+     "\u53cb\u4eec",
+     "minster",
+     " nah",
+     "\u6760",
+     "ritz",
+     "-nav",
+     " Roc"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "land",
+     "points",
+     "paths",
+     "trust",
+     "strip",
+     "forward",
+     "words",
+     "man",
+     "paren",
+     "proof"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "izzo",
+     "\u65b9\u304c",
+     "\u60a8\u540c\u610f",
+     "\u4e66\u623f",
+     " \u0440\u0430\u0437\u043c\u0435\u0449\u0435\u043d",
+     " Champagne",
+     "\u7247\u5b50",
+     " Cabinets",
+     "\u65b9\u306f",
+     "ERGY"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7075",
+     "\u3063\u3068",
+     "\u67af",
+     "\u6a90",
+     "\u8e6c",
+     "strup",
+     "\u5934\u53d1",
+     "\u8840",
+     "atha",
+     "\u8116\u5b50"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7684\u4e0d\u540c",
+     "\u4e0d\u540c",
+     " framing",
+     " revers",
+     " verbs",
+     "omething",
+     "\u4e2a\u591a",
+     "\u5b57",
+     "\u6b8a",
+     ".Compiler"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "scale",
+     "samples",
+     "pone",
+     "scores",
+     "speed",
+     "square",
+     "sdk",
+     "sink",
+     "su",
+     "sap"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u672c\u8eab\u7684",
+     "\u6765\u7684",
+     "\u884c\u4e1a\u4e2d",
+     "\u5f97\u592a",
+     "\u4e5f\u597d",
+     "\u4e2d\u6709",
+     "\u73af\u5883\u4e2d",
+     "\u8fc7\u7a0b\u4e2d",
+     "\u540e\u7684",
+     "\u7684\u5177\u4f53"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "16": [
+   {
+    "tokens": [
+     "(?:",
+     "\u4f10",
+     "illion",
+     "\u53e4\u4ee3",
+     "\u5343\u4e07",
+     "\u73e0",
+     "\u73fe\u4ee3",
+     "ipy",
+     "onian",
+     "\u1ecbch"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ",
+     "e",
+     "\u00a0",
+     "/or",
+     "y",
+     "i",
+     "es",
+     "en",
+     "ment",
+     "er"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ments",
+     "\u4e86",
+     "ly",
+     "\u7136\u662f",
+     "imizer",
+     "imately",
+     "ally",
+     "ted",
+     "tempts",
+     "\u0647"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6b22",
+     "\u5ba2",
+     "geb",
+     "pre",
+     "Carthy",
+     "\u4f55\u79cd",
+     "\u5e73\u7b49",
+     "\u521d\u7ea7",
+     "gift",
+     "\u4fe1\u4efb"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "-handed",
+     "-sided",
+     "-half",
+     " liners",
+     "\uc529",
+     " \u043b\u0438\u0448\u044c",
+     " thing",
+     "-way",
+     "\u6216\u591a",
+     "-minded"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "\u4e86\u5427",
+     "bor",
+     "/OR",
+     "OURS",
+     "\u701b",
+     " ALLOW",
+     "#__",
+     "Compound",
+     "kah"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "gain",
+     "\u3057\u307e\u3046",
+     "ratings",
+     " \u0440\u0435\u0439\u0442\u0438\u043d\u0433",
+     "itness",
+     "illions",
+     "ivery",
+     "rating",
+     " \u043a\u0430\u0436",
+     "\u8d8b\u52bf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "already",
+     "Need",
+     "ignore",
+     "needs",
+     "your",
+     "lowest",
+     "points",
+     " sodom",
+     "None",
+     "least"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "DU",
+     "rst",
+     " rst",
+     " \u0110\u00ecnh",
+     " Ext",
+     "Sensitive",
+     "\u5b9a\u4e86",
+     " DU",
+     "\u9ebb\u75f9",
+     " revision"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u65e2\u6709",
+     " \u6216",
+     "\u610f\u601d",
+     " \ufffd",
+     "\u5c6f",
+     " \ufffd",
+     "orce",
+     "\u8236",
+     "\u653e",
+     " vagy"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "17": [
+   {
+    "tokens": [
+     "\u4e00\u4e2a\u597d\u7684",
+     "odos",
+     "\u5206\u949f\u540e",
+     "\u65b0\u52a0",
+     "\u516c\u7f51\u5b89\u5907",
+     "\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435",
+     "ewise",
+     "obe",
+     "\u5206\u949f\u5de6\u53f3",
+     "\u9002\u5f53\u7684"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " UNESCO",
+     " spyOn",
+     "-esque",
+     "\u5728\u8fd9",
+     "\u8fd9\u4e48\u5927",
+     "eting",
+     "_requires",
+     " dazu",
+     "lessly",
+     "kel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Kerala",
+     " Karnataka",
+     " Tamil",
+     " tamil",
+     " Sri",
+     " Chennai",
+     " Malay",
+     "\u6d77\u8fb9",
+     " Hyderabad",
+     " Kann"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5355\u7eaf\u7684",
+     "\u9002\u5f53\u7684",
+     "\u5f97\u592a",
+     "\u884c\u4e1a\u4e2d",
+     "\u672c\u8eab\u7684",
+     "++;\r\n",
+     "YRO",
+     "\u529b\u8fd8\u662f",
+     "++;\r\n\r\n",
+     "\u592a\u591a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0440\u0435\u0433\u0438",
+     "\u809a\u5b50",
+     " ad\u0131m",
+     "\u9192",
+     "\u53bb",
+     "\u5f69\u8272",
+     "\u4e00\u4ee3",
+     "\u73a9\u6e38\u620f",
+     "|RF",
+     "\u9001\u6765"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0440\u0430\u0449",
+     "located",
+     "\u4f55\u79cd",
+     "geb",
+     "ENTS",
+     "scriptions",
+     "stants",
+     "k\u0142ad",
+     "mittel",
+     "gambar"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\ud83c\udffb",
+     "inish",
+     " fashioned",
+     "yan",
+     "s",
+     "ivi",
+     "\ud83c\udffd",
+     "entities",
+     "sheets"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "iful",
+     "jamin",
+     " Isles",
+     " nhi\u00eau",
+     "friend",
+     "\u0e40\u0e09\u0e1e\u0e32\u0e30",
+     " ph\u1eadn",
+     "autiful",
+     "keley",
+     "ruptcy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "\u200e",
+     "[email",
+     "nd",
+     "\u0301",
+     "\"",
+     "*",
+     "\ufe0f",
+     "ren",
+     "nic"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ubd88\uad6c\ud558\uace0",
+     "\u7136\u662f",
+     "birth",
+     "ypes",
+     "tings",
+     "\u53c8\u8981",
+     "umer",
+     "iable",
+     "ndon",
+     "\u504f\u504f"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "18": [
+   {
+    "tokens": [
+     "\u1ed5i",
+     "swap",
+     "ivate",
+     "\u5206\u949f\u540e",
+     "\ufffd",
+     "\u516c\u7f51\u5b89\u5907",
+     "\u62bc",
+     "\u65b9",
+     "odos",
+     "\u0443"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "[email",
+     " \u200b\u200b",
+     "nd",
+     "\u200e",
+     "entication",
+     "*",
+     "\"",
+     "nic",
+     "\u4eec",
+     "ren"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ments",
+     "imately",
+     "ection",
+     "tempts",
+     "enticate",
+     "cion",
+     "hips",
+     "\u4e86",
+     "sWith",
+     "eed"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\u7136\u662f",
+     "\ufffd",
+     "\ufffd",
+     "\u0447\u0440\u0435\u0436\u0434\u0435\u043d",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5ab3",
+     "-thirds",
+     "\u7136\u662f",
+     "appe",
+     "nd",
+     "akes",
+     "gross",
+     "\u624b\u4e2d\u7684",
+     "\u96cf",
+     "\u00f1os"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u064a\u0629",
+     "../../../",
+     "\u3057\u307e\u3046",
+     "\u6001",
+     "phere",
+     "\u6daf",
+     "-made",
+     "\u6e1a",
+     "-\u00eatre",
+     "jamin"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u662f\u4e00\u4f4d",
+     "attrib",
+     "\u6458\u8981",
+     "TITLE",
+     "\u7f51\u8baf",
+     "\u5e26\u4f60",
+     "/title",
+     "\u662f\u6211\u4eec",
+     "byte",
+     "\u5199\u5b57"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "-",
+     "-/",
+     "\u2011",
+     "-c",
+     "\\-",
+     "trust",
+     "-m",
+     "line",
+     "-re",
+     "path"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e0d\u5c11",
+     "\u51e0\u4e2a",
+     "\u4e00\u4e9b",
+     "\u8bb8\u591a",
+     "\u8bf8\u591a",
+     "\u5f88\u591a",
+     "\u4e00\u4e2a\u95ee\u9898",
+     " few",
+     "\u4e00\u70b9",
+     "\u4e00\u79cd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u662f\u56e0\u4e3a",
+     "\u8bf4\u7684\u662f",
+     "\u770b\u6765",
+     "\u8981\u8bf4",
+     "\u6765\u8bf4",
+     "\u5c31\u662f\u8fd9\u6837",
+     "\u8fd9\u4e48\u8bf4",
+     "theless",
+     "\u4e5f\u6709\u4e00\u4e9b",
+     "\u5c31\u662f\u56e0\u4e3a"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "19": [
+   {
+    "tokens": [
+     "gether",
+     "istration",
+     "etsk",
+     "ory",
+     "imum",
+     " McCabe",
+     "istrator",
+     "stay",
+     "etes",
+     "\u3057\u307e\u3046"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u043f\u0440\u0438\u044f\u0442\u043d",
+     "\u0447\u0440\u0435\u0436\u0434\u0435\u043d",
+     "\u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d",
+     " \u043d\u0430\u0440\u043a\u043e",
+     "\u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d",
+     "\u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d",
+     " \u0414\u043c\u0438\u0442\u0440",
+     "\u0438\u043d\u0434\u0438\u0432",
+     "\u5176\u5b83\u95ee\u9898",
+     "\u0432\u0448\u0438\u0441"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "already",
+     "others",
+     "your",
+     "you",
+     "points",
+     "The",
+     "any",
+     "of",
+     "the",
+     "needs"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "A",
+     "D",
+     "\u4e3b",
+     "\u5927\u7684",
+     "\u8fbe",
+     "\u201c",
+     "\u8d2f",
+     "S",
+     "\u6781",
+     "B"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7ba1\u59d4\u4f1a",
+     "yny",
+     ".LayoutParams",
+     "vely",
+     "rics",
+     "IgnoreCase",
+     "enticate",
+     "ll",
+     "ued",
+     " Wich"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ec0\u9ebd",
+     " \u200b\u200b",
+     "bai",
+     "\f\n",
+     ".lambda",
+     "Chi",
+     "))-",
+     "/plain",
+     "_chi",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ober",
+     "\u3082\u306e",
+     "ity",
+     "\u0629",
+     "ation",
+     "\u3088\u3046\u306a",
+     "\u0635\u0631",
+     "zelf",
+     "\u05ea",
+     "../../../"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u200b\u200b",
+     "[email",
+     "ing",
+     "\"",
+     "*",
+     "nd",
+     "entication",
+     "\u200e",
+     " G\u0142\u00f3wn",
+     "ren"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ields",
+     "annis",
+     "esterday",
+     "osemite",
+     " \u200b\u200b",
+     "andex",
+     "asmine",
+     "vette",
+     "\u9b1f",
+     "thon"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "./(",
+     " Casinos",
+     "\uff01\n\n\n\n",
+     "\u525c",
+     " pleasantly",
+     "\u8fd9\u4e2a\u5730\u56fe",
+     " Fallen",
+     " Wrest",
+     "\u80fd\u4f7f",
+     "+-+-+-+-"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "20": [
+   {
+    "tokens": [
+     "\u7ba1\u59d4\u4f1a",
+     "ll",
+     "yny",
+     "ued",
+     "vely",
+     "ecs",
+     "IgnoreCase",
+     "rics",
+     "https",
+     ".LayoutParams"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "../../../",
+     "\u043e\u0441\u044c",
+     "\u3057\u307e\u3046",
+     "\u0300",
+     " \ubd88\uad6c\ud558\uace0",
+     "\u0301",
+     "\u75c7",
+     "\u0441\u0442\u0440\u043e",
+     "arith",
+     "etic"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ExecutionContext",
+     " Gest",
+     "otime",
+     "CCI",
+     "-sizing",
+     "\u65b0\u897f",
+     "sonian",
+     "DITION",
+     " spoilers",
+     "nant"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e1c\u8def",
+     "\u8832",
+     "\u6052",
+     "\u670b\u53cb\u4eec\u5bf9",
+     "\u25c0",
+     "\u4ea7\u4e1a\u56ed\u533a",
+     " Nab",
+     " PROF",
+     " sw",
+     "\u4eba\u90fd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u043f\u0440\u0438\u044f\u0442\u043d",
+     "\u0447\u0440\u0435\u0436\u0434\u0435\u043d",
+     "\u9cda",
+     "\u0432\u0448\u0438\u0441",
+     "\u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d",
+     " \u0414\u043c\u0438\u0442\u0440",
+     "\u0441\u043e\u0446\u0438\u0430\u043b\u044c\u043d",
+     "\u68be",
+     "\u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d",
+     "\u844e"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u545b",
+     "\u3082\u306e",
+     "hips",
+     "ll",
+     "hip",
+     "yr",
+     "hin",
+     "\u2019ve",
+     "ild",
+     "\u8782"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "TEXT",
+     "\u65e0\u8bba\u5982\u4f55",
+     "rice",
+     "\u65b0\u5e38\u6001",
+     "_TESTS",
+     "shr",
+     "\u515a\u7684\u9886\u5bfc",
+     "ullah",
+     "\u5145\u5b9e",
+     "ropp"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "Neg",
+     "Highest",
+     "\u590d\u5408",
+     "\u98a0",
+     "Dimensions",
+     "Third",
+     "rence",
+     "\u9798",
+     " bulund"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "sville",
+     " Biz",
+     "getic",
+     "stu",
+     "\u60ac\u6302",
+     "\u2023",
+     "baugh",
+     "wind",
+     "\u0444\u043e\u043d",
+     "\u4e8b\u5148"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u9510",
+     "\u8d26",
+     "\u7545",
+     "\u4e0b\u4e00\u6b65",
+     "\u6682",
+     "\u5c31",
+     "\u6838",
+     "#{@",
+     "\u62e8",
+     "\u4f18\u60e0"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "21": [
+   {
+    "tokens": [
+     "\ufe0f",
+     "ll",
+     "swap",
+     "\u6b21",
+     "\ufffd",
+     "todo",
+     "\u0e46",
+     "\u4e0b\u73ed",
+     "parer",
+     "crease"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ethiopian",
+     " Ethiopia",
+     " Ethi",
+     " Yemen",
+     "\u975e\u6d32",
+     " Uganda",
+     " Somali",
+     " \u0627\u0644\u064a\u0645\u0646",
+     " Somalia",
+     " Sudan"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Georgia",
+     "Georgia",
+     " Atlanta",
+     " Georgian",
+     "Atlanta",
+     "\u5f5d",
+     " Ethiopian",
+     " Savannah",
+     " Karnataka",
+     " Braves"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "#error",
+     "III",
+     "kah",
+     "*&",
+     "Software",
+     "#__",
+     "Interactive",
+     "Joint",
+     "...\\"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e3a\u60a8",
+     "\u4e3a\u60a8\u63d0\u4f9b",
+     "\u67e5\u770b\u66f4\u591a",
+     "\u626b\u7801",
+     "\u672c\u5468",
+     " \u2764",
+     "\u53cb\u60c5\u94fe\u63a5",
+     " \u043e\u043d\u043b\u0430\u0439\u043d",
+     "\u8ba9\u60a8",
+     "\u65b0\u95fb"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u53e4",
+     "\ufffd\u56de",
+     "_ordered",
+     "ality",
+     "otime",
+     "_completion",
+     "\u7656",
+     "ivate",
+     "oration",
+     "agrams"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7ba1\u59d4\u4f1a",
+     "ued",
+     "IgnoreCase",
+     "ecs",
+     "yny",
+     "ll",
+     ".LayoutParams",
+     "vely",
+     "tps",
+     "_FILENO"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd\ufffd",
+     "/gallery",
+     "\u0155",
+     "\u4e3b\u573a",
+     "...\",",
+     "itte",
+     "])**",
+     "\u3069\u3053\u308d",
+     "\u5bd3",
+     "\u600f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8f6c\u8f7d\u8bf7",
+     "\u7248\u6743\u58f0\u660e",
+     "\u63a8\u8350\u9605\u8bfb",
+     "\u8bf4\u5230\u8fd9\u91cc",
+     "\u8d23\u4efb\u7f16\u8f91",
+     "\u6458",
+     " disclaimer",
+     "\u6458\u7f16",
+     " Recap",
+     "\u67e5\u770b\u66f4\u591a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u514b\u65af",
+     " \u200b\u200b",
+     "eur",
+     "hip",
+     "psilon",
+     "erin",
+     "itm",
+     "\u59c6",
+     "\u56de\u4e8b",
+     "\u05d9\u05e7\u05d4"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "22": [
+   {
+    "tokens": [
+     "\u5f53\u4eca",
+     "\u4eca\u5929",
+     "\u6709\u4e00\u5929",
+     "\u8d8a\u662f",
+     "\u66fe\u7ecf",
+     "\u524d\u51e0\u5929",
+     "\u4e0d\u4e45\u524d",
+     "\u76ee\u524d\u4e3a\u6b62",
+     "\u4e00\u65b9\u9762",
+     "\u76ee\u524d\u5df2\u7ecf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u76f4",
+     "\u60c5\u51b5\u8fdb\u884c",
+     "\u7231\u4f60",
+     "],$",
+     "\u5176\u4e2d\u6709",
+     "\u8c23",
+     "\u4ec0\u4e48\u4e8b",
+     "vi",
+     "\u1ed5i",
+     "\u9753"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd\u8ba4",
+     "\u7aae",
+     " reimburse",
+     "\u5965\u5730",
+     "\u898f\u6a21",
+     "\u4e3b\u7fa9",
+     " moderators",
+     "ERSHEY",
+     " uncert",
+     " rects"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Ethiopian",
+     "\u5f5d",
+     " Atlanta",
+     " Georgian",
+     " Maharashtra",
+     " Pune",
+     " Georgia",
+     " Ethiopia",
+     "Atlanta",
+     "Georgia"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " unto",
+     ".rgb",
+     " crumbs",
+     "erten",
+     "\u7740",
+     ".li",
+     "AutoSize",
+     "\u51fa\u95e8",
+     "\u4f9d",
+     " petty"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+     " \u00a0",
+     "\u00a0\u00a0\u00a0",
+     "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0",
+     "\u00a0\u00a0",
+     "\u00a0\u00a0\u00a0\u00a0",
+     " \u00a0 \u00a0",
+     " \u00a0 \u00a0 \u00a0 \u00a0",
+     "\n",
+     " Name"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e4e",
+     "\u5f3a\u6709\u529b",
+     "uml",
+     "\u63ed",
+     "structors",
+     "\u5f53\u4e2d",
+     " chaud",
+     "\u6f84\u6e05",
+     "\u60e0",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2023",
+     "getic",
+     "\u25c4",
+     "worthy",
+     "coln",
+     "baugh",
+     "sville",
+     "ames",
+     "stu",
+     "ect"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0651",
+     "\u0642",
+     "\u0627\u0621",
+     "\u062d",
+     "\u0629",
+     "\u997c",
+     "\u062c",
+     "\u0627\u0645",
+     "\u0637",
+     "stery"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Arcade",
+     "@update",
+     " OTHERWISE",
+     "\u73bf",
+     "\u73b6",
+     " +=\n",
+     "\u4f7f\u7528\u8005\u6216",
+     "orie",
+     "\u67c4",
+     "\u4e0d\u7ecf"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "23": [
+   {
+    "tokens": [
+     " Ethiopian",
+     " Ethiopia",
+     " Ethi",
+     " Yemen",
+     "\u5f5d",
+     "\u975e\u6d32",
+     " Ghana",
+     " Armenia",
+     " Armenian",
+     " Georgian"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5f53\u4eca",
+     "\u524d\u51e0\u5929",
+     "\u4eca\u5929",
+     "\u4e00\u5929",
+     "\u6709\u4e00\u5929",
+     "\u6574\u4e2a",
+     "\u4e00\u65b9\u9762",
+     "\u7a81\u7136",
+     "\u76ee\u524d\u4e3a\u6b62",
+     "\u4e0d\u4e45\u524d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " flu",
+     " na",
+     " lat",
+     " pur",
+     " ag",
+     " Gael",
+     "ag",
+     "adh",
+     " ni",
+     " gn"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Chennai",
+     " tamil",
+     " Karnataka",
+     " Kerala",
+     " Tamil",
+     " Hyderabad",
+     " Kann",
+     " Sri",
+     " Krish",
+     " Bangalore"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "IGINAL",
+     "d\u0131r",
+     "ftware",
+     "\u7ba1\u59d4\u4f1a",
+     "ll",
+     "finity",
+     "\u011fi",
+     "bove",
+     "ponses",
+     "ategy"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6983",
+     "\u7c09",
+     "\u850a",
+     "\u73eb",
+     "\u5cff",
+     "autoload",
+     "egot",
+     "\u6f9b",
+     "\u8225",
+     "\u90da"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ",
+     "\u00a0",
+     "/",
+     "\u5f0f",
+     "2",
+     "1",
+     "\u0300",
+     "\uff08",
+     "\"",
+     " ("
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "etheless",
+     "\u516c\u7f51\u5b89\u5907",
+     "\u7279\u522b\u58f0\u660e",
+     "\u7248\u6743\u58f0\u660e",
+     "odore",
+     "::~",
+     "adays",
+     "\u8d23\u4efb\u7f16\u8f91",
+     " FAQs",
+     "\u8f6c\u8f7d\u8bf7"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "tern",
+     "nder",
+     "ser",
+     "gre",
+     "gro",
+     "thers",
+     "kel",
+     "rogen",
+     "ber",
+     "kan"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ud83c\udffb",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ufffd",
+     "\u2728",
+     " **",
+     "\u9664\u4e86",
+     "\u4ece\u672a",
+     "\u540c\u65f6\u8fd8"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "24": [
+   {
+    "tokens": [
+     " Gael",
+     " na",
+     " ni",
+     " flu",
+     " cy",
+     " pur",
+     " gn",
+     " fo",
+     " ny",
+     " ta"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ud83c\udffb",
+     "\ud83c\udffc",
+     "\ufffd",
+     "\ud83c\udffd",
+     "\ud83c\udfff",
+     "\ud83c\udffe",
+     "\ufffd",
+     "suit",
+     "\u25b7"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u516c\u7f51\u5b89\u5907",
+     "\u7814\u7a76\u8868\u660e",
+     "\u62a5\u544a\u663e\u793a",
+     "\u7f51\u8baf",
+     "\u62a5\u8bb0\u8005",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u95ee\u9898\u662f",
+     "\u6570\u636e\u663e\u793a",
+     " says",
+     "\u53cb\u4eec"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "HING",
+     " un",
+     " ser",
+     "i\u1ebfc",
+     " ch",
+     " l",
+     "h\u1edf",
+     " k",
+     " never",
+     " natural"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd\u8ba4",
+     "\u5965\u5730",
+     "APON",
+     "\uff01\n\n\n\n",
+     " UNUSED",
+     "_spin",
+     "ArrayOf",
+     "\u6900",
+     " inconsist",
+     " PartialView"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "../../../",
+     "t\u00ed",
+     "\u00fcc",
+     "er\u00eda",
+     "\u55df",
+     "eload",
+     "\u7d2f\u7d2f",
+     "orer",
+     "\ufffd",
+     "\u25fb"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ellow",
+     "ium",
+     "ption",
+     " Re",
+     "\u5f92",
+     "\u0e4c",
+     "\u7fd5",
+     "\u535c",
+     "\u0e30",
+     "\u752b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "IGINAL",
+     "\u7ba1\u59d4\u4f1a",
+     "ll",
+     "ftware",
+     "\u011fi",
+     "d\u0131r",
+     "finity",
+     "\u5c40\u957f",
+     "bove",
+     "crease"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ",
+     "2",
+     "1",
+     "\u00a0",
+     "(",
+     "-",
+     "\u5f0f",
+     "/",
+     " (",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8fd9\u5176\u4e2d",
+     "\u8fd9\u662f\u56e0\u4e3a",
+     "\u8fd9\u91cc\u9762",
+     "\u8fd9\u573a",
+     "\u5728\u8fd9\u4e2a",
+     "\u800c\u8fd9",
+     "\u8fd9\u65f6",
+     "\u8fd9\u5c31",
+     "\u4e0e\u6b64",
+     "\u8fd9\u6837\u4e00\u6765"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "25": [
+   {
+    "tokens": [
+     "\u0301",
+     "\u4e2d\u6587",
+     "\u4ec0\u4e48\u610f\u601d",
+     "\u064e\u0627",
+     "LIST",
+     "\u064e",
+     "\u5f00\u5934",
+     "\u0e2b\u0e25\u0e27\u0e07",
+     "ocal",
+     "_TRANSL"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7518\u8083",
+     "\u5170\u5dde",
+     "\u7518\u8083\u7701",
+     "\u9647",
+     "\u6566\u714c",
+     " Austrian",
+     " Wien",
+     " \u00d6sterreich",
+     "\u6d2e",
+     " Philadelphia"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     " l",
+     " ch",
+     "\u0438\u043d\u0434\u0438\u0432",
+     " k",
+     " g",
+     " un",
+     " \u041f\u043e\u0447\u0435\u043c",
+     " per",
+     " t"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "IGINAL",
+     "\u7ba1\u59d4\u4f1a",
+     "ll",
+     "d\u0131r",
+     "ftware",
+     "finity",
+     "\u011fi",
+     "crease",
+     "\u6b64\u57fa\u7840\u4e0a",
+     "annels"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7814\u7a76\u8868\u660e",
+     "\u4ee5\u4e0a",
+     "\u800c\u8a00",
+     "\u60c5\u51b5\u4e0b",
+     "\u4e4b\u6240\u4ee5",
+     "\u4ee5\u4e0a\u7684",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u8fd9\u4e9b",
+     "\u5982\u6b64",
+     "\u8fd9\u6837\u7684"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ",
+     "2",
+     "1",
+     "(",
+     "\ufffd",
+     "'",
+     "/",
+     "\u5f0f",
+     "\u0300",
+     "-"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u064b",
+     "ught",
+     "frica",
+     "\u011f\u0131",
+     "ffect",
+     "\u011f",
+     "stry",
+     "fter",
+     "\u00e7\u00f5es",
+     "ffects"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "itionally",
+     "\u4e00\u6761",
+     "\u90a3\u4e9b",
+     "vro",
+     "\u4e00\u4e2a",
+     "\u540c\u4e00",
+     "\u4e00\u79cd",
+     "\u4efb\u4f55\u5f62\u5f0f",
+     "\u5b9a",
+     "\u91cf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ields",
+     "kees",
+     "\u80a2",
+     "\u0131t",
+     "outu",
+     "_oauth",
+     "\u5851",
+     ".pag",
+     "bole",
+     "ovel"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "../../../",
+     "i",
+     "orer",
+     "iq",
+     "esz",
+     "oit",
+     "\u5b50\u91cc",
+     "urers",
+     "ENTITY",
+     "iou"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "26": [
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u4ec0\u4e48\u610f\u601d",
+     "\u064e\u0627",
+     "\u8584",
+     "\u0301",
+     "\u8bd1",
+     "\u7ffb\u8bd1",
+     "\u7231\u4f60",
+     "\u6587\u6863",
+     "\u043f\u0438\u0441\u0430\u043d\u0438\u0435"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6574\u4e2a",
+     "\u4e00\u65b9\u9762",
+     "\u5f53\u4eca",
+     "\u73b0\u6709\u7684",
+     "\u8fd1\u5e74",
+     "\u56fd\u5916",
+     "\u8fd1\u51e0\u5e74",
+     "\u4ed6\u4eec\u5728",
+     "\u76ee\u524d\u4e3a\u6b62",
+     "\u5f53\u4ee3"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7518\u8083\u7701",
+     "\u7518\u8083",
+     "\u5170\u5dde",
+     "\u9647",
+     "\u6d2e",
+     " Pennsylvania",
+     "\u6566\u714c",
+     " Philadelphia",
+     "Philadelphia",
+     " Philly"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     "\u0438\u043d\u0434\u0438\u0432",
+     " k",
+     "\u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a",
+     " ped",
+     " l",
+     " man",
+     " g",
+     " pol",
+     " mal"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ud83c\udffb",
+     "\ufffd",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ud83c\udffe",
+     "\ud83c\udfff",
+     "\ufffd",
+     "suit",
+     "\u2640"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u752b",
+     "\u5401",
+     "ellow",
+     " Bro",
+     "\u5319",
+     "\u0e30",
+     "ble",
+     "\u5484",
+     " Re",
+     "bole"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4f46\u4e0d\u9650\u4e8e",
+     "...\\",
+     "#endregion",
+     "...</",
+     "III",
+     "Joint",
+     "\\\"><",
+     "-</",
+     "../",
+     "F"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Kenya",
+     " Nairobi",
+     " Tanzania",
+     " Uganda",
+     "Ken",
+     " Rwanda",
+     " Ken",
+     " Colorado",
+     "airobi",
+     " Tanz"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "-based",
+     "\u5e02\u573a\u4e0a",
+     "\u672c\u571f",
+     "-born",
+     "\u5730\u533a\u7684",
+     "\u4e43\u81f3",
+     "\u672c\u5730",
+     "\u8fd9\u8fb9",
+     "-area",
+     "\u5730\u533a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u064b",
+     "ught",
+     "frica",
+     "\u011f\u0131",
+     "\u011f",
+     "ffect",
+     "stry",
+     "\u015f\u0131",
+     "ughty",
+     "ughter"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "27": [
+   {
+    "tokens": [
+     " CLOSE",
+     " INSTANCE",
+     "-instance",
+     "ustria",
+     "ANCE",
+     "-strokes",
+     "'gc",
+     "-collection",
+     "%</",
+     "\u5b9e\u4f8b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u5217\u8868",
+     "\u4e2d\u6587",
+     "\u540d",
+     "\u82f1\u6587",
+     "\u6574",
+     "\u96c6",
+     "\u7b26",
+     "\u683c",
+     "\u516d",
+     "\u4e09"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Kenya",
+     " Nairobi",
+     " Uganda",
+     " Tanzania",
+     " Rwanda",
+     "\u975e\u6d32",
+     " Tanz",
+     " Ethiopia",
+     " Zambia",
+     "airobi"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " ni",
+     " na",
+     " hal",
+     " cy",
+     " ag",
+     " \u00fe",
+     " '(",
+     " ny",
+     " le",
+     " dem"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6574\u4e2a",
+     "\u73b0\u6709\u7684",
+     "\u666e\u901a\u7684",
+     "\u4e00\u5f00\u59cb",
+     "\u7a81\u7136",
+     "\u4e0d\u540c\u7684",
+     "\u8fd1\u5e74",
+     "\u539f\u6709\u7684",
+     "\u4e00\u65b9\u9762",
+     "\u9002\u5f53\u7684"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u548c\u670d\u52a1",
+     "\ufffd\u8bd5",
+     "opard",
+     "/display",
+     "Compat",
+     "\ufffd\ufffd",
+     "\u9a30",
+     "\u62a5\u5e9f",
+     "\u65f6\u4ee3\u4e2d\u56fd",
+     "egot"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u1015",
+     "\u1010",
+     "\u1001",
+     "\u101b",
+     "\ufffd",
+     "\u101c",
+     "\u1019",
+     "\u1014",
+     "\u1000",
+     "\u1005"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u304a\u4e92",
+     "\u4e00\u5b9a\u7a0b\u5ea6",
+     "\u4e00\u5ea6",
+     "\u6574\u4e2a",
+     "\u81ea\u8eab",
+     "\u6700\u521d",
+     "\u7279\u5b9a",
+     " \u0410\u043b\u0435\u043a\u0441\u0430\u043d",
+     "\u5f88\u5927\u7a0b\u5ea6",
+     "\u5fc5\u305a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "bidden",
+     "\u591a\u4e86",
+     "/dist",
+     "gether",
+     "atre",
+     "\u00a9",
+     "soever",
+     "baugh",
+     "\u547d\u4e2d",
+     "culated"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7814\u7a76\u8868\u660e",
+     "\u800c\u8a00",
+     "\u4ee5\u4e0a",
+     "\u60c5\u51b5\u4e0b",
+     "\u4e4b\u6240\u4ee5",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u4ee5\u4e0a\u7684",
+     "\u95ee\u9898\u662f",
+     "\u8fd9\u4e00\u5207",
+     "\u4ec0\u4e48\u6837\u7684"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "28": [
+   {
+    "tokens": [
+     "\u5b9e\u4f8b",
+     "-instance",
+     "\u05d4",
+     "\u516c\u7528",
+     " INSTANCE",
+     " assembler",
+     "\u6307\u6570",
+     " CLOSE",
+     "'gc",
+     " Locate"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "ively",
+     "\ufe0f",
+     "\u3057\u307e\u3046",
+     "\u3044\u3046",
+     "enticate",
+     "\u3044\u308b",
+     "ll",
+     "sson",
+     "ORY",
+     "swick"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u6574\u4e2a",
+     "\u666e\u901a\u7684",
+     "\u73b0\u6709\u7684",
+     "\u5355\u7eaf\u7684",
+     "\u4eca\u540e",
+     "\u7a81\u7136",
+     "\u8fd1\u5e74",
+     "\u539f\u5148",
+     "\u8fc7\u53bb",
+     "\u6700\u8fd1"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4e2d\u6587",
+     "\u82f1\u6587",
+     "\u5217\u8868",
+     "\u6574",
+     "\u540d",
+     "ToolStripMenuItem",
+     "\u0301",
+     "\u96c6",
+     "\u683c",
+     "\u65e5"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ud83d\udcd0",
+     "...\n",
+     "\u514b\u601d\u4e3b\u4e49",
+     "\u2033",
+     " [\u2026",
+     "[\u2026]",
+     "\u6069",
+     "\u5e7f\u573a",
+     "\u7678",
+     "[\u2026"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ud83c\udffb",
+     "\ufffd",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ud83c\udffe",
+     "suit",
+     "\ud83c\udfff",
+     "\ufffd",
+     "\u2728"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "bidden",
+     "\u591a\u4e86",
+     "/dist",
+     "\u00a9",
+     "baugh",
+     "\u2023",
+     "cape",
+     "gether",
+     "ewire",
+     "\u7eb5\u6a2a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u7814\u7a76\u8868\u660e",
+     "\u4ee5\u4e0a",
+     "\u8fd9\u4e00\u5207",
+     "\u800c\u8a00",
+     "\u4ee5\u4e0a\u7684",
+     "\u8c03\u67e5\u663e\u793a",
+     "\u60c5\u51b5\u4e0b",
+     "\u8fd9\u6837\u7684",
+     "\u8fd9\u4e9b",
+     "\u8fd9\u4e48\u591a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "(q",
+     "[q",
+     "[ch",
+     "[g",
+     "[y",
+     "[j",
+     "osal",
+     "(xi",
+     "[l",
+     "[h"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " very",
+     "\u672c\u8eab\u5c31\u662f",
+     "\u306f",
+     "\ub294",
+     "\u4ec5\u4ec5\u662f",
+     "\u672c\u8d28\u4e0a",
+     "\u662f\u5bf9",
+     "\u4ec5\u4ec5",
+     " basically",
+     "\uc740"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "29": [
+   {
+    "tokens": [
+     " kosher",
+     " Torah",
+     " \u05d0",
+     " restitution",
+     " Rabbi",
+     "\u05d4",
+     " \u05d4",
+     " \u05d1",
+     " Locate",
+     " \ubb38\uc11c"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ud83c\udffb",
+     "\ufffd",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ud83c\udffe",
+     "suit",
+     "\ud83c\udfff",
+     "\u0e46",
+     "\u0301"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Vietnamese",
+     "\u17d2\ufffd",
+     "\ufffd",
+     "\u6587\u5b57",
+     "homepage",
+     "ISED",
+     "\u4e0e\u53d1\u5c55",
+     "\"https",
+     "SWG",
+     " backpage"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Tap",
+     " tap",
+     " Re",
+     "-N",
+     " Din",
+     " Mo",
+     " Per",
+     " Ar",
+     " N",
+     " K"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "orary",
+     "istrator",
+     "\u4eec",
+     "raries",
+     "erin",
+     "eria",
+     "\u0644\u0627\u0645",
+     "\u0629",
+     "enet",
+     "l\u00e1"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "those",
+     "exercise",
+     "hint",
+     "ex",
+     "starting",
+     "yes",
+     "Justice",
+     "three",
+     "unique",
+     "blank"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ebf\u4e07",
+     "\u91d1\u878d\u4e1a",
+     "\u6280\u672f\u6c34\u5e73",
+     " continent",
+     "\u53cd\u6b63",
+     "\u884c\u4eba",
+     "\u57ce\u5e02\u53d1\u5c55",
+     "\u5e02\u573a\u89c4\u6a21",
+     "-sex",
+     "\u8d2b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u064b",
+     "ught",
+     "frica",
+     "\u011f\u0131",
+     "ughter",
+     "ughty",
+     "ugh",
+     "eus",
+     "oui",
+     "ughters"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " USA",
+     " China",
+     " Italy",
+     " Canada",
+     " France",
+     " Germany",
+     " India",
+     "USA",
+     " Japan",
+     " Russia"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u3082\u306e",
+     "\u8f66\u9053",
+     "zelf",
+     "\u3079\u304d",
+     "\u4e0d\u4e86",
+     "\u91cd\u4efb",
+     "\ufffd",
+     "\u78bc",
+     " CRA",
+     "able"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "30": [
+   {
+    "tokens": [
+     "\ufffd",
+     "\u17b6\ufffd",
+     "\u17d2\ufffd",
+     "\ufffd",
+     "\u1793",
+     "\u17b6",
+     "\u179a",
+     "\u178a",
+     "\u179f",
+     "\u178f"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ebf\u4e07",
+     "iore",
+     " continent",
+     " flora",
+     "_published",
+     "\u8230",
+     "\u4e3b\u8981\u539f\u56e0",
+     "\u4ea4\u6d41",
+     "\u94ed",
+     " Vanguard"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ubb38\uc11c",
+     " Reviewed",
+     " IDF",
+     " Torah",
+     "-strokes",
+     " \u05d0",
+     "\u516c\u7528",
+     " *</",
+     " gratis",
+     " Apprent"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u4ea4\u901a",
+     "\u30b9\u30dd\u30fc\u30c4",
+     "\u91d1\u878d",
+     "\u5b97\u6559",
+     "\u822a\u5929",
+     " sports",
+     "\u5bb6\u5ead\u6559\u80b2",
+     "\u5987\u5973",
+     "\u4f53\u80b2",
+     " polit"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ud83c\udffb",
+     "\ufffd",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ud83c\udffe",
+     "\ud83c\udfff",
+     "suit",
+     "\u2728",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\u0cb2",
+     " \ufffd",
+     "\u0ca6",
+     "\u0cb5",
+     "\u0ca8",
+     "\u0c97",
+     "\u0cb0",
+     "\u0caf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " dop",
+     "\u8bc4\u7ea7",
+     " let",
+     "\ufffd\ufffd",
+     "prec",
+     "Ult",
+     "(es",
+     "\u626c",
+     "\u0448\u0438\u0431",
+     "\u8702"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " interior",
+     " fullest",
+     "anking",
+     "\u043f\u0435\u0440\u0435\u0434",
+     "\u8be5\u9879",
+     "celed",
+     "\u4e00\u4efd",
+     "aint",
+     " exterior",
+     "\u662f\u6700\u597d\u7684"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "_ABC",
+     "(KP",
+     "xAE",
+     " __________________\n\n",
+     "GenericType",
+     "VML",
+     "AFX",
+     "-FIRST",
+     "(Constructor",
+     "abeth"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u1021",
+     "\u1780",
+     "\u101b",
+     "\u1006",
+     "{|",
+     "aman",
+     "\u1005",
+     "\u1019",
+     "\u1015",
+     "\u1000"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "31": [
+   {
+    "tokens": [
+     "\u17b6\ufffd",
+     "\u1015",
+     "\ufffd",
+     "\ufffd",
+     "\u17d2\ufffd",
+     "\u1019",
+     "\u1793",
+     "\u179f",
+     "\ufffd",
+     "\u1000"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Reviewed",
+     "\u589e\u91cf",
+     " mnist",
+     " Segment",
+     " \u751f\u547d\u5468\u671f",
+     " TEAM",
+     "-strokes",
+     "\u628a\u624b",
+     " Loaded",
+     " Publisher"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " rootReducer",
+     "Prosec",
+     " toDate",
+     "Desde",
+     " isEqual",
+     " SPELL",
+     "como",
+     "\u795b",
+     "N\u00famero",
+     ".annot"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     "\u0917",
+     "\u091f",
+     "\u092f",
+     "\u0921",
+     "\u092a",
+     "\u0932",
+     " \u0938",
+     "\u0935",
+     "\u0908"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u092a",
+     " \u0938",
+     " \ufffd",
+     " \u092e",
+     " \u0915",
+     "\u043f\u0440\u0430\u043a\u0442\u0438\u043a",
+     "\u0972",
+     "\u0440\u0435\u0437\u0438\u0434\u0435\u043d\u0442",
+     "\u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ufffd",
+     "\ud83c\udffb",
+     "\ud83c\udffc",
+     "\ud83c\udffd",
+     "\ud83c\udfff",
+     "\ud83c\udffe",
+     "suit",
+     "\ufffd",
+     "\u25b7"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "inton",
+     "lessons",
+     "angles",
+     "indexes",
+     "woke",
+     "hint",
+     "\u0640",
+     "inclusive",
+     "fusion",
+     "marked"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u043e",
+     " \u0430",
+     " \u0431",
+     " \u0435",
+     " \u0445",
+     " \ufffd",
+     " \u043c",
+     " \u0434\u0430",
+     " \u0434",
+     " \u043d"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u65f6\u5019",
+     "\u60c5\u51b5\u4e0b",
+     "\u6837\u7684",
+     "\u610f\u4e49\u4e0a",
+     "\u6761\u4ef6\u4e0b",
+     "\u573a\u5408",
+     "\u6642\u5019",
+     "\u4e8b\u60c5",
+     "\u6837\u5b50",
+     "\u3053\u3068\u3067"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u03bd",
+     "\u1fd6",
+     "\u1f76",
+     " \u03c0",
+     "\u03c1",
+     "likes",
+     "NY",
+     "s",
+     "\u0e46",
+     "etheless"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "32": [
+   {
+    "tokens": [
+     " \u05d1",
+     " \u05d0",
+     " \u05d4",
+     " \u05de",
+     " \u05e9",
+     " \u05db",
+     " Rabbi",
+     " Torah",
+     " \u03c3",
+     " \u05ea"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0561",
+     "\u0576",
+     "\u0578",
+     "\u057e",
+     "\u0565",
+     "\u0574",
+     "\u057d",
+     "\u10d0",
+     "\u056b",
+     "\u0575"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\u17b6\ufffd",
+     "\u1794",
+     "\u1793",
+     "\u1798",
+     "\u178a",
+     "\u1780",
+     "\u17b6",
+     "\u17d2\ufffd",
+     "\u179a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     " \u03ba",
+     " \u03c4",
+     " \u03b4",
+     " \u03c0",
+     " \u03c3",
+     "\u03b5",
+     "\u03b9",
+     "\u03b1",
+     "\u03c4"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u092f",
+     "\u0917",
+     "\u091f",
+     " \ufffd",
+     "\u0908",
+     "\u0915",
+     "\u0921",
+     "\u0916",
+     "\u0913",
+     "\u092a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufe0f",
+     "\ufffd",
+     "\ud83c\udffb",
+     "\ud83c\udffd",
+     "\ud83c\udffc",
+     "\ud83c\udfff",
+     "\ud83c\udffe",
+     "\u5411\u4e0a",
+     "\u4e09\u6761",
+     "\u8bf7"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " toDate",
+     "\u8dc6",
+     "Desde",
+     " isEqual",
+     " rootReducer",
+     " SPELL",
+     "N\u00famero",
+     "como",
+     ".sources",
+     "\u795b"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\u0bbf\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\u0bc1",
+     "\u0cb5",
+     "\u0cb0",
+     "\ufffd",
+     "\u0d2e",
+     "\u0cae"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\u1010",
+     "\u1001",
+     "\u1015",
+     "\u1019",
+     "\u1000",
+     "\u1005",
+     "\u101b",
+     "\u1021",
+     "\u101e"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0645",
+     " \u0628",
+     " \u062a",
+     " \u0627",
+     " \u0627\u0644",
+     " \u0627\u0644\u0645",
+     " \u0639",
+     " \u062e",
+     " \u0641",
+     " \u0627\u0644\u062a"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "33": [
+   {
+    "tokens": [
+     " \u05de",
+     " \u05ea",
+     " \u05d1",
+     " \u05e9",
+     " \u05d0",
+     " Hebrew",
+     " \u05d4",
+     "Validity",
+     " Israeli",
+     " Judaism"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     "\ufffd",
+     "\u0d2f",
+     "\u0d4d",
+     "\u0d30",
+     "\u0d24",
+     "\u0d15",
+     "\u0d38",
+     "\u0d35",
+     "\u0d4d\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     " \u03ba",
+     "\u03ba",
+     " \u03c4",
+     " \u03c0",
+     "\u03b5",
+     "\u03c4",
+     "\u03b9",
+     " \u03b4",
+     "\u03bf"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u178b",
+     "\u1794",
+     "\ufffd",
+     "\u178f",
+     "\u1793",
+     "\u1780",
+     "\u179f",
+     "\ufffd",
+     "\u178a",
+     "\u1798"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0909",
+     "\u0972",
+     " \ufffd",
+     "\u0905",
+     "\u092a",
+     "\u0906",
+     " \u092a",
+     " \u092e",
+     "\u0936",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " Not\u00edcias",
+     " misunder",
+     "newValue",
+     " SPELL",
+     " isEqual",
+     " toDate",
+     " UserRepository",
+     " newState",
+     " BaseService",
+     ".sources"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " LOGGER",
+     "\u2f29",
+     "\u2f64",
+     "\u2fbc",
+     "\ufffd",
+     "\ufffd",
+     "\u2f24",
+     "\u2f63",
+     "\u2f08",
+     "\u2f50"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " DU",
+     "\u7c2a",
+     "inear",
+     "engo",
+     " claw",
+     ".ini",
+     "\u4ed6\u8fd8",
+     "\u6bdb\u5b54",
+     "\u4e92\u52a9",
+     "\u4e00\u95e8"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d",
+     "\u0627\u0633\u062a\u0642\u0644",
+     "\u043d\u0430\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d",
+     "\u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+     "\u0438\u043d\u0434\u0438\u0432",
+     "\u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d",
+     "\u0645\u0635\u0627\u0644\u062d",
+     "\u0623\u0646\u0638",
+     "\u0645\u0646\u0627\u0637"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u04b3",
+     "\u04b2",
+     "xon",
+     " tug",
+     " Uzbek",
+     "idan",
+     " Raq",
+     " yo",
+     "Yang",
+     "jon"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "34": [
+   {
+    "tokens": [
+     "\u0561",
+     "\u0578",
+     "\u0565",
+     "\u0576",
+     "\u0574",
+     "\u056f",
+     "\u056b",
+     "\u057e",
+     "\u10d0",
+     "\u0562"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " $\r\n",
+     ".\"\r\n",
+     ").\r\n",
+     ")}\r\n",
+     "!\")\r\n",
+     "\uff01');\n",
+     ".\",\r\n",
+     "\uff09\r\n",
+     "$\r\n",
+     "**\r\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "(\\\"",
+     "\"\\\n",
+     "\u4ee5\u8272\u5217",
+     "routing",
+     "(Android",
+     "distributed",
+     " Enumerator",
+     "\u05d9\u05ea",
+     "\"+\"",
+     "\u05d5"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     "\u6fe1",
+     "\u8fd9\u4e9b\u95ee\u9898",
+     " \ufffd",
+     " \ufffd",
+     " LATIN",
+     "\u81f4\u547d",
+     "'\r\n\r\n",
+     "'\r\n",
+     "\")\r\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u05de",
+     " \u05ea",
+     " \u05d1",
+     " \u05e9",
+     "\u5e73\u7b49",
+     " \u05d4",
+     " \u05dc",
+     " \u05e7",
+     " \u05d4\u05de",
+     " \u05e8"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \u0431",
+     "\u9a9e",
+     " \u03b4",
+     " \u03bb",
+     " \ufffd\ufffd\ufffd\ufffd",
+     " \u0411",
+     " \u041e",
+     "\u0434\u0435\u0439",
+     "\u9609",
+     " \ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " nom",
+     " cheg",
+     " ham",
+     " bo",
+     " q",
+     " ob",
+     " ax",
+     " Raq",
+     " bir",
+     " mos"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u8207",
+     "\u5c0d",
+     "\u9019",
+     "\u9032",
+     "\u6642",
+     "\u5f8c",
+     "\u65bc",
+     "\u7576",
+     "\u8a9e",
+     "\u70ba"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u2013\n\n",
+     "\uff5e\n\n",
+     "\u8fd9\u662f\u6211",
+     "\u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d",
+     "reak",
+     " \u2014\n\n",
+     "???\n\n",
+     "~\n\n",
+     "!!\n\n",
+     "\u00fas"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u1021",
+     "\u0915",
+     "SEE",
+     "\u1011",
+     "\u092e",
+     "\u0924",
+     "\ufffd",
+     "\uff4d",
+     "hi",
+     " heavyweight"
+    ],
+    "target_script_frac": 0.0
+   }
+  ],
+  "35": [
+   {
+    "tokens": [
+     "\u67e5\u770b\u66f4\u591a",
+     "<|endoftext|>",
+     "\uff1a</",
+     "/providers",
+     "/el",
+     "\u3002</",
+     "\u305d\u308c\u305e",
+     "/interfaces",
+     ".\"\r\n",
+     "{\r\n"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u0561",
+     "\u0578",
+     "\u10d8",
+     "\u0576",
+     "\u10d0",
+     "\u0565",
+     "\u056b",
+     "\u10d4",
+     "\u0575",
+     "\u10d3"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\u0d4d\ufffd",
+     "\ufffd",
+     "\u0d28",
+     "\u0d15",
+     "\u0d2f",
+     "\u0d24",
+     "\u0d2e",
+     "\u0d30",
+     "\u0d32"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\u0ca4",
+     " \ufffd",
+     "\u0ca8",
+     "\ufffd",
+     " \u0644",
+     " \u0111",
+     "\u0111",
+     " \u0627\u0644",
+     " \u062a"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     " \ufffd",
+     "\ufffd",
+     "\u0ab5",
+     "\u0aae",
+     "\u0aa4",
+     "\u0aa1",
+     "\u0aaa",
+     "\u0a9c",
+     "\u0ab0"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "htub",
+     " HttpStatusCodeResult",
+     " componentWill",
+     " Interracial",
+     " burgl",
+     " Pills",
+     " homophobic",
+     " nettsteder",
+     " expectedResult",
+     "atisch"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     " \ufffd",
+     " \ufffd",
+     " \ufffd",
+     "\u0d0f",
+     "\u0d8a",
+     " '",
+     " \ufffd",
+     "\u0d0e",
+     "\u0c8a",
+     " \ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\u1021",
+     "\u0906",
+     "\u1006",
+     "\u1013",
+     "\u101e",
+     "\u1027",
+     "\u0905",
+     " \u201c",
+     "\u1011",
+     "\u1786"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd",
+     "\ufffd"
+    ],
+    "target_script_frac": 0.0
+   },
+   {
+    "tokens": [
+     "2",
+     "3",
+     "1",
+     "5",
+     "6",
+     "0",
+     "4",
+     "8",
+     "7",
+     "9"
+    ],
+    "target_script_frac": 0.0
+   }
+  ]
+ }
+}

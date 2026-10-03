@@ -150,3 +150,12 @@ Figures (`scripts/make_figures.py`; each also writes a CSV with the exact number
 
 `python tests/fake_results.py /tmp/fake` writes SYNTHETIC outputs for testing the plotting
 code only; never put those figures in a paper.
+
+## Rerunning later stages after a code fix
+
+```bash
+# keep Stage I (the expensive part), redo Stage II + III, held-out table and export
+python scripts/run_pipeline.py --models all --langs all --fast --redo_from stage2
+# keep Stage I + II, redo only Stage III
+python scripts/run_pipeline.py --models all --langs all --fast --redo_from stage3
+```

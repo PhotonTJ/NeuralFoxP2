@@ -34,7 +34,10 @@ WEAK_TEMPLATES = {
 }
 # Explicit-instruction families (gate training on dev, conflict test on eval).
 EXPLICIT_TEMPLATES = {
-    "dev": ["{p} Answer in {L}.", "Please reply in {L}. {p}", "{p} ({L} please)"],
+    # gate training (dev): varied positions and phrasings; eval phrasings stay unseen
+    "dev": ["{p} Answer in {L}.", "Please reply in {L}. {p}", "{p} ({L} please)",
+            "{p} Write the answer in {L}.", "Reply using {L}: {p}", "{p}\nLanguage of reply: {L}",
+            "Can you answer in {L}? {p}", "{p} -- respond in {L}"],
     "eval": ["In {L}: {p}", "{p} Respond only in {L}.", "Use {L} for your answer. {p}"],
 }
 EXPLICIT_LANGS = ["English", "Hindi", "Chinese", "Bengali", "Telugu", "Spanish", "Swahili",

@@ -54,7 +54,8 @@ def build_steerer(model, s1, diag, window, rank, lam, beta, cfg, d_model, varian
               f"gate disabled for this configuration")
         gate = None
     st = FOXP2Steerer(layers, d_model, k_en, mode=cfg.mode, k_decode=cfg.k_decode, beta=beta,
-                      gamma=1.0, use_gate=cfg.use_gate and gate is not None)
+                      gamma=1.0, use_gate=cfg.use_gate and gate is not None,
+                      sink_factor=cfg.sink_factor)
     with torch.no_grad():
         for i, l in enumerate(layers):
             L = s1["layers"][l]
@@ -106,31 +107,65 @@ def _last_resid(model, tok, spec, prompts, layer, batch_size):
     return torch.cat(out)
 
 
-def train_gate(model, tok, spec, ldata, cfg, layer: int) -> tuple[dict | None, dict]:
-    """Probe: explicit language instruction (1) vs weak prompt (0) at the window's first layer."""
+def train_gate(model, tok, spec, ldata, cfg, layer: int, keep_rate: float = 0.95
+               ) -> tuple[dict | None, dict]:
+    """Probe at the window's first layer: explicit language instruction (1) vs weak prompt (0).
+
+    Trained on every disc+dev weak template and every dev explicit template.  The decision
+    threshold is set by leave-one-template-out cross-validation so that >= `keep_rate` of weak
+    prompts written with an UNSEEN template are still steered (a probe that only memorises
+    templates would otherwise switch steering off for new phrasings).  Reported accuracy is on
+    the eval templates, which are used nowhere in training or calibration."""
+    import random as _r
     from sklearn.linear_model import LogisticRegression
-    n = min(len(ldata.dev), 300)
-    weak_dev = weak_prompts(ldata.dev[:n], "dev")
-    exp_dev = [p for p, _ in explicit_prompts(ldata.dev[:n], "dev", seed=cfg.seed)]
-    weak_ev = weak_prompts(ldata.eval[:n], "eval")
-    exp_ev = [p for p, _ in explicit_prompts(ldata.eval[:n], "eval", seed=cfg.seed + 1)]
-    X = torch.cat([_last_resid(model, tok, spec, weak_dev, layer, cfg.batch_size),
-                   _last_resid(model, tok, spec, exp_dev, layer, cfg.batch_size)]).numpy()
-    y = np.r_[np.zeros(len(weak_dev)), np.ones(len(exp_dev))]
+    from .data import EXPLICIT_LANGS, EXPLICIT_TEMPLATES, WEAK_TEMPLATES
+
+    rng = _r.Random(cfg.seed)
+    units = ldata.dev[: min(len(ldata.dev), 300)]
+    wt = WEAK_TEMPLATES["disc"] + WEAK_TEMPLATES["dev"]
+    et = EXPLICIT_TEMPLATES["dev"]
+    fill = lambda t, u: t.format(kw=u.kw, topic=u.topic or "news")
+    weak = [(fill(wt[i % len(wt)], u), i % len(wt)) for i, u in enumerate(units)]
+    expl = [(et[i % len(et)].format(p=fill(wt[(i * 7) % len(wt)], u), L=rng.choice(EXPLICIT_LANGS)),
+             i % len(et)) for i, u in enumerate(units)]
+    X = torch.cat([_last_resid(model, tok, spec, [p for p, _ in weak], layer, cfg.batch_size),
+                   _last_resid(model, tok, spec, [p for p, _ in expl], layer, cfg.batch_size)]).numpy()
+    y = np.r_[np.zeros(len(weak)), np.ones(len(expl))]
+    gw = np.array([g for _, g in weak])
+    ge = np.array([g for _, g in expl])
     mu, sd = X.mean(0), X.std(0) + 1e-6
-    clf = LogisticRegression(C=0.5, max_iter=2000).fit((X - mu) / sd, y)
+    Z = (X - mu) / sd
+
+    def fit(mask):
+        return LogisticRegression(C=0.5, max_iter=3000).fit(Z[mask], y[mask])
+
+    # leave-one-template-out: fold f holds out weak template f and explicit template f % |et|
+    oot = np.full(len(y), np.nan)
+    for f in range(len(wt)):
+        held = np.r_[gw == f, ge == (f % len(et))]
+        if held.all() or not held.any():
+            continue
+        oot[held] = fit(~held).decision_function(Z[held])
+    weak_oot, expl_oot = oot[: len(weak)], oot[len(weak):]
+    tau = float(np.nanquantile(weak_oot, keep_rate))
+    clf = fit(np.ones(len(y), dtype=bool))
     w = clf.coef_[0] / sd
-    b = clf.intercept_[0] - float((clf.coef_[0] * mu / sd).sum())
+    b = clf.intercept_[0] - float((clf.coef_[0] * mu / sd).sum()) - tau
+
+    weak_ev = weak_prompts(ldata.eval[: len(units)], "eval")
+    exp_ev = [p for p, _ in explicit_prompts(ldata.eval[: len(units)], "eval", seed=cfg.seed + 1)]
     Xe = torch.cat([_last_resid(model, tok, spec, weak_ev, layer, cfg.batch_size),
                     _last_resid(model, tok, spec, exp_ev, layer, cfg.batch_size)]).numpy()
     ye = np.r_[np.zeros(len(weak_ev)), np.ones(len(exp_ev))]
     pred = (Xe @ w + b) > 0
-    rep = {"layer": layer, "heldout_acc": float((pred == ye).mean()),
+    rep = {"layer": layer, "tau": tau, "heldout_acc": float((pred == ye).mean()),
            "weak_kept_rate": float((~pred[: len(weak_ev)]).mean()),
-           "explicit_caught_rate": float(pred[len(weak_ev):].mean())}
-    print(f"[gate] held-out templates: {rep}")
-    if rep["heldout_acc"] < cfg.gate_min_acc:
-        print("[gate] accuracy below threshold; gate disabled for this artifact")
+           "explicit_caught_rate": float(pred[len(weak_ev):].mean()),
+           "cv_weak_kept_rate": float(np.nanmean(weak_oot <= tau)),
+           "cv_explicit_caught_rate": float(np.nanmean(expl_oot > tau))}
+    print(f"[gate] {rep}")
+    if rep["heldout_acc"] < cfg.gate_min_acc or rep["weak_kept_rate"] < 0.9:
+        print("[gate] held-out accuracy or weak-prompt retention too low; gate disabled")
         return None, rep
     return {"w": torch.tensor(w, dtype=torch.float32), "b": torch.tensor([b], dtype=torch.float32),
             "layer": layer}, rep
@@ -240,6 +275,7 @@ def run_stage3(model, tok, spec, ldata, cfg, s1, s2, out_dir, bench, d_model, ru
         "state_dict": {k: v.detach().cpu() for k, v in final.state_dict().items()},
         "config": {"layers": final.layers, "k_en": int(final.en_mask.shape[1]), "mode": cfg.mode,
                    "k_decode": cfg.k_decode, "beta": best["beta"], "lam": best["lam"],
+                   "sink_factor": cfg.sink_factor,
                    "gamma": 1.0, "use_gate": gate is not None, "rank": str(s2["rank"]),
                    "window": W, "model": spec.key, "base_model": spec.hf_id,
                    "target": ldata.target, "sae_repo": spec.sae_repo,

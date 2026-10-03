@@ -1,0 +1,554 @@
+{
+ "config": {
+  "layers": [
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35
+  ],
+  "k_en": 32,
+  "mode": "decode_window",
+  "k_decode": 8,
+  "beta": 0.0,
+  "lam": 6.0,
+  "sink_factor": 5.0,
+  "gamma": 1.0,
+  "use_gate": false,
+  "rank": "spectral",
+  "window": [
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35
+  ],
+  "model": "qwen3-8b",
+  "base_model": "Qwen/Qwen3-8B",
+  "target": "fr",
+  "sae_repo": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_50",
+  "feasible": true,
+  "guardrail_eps": {
+   "leak": 0.08,
+   "kl": 0.19781425595283508,
+   "util": 0.3139652609825134
+  }
+ },
+ "variants": {
+  "full": {
+   "window": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "lam": 6.0,
+   "beta": 0.0,
+   "dev": {
+    "variant": "full",
+    "lam": 6.0,
+    "beta": 0.0,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": 0.28042668104171753,
+    "gain_dM": 0.5777902603149414,
+    "gain_dM_ci": [
+     0.5137254596818821,
+     0.6446721435968357
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.75,
+    "gain_lid": 0.75,
+    "gain_lid_ci": [
+     0.640625,
+     0.859375
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.75,
+    "gain_DEFAULT": 0.75,
+    "gain_DEFAULT_ci": [
+     0.640625,
+     0.859375
+    ],
+    "leak_max": 0.003960759378969669,
+    "kl_offdecision": 0.004857154563069344,
+    "util_nll": 0.0029330849647521973,
+    "util_nll_all": 0.2133407183620606,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": 2.718075720054003e-08,
+    "leak_zh": 1.5285824702004902e-05,
+    "leak_bn": 5.740855790747901e-09,
+    "leak_te": 6.685522691007861e-10,
+    "leak_es": 0.003960759378969669,
+    "leak_sw": 0.0019587285351008177,
+    "leak_am": 4.893276450701478e-09,
+    "leak_ar": 4.118245158224454e-07,
+    "leak_mr": 1.7124114626287934e-10,
+    "leak_de": 0.0002461837721057236,
+    "leak_ur": 1.1940316291259023e-08,
+    "leak_ne": 3.896184264107205e-09
+   }
+  },
+  "pos_only": {
+   "window": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "lam": 6.0,
+   "beta": 0.0,
+   "dev": {
+    "variant": "pos_only",
+    "lam": 6.0,
+    "beta": 0.0,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": 0.28042668104171753,
+    "gain_dM": 0.5777902603149414,
+    "gain_dM_ci": [
+     0.5137254596818821,
+     0.6446721435968357
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.75,
+    "gain_lid": 0.75,
+    "gain_lid_ci": [
+     0.640625,
+     0.859375
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.75,
+    "gain_DEFAULT": 0.75,
+    "gain_DEFAULT_ci": [
+     0.640625,
+     0.859375
+    ],
+    "leak_max": 0.003960759378969669,
+    "kl_offdecision": 0.004857154563069344,
+    "util_nll": 0.0029330849647521973,
+    "util_nll_all": 0.2133407183620606,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": 2.718075720054003e-08,
+    "leak_zh": 1.5285824702004902e-05,
+    "leak_bn": 5.740855790747901e-09,
+    "leak_te": 6.685522691007861e-10,
+    "leak_es": 0.003960759378969669,
+    "leak_sw": 0.0019587285351008177,
+    "leak_am": 4.893276450701478e-09,
+    "leak_ar": 4.118245158224454e-07,
+    "leak_mr": 1.7124114626287934e-10,
+    "leak_de": 0.0002461837721057236,
+    "leak_ur": 1.1940316291259023e-08,
+    "leak_ne": 3.896184264107205e-09
+   },
+   "builder_variant": "pos_only"
+  },
+  "neg_only": {
+   "window": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "lam": 1.0,
+   "beta": 0.5,
+   "dev": {
+    "variant": "neg_only",
+    "lam": 1.0,
+    "beta": 0.5,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": -0.2772088646888733,
+    "gain_dM": 0.020154735073447227,
+    "gain_dM_ci": [
+     -0.013777868858277743,
+     0.054441796962098
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.0,
+    "gain_lid": 0.0,
+    "gain_lid_ci": [
+     0.0,
+     0.0
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.0,
+    "gain_DEFAULT": 0.0,
+    "gain_DEFAULT_ci": [
+     0.0,
+     0.0
+    ],
+    "leak_max": 3.6974670365452766e-05,
+    "kl_offdecision": 0.0013620948884636164,
+    "util_nll": 0.01332196593284607,
+    "util_nll_all": 0.04902909216626172,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": -3.2223008983311985e-13,
+    "leak_zh": -2.2921346953808097e-07,
+    "leak_bn": 2.7774033073413307e-12,
+    "leak_te": -1.6258583021566686e-12,
+    "leak_es": -2.2112324415957119e-07,
+    "leak_sw": 2.038955790339969e-05,
+    "leak_am": -2.2951206907206867e-11,
+    "leak_ar": -4.477915815925826e-10,
+    "leak_mr": -1.1875049554799233e-14,
+    "leak_de": 3.6974670365452766e-05,
+    "leak_ur": -5.4698773288563984e-11,
+    "leak_ne": 6.296107298714437e-13
+   },
+   "builder_variant": "neg_only"
+  },
+  "sparse_only": {
+   "window": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "lam": 6.0,
+   "beta": 0.0,
+   "dev": {
+    "variant": "sparse_only",
+    "lam": 6.0,
+    "beta": 0.0,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": 0.28888773918151855,
+    "gain_dM": 0.5862513780593872,
+    "gain_dM_ci": [
+     0.5203703829800361,
+     0.6542768183091537
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.6875,
+    "gain_lid": 0.6875,
+    "gain_lid_ci": [
+     0.578125,
+     0.796875
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.6875,
+    "gain_DEFAULT": 0.6875,
+    "gain_DEFAULT_ci": [
+     0.578125,
+     0.796875
+    ],
+    "leak_max": 0.002989406930282712,
+    "kl_offdecision": 0.005072102881968021,
+    "util_nll": -0.0001316070556640625,
+    "util_nll_all": 0.2135961072078203,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": 3.590186636870385e-08,
+    "leak_zh": 1.5713028915342875e-05,
+    "leak_bn": 6.686224018892517e-09,
+    "leak_te": 8.487963110148655e-10,
+    "leak_es": 0.002151892287656665,
+    "leak_sw": 0.0018945039482787251,
+    "leak_am": 5.629520849481651e-09,
+    "leak_ar": 5.076263960290817e-07,
+    "leak_mr": 2.7978167005393573e-10,
+    "leak_de": 0.002989406930282712,
+    "leak_ur": 1.4021117600293564e-08,
+    "leak_ne": 5.216473919489317e-09
+   },
+   "builder_variant": "sparse_only"
+  },
+  "random": {
+   "window": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "lam": 2.0,
+   "beta": 0.0,
+   "dev": {
+    "variant": "random",
+    "lam": 2.0,
+    "beta": 0.0,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": -0.2907787561416626,
+    "gain_dM": 0.006584823131561279,
+    "gain_dM_ci": [
+     -0.0009443316898924081,
+     0.01795401586735357
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.0,
+    "gain_lid": 0.0,
+    "gain_lid_ci": [
+     0.0,
+     0.0
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.0,
+    "gain_DEFAULT": 0.0,
+    "gain_DEFAULT_ci": [
+     0.0,
+     0.0
+    ],
+    "leak_max": 4.290253855288029e-06,
+    "kl_offdecision": 0.00046251030289568007,
+    "util_nll": 0.0005764365196228027,
+    "util_nll_all": -0.0025939288502789815,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": 3.7369564907796526e-13,
+    "leak_zh": 7.064568308123853e-08,
+    "leak_bn": 1.3451906255568247e-11,
+    "leak_te": 1.0592282259636043e-12,
+    "leak_es": 1.8472707097316743e-07,
+    "leak_sw": 1.3895005395170301e-06,
+    "leak_am": 4.269039982629508e-12,
+    "leak_ar": 1.3957901501271408e-10,
+    "leak_mr": 7.915998585794615e-14,
+    "leak_de": 4.290253855288029e-06,
+    "leak_ur": 1.3145859401042514e-11,
+    "leak_ne": 1.2623008107531808e-13
+   },
+   "builder_variant": "random"
+  },
+  "caa": {
+   "window": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35
+   ],
+   "lam": 3.0,
+   "beta": 0.0,
+   "dev": {
+    "variant": "caa",
+    "lam": 3.0,
+    "beta": 0.0,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": 0.2980305254459381,
+    "gain_dM": 0.5953941345214844,
+    "gain_dM_ci": [
+     0.5306921999719634,
+     0.6622976158803795
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.578125,
+    "gain_lid": 0.578125,
+    "gain_lid_ci": [
+     0.46875,
+     0.703125
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.578125,
+    "gain_DEFAULT": 0.578125,
+    "gain_DEFAULT_ci": [
+     0.46875,
+     0.703125
+    ],
+    "leak_max": 0.00195463839918375,
+    "kl_offdecision": 0.007553427945822477,
+    "util_nll": 0.005759894847869873,
+    "util_nll_all": 0.18342589635600914,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": 2.7710167493921745e-09,
+    "leak_zh": 0.00016308588965330273,
+    "leak_bn": 1.59321604797924e-08,
+    "leak_te": 2.7037141414609778e-09,
+    "leak_es": 0.00195463839918375,
+    "leak_sw": 0.00014012308383826166,
+    "leak_am": 1.1002038391438873e-08,
+    "leak_ar": 1.1316191148580401e-06,
+    "leak_mr": 9.932258349110157e-10,
+    "leak_de": -0.0003428545605856925,
+    "leak_ur": 3.758700017897354e-08,
+    "leak_ne": 3.0958186014728994e-10
+   },
+   "builder_variant": "caa"
+  },
+  "outside_window": {
+   "window": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "lam": 16.0,
+   "beta": 0.0,
+   "dev": {
+    "variant": "outside_window",
+    "lam": 16.0,
+    "beta": 0.0,
+    "n": 64,
+    "dM_base": -0.29736360907554626,
+    "dM_edit": -0.03702901303768158,
+    "gain_dM": 0.2603345513343811,
+    "gain_dM_ci": [
+     0.19897912594458375,
+     0.3236877967726741
+    ],
+    "lid_base": 0.0,
+    "lid_edit": 0.40625,
+    "gain_lid": 0.40625,
+    "gain_lid_ci": [
+     0.296484375,
+     0.53125
+    ],
+    "DEFAULT_base": 0.0,
+    "DEFAULT_edit": 0.21875,
+    "gain_DEFAULT": 0.21875,
+    "gain_DEFAULT_ci": [
+     0.125,
+     0.31289062499999787
+    ],
+    "leak_max": 0.00029198924312368035,
+    "kl_offdecision": 0.08954191207885742,
+    "util_nll": -0.030173420906066895,
+    "util_nll_all": 0.025298374094194997,
+    "feasible": true,
+    "excess": 0.0,
+    "leak_hi": 4.809264542160463e-09,
+    "leak_zh": 4.660845297621563e-05,
+    "leak_bn": 4.049164203934197e-08,
+    "leak_te": 2.186633984990749e-09,
+    "leak_es": 7.293784437933937e-05,
+    "leak_sw": 0.00029198924312368035,
+    "leak_am": 1.1104633657055274e-08,
+    "leak_ar": 6.680364776912029e-07,
+    "leak_mr": 5.082665399669395e-10,
+    "leak_de": -0.00011427068966440856,
+    "leak_ur": 3.8691450043870645e-08,
+    "leak_ne": 6.521090334388191e-10
+   },
+   "builder_variant": "full"
+  }
+ },
+ "gate": {
+  "layer": 28,
+  "tau": 0.9554719358682646,
+  "heldout_acc": 0.9283333333333333,
+  "weak_kept_rate": 0.86,
+  "explicit_caught_rate": 0.9966666666666667,
+  "cv_weak_kept_rate": 0.95,
+  "cv_explicit_caught_rate": 0.96
+ },
+ "protocol": {
+  "contrast": "response",
+  "k_resp": 3,
+  "n_disc": 600,
+  "n_dev": 397,
+  "n_eval": 300,
+  "n_lift_prompts": 48,
+  "n_dev_prompts": 64,
+  "n_heldout_prompts": 128,
+  "token_ratio": 4.0,
+  "token_min_count": 3,
+  "layers": null,
+  "n_screen": 128,
+  "lift_mode": "verify",
+  "n_verify": 16,
+  "n_verify_prompts": 16,
+  "lift_alphas": [
+   0.5,
+   1.0
+  ],
+  "K_tgt": 64,
+  "K_en": 32,
+  "T": 3,
+  "subspace": "uncentered",
+  "rank_candidates": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "max_rank": 16,
+  "n_boot": 50,
+  "stab_min": 0.6,
+  "min_width": 3,
+  "max_width": 12,
+  "n_window_candidates": 4,
+  "alpha_leak": 2.0,
+  "alpha_kl": 1.0,
+  "alpha_util": 2.0,
+  "alpha_stab": 0.05,
+  "window_lam_grid": [
+   2.0,
+   4.0,
+   8.0,
+   16.0
+  ],
+  "window_beta": 0.5,
+  "lam_grid": [
+   2.0,
+   4.0,
+   6.0,
+   8.0,
+   12.0,
+   16.0
+  ],
+  "caa_lam_grid": [
+   0.5,
+   1.0,
+   1.5,
+   2.0,
+   3.0
+  ],
+  "beta_grid": [
+   0.0,
+   0.5,
+   1.0
+  ],
+  "eps_leak": 0.08,
+  "eps_kl": 0.08,
+  "eps_util": 0.03,
+  "util_skip": 3,
+  "n_util_tokens": 16,
+  "guardrail": "prompt",
+  "mode": "decode_window",
+  "k_decode": 8,
+  "use_gate": true,
+  "sink_factor": 5.0,
+  "gate_min_acc": 0.8,
+  "batch_size": 16,
+  "seed": 17
+ }
+}

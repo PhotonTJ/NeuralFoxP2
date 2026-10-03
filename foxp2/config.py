@@ -138,13 +138,15 @@ class FOXP2Config:
     eps_leak: float = 0.08          # max mass gain of any non-target language
     eps_kl: float = 0.08            # max off-decision KL (already-committed contexts)
     eps_util: float = 0.03          # max in-language NLL increase (nats/token) at deployed positions
-    util_skip: int = 3              # response tokens treated as the language commitment (not scored)
+    util_skip: int = 3              # (legacy) used only by the reported util_nll_all stress test
+    n_util_tokens: int = 16         # downstream reference tokens scored by the utility guardrail
     # "prompt": a guardrail is max(fixed eps, cost of simply instructing "Answer in <L>.") on D_dev,
     #           i.e. steering may not cost more than prompting does.  "fixed": the eps values above.
     guardrail: str = "prompt"
     mode: str = "decode_window"     # "decode_window" | "all"
     k_decode: int = 8               # decode steps edited after the prompt-final position
     use_gate: bool = True           # explicit-instruction gate
+    sink_factor: float = 5.0        # never edit positions with norm > factor x median (attention sinks)
     gate_min_acc: float = 0.80
 
     # ---- misc ----

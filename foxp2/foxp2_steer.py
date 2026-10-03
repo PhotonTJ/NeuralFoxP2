@@ -14,8 +14,14 @@ Positions edited ("decode_window" mode): the prompt-final position (which produc
 response token) and the next `k_decode` decoding steps.  "all" mode edits every position and
 is the right mode for log-likelihood (multiple-choice) benchmarks.
 
+Positions whose residual norm exceeds `sink_factor` x the row's median norm (attention-sink /
+massive-activation tokens such as BOS) are never edited: SAE pre-activations there are huge, so
+the suppression term would otherwise subtract a huge vector and break attention for every later
+token.  The reference median comes from the prefill and is reused during decoding.
+
 Runtime overrides (env vars win over config): FOXP2_GAMMA, FOXP2_MODE, FOXP2_KDECODE,
-FOXP2_GATE (0/1).  gamma = 0 reproduces the unedited model bit for bit.
+FOXP2_GATE (0/1), FOXP2_SINK (sink factor, 0 = off).  gamma = 0 reproduces the unedited model
+bit for bit.
 """
 from __future__ import annotations
 
@@ -47,7 +53,8 @@ def _seq_info(args, kwargs):
 
 class FOXP2Steerer(nn.Module):
     def __init__(self, layers, d_model: int, k_en: int, mode: str = "decode_window",
-                 k_decode: int = 8, beta: float = 1.0, gamma: float = 1.0, use_gate: bool = True):
+                 k_decode: int = 8, beta: float = 1.0, gamma: float = 1.0, use_gate: bool = True,
+                 sink_factor: float = 5.0):
         super().__init__()
         self.layers = [int(l) for l in layers]
         n, k_en = len(self.layers), max(int(k_en), 1)
@@ -66,7 +73,10 @@ class FOXP2Steerer(nn.Module):
         self._handles = []
         self._prefill, self._step, self._gate = True, 0, None
         self._cache = {}
-        self.force_last = None   # analysis only: edit the last n positions of a prefill
+        self.sink_factor = float(sink_factor)
+        self._ref_norm = {}
+        # analysis only: (a, b) -> edit slice(T - a, T - b) of a prefill; the gate is read at T - a
+        self.force_range = None
 
     # ---------------------------------------------------------------- state management
     def invalidate(self):
@@ -88,26 +98,31 @@ class FOXP2Steerer(nn.Module):
         k_dec = int(e.get("FOXP2_KDECODE", self.k_decode))
         gate = e.get("FOXP2_GATE")
         use_gate = self.use_gate if gate is None else gate not in ("0", "false", "False")
-        return gamma, mode, k_dec, use_gate
+        sink = float(e.get("FOXP2_SINK", self.sink_factor))
+        return gamma, mode, k_dec, use_gate, sink
 
     def begin_forward(self, seq_len: int, past: int):
         if past == 0 or seq_len > 1:
             self._prefill, self._step, self._gate = True, 0, None
+            self._ref_norm = {}
         else:
             self._prefill = False
             self._step += 1
 
     # ---------------------------------------------------------------- the edit
     def edit(self, i: int, h: torch.Tensor) -> torch.Tensor:
-        gamma, mode, k_dec, use_gate = self._settings()
+        gamma, mode, k_dec, use_gate, sink = self._settings()
         if gamma == 0.0:
             return h
         B, T, _ = h.shape
-        if mode == "all":
+        gate_pos = T - 1
+        if self._prefill and self.force_range is not None:
+            a, b = self.force_range
+            sl, gate_pos = slice(max(T - a, 0), T - b), max(T - a, 0)
+        elif mode == "all":
             sl = slice(0, T)
         elif self._prefill:
-            n = self.force_last or 1
-            sl = slice(max(T - n, 0), T)
+            sl = slice(T - 1, T)
         elif self._step <= k_dec:
             sl = slice(0, T)
         else:
@@ -115,7 +130,7 @@ class FOXP2Steerer(nn.Module):
         P = self._params(h.device)
         if i == 0 and (self._prefill or self._gate is None):
             if use_gate and bool(P["gate_w"].abs().sum() > 0):
-                logit = h[:, -1].float() @ P["gate_w"] + P["gate_b"]
+                logit = h[:, gate_pos].float() @ P["gate_w"] + P["gate_b"]
                 self._gate = (logit < 0).float()          # 1 = weak prompt -> steer
             else:
                 self._gate = torch.ones(B, device=h.device)
@@ -126,6 +141,14 @@ class FOXP2Steerer(nn.Module):
         z = pre * (pre > P["enc_thr"][i]).float() * P["en_mask"][i]
         delta = P["v_pos"][i] - self.beta * (z @ P["dec_W"][i])
         delta = gamma * g[:, None, None] * delta
+        if sink > 0:
+            if self._prefill or i not in self._ref_norm:
+                if T > 1:
+                    self._ref_norm[i] = h.float().norm(dim=-1).median(dim=1).values
+            ref = self._ref_norm.get(i)
+            if ref is not None and ref.shape[0] == B:
+                keep = (x.norm(dim=-1) <= sink * ref[:, None]).float()
+                delta = delta * keep[..., None]
         out = h.clone()
         out[:, sl] = (x + delta).to(h.dtype)
         return out
@@ -157,6 +180,7 @@ class FOXP2Steerer(nn.Module):
     def summary(self) -> dict:
         return {"layers": self.layers, "mode": self.mode, "k_decode": self.k_decode,
                 "beta": self.beta, "gamma": self.gamma, "use_gate": self.use_gate,
+                "sink_factor": self.sink_factor,
                 "v_pos_norm": [round(float(v), 4) for v in self.v_pos.float().norm(dim=-1)],
                 "n_en_features": [int(m) for m in self.en_mask.sum(-1)],
                 "gate_active": bool(self.gate_w.abs().sum() > 0)}

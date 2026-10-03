@@ -194,6 +194,20 @@ def main():
     os.environ.pop("FOXP2_MODE")
     assert (allpos - ref).abs().amax(-1)[:, :-1].max() > 0, "'all' mode must edit every position"
     print("FOXP2_MODE=all edits every position")
+
+    # attention-sink positions (huge residual norm) are never edited, in prefill or decoding
+    from foxp2.foxp2_steer import FOXP2Steerer
+    s = FOXP2Steerer([0], d, 1, mode="all", sink_factor=5.0)
+    s.v_pos[0] = 1.0
+    s.begin_forward(6, 0)
+    h = torch.randn(2, 6, d)
+    h[:, 0] *= 100
+    o = s.edit(0, h)
+    assert torch.equal(o[:, 0], h[:, 0]) and (o[:, 1:] - h[:, 1:]).abs().amin() > 0
+    s.begin_forward(1, 6)
+    h1 = torch.randn(2, 1, d) * 100
+    assert torch.equal(s.edit(0, h1), h1)
+    print("attention-sink positions are left untouched")
     shutil.rmtree(tmp)
     print("SMOKE TEST PASSED")
 

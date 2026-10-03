@@ -37,6 +37,9 @@ fi
 if has evaluate; then
   for m in "${MS[@]}"; do for l in "${LS[@]}"; do
     ck="$CK/$m-foxp2-$l"; [[ -d "$ck" ]] || { echo "[skip] $ck missing"; continue; }
+    if [[ -f "$ck/eval_$l.json" && "${FORCE_EVAL:-0}" != "1" ]]; then
+      echo "[resume] $ck/eval_$l.json exists, skipping (FORCE_EVAL=1 to redo)"; continue
+    fi
     log "evaluate $m $l"
     python scripts/evaluate.py --ckpt "$ck" --model "$m" --lang "$l" --translation 2>&1 | tee -a evaluate.log
   done; done
@@ -57,6 +60,10 @@ if has lmeval; then
     for kind in target english; do
       for g in 0 1; do
         dest="$RES/$m/$l/$kind/gamma$g"
+        if compgen -G "$dest/**/results_*.json" >/dev/null 2>&1 || \
+           [[ -n "$(find -L "$dest" -name 'results_*.json' 2>/dev/null | head -1)" ]]; then
+          echo "[resume] $dest done, skipping"; continue
+        fi
         # English, unedited: identical for every language of a model -> run once, link the rest
         shared="$RES/$m/_english_gamma0"
         if [[ "$kind" == english && "$g" == 0 && -d "$shared" ]]; then

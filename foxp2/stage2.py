@@ -30,8 +30,8 @@ import torch
 
 from .config import LANG_NAME
 from .data import weak_prompts
-from .metrics import (committed_contexts, compare_early, early_defaultness, kl, last_logprobs,
-                      response_nll, tf_masses, tf_sequences)
+from .metrics import (compare_early, downstream_scores, early_defaultness, kl, response_nll,
+                      tf_masses, tf_sequences)
 from .model_io import add_vectors, chat_ids
 
 
@@ -127,16 +127,15 @@ class DevBench:
         self.prompt_texts = weak_prompts(units, split)
         self.prompts = [chat_ids(tok, p, spec.chat_kwargs) for p in self.prompt_texts]
         self.tf_seqs = tf_sequences(model, tok, self.prompts, cfg.T, cfg.batch_size)
-        self.committed = committed_contexts(tok, self.prompts, [u.tgt for u in units])
         self.ref_tgt = [u.tgt for u in units]
+        # two consecutive target sentences, so every reference is long enough for the
+        # downstream window in every tokenizer
+        self.ref_long = [units[i].tgt + " " + units[(i + 1) % len(units)].tgt for i in range(len(units))]
         self.base_tf, _ = tf_masses(model, tok, self.tf_seqs, ts, self.target, cfg.T, cfg.batch_size)
         self.base_early = early_defaultness(model, tok, self.prompts, ts, self.target, cfg.T,
                                            batch_size=cfg.batch_size)
-        self.base_lp = last_logprobs(model, tok, self.committed, cfg.batch_size)
         self.base_nll = response_nll(model, tok, self.prompts, self.ref_tgt, batch_size=cfg.batch_size)
-        self.k_util = max(cfg.k_decode, cfg.util_skip + 2)
-        self.base_nll_dep = response_nll(model, tok, self.prompts, self.ref_tgt, skip=cfg.util_skip,
-                                         max_resp=self.k_util, batch_size=cfg.batch_size)
+        self.base_ds, self.base_lp, self.n_ds = self._downstream(self.prompts, None)
         self.prompt_ref = self.prompt_reference()
         fixed = {"leak": cfg.eps_leak, "kl": cfg.eps_kl, "util": cfg.eps_util}
         if cfg.guardrail == "prompt":
@@ -154,20 +153,23 @@ class DevBench:
               f"util={pr_fmt(self.prompt_ref, 'util_nll')}")
         print(f"[guardrail] mode={cfg.guardrail} eps={ {k: round(v, 3) for k, v in self.eps.items()} }")
 
+    def _downstream(self, prompts, steer):
+        return downstream_scores(self.model, self.tok, prompts, self.ref_long, self.cfg.k_decode,
+                                 self.cfg.n_util_tokens, self.cfg.batch_size, steer)
+
     def prompt_reference(self) -> dict:
-        """What the explicit instruction itself costs, measured exactly like an edit:
-        gain/leak on the same dev prompts, KL and in-language NLL on the same committed
-        target-language contexts, with the instruction added to the prompt."""
+        """What the explicit instruction itself costs, measured exactly like an edit: gain/leak
+        on the same dev prompts; downstream KL and NLL on the same target-language references,
+        with the instruction added to the prompt instead of an edit."""
         L = LANG_NAME[self.target]
         instr = [chat_ids(self.tok, f"{p} Answer in {L}.", self.spec.chat_kwargs)
                  for p in self.prompt_texts]
         e = early_defaultness(self.model, self.tok, instr, self.ts, self.target, self.cfg.T,
                               batch_size=self.cfg.batch_size)
         r = compare_early(e, self.base_early, self.target, self.others)
-        r["kl_offdecision"] = kl(self.base_lp, last_logprobs(
-            self.model, self.tok, committed_contexts(self.tok, instr, self.ref_tgt), self.cfg.batch_size))
-        r["util_nll"] = response_nll(self.model, self.tok, instr, self.ref_tgt, skip=self.cfg.util_skip,
-                                     max_resp=self.k_util, batch_size=self.cfg.batch_size) - self.base_nll_dep
+        nll, lp, _ = self._downstream(instr, None)
+        r["kl_offdecision"] = kl(self.base_lp, lp)
+        r["util_nll"] = nll - self.base_ds
         return r
 
     def tf_gain(self) -> float:
@@ -176,25 +178,24 @@ class DevBench:
         return float(dM.mean() - self.base_tf.mean())
 
     def full(self, steer=None) -> dict:
-        """Closed-loop gain/leak (current hooks) + off-decision KL + in-language NLL drift.
+        """Closed-loop gain/leak (current hooks) plus the two guardrail costs, both measured on
+        target-language references with the edit applied exactly where it is deployed
+        (prompt-final + first k_decode positions) and scored only at positions after it:
 
-        util_nll (guardrail): NLL of reference target-language tokens util_skip..k_decode with
-        the edit on exactly the positions it touches when deployed (prompt-final + first
-        k_decode steps).  util_nll_all (reported only): the same responses with every position
-        edited, a stress test that over-states the cost of decode_window steering."""
+          util_nll        downstream NLL increase (nats/token) over n_util_tokens tokens
+          kl_offdecision  KL(base || edited) of the next-token distribution right after the
+                          edited span
+
+        Neither rewards the language push itself (the scored positions are never edited).
+        util_nll_all (reported only): every position edited, as in log-likelihood benchmarks."""
         e = early_defaultness(self.model, self.tok, self.prompts, self.ts, self.target, self.cfg.T,
                               batch_size=self.cfg.batch_size)
         r = compare_early(e, self.base_early, self.target, self.others)
-        r["kl_offdecision"] = kl(self.base_lp, last_logprobs(self.model, self.tok, self.committed,
-                                                             self.cfg.batch_size))
-        if steer is not None and steer.mode != "all":
-            steer.force_last = self.k_util + 1
-        r["util_nll"] = response_nll(self.model, self.tok, self.prompts, self.ref_tgt,
-                                     skip=self.cfg.util_skip, max_resp=self.k_util,
-                                     batch_size=self.cfg.batch_size) - self.base_nll_dep
+        nll, lp, _ = self._downstream(self.prompts, steer)
+        r["kl_offdecision"] = kl(self.base_lp, lp)
+        r["util_nll"] = nll - self.base_ds
         mode = None
         if steer is not None:
-            steer.force_last = None
             mode, steer.mode = steer.mode, "all"
         r["util_nll_all"] = response_nll(self.model, self.tok, self.prompts, self.ref_tgt,
                                          batch_size=self.cfg.batch_size) - self.base_nll

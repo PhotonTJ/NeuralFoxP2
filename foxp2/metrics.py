@@ -236,3 +236,41 @@ def response_nll(model, tok, prompt_ids, resp_texts, skip: int = 4, max_resp: in
                 tot -= float(pred.gather(-1, tgt[:, None]).sum())
                 cnt += len(tgt)
     return tot / max(cnt, 1)
+
+
+def downstream_scores(model, tok, prompt_ids, refs, k: int, n_score: int, batch_size: int = 16,
+                      steer=None):
+    """Utility cost of an edit, free of the "it makes target tokens likelier" confound.
+
+    Each context is prompt + the first R = k + 1 + n_score tokens of a target-language
+    reference.  When `steer` is given, the edit is applied exactly where it is applied at
+    deployment (the prompt-final position and the first k response positions); the scored
+    tokens k+1 .. R-1 are predicted from positions the edit never touches, so any change in
+    them is collateral damage carried through the KV cache, not the intended language push.
+
+    Returns (mean NLL in nats/token over scored tokens, log-probs at the first scored
+    position [N, V] on CPU for a KL comparison, number of contexts used)."""
+    from .model_io import text_ids
+    R = k + 1 + n_score
+    items = [(p, text_ids(tok, r)[:R]) for p, r in zip(prompt_ids, refs)]
+    items = [(p, r) for p, r in items if len(r) == R]
+    if not items:
+        raise ValueError(f"no reference has >= {R} tokens; lower n_score")
+    dev, tot, cnt, first = input_device(model), 0.0, 0, []
+    if steer is not None:
+        steer.force_range = (R + 1, R - k)
+    try:
+        with torch.no_grad():
+            for chunk in batches(items, batch_size):
+                ids, att = left_pad([p + r for p, r in chunk], tok.pad_token_id, dev)
+                L = ids.shape[1]
+                lp = model(input_ids=ids, attention_mask=att).logits[:, L - R + k: L - 1].float() \
+                    .log_softmax(-1)
+                tgt = ids[:, L - R + k + 1: L]
+                tot -= float(lp.gather(-1, tgt[..., None]).sum())
+                cnt += tgt.numel()
+                first.append(lp[:, 0].cpu())
+    finally:
+        if steer is not None:
+            steer.force_range = None
+    return tot / cnt, torch.cat(first), len(items)

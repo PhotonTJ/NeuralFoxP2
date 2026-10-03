@@ -52,6 +52,14 @@ def fast(cfg: FOXP2Config) -> FOXP2Config:
     return cfg
 
 
+def pair_done(args, spec, lang) -> bool:
+    out = os.path.join(args.out, spec.key, lang)
+    need = [os.path.join(out, f) for f in ("artifact.pt", "stage3_heldout.json")]
+    if args.export_dir:
+        need.append(os.path.join(args.export_dir, f"{spec.key}-foxp2-{lang}", "foxp2.safetensors"))
+    return all(os.path.exists(p) for p in need)
+
+
 def run_pair(model, tok, spec, lang, cfg, args):
     out = os.path.join(args.out, spec.key, lang)
     os.makedirs(out, exist_ok=True)
@@ -125,7 +133,10 @@ def main():
                     help="optional NLI model for bidirectional-entailment QC, e.g. "
                          "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7")
     ap.add_argument("--hf_cache", default=None)
-    ap.add_argument("--force", action="store_true")
+    ap.add_argument("--force", action="store_true", help="redo every stage, including Stage I")
+    ap.add_argument("--redo_from", default=None, choices=["stage2", "stage3"],
+                    help="keep cached Stage I (and Stage II for stage3) and redo the rest for every "
+                         "selected pair, e.g. after a code fix in the later stages")
     ap.add_argument("--guardrail", default="prompt", choices=["prompt", "fixed"],
                     help="prompt: steering may cost no more than instructing the language (default); "
                          "fixed: the paper's eps (leak .08, KL .08, util .03)")
@@ -144,8 +155,20 @@ def main():
                           layers=parse_layers(args.layers, spec.n_layers))
         if args.fast:
             fast(cfg)
+        if args.redo_from:
+            for l in langs:
+                rd = os.path.join(args.out, spec.key, l)
+                drop = ["artifact.pt", "stage3_heldout.json"] + (["stage2.pt"] if args.redo_from == "stage2" else [])
+                for fn in drop:
+                    if os.path.exists(os.path.join(rd, fn)):
+                        os.remove(os.path.join(rd, fn))
+        todo = [l for l in langs if args.force or args.redo_from or not pair_done(args, spec, l)]
+        for l in sorted(set(langs) - set(todo)):
+            print(f"[resume] {mk}/{l} already complete, skipping (use --force to redo)")
+        if not todo:
+            continue
         model, tok = load_model(spec)
-        for lang in langs:
+        for lang in todo:
             run_pair(model, tok, spec, lang, cfg, args)
         del model
         gc.collect()
